@@ -20,6 +20,10 @@ def parse_value(value):
     text = str(value).strip()
     if text in {"None", "nan", ""}:
         return None
+    if text.startswith("[") and text.endswith("]"):
+        quoted = re.findall(r"'([^']*)'|\"([^\"]*)\"", text)
+        if quoted:
+            return [first or second for first, second in quoted]
     try:
         return ast.literal_eval(text)
     except (ValueError, SyntaxError):
@@ -33,7 +37,7 @@ def choices_text(value: object) -> str:
     if isinstance(choices, (list, tuple)):
         items = list(map(str, choices))
     elif isinstance(choices, str) and "\n" not in choices:
-        items = re.findall(r"[A-Z]\.\s*.*?(?=\s+[A-Z]\.\s+|$)", choices)
+        items = re.findall(r"[A-Z]\.\s*.*?(?=[A-Z]\.\s+|$)", choices)
         items = items or [choices]
     else:
         items = [str(choices)]
