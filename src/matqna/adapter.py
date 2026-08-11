@@ -3,6 +3,7 @@ from __future__ import annotations
 import ast
 import base64
 import json
+import re
 import shutil
 import urllib.request
 from pathlib import Path
@@ -30,8 +31,13 @@ def choices_text(value: object) -> str:
     if not choices:
         return ""
     if isinstance(choices, (list, tuple)):
-        return "Choices:\n" + "\n".join(map(str, choices))
-    return f"Choices:\n{choices}"
+        items = list(map(str, choices))
+    elif isinstance(choices, str) and "\n" not in choices:
+        items = re.findall(r"[A-Z]\.\s*.*?(?=\s+[A-Z]\.\s+|$)", choices)
+        items = items or [choices]
+    else:
+        items = [str(choices)]
+    return "Choices:\n" + "\n".join(item.strip() for item in items)
 
 
 def records(source: Path | None = None) -> pd.DataFrame:
