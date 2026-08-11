@@ -67,6 +67,7 @@ def generate(
         image = parse_value(row.images)
         image = image if isinstance(image, str) else str(image)
         (task / "environment/data/image.png").write_bytes(base64.b64decode(image))
+        shutil.copy2(ROOT / "task-template/environment/Dockerfile", task / "environment/Dockerfile")
 
         answer = parse_value(row.scholar_reference_answer)
         answer = "" if answer is None else str(answer)
