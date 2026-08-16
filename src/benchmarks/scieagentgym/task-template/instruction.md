@@ -7,4 +7,9 @@ Solve the following {{ subject }} / {{ topic }} problem. You may inspect the ben
 
 Expected tool concepts (when applicable): {{ tools }}
 
-Write the final answer to `/app/answer.txt`. Match the benchmark answer as closely as possible; for structured answers, write valid JSON.
+Write the final answer to `/app/answer.txt` using this exact format:
+
+###Answer###
+$\\boxed{The final answer}$
+
+Include your reasoning before the answer if useful, but the final answer must be wrapped in `\\boxed{}`.

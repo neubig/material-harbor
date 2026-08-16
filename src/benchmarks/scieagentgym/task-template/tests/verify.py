@@ -1,142 +1,89 @@
 import json
-import math
 import os
 import re
 import urllib.request
 from pathlib import Path
 
 
-def extract_json(text):
-    candidates = []
-    for match in re.finditer(r"```(?:json)?\s*([\s\S]*?)\s*```", text, re.I):
-        candidates.append(match.group(1))
-    for start, char in enumerate(text):
-        if char != "{":
-            continue
-        depth = 0
-        for end in range(start, len(text)):
-            if text[end] == "{":
-                depth += 1
-            elif text[end] == "}":
-                depth -= 1
-                if depth == 0:
-                    candidates.append(text[start : end + 1])
-                    break
-    parsed = []
-    for candidate in candidates:
-        try:
-            value = json.loads(candidate)
-        except json.JSONDecodeError:
-            continue
-        score = len(candidate) + (5000 if isinstance(value, dict) else 0)
-        parsed.append((score, value))
-    return max(parsed, default=(0, None))[1]
+def extract_balanced_braces(text, start_pos):
+    if not text or start_pos < 0 or start_pos >= len(text) or text[start_pos] != '{':
+        return None
+    stack = 0
+    result = []
+    for char in text[start_pos:]:
+        if char == '{':
+            stack += 1
+            if stack > 1:
+                result.append(char)
+        elif char == '}':
+            stack -= 1
+            if stack == 0:
+                return ''.join(result)
+            if stack < 0:
+                return None
+            result.append(char)
+        elif stack >= 1:
+            result.append(char)
+    return None
 
 
-def number(value):
-    if isinstance(value, bool):
-        return value
-    if isinstance(value, (int, float)):
-        return value
-    if isinstance(value, str):
-        try:
-            return float(value.strip())
-        except ValueError:
-            return value
-    return value
-
-
-def count_leaves(value):
-    if isinstance(value, dict):
-        return sum(count_leaves(item) for item in value.values())
-    if isinstance(value, list):
-        return sum(count_leaves(item) for item in value)
-    return 1
-
-
-def compare(actual, expected, tolerance=0.05):
-    if isinstance(expected, dict):
-        if not isinstance(actual, dict):
-            return 0, count_leaves(expected)
-        matched = 0
-        total = count_leaves(expected)
-        for key, value in expected.items():
-            if key in actual:
-                child_matched, _ = compare(actual[key], value, tolerance)
-                matched += child_matched
-        return matched, total
-    if isinstance(expected, list):
-        if not isinstance(actual, list) or len(actual) != len(expected):
-            return 0, count_leaves(expected)
-        matched = total = 0
-        for left, right in zip(actual, expected):
-            child_matched, child_total = compare(left, right, tolerance)
-            matched += child_matched
-            total += child_total
-        return matched, total
-    actual_num, expected_num = number(actual), number(expected)
-    if isinstance(actual_num, (int, float)) and isinstance(expected_num, (int, float)):
-        return (1 if math.isclose(float(actual_num), float(expected_num), rel_tol=tolerance, abs_tol=tolerance) else 0), 1
-    if isinstance(actual_num, str) and isinstance(expected_num, str):
-        return (1 if actual_num.strip().lower() == expected_num.strip().lower() else 0), 1
-    return (1 if actual_num == expected_num else 0), 1
+def extract_boxed_answer(text):
+    if not text:
+        return None
+    matches = []
+    for pattern in (r"\\boxed\{", r"\$\\boxed\{", r"boxed\{"):
+        for match in re.finditer(pattern, text):
+            value = extract_balanced_braces(text, match.end() - 1)
+            if value is not None:
+                matches.append(value)
+    return matches[-1].strip() if matches else None
 
 
 case = json.loads(Path('/app/data/case.json').read_text(encoding='utf-8'))['case']
-metadata = case.get('metadata', {})
 answer_path = Path('/app/answer.txt')
-actual_text = answer_path.read_text(encoding='utf-8').strip() if answer_path.exists() else ''
-actual = extract_json(actual_text)
-
-# SciAgentGYM's normal evaluator judges the top-level answer semantically.
-expected_text = str(case.get('answer', '')).strip()
-if actual is None:
-    judge_reward = None
-    api_key = os.environ.get('LLM_API_KEY')
-    base_url = os.environ.get('LLM_BASE_URL', '').rstrip('/')
-    judge_model = os.environ.get('LLM_JUDGE_MODEL', 'openai/deepseek-v4-flash')
-    if api_key and base_url:
-        prompt = f'''Judge whether the AI answer is correct.
-Ignore formatting differences, irrelevant explanation, and prefixes. Accept logically,
-computationally, or numerically equivalent answers. Return only CORRECT or INCORRECT.
-
-Question:\n{case.get('question', '')}
-
-Standard answer:\n{expected_text}
-
-AI answer:\n{actual_text}'''
-        payload = json.dumps({'model': judge_model, 'messages': [{'role': 'user', 'content': prompt}], 'max_tokens': 5}).encode()
-        request = urllib.request.Request(
-            f'{base_url}/v1/chat/completions',
-            data=payload,
-            headers={'Authorization': f'Bearer {api_key}', 'Content-Type': 'application/json'},
-        )
-        try:
-            with urllib.request.urlopen(request, timeout=30) as response:
-                result = json.load(response)['choices'][0]['message']['content'].strip().upper()
-            judge_reward = float(result == 'CORRECT')
-        except Exception:
-            judge_reward = None
-    if judge_reward is not None:
-        reward = judge_reward
-    else:
-        actual_text_lower = actual_text.lower()
-        expected_text_lower = expected_text.lower()
-        normalized_actual = re.sub(r"\\boxed\\s*\\{|[}${]", "", actual_text_lower)
-        normalized_expected = re.sub(r"\\boxed\\s*\\{|[}${]", "", expected_text_lower)
-        reward = float(bool(normalized_expected) and normalized_expected in normalized_actual)
+response = answer_path.read_text(encoding='utf-8').strip() if answer_path.exists() else ''
+model_answer = extract_boxed_answer(response)
+standard_answer = case.get('answer')
+if isinstance(standard_answer, list) and standard_answer:
+    standard_answer = str(standard_answer[0])
+elif isinstance(standard_answer, dict):
+    standard_answer = json.dumps(standard_answer, ensure_ascii=False)
 else:
-    # Refined-style responses are scored recursively against golden_answer.
-    golden = metadata.get('golden_answer', expected_text)
-    if isinstance(golden, list):
-        golden = golden[0] if golden else None
-    if isinstance(golden, dict) and 'final_answer' in golden:
-        golden = golden['final_answer']
-    if not isinstance(golden, dict):
-        golden = {'answer': golden}
-    matched, total = compare(actual, golden)
-    reward = matched / total if total else 0.0
+    standard_answer = str(standard_answer or '')
+
+reward = 0.0
+api_key = os.environ.get('LLM_API_KEY')
+base_url = os.environ.get('LLM_BASE_URL', '').rstrip('/')
+if model_answer and standard_answer and api_key and base_url:
+    prompt = f'''这是一个问题、一个标准答案，以及一个由AI模型生成的答案。请你判断AI模型的答案是否正确。
+    评判要求：
+    1. 忽略答案中的格式差异。
+    2. 忽略无关的前缀或文字修饰。
+    3. 如果标准答案是一个表达式或数值，只要模型答案在逻辑、计算或数值上等价，也视为正确。
+    4. 若模型答案与标准答案**核心内容一致**，则判断为"正确"。
+
+    请只输出：`正确` 或 `错误`。
+
+    ---
+    问题：
+    {case.get('question', '')}
+    ---
+    标准答案：
+    {standard_answer}
+    ---
+    AI模型的答案：
+    {model_answer}
+    ---
+    '''
+    payload = json.dumps({'model': os.environ.get('LLM_JUDGE_MODEL', 'openai/deepseek-v4-flash'), 'messages': [{'role': 'user', 'content': prompt}], 'max_tokens': 5}).encode()
+    request = urllib.request.Request(f'{base_url}/v1/chat/completions', data=payload, headers={'Authorization': f'Bearer {api_key}', 'Content-Type': 'application/json'})
+    try:
+        with urllib.request.urlopen(request, timeout=30) as result:
+            content = json.load(result)['choices'][0]['message']['content'].strip()
+        reward = float(content == '正确')
+    except Exception:
+        reward = 0.0
 
 Path('/logs/verifier/reward.txt').write_text(str(reward))
-if reward < 0.8:
+if reward < 1:
     raise SystemExit(1)
