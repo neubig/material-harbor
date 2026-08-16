@@ -1,17 +1,32 @@
-# MatQnA for Harbor
+# Scientific benchmarks for Harbor
 
-This repository adapts [MatQnA](https://arxiv.org/abs/2509.11335), a multimodal materials-characterization QA benchmark, to [Harbor](https://github.com/harbor-framework/harbor).
+This repository adapts scientific benchmark datasets to the [Harbor](https://github.com/harbor-framework/harbor) task format.
 
-The source is [`richardhzgg/matQnA`](https://huggingface.co/datasets/richardhzgg/matQnA), licensed MIT. It contains 4,968 questions, 270 embedded images, and ten characterization categories. The source Parquet is not committed; the adapter downloads it and materializes tasks reproducibly.
+## Datasets
 
-## Generate
+### MatQnA
+
+The existing MatQnA adapter is under `src/benchmarks/matqna`. It downloads the MIT-licensed [`richardhzgg/matQnA`](https://huggingface.co/datasets/richardhzgg/matQnA) Parquet source and generates multimodal materials-characterization tasks.
 
 ```bash
-uv run --with pandas --with pyarrow python -m src.matqna.main --output-dir datasets/matqna --limit 10
-# use --all for the complete benchmark, or --task-ids 0 1 2
+uv run --with pandas --with pyarrow python -m src.benchmarks.matqna.main \
+  --output-dir datasets/matqna --limit 10
 ```
 
-Generated tasks contain the decoded image, instruction, oracle solution, and verifier.
+Use `--all` for the full source or `--task-ids 0 1 2` for selected rows.
+
+### SciAgentGYM
+
+The SciAgentGYM adapter is under `src/benchmarks/scieagentgym`. It downloads the public [`CMarsRover/SciAgentGYM`](https://github.com/CMarsRover/SciAgentGYM) repository, converts the 83 multi-question benchmark cases into Harbor tasks, and preserves each case's question, metadata, expected tool concepts, and answer in the generated task.
+
+```bash
+uv run python -m src.benchmarks.scieagentgym \
+  --output-dir datasets/scieagentgym --limit 10
+```
+
+By default, only the 83 multi-step cases are generated. Add `--include-single` to include the 48 single-question cases as well. Use `--all` for the complete selected source or `--task-ids 0 1 2` for selected cases. Use `--source /path/to/SciAgentGYM` to avoid downloading the source.
+
+Generated task directories contain `task.toml`, `instruction.md`, an isolated Docker environment, the source case at `/app/data/case.json`, and a deterministic verifier. The included oracle solution is useful for Harbor smoke tests; agent evaluations should solve the problem and write `/app/answer.txt`.
 
 ## Run an agent evaluation
 
