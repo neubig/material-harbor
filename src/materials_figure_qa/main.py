@@ -12,6 +12,7 @@ def generate(output: Path, split: str, limit: int | None = None, overwrite: bool
         if task.exists() and not overwrite: continue
         if task.exists(): shutil.rmtree(task)
         (task / 'environment/data').mkdir(parents=True); (task / 'solution').mkdir(); (task / 'tests/data').mkdir(parents=True)
+        shutil.copy2(ROOT / 'task-template/environment/Dockerfile', task / 'environment/Dockerfile')
         row['image'].save(task / 'environment/data/image.png')
         (task / 'instruction.md').write_text((ROOT / 'task-template/instruction.md').read_text().replace('{{ question }}', row['question']))
         (task / 'task.toml').write_text((ROOT / 'task-template/task.toml').read_text().replace('{{ task_id }}', f'{split}-{i:06d}'))
