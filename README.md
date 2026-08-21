@@ -69,7 +69,36 @@ uv run harbor run \
   --ae LLM_API_KEY="$LLM_API_KEY"
 ```
 
-Trial results, rewards, logs, and trajectories are written below the directory supplied by `--trials-dir` (or Harbor's default trials directory). Objective tasks receive exact-choice scoring. Subjective-task scoring is currently provisional: the verifier checks only that the agent writes a non-empty answer, so subjective results should not be treated as benchmark-quality scores until an expert or LLM-judge rubric is added.
+Trial results, rewards, logs, and trajectories are written below the directory supplied by `--trials-dir` (or Harbor's default trials directory). The original MatQnA adapter retains its existing objective/subjective scoring behavior; the Materials Figure QA adapter below uses a strict multimodal VLM judge.
+
+## Materials Figure QA adapter
+
+This repository also contains `src/materials_figure_qa`, an adapter for the filtered Materials Figure QA dataset at [gneubig/materials-figure-qa](https://huggingface.co/datasets/gneubig/materials-figure-qa). It generates Harbor tasks from the `validation` and `test` Parquet splits:
+
+```bash
+uv run --with datasets --with pillow python -m src.materials_figure_qa.main \
+  --output-dir datasets/materials-figure-qa --split both
+```
+
+Run an agent task with Harbor as usual:
+
+```bash
+uv run harbor trial start \
+  -p /path/to/material-harbor/datasets/materials-figure-qa/materials-figure-qa-validation-000000 \
+  -a openhands-sdk -m openai/gpt-5.5 -e docker \
+  --ae LLM_API_KEY="$LLM_API_KEY" \
+  --trials-dir /tmp/materials-figure-qa-trials
+```
+
+The verifier uses a **strict multimodal VLM judge**, not lexical matching or non-empty-answer checks. It sends the figure, question, reference answer, and agent answer to an OpenAI-compatible endpoint. Configure the judge with:
+
+```bash
+--ae VLM_JUDGE_API_KEY="$LLM_API_KEY" \
+--ae VLM_JUDGE_BASE_URL="https://llm-proxy.app.all-hands.dev/v1" \
+--ae VLM_JUDGE_MODEL="gpt-5.5"
+```
+
+The verifier gives reward `1` only when the judge finds the answer substantively correct and supported by the figure; otherwise it gives `0`. It writes the judge rationale to `/logs/verifier/details.json`.
 
 ## Publishing
 
