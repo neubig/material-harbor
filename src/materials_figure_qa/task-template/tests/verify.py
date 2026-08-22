@@ -26,7 +26,10 @@ if not choices:
     raise RuntimeError('judge returned no choices')
 text = choices[0]['message'].get('content', '')
 match = re.search(r'\{.*\}', text, re.S)
-verdict = json.loads(match.group(0) if match else text)
+try:
+    verdict = json.loads(match.group(0) if match else text)
+except (TypeError, json.JSONDecodeError):
+    verdict = {'score': 0, 'rationale': 'Judge returned malformed JSON.'}
 score = int(verdict.get('score', 0))
 Path('/logs/verifier/reward.txt').write_text(str(float(score)))
 Path('/logs/verifier/details.json').write_text(json.dumps({'score': score, 'rationale': verdict.get('rationale', ''), 'model': model, 'prediction_available': bool(prediction)}))
