@@ -6,10 +6,10 @@ This repository adapts scientific benchmark datasets to the [Harbor](https://git
 
 ### MatQnA
 
-The existing MatQnA adapter is under `src/benchmarks/matqna`. It downloads the MIT-licensed [`richardhzgg/matQnA`](https://huggingface.co/datasets/richardhzgg/matQnA) Parquet source and generates multimodal materials-characterization tasks.
+The existing MatQnA adapter is under `matqna`. It downloads the MIT-licensed [`richardhzgg/matQnA`](https://huggingface.co/datasets/richardhzgg/matQnA) Parquet source and generates multimodal materials-characterization tasks.
 
 ```bash
-uv run --with pandas --with pyarrow python -m src.benchmarks.matqna.main \
+uv run --with pandas --with pyarrow python -m matqna.main \
   --output-dir datasets/matqna --limit 10
 ```
 
@@ -108,4 +108,12 @@ The canonical Harbor workflow is `harbor dataset init`, `harbor add --scan`, `ha
 
 ```bibtex
 @misc{weng2025matqna, title={MatQnA: A Benchmark Dataset for Multi-modal Large Language Models in Materials Characterization and Analysis}, year={2025}, eprint={2509.11335}, archivePrefix={arXiv}}
+```
+
+## Materials Figure QA
+
+The Materials Figure QA adapter is under `materials-figure-qa`. It generates tasks from the filtered `gneubig/materials-figure-qa` dataset and uses strict multimodal VLM grading.
+
+```bash
+uv run python materials-figure-qa/main.py --output-dir datasets/materials-figure-qa --split both
 ```
