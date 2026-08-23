@@ -6,10 +6,10 @@ This repository adapts scientific benchmark datasets to the [Harbor](https://git
 
 ### MatQnA
 
-The existing MatQnA adapter is under `src/benchmarks/matqna`. It downloads the MIT-licensed [`richardhzgg/matQnA`](https://huggingface.co/datasets/richardhzgg/matQnA) Parquet source and generates multimodal materials-characterization tasks.
+The existing MatQnA adapter is under `matqna`. It downloads the MIT-licensed [`richardhzgg/matQnA`](https://huggingface.co/datasets/richardhzgg/matQnA) Parquet source and generates multimodal materials-characterization tasks.
 
 ```bash
-uv run --with pandas --with pyarrow python -m src.benchmarks.matqna.main \
+uv run --with pandas --with pyarrow python -m matqna.main \
   --output-dir datasets/matqna --limit 10
 ```
 
@@ -69,7 +69,36 @@ uv run harbor run \
   --ae LLM_API_KEY="$LLM_API_KEY"
 ```
 
-Trial results, rewards, logs, and trajectories are written below the directory supplied by `--trials-dir` (or Harbor's default trials directory). Objective tasks receive exact-choice scoring. Subjective-task scoring is currently provisional: the verifier checks only that the agent writes a non-empty answer, so subjective results should not be treated as benchmark-quality scores until an expert or LLM-judge rubric is added.
+Trial results, rewards, logs, and trajectories are written below the directory supplied by `--trials-dir` (or Harbor's default trials directory). The original MatQnA adapter retains its existing objective/subjective scoring behavior; the Materials Figure QA adapter below uses a strict multimodal VLM judge.
+
+## Materials Figure QA adapter
+
+This repository also contains `src/materials_figure_qa`, an adapter for the filtered Materials Figure QA dataset at [gneubig/materials-figure-qa](https://huggingface.co/datasets/gneubig/materials-figure-qa). It generates Harbor tasks from the `validation` and `test` Parquet splits:
+
+```bash
+uv run --with datasets --with pillow python -m src.materials_figure_qa.main \
+  --output-dir datasets/materials-figure-qa --split both
+```
+
+Run an agent task with Harbor as usual:
+
+```bash
+uv run harbor trial start \
+  -p /path/to/material-harbor/datasets/materials-figure-qa/materials-figure-qa-validation-000000 \
+  -a openhands-sdk -m openai/gpt-5.5 -e docker \
+  --ae LLM_API_KEY="$LLM_API_KEY" \
+  --trials-dir /tmp/materials-figure-qa-trials
+```
+
+The verifier uses a **strict multimodal VLM judge**, not lexical matching or non-empty-answer checks. It sends the figure, question, reference answer, and agent answer to an OpenAI-compatible endpoint. Configure the judge with:
+
+```bash
+--ae VLM_JUDGE_API_KEY="$LLM_API_KEY" \
+--ae VLM_JUDGE_BASE_URL="https://llm-proxy.app.all-hands.dev/v1" \
+--ae VLM_JUDGE_MODEL="gpt-5.5"
+```
+
+The verifier gives reward `1` only when the judge finds the answer substantively correct and supported by the figure; otherwise it gives `0`. It writes the judge rationale to `/logs/verifier/details.json`.
 
 ## Publishing
 
@@ -79,4 +108,12 @@ The canonical Harbor workflow is `harbor dataset init`, `harbor add --scan`, `ha
 
 ```bibtex
 @misc{weng2025matqna, title={MatQnA: A Benchmark Dataset for Multi-modal Large Language Models in Materials Characterization and Analysis}, year={2025}, eprint={2509.11335}, archivePrefix={arXiv}}
+```
+
+## Materials Figure QA
+
+The Materials Figure QA adapter is under `materials-figure-qa`. It generates tasks from the filtered `gneubig/materials-figure-qa` dataset and uses strict multimodal VLM grading.
+
+```bash
+uv run python materials-figure-qa/main.py --output-dir datasets/materials-figure-qa --split both
 ```
