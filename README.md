@@ -117,3 +117,60 @@ The Materials Figure QA adapter is under `materials-figure-qa`. It generates tas
 ```bash
 uv run python materials-figure-qa/main.py --output-dir datasets/materials-figure-qa --split both
 ```
+
+## Creating new figure-QA benchmarks
+
+`scripts/create_figure_qa_benchmark.py` generalizes the Materials Figure QA
+creation pipeline to user-supplied arXiv papers or categories:
+
+```bash
+export LLM_API_KEY=...
+export LLM_BASE_URL=https://your-openai-compatible-endpoint/v1
+uv run python scripts/create_figure_qa_benchmark.py \
+  --paper 2608.19185 \
+  --paper 2608.19178 \
+  --limit 300
+```
+
+To discover papers from one or more arXiv categories, repeat `--domain` or use
+`--domain-file`. The newest 100 papers per category are fetched by default;
+use `--papers-per-domain` to change that bound:
+
+```bash
+uv run python scripts/create_figure_qa_benchmark.py \
+  --domain cond-mat.mtrl-sci \
+  --domain cond-mat.soft \
+  --papers-per-domain 50 \
+  --limit 300
+```
+
+Explicit papers and categories can be combined, and duplicate papers are
+processed only once. The run is resumable and retains candidate, approved,
+rejected, calibration, and provenance data. Use `--overwrite` for a clean rebuild.
+Five-model calibration is enabled by default; `--skip-calibration` is intended
+only for cheap smoke tests.
+
+### Quality controls
+
+The builder includes every quality-control stage recovered from the original
+Materials Figure QA creation process:
+
+- requires a resolvable LaTeX figure, caption, and paper discussion that
+  references the figure;
+- requires the author VLM to use both visual evidence and materials-science
+  knowledge, forbidding invented labels, panels, values, and entities;
+- uses a separate strict VLM review for ambiguity, question validity, reference
+  validity, visual necessity, visible support, and caption-only answerability;
+- rejects duplicate questions;
+- rejects figures with an aspect ratio greater than 4:1;
+- downsamples figures to a maximum dimension of 2048 pixels;
+- runs the five original calibration models and semantically grades each answer
+  on the original 0–3 scale with error classification;
+- rejects candidates that any semantic grader marks as an invalid question or
+  reference, and by default rejects questions all five models solve fully;
+- samples round-robin across papers for source diversity; and
+- emits validation and test splits that are paper-disjoint to prevent leakage.
+
+The generated `*.approved.jsonl`, `*.rejected.jsonl`, and
+`*.candidates.jsonl` files provide an audit trail. The final JSONL and split
+files include the full structured review and calibration records.
