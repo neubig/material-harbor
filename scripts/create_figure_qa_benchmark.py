@@ -70,14 +70,9 @@ def balanced_argument(text: str, opening: int) -> str:
     return ""
 
 
-def fetch_metadata(ids: list[str], timeout: int) -> dict[str, Paper]:
-    query = urllib.parse.urlencode({"id_list": ",".join(ids), "max_results": len(ids)})
-    request = urllib.request.Request(
-        f"{ARXIV_API}?{query}", headers={"User-Agent": "materials-figure-qa-builder/1.0"}
-    )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        root = ET.fromstring(response.read())
+def parse_metadata_feed(data: bytes) -> dict[str, Paper]:
     papers = {}
+    root = ET.fromstring(data)
     for entry in root.findall(f"{{{ATOM}}}entry"):
         paper_id = normalize_id(entry.findtext(f"{{{ATOM}}}id", "").rsplit("/", 1)[-1])
         links = entry.findall(f"{{{ATOM}}}link")
@@ -90,9 +85,42 @@ def fetch_metadata(ids: list[str], timeout: int) -> dict[str, Paper]:
             next((node.attrib["href"] for node in links if node.attrib.get("title") == "pdf"),
                  f"https://arxiv.org/pdf/{paper_id}"),
         )
+    return papers
+
+
+def fetch_arxiv(query: dict[str, str | int], timeout: int) -> dict[str, Paper]:
+    request = urllib.request.Request(
+        f"{ARXIV_API}?{urllib.parse.urlencode(query)}",
+        headers={"User-Agent": "materials-figure-qa-builder/1.0"},
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return parse_metadata_feed(response.read())
+
+
+def fetch_metadata(ids: list[str], timeout: int) -> dict[str, Paper]:
+    papers = fetch_arxiv({"id_list": ",".join(ids), "max_results": len(ids)}, timeout)
     missing = [paper_id for paper_id in ids if paper_id not in papers]
     if missing:
         raise RuntimeError(f"No metadata returned for: {', '.join(missing)}")
+    return papers
+
+
+def fetch_domain_metadata(
+    domains: list[str], papers_per_domain: int, timeout: int, delay: float = 0
+) -> dict[str, Paper]:
+    papers = {}
+    for index, domain in enumerate(domains):
+        if not re.fullmatch(r"[A-Za-z0-9.-]+", domain):
+            raise ValueError(f"Invalid arXiv domain: {domain}")
+        if index:
+            time.sleep(max(0, delay))
+        papers.update(fetch_arxiv({
+            "search_query": f"cat:{domain}",
+            "start": 0,
+            "max_results": papers_per_domain,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+        }, timeout))
     return papers
 
 
@@ -391,20 +419,38 @@ def ids_in(path: Path) -> set[str]:
     return result
 
 
-def build(args: argparse.Namespace) -> int:
-    ids = [normalize_id(value) for value in args.paper]
-    if args.paper_file:
-        ids += [normalize_id(line) for line in args.paper_file.read_text().splitlines()
-                if line.strip() and not line.lstrip().startswith("#")]
+def values_from_file(path: Path | None) -> list[str]:
+    if not path:
+        return []
+    return [
+        line.strip() for line in path.read_text().splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    ]
+
+
+def resolve_papers(args: argparse.Namespace) -> tuple[list[str], dict[str, Paper]]:
+    ids = [normalize_id(value) for value in args.paper + values_from_file(args.paper_file)]
+    domains = list(dict.fromkeys(args.domain + values_from_file(args.domain_file)))
     ids = list(dict.fromkeys(ids))
+    if not ids and not domains:
+        raise ValueError("Provide --paper, --paper-file, --domain, or --domain-file")
+    metadata = fetch_metadata(ids, args.timeout) if ids else {}
+    if domains:
+        metadata.update(fetch_domain_metadata(
+            domains, args.papers_per_domain, args.timeout, args.delay
+        ))
+    return list(metadata), metadata
+
+
+def build(args: argparse.Namespace) -> int:
+    ids, metadata = resolve_papers(args)
     if not ids:
-        raise ValueError("Provide --paper or --paper-file")
+        raise RuntimeError("No papers returned for the requested arXiv domains")
     key = os.environ.get("LLM_API_KEY") or os.environ.get("OPENAI_API_KEY")
     base_url = os.environ.get("LLM_BASE_URL")
     if not key or not base_url:
         raise RuntimeError("Set LLM_API_KEY (or OPENAI_API_KEY) and LLM_BASE_URL")
 
-    metadata = fetch_metadata(ids, args.timeout)
     approved_path = args.output.with_name(args.output.stem + ".approved.jsonl")
     candidates_path = args.output.with_name(args.output.stem + ".candidates.jsonl")
     rejected_path = args.output.with_name(args.output.stem + ".rejected.jsonl")
@@ -493,6 +539,9 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--paper", action="append", default=[], help="arXiv ID or URL; repeatable")
     parser.add_argument("--paper-file", type=Path, help="one arXiv ID or URL per line")
+    parser.add_argument("--domain", action="append", default=[], help="arXiv category such as cond-mat.mtrl-sci; repeatable")
+    parser.add_argument("--domain-file", type=Path, help="one arXiv category per line")
+    parser.add_argument("--papers-per-domain", type=int, default=100, help="newest papers fetched per arXiv category")
     parser.add_argument("--output", type=Path, default=Path("data/materials-figure-qa.jsonl"))
     parser.add_argument("--splits-dir", type=Path, default=Path("data/materials-figure-qa"))
     parser.add_argument("--work-dir", type=Path, default=Path("data/work"))
@@ -513,6 +562,8 @@ def main() -> int:
     args = parse_args()
     if args.limit < 1:
         raise ValueError("--limit must be positive")
+    if args.papers_per_domain < 1:
+        raise ValueError("--papers-per-domain must be positive")
     if not 0 < args.validation_fraction < 1:
         raise ValueError("--validation-fraction must be between 0 and 1")
     accepted = build(args)

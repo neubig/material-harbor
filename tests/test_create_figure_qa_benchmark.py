@@ -9,6 +9,7 @@ from scripts.create_figure_qa_benchmark import (
     Paper,
     extract_candidates,
     normalize_id,
+    parse_metadata_feed,
     render_image,
     select_diverse,
     write_splits,
@@ -19,6 +20,23 @@ class GeneratorTests(unittest.TestCase):
     def test_normalize_id(self):
         value = "https://arxiv.org/pdf/1234.56789v2.pdf"
         self.assertEqual(normalize_id(value), "1234.56789")
+
+    def test_parses_domain_search_feed(self):
+        feed = b'''<feed xmlns="http://www.w3.org/2005/Atom">
+          <entry>
+            <id>http://arxiv.org/abs/2608.19185v2</id>
+            <title>  Materials\n Figure Study </title>
+            <summary> An abstract. </summary>
+            <published>2026-08-26T00:00:00Z</published>
+            <category term="cond-mat.mtrl-sci"/>
+            <category term="physics.app-ph"/>
+            <link title="pdf" href="https://arxiv.org/pdf/2608.19185v2"/>
+          </entry>
+        </feed>'''
+        papers = parse_metadata_feed(feed)
+        self.assertEqual(list(papers), ["2608.19185"])
+        self.assertEqual(papers["2608.19185"].title, "Materials Figure Study")
+        self.assertIn("cond-mat.mtrl-sci", papers["2608.19185"].categories)
 
     def test_extracts_figure_with_discussion(self):
         with tempfile.TemporaryDirectory() as directory:

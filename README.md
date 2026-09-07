@@ -121,21 +121,34 @@ uv run python materials-figure-qa/main.py --output-dir datasets/materials-figure
 ## Creating new figure-QA benchmarks
 
 `scripts/create_figure_qa_benchmark.py` generalizes the Materials Figure QA
-creation pipeline to a user-supplied list of arXiv papers:
+creation pipeline to user-supplied arXiv papers or categories:
 
 ```bash
 export LLM_API_KEY=...
-export LLM_BASE_URL=https://your-openai-compatible-endpoint/v1  # optional
+export LLM_BASE_URL=https://your-openai-compatible-endpoint/v1
 uv run python scripts/create_figure_qa_benchmark.py \
   --paper 2608.19185 \
   --paper 2608.19178 \
   --limit 300
 ```
 
-The run is resumable and retains candidate, approved, rejected, calibration,
-and provenance data. Use `--overwrite` for a clean rebuild. Five-model
-calibration is enabled by default; `--skip-calibration` is intended only for
-cheap smoke tests.
+To discover papers from one or more arXiv categories, repeat `--domain` or use
+`--domain-file`. The newest 100 papers per category are fetched by default;
+use `--papers-per-domain` to change that bound:
+
+```bash
+uv run python scripts/create_figure_qa_benchmark.py \
+  --domain cond-mat.mtrl-sci \
+  --domain cond-mat.soft \
+  --papers-per-domain 50 \
+  --limit 300
+```
+
+Explicit papers and categories can be combined, and duplicate papers are
+processed only once. The run is resumable and retains candidate, approved,
+rejected, calibration, and provenance data. Use `--overwrite` for a clean rebuild.
+Five-model calibration is enabled by default; `--skip-calibration` is intended
+only for cheap smoke tests.
 
 ### Quality controls
 
