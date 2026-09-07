@@ -96,9 +96,10 @@ def generate(
             (ROOT / "task-template/task.toml").read_text().replace("{{ task_id }}", task_id)
         )
         answer = answer_for(case)
+        boxed_answer = f"###Answer###\n$\\boxed{{{answer}}}$"
         (task / "solution/solve.sh").write_text(
             (ROOT / "task-template/solution/solve.sh").read_text().replace(
-                "{{ answer }}", answer.encode("utf-8").hex()
+                "{{ answer }}", boxed_answer.encode("utf-8").hex()
             )
         )
         (task / "solution/solve.sh").chmod(0o755)
