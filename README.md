@@ -26,16 +26,19 @@ uv run python bioreason-vep/main.py \
 
 Use `--all` for all 1,233 coding and 873 non-SNV test examples, `--setting coding` or `--setting non-snv` for one benchmark, or `--task-ids 0 1 2` for selected rows. Each task asks the agent to inspect `/app/data/case.json` and write exactly `benign` or `pathogenic` to `/app/answer.txt`.
 
-Run the deterministic one-call classifier through Harbor with an OpenAI-compatible endpoint:
+Run the benchmark through Harbor with its standard OpenHands SDK agent:
 
 ```bash
-PYTHONPATH=bioreason-vep harbor run \
+harbor run \
   -p datasets/bioreason-vep \
-  -a harbor_agent:BioReasonClassifier \
+  -a openhands-sdk \
   -m openai/deepseek-v4-flash \
   -e docker \
   --ae LLM_API_KEY="$LLM_API_KEY" \
   --ae LLM_BASE_URL="https://llm-proxy.app.all-hands.dev" \
+  --agent-kwarg load_skills=false \
+  --agent-kwarg max_iterations=2 \
+  --agent-kwarg temperature=0 \
   --n-concurrent 8 --max-retries 2 -y
 ```
 
