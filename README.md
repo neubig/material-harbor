@@ -15,6 +15,17 @@ uv run --with pandas --with pyarrow python -m matqna.main \
 
 Use `--all` for the full source or `--task-ids 0 1 2` for selected rows.
 
+### BioReason variant effect prediction
+
+The BioReason adapter covers the two difficult variant-effect classification settings from [BioReason](https://arxiv.org/abs/2505.23579): coding variants and coding non-SNVs. It converts the public [`wanglab/variant_effect_coding`](https://huggingface.co/datasets/wanglab/variant_effect_coding) and [`wanglab/variant_effect_non_snv`](https://huggingface.co/datasets/wanglab/variant_effect_non_snv) test splits into deterministic binary-classification tasks.
+
+```bash
+uv run python bioreason-vep/main.py \
+  --output-dir datasets/bioreason-vep --setting both --limit 10
+```
+
+Use `--all` for all 1,233 coding and 873 non-SNV test examples, `--setting coding` or `--setting non-snv` for one benchmark, or `--task-ids 0 1 2` for selected rows. Each task asks the agent to inspect `/app/data/case.json` and write exactly `benign` or `pathogenic` to `/app/answer.txt`.
+
 ### SciAgentGYM
 
 The SciAgentGYM adapter is under `src/benchmarks/scieagentgym`. It downloads the public [`CMarsRover/SciAgentGYM`](https://github.com/CMarsRover/SciAgentGYM) repository, converts the 83 multi-question benchmark cases into Harbor tasks, and preserves each case's question, metadata, expected tool concepts, and answer in the generated task.
