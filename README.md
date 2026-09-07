@@ -26,6 +26,19 @@ uv run python bioreason-vep/main.py \
 
 Use `--all` for all 1,233 coding and 873 non-SNV test examples, `--setting coding` or `--setting non-snv` for one benchmark, or `--task-ids 0 1 2` for selected rows. Each task asks the agent to inspect `/app/data/case.json` and write exactly `benign` or `pathogenic` to `/app/answer.txt`.
 
+Run the deterministic one-call classifier through Harbor with an OpenAI-compatible endpoint:
+
+```bash
+PYTHONPATH=bioreason-vep harbor run \
+  -p datasets/bioreason-vep \
+  -a harbor_agent:BioReasonClassifier \
+  -m openai/deepseek-v4-flash \
+  -e docker \
+  --ae LLM_API_KEY="$LLM_API_KEY" \
+  --ae LLM_BASE_URL="https://llm-proxy.app.all-hands.dev" \
+  --n-concurrent 8 --max-retries 2 -y
+```
+
 ### SciAgentGYM
 
 The SciAgentGYM adapter is under `src/benchmarks/scieagentgym`. It downloads the public [`CMarsRover/SciAgentGYM`](https://github.com/CMarsRover/SciAgentGYM) repository, converts the 83 multi-question benchmark cases into Harbor tasks, and preserves each case's question, metadata, expected tool concepts, and answer in the generated task.
