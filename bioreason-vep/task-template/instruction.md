@@ -2,4 +2,4 @@
 
 Inspect `/app/data/case.json`. It contains a reference DNA sequence, a variant DNA sequence, and genomic context. Classify the variant's clinical effect.
 
-Do not use external network resources or run sequence-analysis scripts. Use exactly two terminal commands: first read `/app/data/case.json`, then immediately write your best classification to `/app/answer.txt`. The file must contain exactly `benign` or `pathogenic`.
+You have at most {{ max_iterations }} steps (agent iterations) to complete this task. Do not use external network resources. Write a provisional classification to `/app/answer.txt` within your first two iterations, then revise it later if needed. Before finishing, ensure the file contains exactly `benign` or `pathogenic`.

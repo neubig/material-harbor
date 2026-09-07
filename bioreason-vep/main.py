@@ -11,7 +11,15 @@ DATASETS = {
     "coding": "wanglab/variant_effect_coding",
     "non-snv": "wanglab/variant_effect_non_snv",
 }
+DEFAULT_MAX_ITERATIONS = 20
 ROOT = Path(__file__).parent
+
+
+def positive_int(value: str) -> int:
+    parsed = int(value)
+    if parsed < 1:
+        raise argparse.ArgumentTypeError("must be at least 1")
+    return parsed
 
 
 def label(answer: object) -> str:
@@ -29,6 +37,7 @@ def generate(
     ids: list[int] | None,
     limit: int | None,
     overwrite: bool,
+    max_iterations: int = DEFAULT_MAX_ITERATIONS,
 ) -> int:
     dataset_name = DATASETS[setting]
     dataset = load_dataset(dataset_name, split="test")
@@ -61,9 +70,10 @@ def generate(
         )
 
         instruction = (ROOT / "task-template/instruction.md").read_text()
-        (task / "instruction.md").write_text(
-            instruction.replace("{{ setting }}", setting), encoding="utf-8"
+        instruction = instruction.replace("{{ setting }}", setting).replace(
+            "{{ max_iterations }}", str(max_iterations)
         )
+        (task / "instruction.md").write_text(instruction, encoding="utf-8")
         config = (ROOT / "task-template/task.toml").read_text()
         config = (
             config.replace("{{ setting }}", setting)
@@ -97,6 +107,12 @@ def main() -> None:
     parser.add_argument("--setting", choices=[*DATASETS, "both"], default="both")
     parser.add_argument("--task-ids", nargs="+", type=int)
     parser.add_argument("--limit", type=int)
+    parser.add_argument(
+        "--max-iterations",
+        type=positive_int,
+        default=DEFAULT_MAX_ITERATIONS,
+        help="OpenHands SDK iteration budget stated in generated instructions",
+    )
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
@@ -108,6 +124,7 @@ def main() -> None:
             args.task_ids,
             None if args.all else args.limit,
             args.overwrite,
+            args.max_iterations,
         )
 
 
