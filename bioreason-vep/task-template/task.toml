@@ -5,6 +5,8 @@ name = "bioreason_vep/bioreason_vep_{{ setting }}__{{ task_id }}"
 keywords = ["biology", "genomics", "variant-effect-prediction"]
 
 [metadata]
+answer_schema = "pathogenicity-diseases-v2"
+source_revision = "{{ source_revision }}"
 category = "variant-effect-{{ setting }}"
 dataset = "BioReason Variant Effect Prediction"
 source = "https://huggingface.co/datasets/{{ dataset_name }}"
