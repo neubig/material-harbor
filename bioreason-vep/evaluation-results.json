@@ -1,0 +1,386 @@
+{
+  "metric": "historical_label_only_not_full_answer",
+  "model": "deepseek-v4-flash",
+  "agent": "openhands-sdk",
+  "harbor_version": "0.22.0",
+  "source_adapter_revision": "72853d15e6e6bcefad8427d073dd66556fd878d1",
+  "selection": "non-SNV test rows 0..49, not randomized",
+  "max_iterations": 20,
+  "agent_timeout_sec": 600,
+  "correct": 28,
+  "total": 50,
+  "accuracy": 0.56,
+  "balanced_accuracy": 0.6,
+  "majority_accuracy": 0.6,
+  "agent_timeouts": 16,
+  "timeout_correct": 7,
+  "final_infrastructure_errors": 0,
+  "recorded_final_trial_cost_usd": 1.27807624,
+  "recovery": "Retried setup failures and cancellations after targeted Docker network cleanup; did not retry true agent timeouts or successful trials. Cost excludes unrecorded interrupted attempts.",
+  "trials": [
+    {
+      "task": "bioreason-vep-non-snv-000000",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.03144435
+    },
+    {
+      "task": "bioreason-vep-non-snv-000001",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.04984209
+    },
+    {
+      "task": "bioreason-vep-non-snv-000002",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.02060302
+    },
+    {
+      "task": "bioreason-vep-non-snv-000003",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000004",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000005",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000006",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.046169409999999994
+    },
+    {
+      "task": "bioreason-vep-non-snv-000007",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.05195448
+    },
+    {
+      "task": "bioreason-vep-non-snv-000008",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.05315595
+    },
+    {
+      "task": "bioreason-vep-non-snv-000009",
+      "gold": "benign",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.03629157
+    },
+    {
+      "task": "bioreason-vep-non-snv-000010",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000011",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.03814533
+    },
+    {
+      "task": "bioreason-vep-non-snv-000012",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000013",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000014",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.03409427
+    },
+    {
+      "task": "bioreason-vep-non-snv-000015",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.05391249
+    },
+    {
+      "task": "bioreason-vep-non-snv-000016",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.04099794
+    },
+    {
+      "task": "bioreason-vep-non-snv-000017",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.01765815
+    },
+    {
+      "task": "bioreason-vep-non-snv-000018",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.03098409
+    },
+    {
+      "task": "bioreason-vep-non-snv-000019",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.01789827
+    },
+    {
+      "task": "bioreason-vep-non-snv-000020",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.05259293999999999
+    },
+    {
+      "task": "bioreason-vep-non-snv-000021",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.03708534
+    },
+    {
+      "task": "bioreason-vep-non-snv-000022",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000023",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.042531
+    },
+    {
+      "task": "bioreason-vep-non-snv-000024",
+      "gold": "benign",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000025",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.02919877
+    },
+    {
+      "task": "bioreason-vep-non-snv-000026",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.01924151
+    },
+    {
+      "task": "bioreason-vep-non-snv-000027",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.052227380000000004
+    },
+    {
+      "task": "bioreason-vep-non-snv-000028",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.028744810000000003
+    },
+    {
+      "task": "bioreason-vep-non-snv-000029",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.019676120000000002
+    },
+    {
+      "task": "bioreason-vep-non-snv-000030",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.03673828
+    },
+    {
+      "task": "bioreason-vep-non-snv-000031",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.03225515
+    },
+    {
+      "task": "bioreason-vep-non-snv-000032",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.03804528
+    },
+    {
+      "task": "bioreason-vep-non-snv-000033",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.047019439999999996
+    },
+    {
+      "task": "bioreason-vep-non-snv-000034",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.03981818
+    },
+    {
+      "task": "bioreason-vep-non-snv-000035",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.02847441
+    },
+    {
+      "task": "bioreason-vep-non-snv-000036",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000037",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.046900779999999996
+    },
+    {
+      "task": "bioreason-vep-non-snv-000038",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.028385070000000005
+    },
+    {
+      "task": "bioreason-vep-non-snv-000039",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000040",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.04267784
+    },
+    {
+      "task": "bioreason-vep-non-snv-000041",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000042",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000043",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000044",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000045",
+      "gold": "pathogenic",
+      "reward": 1.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000046",
+      "gold": "pathogenic",
+      "reward": 0.0,
+      "exception": "AgentTimeoutError",
+      "cost_usd": null
+    },
+    {
+      "task": "bioreason-vep-non-snv-000047",
+      "gold": "benign",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.048460210000000004
+    },
+    {
+      "task": "bioreason-vep-non-snv-000048",
+      "gold": "benign",
+      "reward": 0.0,
+      "exception": null,
+      "cost_usd": 0.041153419999999996
+    },
+    {
+      "task": "bioreason-vep-non-snv-000049",
+      "gold": "benign",
+      "reward": 1.0,
+      "exception": null,
+      "cost_usd": 0.0436989
+    }
+  ],
+  "full_answer_validation": {
+    "generated_tasks_checked": 1727,
+    "coding_retained": 890,
+    "non_snv_retained": 837,
+    "harbor_oracle_trials": 4,
+    "harbor_oracle_success": 4,
+    "all_metrics": [
+      "format",
+      "pathogenicity",
+      "diseases",
+      "reward"
+    ],
+    "note": "Oracle validates grading/plumbing, NOT biological answerability. Full-answer model accuracy not measured."
+  }
+}

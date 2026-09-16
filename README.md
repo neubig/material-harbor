@@ -17,7 +17,7 @@ Use `--all` for the full source or `--task-ids 0 1 2` for selected rows.
 
 ### BioReason variant effect prediction
 
-The BioReason adapter covers the two difficult variant-effect classification settings from [BioReason](https://arxiv.org/abs/2505.23579): coding variants and coding non-SNVs. It converts the public [`wanglab/variant_effect_coding`](https://huggingface.co/datasets/wanglab/variant_effect_coding) and [`wanglab/variant_effect_non_snv`](https://huggingface.co/datasets/wanglab/variant_effect_non_snv) test splits into deterministic binary-classification tasks.
+The BioReason adapter covers the two difficult variant-effect classification settings from [BioReason](https://arxiv.org/abs/2505.23579): coding variants and coding non-SNVs. It converts the public [`wanglab/variant_effect_coding`](https://huggingface.co/datasets/wanglab/variant_effect_coding) and [`wanglab/variant_effect_non_snv`](https://huggingface.co/datasets/wanglab/variant_effect_non_snv) test splits into structured pathogenicity-and-disease tasks. Original questions and full raw answers are retained; source revisions are pinned.
 
 ```bash
 uv run python bioreason-vep/main.py \
@@ -25,7 +25,35 @@ uv run python bioreason-vep/main.py \
   --max-iterations 20
 ```
 
-Use `--all` for all 1,233 coding and 873 non-SNV test examples, `--setting coding` or `--setting non-snv` for one benchmark, or `--task-ids 0 1 2` for selected rows. `--max-iterations` defaults to 20 and states the available agent-iteration budget in each generated prompt. Each task asks the agent to inspect `/app/data/case.json` and write exactly `benign` or `pathogenic` to `/app/answer.txt`.
+Use `--all` to inspect all 1,233 coding and 873 non-SNV source test examples. The quality filter currently retains **890 coding and 837 non-SNV tasks**. Missing disease annotations, malformed answers, and sequence pairs with conflicting complete answers are excluded and recorded in `excluded-<setting>.json`. Use `--setting coding` or `--setting non-snv` for one benchmark, or `--task-ids 4 676` for selected rows. `--limit` applies to source rows before filtering, so fewer tasks may be emitted. `--max-iterations` defaults to 20 and states the available agent-iteration budget in each generated prompt. Each task asks the agent to inspect `/app/data/case.json` and write `/app/answer.json`:
+
+```json
+{"pathogenicity": "pathogenic", "diseases": ["Disease name"]}
+```
+
+For benign variants, `diseases` must be `[]`. The disease list must match the complete source answer. The deterministic verifier normalizes case, punctuation, whitespace and underscores, but does not infer medical synonyms or merge disease subtypes. This is a reproducible **source-label exact-set metric**, not expert semantic adjudication.
+
+Following [Harbor reward conventions](https://www.harborframework.com/docs/tasks), `/logs/verifier/reward.json` contains numeric `format`, `pathogenicity`, `diseases`, and `reward` metrics. **`reward` is 1 only if all three criteria pass**; partial criterion success never makes the binary reward true. A matching `reward.txt` supports scalar-only consumers. `details.json` records grading diagnostics. Use a fresh output directory when migrating from the old label-only adapter (or explicitly `--overwrite` the same selection).
+
+### BioReason data quality and answerability
+
+The reproducible full-source audit is in `bioreason-vep/quality_audit.py` and `bioreason-vep/quality-report.json`:
+
+```bash
+uv run python bioreason-vep/quality_audit.py --output bioreason-vep/quality-report.json
+```
+
+The audit covers all 2,106 source test rows. Coding has 41 missing disease annotations and 302 rows excluded for conflicting full answers on identical sequence pairs; non-SNV has 35 missing disease annotations and one malformed list. No disease labels are invented to repair these rows. The coding source contains exact question-and-sequence duplicates with different disease answers, and all coding test cases are on chromosome 8. Importantly, all 557 benign coding questions lack parsed gene context whereas pathogenic questions have gene context: this is a substantial shortcut risk, not evidence of biological reasoning.
+
+**The remaining tasks are not certified as uniformly answerable or clinically valid.** All sequence pairs differ, but DNA windows and gene names do not uniquely establish clinical pathogenicity/disease. Genome assembly, transcript/strand and clinical evidence are generally absent. Filtering repairs objective grading contradictions, not missing biological evidence. Exact disease-name scoring can also reject legitimate synonyms. Clinical expert review and validated allele/context reconstruction are required before scientific endorsement.
+
+### Historical label-only results (not the new full-answer metric)
+
+The old DeepSeek-v4-flash/OpenHands-SDK Harbor runs reported 316/1,233 coding (25.63%) and 422/873 non-SNV (48.34%) with only two iterations; 885/2,106 answers were missing ([PR #3](https://github.com/neubig/material-harbor/pull/3)).
+
+A subsequent 20-iteration, 600-second pilot on the first 50 non-SNV rows scored **28/50 = 56% label-only accuracy**, 60% balanced accuracy, versus a 60% majority-class raw baseline. Benign recall was 16/20; pathogenic recall 12/30. Sixteen agent timeouts were retained and their saved answers graded (7/16 correct). There were no final setup failures after retrying Docker-network failures/cancellations; successful results and true agent timeouts were not rerun. Recorded final-trial model cost was $1.27807624, excluding any unrecorded interrupted-attempt cost. The sample was not randomized. See `bioreason-vep/evaluation-results.json`.
+
+**Neither historical result evaluates disease answers, the filtered subset, or the new all-criteria success metric.** New oracle tests validate plumbing only; no new-model accuracy is claimed.
 
 Run the benchmark through Harbor with its standard OpenHands SDK agent:
 

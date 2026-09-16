@@ -1,3 +1,6 @@
 #!/bin/sh
 set -eu
-printf '%s\n' '{{ answer }}' > /app/answer.txt
+python - <<'PYTHON'
+from pathlib import Path
+Path("/app/answer.json").write_bytes(bytes.fromhex("{{ answer_hex }}"))
+PYTHON
