@@ -397,3 +397,11 @@ fixed environment configuration and handoff. Those artifacts are deliberately no
 published. For new measurements, generate a new selection and use `run_modal.py`
 with an explicitly reviewed manifest and authorized Modal environment; do not
 implicitly resume or overwrite the historical run.
+
+## Additional adapters (not yet measured)
+
+- CSMBench: `python csmbench/main.py` generates a caption-matching visual MCQ pilot with pinned metadata and image checks. Real-source tests require the pilot plus the pinned upstream `utils.py` audit fixture.
+- MATCHA: install the `matcha` and `analysis` extras, then run `python matcha/adapter.py --selection pilot10`, `--selection full`, or `--selection sample100`. The full local audit compared all 1,500 generated images to native upstream decoding and cropping. These are mechanical checks, not scientific label validation.
+- MATRIX: `python matrix/build.py --fetch --output datasets/matrix-run/tasks` retrieves checksum-pinned source and generates text tasks. Its binary reference judge is explicitly experimental, not the official five-level GPT-5.1 protocol; verifier-only credentials and compatible network setup must be supplied before measurement.
+
+Visual model measurements remain blocked on validated SDK image transport. A completed CSMBench model smoke is not a valid visual accuracy estimate: tool-image serialization was not established. Do not launch cohorts or infer vision accuracy merely because an image path is accessible to the agent.

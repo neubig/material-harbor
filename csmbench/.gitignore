@@ -1,0 +1,7 @@
+source/
+tasks/
+*.log
+*-results.txt
+image-audit.json
+manifest.json
+csmbench-handoff.json
