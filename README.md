@@ -232,3 +232,168 @@ Materials Figure QA creation process:
 The generated `*.approved.jsonl`, `*.rejected.jsonl`, and
 `*.candidates.jsonl` files provide an audit trail. The final JSONL and split
 files include the full structured review and calibration records.
+
+## Fixed-manifest Modal runner
+
+`scripts/run_modal.py` ports science-agent's built-in Harbor Modal backend setup,
+using its Harbor pin `c178c20710c362ef806c5d5d18852f95b21ca34b`, without HPC
+packages or credential-bearing command logging. Requires **Python 3.12+**:
+
+```bash
+uv sync --extra modal --python 3.12
+```
+
+Supply any local Harbor task and an explicit JSON manifest of reviewed files,
+relative to that task, e.g.:
+
+```json
+["task.toml", "instruction.md", "environment/Dockerfile",
+ "environment/data/case.json", "solution/solve.sh", "tests/test.sh",
+ "tests/verify.py", "tests/data/info.json"]
+```
+
+Save the manifest outside the task. Review its files, Dockerfile, and task
+configuration before upload. The manifest is a source boundary, not a detector
+of secrets embedded in ordinary files or a sandbox for malicious task definitions.
+Only listed files are staged. Hidden/credential-like filenames, symlinks, traversal,
+and files outside standard task source directories are rejected. Never construct
+a manifest from a recursive listing of your workspace/home.
+
+```bash
+uv run --extra modal python scripts/run_modal.py \
+  --task /path/to/task --manifest /path/to/manifest.json \
+  --output /tmp/modal-oracle --dry-run
+
+uv run --extra modal python scripts/run_modal.py \
+  --task /path/to/task --manifest /path/to/manifest.json \
+  --output /tmp/modal-oracle --env-file "$HOME/.env" --agent oracle
+
+uv run --extra modal python scripts/run_modal.py \
+  --task /path/to/task --manifest /path/to/manifest.json \
+  --output /tmp/modal-deepseek --env-file "$HOME/.env" \
+  --agent openhands-sdk --model openai/deepseek-v4-flash \
+  --base-url https://llm-proxy.app.all-hands.dev/v1 \
+  --max-iterations 20 --timeout 180 --sandbox-timeout 900
+```
+
+Each real run needs a **fresh output directory** and defaults to one trial without retries.
+After smoke validation and budget approval, `--repetitions N` runs independent
+sequential trials against the same staged source snapshot. SHA-256 hashes are saved
+in `source-hashes.json`; each trial has its own name, logs, command, and result.
+`batch-summary.json` retains raw rewards and failures, not an accuracy estimate.
+Infrastructure failures stop the batch immediately, preserving attempted trials;
+zero-reward completed trials do not stop the batch. No retries or resume are implicit.
+Outputs include the staged task, manifest, command, redacted console log, and
+Harbor's `trials/smoke/result.json`, verifier logs, and agent trajectory.
+Infrastructure exceptions return nonzero even when Harbor reports completion;
+a completed trial with zero reward is not a runner failure. Keep outputs private
+and outside version control. The sandbox lifetime/agent limits are not a monetary
+budget or a total build-time limit. Harbor requests deletion on completion;
+confirm cleanup in Modal after interruption.
+
+Dotenv is parsed locally, never executed or copied. Only `MODAL_TOKEN_ID` and
+`MODAL_TOKEN_SECRET` are selected from the credential file, and both are required
+(no ambient token/profile fallback). `LLM_API_KEY` is read only from the exported
+environment; a dotenv LLM key is ignored.
+The default agent is Harbor's native **OpenHands SDK** (`openhands-sdk`), with
+skills disabled, temperature 0, and 20 iterations by default. `~/.env` is the
+default credential file. The oracle receives no LLM key. Harbor forwards
+`LLM_API_KEY` and `LLM_BASE_URL` to the installed SDK process in the sandbox;
+the key is not passed in CLI arguments or embedded in the staged task. This
+does not isolate credentials from agent-executed code. Modal tokens stay on the
+host. Model calls send prompt/task data to your endpoint.
+Tasks requiring verifier credentials or nonstandard source files need a separately
+reviewed integration; arbitrary environment variables, mounts, skills, and agent
+options are not forwarded. Your Modal identity must have write access to its
+selected environment. `--modal-environment NAME` explicitly selects an authorized
+environment via `MODAL_ENVIRONMENT`; there is no automatic fallback. Do not switch
+environments or change permissions without approval. A successful environment
+listing alone does not establish write permission. Resolve permission errors
+with your workspace administrator.
+
+```bash
+uv run --extra modal python -m unittest discover -s tests -v
+```
+
+An oracle validates infrastructure only. A one-task model smoke is neither
+benchmark accuracy nor scientific qualification.
+
+## Reproducible local setup and offline tests
+
+Adapter tooling supports Python 3.11+; Harbor/Modal requires Python 3.12+.
+Install the locked dependencies from this directory:
+
+```bash
+uv sync --locked --extra test --extra analysis --python 3.12
+uv run --locked --extra test python -m unittest discover -s tests -p 'test_run_modal.py' -v
+uv run --locked --extra test python -m unittest discover -s tests -p 'test_run_omni_cohort.py' -v
+uv run --locked --extra test python -m unittest discover -s tests -p 'test_summarize_accuracy.py' -v
+uv run --locked --extra test python -m unittest discover -s tests -p 'test_omnimatbench.py' -v
+```
+
+These tests run offline after dependency installation. Omni native verifier tests
+need no downloaded data; cohort integration tests explicitly skip until the fetch
+below is run. Harbor schema validation skips when Harbor is not installed.
+The `analysis` extra declares NumPy for `scripts/summarize_accuracy.py` and the
+cohort runner. MATCHA image decoding dependencies are available with `--extra matcha`.
+The historical cohort-runner tests still require local measurement fixtures; do not
+copy private logs into a checkout to satisfy them. Keep generated tasks, source downloads, images, logs, trajectories,
+measurement artifacts, handoffs, caches, and credentials out of Git. Use reviewed
+file paths rather than `git add .`; ignore rules are not a secret scanner.
+
+## OmniMatBench CAL text-only adapter
+
+The adapter uses [Wanhao Liu and contributors' OmniMatBench](https://github.com/wanhaoliu/OmniMatBench)
+at revision `f933f03c733bb378ce5dd85b96452d9d5683c17e`. The two unmodified native
+comparator/path-helper modules are redistributed under the upstream MIT license
+in `omnimatbench/source/LICENSE`. The generator includes that license alongside
+the copied native code. Source data and supplementary upstream files are fetched
+explicitly, never during tests or import:
+
+```bash
+uv run --locked python -m omnimatbench.fetch_source
+uv run --locked python -m omnimatbench.main --output-dir datasets/omnimatbench-pilot --count 10 --seed 20260814
+uv run --locked --extra test python -m unittest discover -s tests -p 'test_omnimatbench.py' -v
+```
+
+The fetch uses the pinned raw GitHub revision and checks every file against
+`omnimatbench/source/sha256.json`; existing matching files are reused and mismatched
+downloads are rejected before writing. Generation revalidates all hashes, refuses
+existing output directories, and records the source hashes, selection and exclusions.
+Use `--count 360` for the complete eligible cohort: 360 text-only questions out of
+502 CAL records (142 image-bearing records excluded), **not all of OmniMatBench**.
+
+The agent sees only the original question and answer format in `/app/case.json`.
+It must write a JSON list to `/app/answer.json`. Every flattened answer slot must
+pass the native exact comparator. Its rounding follows the reference string's
+decimal places; this is not physical-unit conversion, symbolic equivalence or
+scientific tolerance. Scientific notation has known quirks. One retained reference,
+`cal/11/018`, triggers native `decimal.InvalidOperation` even when given its own
+gold answer; count this as unknown/native failure, not a valid incorrect answer.
+The tests preserve this behavior rather than silently changing the benchmark.
+Public reference answers and unrestricted network access pose contamination risks.
+
+Run generated tasks using the fixed-manifest runner above. Include
+`tests/native/LICENSE` as well as both native Python files, verifier, gold, task
+metadata, instructions, environment files and oracle script in the reviewed upload
+manifest. Gold and oracle files must stay outside the environment build context.
+
+### Measurement scope and limitations
+
+The recorded fixed-100 DeepSeek-v4-flash/OpenHands SDK pilot had **14 correct,
+82 wrong, and 4 agent timeouts**, with timeouts retained as unknown. The raw
+success fraction is 14/100; it is **not full-benchmark accuracy**. Missingness-aware
+95% bootstrap sensitivity spans approximately **8%–26%**, so qualification against
+a strict 10%–70% band remains **inconclusive**. This measurement concerns only the
+frozen 100-task selection, with 20 iterations and a 600-second agent timeout.
+Native scoring failures, incomplete trials and infrastructure failures must not be
+dropped from denominators. No logs or trajectories are published with this code.
+
+`scripts/summarize_accuracy.py --help` describes the explicit frozen-manifest
+analysis interface. `scripts/run_omni_cohort.py` is a measurement-specific
+orchestrator, **not a fresh-checkout one-command benchmark**: its `freeze100` and
+`run100` modes require the original local protocol/task/measurement artifacts,
+fixed environment configuration and handoff. Those artifacts are deliberately not
+published. For new measurements, generate a new selection and use `run_modal.py`
+with an explicitly reviewed manifest and authorized Modal environment; do not
+implicitly resume or overwrite the historical run.

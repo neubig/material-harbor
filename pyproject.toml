@@ -4,3 +4,12 @@ version = "0.1.0"
 description = "Harbor adapters for scientific benchmark datasets"
 requires-python = ">=3.11"
 dependencies = ["datasets>=3.0", "pandas>=2.0", "pillow>=10.0", "pymupdf>=1.24", "pyarrow>=14.0", "requests>=2.31"]
+
+[project.optional-dependencies]
+matcha = ["tifffile>=2024.1"]
+analysis = ["numpy>=1.26"]
+test = ["numpy>=1.26", "python-dotenv>=1.0", "harbor[modal]; python_version >= '3.12'"]
+modal = ["harbor[modal]; python_version >= '3.12'", "python-dotenv>=1.0"]
+
+[tool.uv.sources]
+harbor = { git = "https://github.com/harbor-framework/harbor.git", rev = "c178c20710c362ef806c5d5d18852f95b21ca34b" }
