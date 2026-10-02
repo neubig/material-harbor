@@ -146,6 +146,7 @@ class OmniMatBenchVisionTests(unittest.TestCase):
         self.assertEqual(manifest['count'], 100)
         self.assertEqual(len({item['key'] for item in manifest['selected']}), 100)
         self.assertEqual(len({item['question_sha256'] for item in manifest['selected']}), 100)
+        self.assertEqual(len({item['image_sha256'] for item in manifest['selected']}), 100)
         for item in manifest['selected']:
             task = self.tasks / ('omnimatbench-' + item['key'].replace('/', '-'))
             images = [path for path in (task / 'environment/data').iterdir() if path.name != 'case.json']
