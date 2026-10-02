@@ -1,0 +1,221 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "message_count": 21,
+  "messages": [
+    {
+      "index": 0,
+      "role": "system",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 15314
+      }
+    },
+    {
+      "index": 1,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 562
+      }
+    },
+    {
+      "index": 2,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 39
+      }
+    },
+    {
+      "index": 3,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 76
+          }
+        ],
+        "image_block_count": 0,
+        "images": []
+      }
+    },
+    {
+      "index": 4,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 77
+          },
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 11063,
+            "sha256": "00d1a9d024b1efe71b4be7ab5555bba62f2d2dee9b1df5463ec477eee37d4ca6"
+          }
+        ],
+        "image_block_count": 1,
+        "images": [
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 11063,
+            "sha256": "00d1a9d024b1efe71b4be7ab5555bba62f2d2dee9b1df5463ec477eee37d4ca6"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 60
+      }
+    },
+    {
+      "index": 6,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 463
+      }
+    },
+    {
+      "index": 7,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 8,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 284
+      }
+    },
+    {
+      "index": 9,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 10,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 984
+      }
+    },
+    {
+      "index": 11,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 12,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 1359
+      }
+    },
+    {
+      "index": 13,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 36
+      }
+    },
+    {
+      "index": 14,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 45
+      }
+    },
+    {
+      "index": 15,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 16,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 731
+      }
+    },
+    {
+      "index": 17,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 36
+      }
+    },
+    {
+      "index": 18,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 699
+      }
+    },
+    {
+      "index": 19,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 20,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 313
+      }
+    }
+  ],
+  "body_sha256": "50203c5a459c96c112af1bb1666a011285d06c3f44015f83d29a23897dbf564a",
+  "body_bytes": 60617,
+  "sequence": 67,
+  "timestamp": 1790950815.240079
+}

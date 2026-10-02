@@ -1,0 +1,100 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "message_count": 7,
+  "messages": [
+    {
+      "index": 0,
+      "role": "system",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 15314
+      }
+    },
+    {
+      "index": 1,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 562
+      }
+    },
+    {
+      "index": 2,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 37
+      }
+    },
+    {
+      "index": 3,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 76
+          }
+        ],
+        "image_block_count": 0,
+        "images": []
+      }
+    },
+    {
+      "index": 4,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 77
+          },
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 9307,
+            "sha256": "5f72781f63c1a933bb6eb042086e903a567e90e788bde055696ca982995f2dd0"
+          }
+        ],
+        "image_block_count": 1,
+        "images": [
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 9307,
+            "sha256": "5f72781f63c1a933bb6eb042086e903a567e90e788bde055696ca982995f2dd0"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 66
+      }
+    },
+    {
+      "index": 6,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 1131
+      }
+    }
+  ],
+  "body_sha256": "7907216f31d0a46c792dfaf5b5a2b71f926717cda1f30a531a6a7d8f5d6adbb4",
+  "body_bytes": 48657,
+  "sequence": 52,
+  "timestamp": 1790950658.1924632
+}

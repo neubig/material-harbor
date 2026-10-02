@@ -1,0 +1,117 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "message_count": 9,
+  "messages": [
+    {
+      "index": 0,
+      "role": "system",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 15314
+      }
+    },
+    {
+      "index": 1,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 562
+      }
+    },
+    {
+      "index": 2,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 31
+      }
+    },
+    {
+      "index": 3,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 76
+          }
+        ],
+        "image_block_count": 0,
+        "images": []
+      }
+    },
+    {
+      "index": 4,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 77
+          },
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 7656,
+            "sha256": "94934ddcce7f63b89c9fff6cc8b2462e91c569d9a4eb1504dfe6b6866423bea6"
+          }
+        ],
+        "image_block_count": 1,
+        "images": [
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 7656,
+            "sha256": "94934ddcce7f63b89c9fff6cc8b2462e91c569d9a4eb1504dfe6b6866423bea6"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 73
+      }
+    },
+    {
+      "index": 6,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 466
+      }
+    },
+    {
+      "index": 7,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 8,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 223
+      }
+    }
+  ],
+  "body_sha256": "7c843ff5f2217f18e7dd9ad2bdccefd28f34212635d5a3c35f3f650349a86539",
+  "body_bytes": 45748,
+  "sequence": 7,
+  "timestamp": 1790950249.7749245
+}

@@ -1,0 +1,81 @@
+{
+  "seed": 20260814,
+  "count": 8,
+  "tasks": [
+    {
+      "task_id": "vision-probe-00",
+      "code": "292716",
+      "counts": {
+        "red": 2,
+        "green": 2,
+        "blue": 1
+      }
+    },
+    {
+      "task_id": "vision-probe-01",
+      "code": "444423",
+      "counts": {
+        "red": 2,
+        "green": 1,
+        "blue": 2
+      }
+    },
+    {
+      "task_id": "vision-probe-02",
+      "code": "323732",
+      "counts": {
+        "red": 1,
+        "green": 3,
+        "blue": 3
+      }
+    },
+    {
+      "task_id": "vision-probe-03",
+      "code": "757180",
+      "counts": {
+        "red": 0,
+        "green": 3,
+        "blue": 1
+      }
+    },
+    {
+      "task_id": "vision-probe-04",
+      "code": "009330",
+      "counts": {
+        "red": 4,
+        "green": 3,
+        "blue": 1
+      }
+    },
+    {
+      "task_id": "vision-probe-05",
+      "code": "194004",
+      "counts": {
+        "red": 1,
+        "green": 4,
+        "blue": 3
+      }
+    },
+    {
+      "task_id": "vision-probe-06",
+      "code": "893097",
+      "counts": {
+        "red": 2,
+        "green": 4,
+        "blue": 4
+      }
+    },
+    {
+      "task_id": "vision-probe-07",
+      "code": "103729",
+      "counts": {
+        "red": 4,
+        "green": 3,
+        "blue": 0
+      }
+    }
+  ],
+  "run": "images-seed20260814-n8",
+  "mode": "images",
+  "model": "openai/deepseek-v4.1-flash"
+}

@@ -1,0 +1,151 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "message_count": 13,
+  "messages": [
+    {
+      "index": 0,
+      "role": "system",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 15314
+      }
+    },
+    {
+      "index": 1,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 562
+      }
+    },
+    {
+      "index": 2,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 34
+      }
+    },
+    {
+      "index": 3,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 76
+          }
+        ],
+        "image_block_count": 0,
+        "images": []
+      }
+    },
+    {
+      "index": 4,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 77
+          },
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 10406,
+            "sha256": "b49df383a2107976185487bf2138298dc6582454af75c2f238c8ed2f254dacc4"
+          }
+        ],
+        "image_block_count": 1,
+        "images": [
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 10406,
+            "sha256": "b49df383a2107976185487bf2138298dc6582454af75c2f238c8ed2f254dacc4"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 90
+      }
+    },
+    {
+      "index": 6,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 784
+      }
+    },
+    {
+      "index": 7,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 8,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 284
+      }
+    },
+    {
+      "index": 9,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 10,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 865
+      }
+    },
+    {
+      "index": 11,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 12,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 1994
+      }
+    }
+  ],
+  "body_sha256": "8a52b5abdd335045c4f83679dfb412e4713ec23c607e24c27ae7a75ac2184ba3",
+  "body_bytes": 55056,
+  "sequence": 47,
+  "timestamp": 1790950608.4990153
+}

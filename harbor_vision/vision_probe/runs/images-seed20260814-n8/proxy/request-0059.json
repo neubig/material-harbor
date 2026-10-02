@@ -1,0 +1,82 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "message_count": 5,
+  "messages": [
+    {
+      "index": 0,
+      "role": "system",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 15314
+      }
+    },
+    {
+      "index": 1,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 562
+      }
+    },
+    {
+      "index": 2,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 39
+      }
+    },
+    {
+      "index": 3,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 76
+          }
+        ],
+        "image_block_count": 0,
+        "images": []
+      }
+    },
+    {
+      "index": 4,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 77
+          },
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 11063,
+            "sha256": "00d1a9d024b1efe71b4be7ab5555bba62f2d2dee9b1df5463ec477eee37d4ca6"
+          }
+        ],
+        "image_block_count": 1,
+        "images": [
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 11063,
+            "sha256": "00d1a9d024b1efe71b4be7ab5555bba62f2d2dee9b1df5463ec477eee37d4ca6"
+          }
+        ]
+      }
+    }
+  ],
+  "body_sha256": "d64e072b1eaa940f8b86fecd1519859a67511f3d9024412f7230b18ae71fd076",
+  "body_bytes": 48631,
+  "sequence": 59,
+  "timestamp": 1790950730.9322646
+}

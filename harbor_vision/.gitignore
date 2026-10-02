@@ -1,0 +1,6 @@
+# Generated probe tasks and Harbor container logs are rebuilt by run.py.
+# report.json and the recording-proxy logs are kept: the former carries the
+# measured rewards, the latter the byte-level transport evidence.
+vision_probe/runs/*/tasks/
+vision_probe/runs/*/jobs/
+__pycache__/

@@ -1,0 +1,158 @@
+{
+  "run": "images-seed20260814-n8",
+  "mode": "images",
+  "model": "openai/deepseek-v4.1-flash",
+  "base_image": "material-harbor/openhands-sdk-vision:dad4aa5",
+  "agent_import_path": "harbor_vision.vision_openhands_sdk:VisionOpenHandsSDK",
+  "sdk_commit": "dad4aa50208c27bf60cea4040b1db4dee2fd71c3",
+  "task_count": 8,
+  "seed": 20260814,
+  "transport": {
+    "recorded_requests": 70,
+    "list_content_messages": 152,
+    "string_content_messages": 494,
+    "image_blocks_seen": 76,
+    "image_blocks_matching_task_figures": 8,
+    "task_figures_available": 8,
+    "matched_task_ids": [
+      "vision-probe-00",
+      "vision-probe-01",
+      "vision-probe-02",
+      "vision-probe-03",
+      "vision-probe-04",
+      "vision-probe-05",
+      "vision-probe-06",
+      "vision-probe-07"
+    ]
+  },
+  "rewards": {
+    "vp-images-1790950163": {
+      "reward": null,
+      "exception_type": null,
+      "task_checksum": null
+    },
+    "vision-probe-04__6ChBv6g": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_checksum": "98eabcc9cc75d5988ed3b27c4af0f876eae709a386c158c55271300fd7c7aa91"
+    },
+    "vision-probe-03__E5UwgJb": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_checksum": "06da88a3d5500beb1f4b9981835d247457f1304b2a00bdb0d8b3c4458fc1cf13"
+    },
+    "vision-probe-01__WNMAMLp": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_checksum": "4d6bb4a496f4c0ceeed53520c4cf4ae5df79a149d9cf600c7046989cfe2b6051"
+    },
+    "vision-probe-00__mHyqFUP": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_checksum": "27e4a2db1923a7fd5049782de629c1512ea1421d149eb47fc15ad97e50b7c855"
+    },
+    "vision-probe-05__9dP4vue": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_checksum": "49ce003b3b6134b83d24dc06dc24457776678ca90a9235b7a77a490b1d013df7"
+    },
+    "vision-probe-06__czSeriX": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_checksum": "dbec9a1f393ab000d6e0be3113f1d283966f02dd74fd09161fdeb9733b5afac1"
+    },
+    "vision-probe-07__T7973vQ": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_checksum": "a8bd1f3487ca1da54d80f023a4edb0a57d7a91e575fbcbd1179e7aec9ab58316"
+    },
+    "vision-probe-02__Th5tRyn": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_checksum": "bb1550e01ae845b5057260d983787253d7b4f2fe75595cc2a4e0aa92905d81d6"
+    }
+  },
+  "scored_trials": 8,
+  "mean_reward": 1.0,
+  "solved": 8,
+  "harbor": {
+    "job_name": "vp-images-1790950163",
+    "returncode": 0,
+    "stdout_tail": "  8/8 Mean: 1.000 \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 0:11:31 0:00:00\n\ntasks \u2022 openhands-sdk \u2022 deepseek-v4.1-flash\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Trials \u2503 Exceptions \u2503  Mean \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502      8 \u2502          0 \u2502 1.000 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Reward \u2503 Count \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 1.0    \u2502     8 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\nJob Info\nTotal runtime: 11m 31s\nResults written to /mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/vision_probe/runs/images-seed20260814-n8/jobs/vp-images-1790950163/result.json\nInspect results by running `harbor view /mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/vision_probe/runs/images-seed20260814-n8/jobs`\nShare results by running `harbor upload /mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/vision_probe/runs/images-seed20260814-n8/jobs/vp-images-1790950163`\n\n",
+    "stderr_tail": ""
+  },
+  "task_manifest": [
+    {
+      "task_id": "vision-probe-00",
+      "code": "292716",
+      "counts": {
+        "red": 2,
+        "green": 2,
+        "blue": 1
+      }
+    },
+    {
+      "task_id": "vision-probe-01",
+      "code": "444423",
+      "counts": {
+        "red": 2,
+        "green": 1,
+        "blue": 2
+      }
+    },
+    {
+      "task_id": "vision-probe-02",
+      "code": "323732",
+      "counts": {
+        "red": 1,
+        "green": 3,
+        "blue": 3
+      }
+    },
+    {
+      "task_id": "vision-probe-03",
+      "code": "757180",
+      "counts": {
+        "red": 0,
+        "green": 3,
+        "blue": 1
+      }
+    },
+    {
+      "task_id": "vision-probe-04",
+      "code": "009330",
+      "counts": {
+        "red": 4,
+        "green": 3,
+        "blue": 1
+      }
+    },
+    {
+      "task_id": "vision-probe-05",
+      "code": "194004",
+      "counts": {
+        "red": 1,
+        "green": 4,
+        "blue": 3
+      }
+    },
+    {
+      "task_id": "vision-probe-06",
+      "code": "893097",
+      "counts": {
+        "red": 2,
+        "green": 4,
+        "blue": 4
+      }
+    },
+    {
+      "task_id": "vision-probe-07",
+      "code": "103729",
+      "counts": {
+        "red": 4,
+        "green": 3,
+        "blue": 0
+      }
+    }
+  ]
+}
