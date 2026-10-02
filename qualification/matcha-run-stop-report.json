@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "run": "matcha-qualification-n100",
+  "protocol": "qualification/protocol.json",
+  "status": "intentionally_stopped_after_separate_gate_failure",
+  "accuracy_cohort_complete": false,
+  "expected_tasks": 100,
+  "retained_trial_result_files": 23,
+  "retained_binary_rewards": {
+    "correct": 19,
+    "incorrect": 4,
+    "missing": 0,
+    "observed_only_accuracy": 0.8260869565217391
+  },
+  "accuracy_interpretation": "Incomplete fixed-n cohort. The observed-only value is not a qualification estimate and has no reported CI. No report.json was produced by the runner.",
+  "termination": {
+    "cause": "The owning agent sent SIGTERM to run_benchmark PID 1401092 after the independently adjudicated verifier false-negative gate had definitively failed.",
+    "process_log": "datasets/matcha-qualification-n100.log contains only the nohup notice and no process traceback or natural exit status.",
+    "aggregate_artifact": "The last aggregate result.json is stale at 21 completed, 3 running, 76 pending, and 1 cancelled; two additional fully scored per-trial result.json files were atomically retained after that snapshot, giving 23 retained scored trials.",
+    "current_process_check": "No MATCHA runner, Harbor job, or MATCHA recording proxy remains."
+  },
+  "short_circuit_basis": {
+    "precommitted_rule": "protocol.json accuracy.stop: Stop on structural/verifier fail or conclusive accuracy interval; protocol.json structural_rule: any definitive gate failure stops costly remaining gates.",
+    "user_rule": "If a candidate definitively fails any gate, stop costly further gates for that candidate.",
+    "failed_gate": "Independent image-grounded scientific verifier false-negative rate must be strictly below 15%.",
+    "primary_audit": "9/27 = 33.33% false negatives; qualification/matcha-scientific-audit-report.json.",
+    "cross_provider_confirmation": "1/4 = 25% false negatives on exact GPT/Gemini high-confidence consensus tasks; qualification/matcha-scientific-audit-consensus-report.json."
+  },
+  "resume_decision": "Do not resume. This is not an accuracy sequential stop and the 23/100 result will never be reported as complete; it is a precommitted cross-gate qualification short circuit after definitive verifier failure. All 23 completed trial artifacts remain preserved locally."
+}

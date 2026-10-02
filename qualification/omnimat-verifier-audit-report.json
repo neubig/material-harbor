@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "population": "All 142 released image-bearing CAL tasks",
+  "independence": "Cases are generated from mathematical equality/inequality and structural list invariants, not solver outcomes. Official references are verifier-only.",
+  "false_positive": {
+    "errors": 0,
+    "denominator": 693,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.005512672605896973
+    ],
+    "examples": []
+  },
+  "false_negative": {
+    "errors": 22,
+    "denominator": 181,
+    "rate": 0.12154696132596685,
+    "wilson95": [
+      0.0816536672116103,
+      0.17717061996902075
+    ],
+    "examples": [
+      {
+        "task": "cal/01/021",
+        "perturbation": "decimal_equivalent_slot_0",
+        "status": "scored"
+      },
+      {
+        "task": "cal/01/021",
+        "perturbation": "decimal_equivalent_slot_1",
+        "status": "scored"
+      },
+      {
+        "task": "cal/01/022",
+        "perturbation": "decimal_equivalent_slot_0",
+        "status": "scored"
+      },
+      {
+        "task": "cal/01/022",
+        "perturbation": "decimal_equivalent_slot_1",
+        "status": "scored"
+      },
+      {
+        "task": "cal/01/022",
+        "perturbation": "decimal_equivalent_slot_2",
+        "status": "scored"
+      },
+      {
+        "task": "cal/02/015",
+        "perturbation": "decimal_equivalent_slot_1",
+        "status": "scored"
+      },
+      {
+        "task": "cal/02/019",
+        "perturbation": "decimal_equivalent_slot_0",
+        "status": "scored"
+      },
+      {
+        "task": "cal/02/019",
+        "perturbation": "decimal_equivalent_slot_2",
+        "status": "scored"
+      },
+      {
+        "task": "cal/06/013",
+        "perturbation": "decimal_equivalent_slot_0",
+        "status": "scored"
+      },
+      {
+        "task": "cal/06/013",
+        "perturbation": "decimal_equivalent_slot_1",
+        "status": "scored"
+      },
+      {
+        "task": "cal/06/018",
+        "perturbation": "decimal_equivalent_slot_0",
+        "status": "scored"
+      },
+      {
+        "task": "cal/07/004",
+        "perturbation": "decimal_equivalent_slot_0",
+        "status": "scored"
+      },
+      {
+        "task": "cal/07/004",
+        "perturbation": "decimal_equivalent_slot_1",
+        "status": "scored"
+      },
+      {
+        "task": "cal/07/004",
+        "perturbation": "decimal_equivalent_slot_2",
+        "status": "scored"
+      },
+      {
+        "task": "cal/10/025",
+        "perturbation": "decimal_equivalent_slot_1",
+        "status": "scored"
+      },
+      {
+        "task": "cal/10/025",
+        "perturbation": "decimal_equivalent_slot_4",
+        "status": "scored"
+      },
+      {
+        "task": "cal/11/022",
+        "perturbation": "decimal_equivalent_slot_0",
+        "status": "scored"
+      },
+      {
+        "task": "cal/12/015",
+        "perturbation": "decimal_equivalent_slot_2",
+        "status": "scored"
+      },
+      {
+        "task": "cal/16/018",
+        "perturbation": "decimal_equivalent_slot_1",
+        "status": "scored"
+      },
+      {
+        "task": "cal/17/002",
+        "perturbation": "decimal_equivalent_slot_1",
+        "status": "scored"
+      },
+      {
+        "task": "cal/17/019",
+        "perturbation": "decimal_equivalent_slot_1",
+        "status": "scored"
+      },
+      {
+        "task": "cal/18/009",
+        "perturbation": "decimal_equivalent_slot_0",
+        "status": "scored"
+      }
+    ]
+  },
+  "valid_case_types": "Exact official answer plus exact Decimal-equivalent representations where a distinct form is constructible.",
+  "invalid_case_types": "Missing slot, extra slot, definitely wrong first slot, plus each parseable numeric slot moved by abs(value)+1."
+}

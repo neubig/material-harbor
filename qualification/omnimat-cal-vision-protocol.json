@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "authored_before_outcomes": true,
+  "candidate": "OmniMatBench CAL image-bearing subset",
+  "manifest_sha256": "f54b4c46190dac7bfdec00e62e60d2747071dc8ba62e7ac829c17720b5a22d18",
+  "model": "openai/deepseek-v4.1-flash",
+  "cohort": 100,
+  "source_population": 142,
+  "images": "Required for all 100 tasks and transported as native model image blocks; no no-image control.",
+  "metric": "Only pinned upstream binary score_exact. Every attempted task in denominator; missing or invalid answers are zero.",
+  "look": "First precommitted qualification look n=100 under qualification/protocol.json; Wilson 98.333333% and paper-cluster bootstrap if valid paper IDs exist.",
+  "stop": "Stop remaining gates on conclusive accuracy failure; otherwise continue at prespecified looks subject to finite population 142.",
+  "verifier_audit": "Before qualification, separately measure false acceptance of known-wrong perturbations and false rejection of independently equivalent/correct values; do not infer from solver accuracy."
+}

@@ -130,5 +130,49 @@ class OmniMatBenchTests(unittest.TestCase):
                 self.adapter.generate(out, 10, 20260814)
 
 
+
+class OmniMatBenchVisionTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        from omnimatbench import build_cal_vision
+        cls.builder = build_cal_vision
+        cls.tasks = ROOT / 'tasks/cal-vision-qualification100'
+        if not cls.tasks.exists():
+            raise unittest.SkipTest('Build fixtures: python -m omnimatbench.build_cal_vision')
+
+    def test_frozen_image_cohort_is_complete_distinct_and_label_isolated(self):
+        manifest = json.loads((ROOT.parent / 'qualification/omnimat-cal-vision-manifest.json').read_text())
+        self.assertEqual(manifest['population'], 142)
+        self.assertEqual(manifest['count'], 100)
+        self.assertEqual(len({item['key'] for item in manifest['selected']}), 100)
+        self.assertEqual(len({item['question_sha256'] for item in manifest['selected']}), 100)
+        for item in manifest['selected']:
+            task = self.tasks / ('omnimatbench-' + item['key'].replace('/', '-'))
+            images = [path for path in (task / 'environment/data').iterdir() if path.name != 'case.json']
+            self.assertEqual(len(images), 1)
+            self.assertEqual(hashlib.sha256(images[0].read_bytes()).hexdigest(), item['image_sha256'])
+            self.assertEqual(set(json.loads((task / 'environment/data/case.json').read_text())),
+                             {'question', 'final_answer_format'})
+            self.assertTrue((task / 'tests/gold.json').is_file())
+            self.assertNotIn('final_answer_list', (task / 'instruction.md').read_text())
+
+    @unittest.skipUnless(importlib.util.find_spec('harbor'), 'Install Harbor for schema validation')
+    def test_all_frozen_image_tasks_validate_as_harbor(self):
+        from harbor.models.task.config import TaskConfig
+        for task in self.tasks.iterdir():
+            TaskConfig.model_validate(tomllib.loads((task / 'task.toml').read_text()))
+
+    def test_full_population_verifier_audit_rates_are_separate(self):
+        from qualification import audit_omnimat_verifier
+        report = audit_omnimat_verifier.run()
+        self.assertEqual(report['false_positive']['denominator'], 693)
+        self.assertEqual(report['false_positive']['errors'], 0)
+        self.assertEqual(report['false_negative']['denominator'], 181)
+        self.assertEqual(report['false_negative']['errors'], 22)
+        self.assertLess(report['false_positive']['rate'], 0.15)
+        self.assertLess(report['false_negative']['rate'], 0.15)
+
+
+
 if __name__ == '__main__':
     unittest.main()

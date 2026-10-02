@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "authored_before_outcomes": true,
+  "scope": "All 142 released image-bearing OmniMatBench CAL tasks at pinned revision f933f03c733bb378ce5dd85b96452d9d5683c17e",
+  "verifier": "Pinned upstream eval_cal_results.py score_exact through omnimatbench/verify.py",
+  "independence": "Perturbation validity follows exact Decimal equality/inequality and answer-list structural invariants, independently of any solver outputs.",
+  "false_negative_denominator": "Exact official references plus each distinct exact-Decimal-equivalent representation constructible by converting a parseable reference slot to fixed decimal notation while leaving all other slots unchanged.",
+  "false_positive_denominator": "For every task: missing final slot, extra definitely-wrong slot, definitely-wrong first slot; plus every parseable numeric slot changed by abs(value)+1.",
+  "decision": "FP and FN point rates are reported separately and must each be strictly below 15%. Wilson 95% intervals are disclosed but are not solver accuracy intervals.",
+  "exclusions": "No rates inferred from model accuracy. No semantic paraphrases whose equivalence requires subjective materials-science judgment."
+}
