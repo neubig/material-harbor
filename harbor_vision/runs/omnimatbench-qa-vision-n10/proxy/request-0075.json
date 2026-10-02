@@ -1,0 +1,108 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "message_count": 8,
+  "messages": [
+    {
+      "index": 0,
+      "role": "system",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 15314
+      }
+    },
+    {
+      "index": 1,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 1653
+      }
+    },
+    {
+      "index": 2,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 3,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 75
+          }
+        ],
+        "image_block_count": 0,
+        "images": []
+      }
+    },
+    {
+      "index": 4,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 421
+      }
+    },
+    {
+      "index": 5,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 77
+          },
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 256210,
+            "sha256": "15d300c340f1eeb1c38d31215a1fa1220299811afe75f3fb20b22f39a1034ba6"
+          }
+        ],
+        "image_block_count": 1,
+        "images": [
+          {
+            "type": "image_url",
+            "scheme": "data:image/png",
+            "bytes": 256210,
+            "sha256": "15d300c340f1eeb1c38d31215a1fa1220299811afe75f3fb20b22f39a1034ba6"
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 160
+      }
+    },
+    {
+      "index": 7,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 1438
+      }
+    }
+  ],
+  "body_sha256": "69386a6eaca9eb97cc892e8ff04963b0da8b2b69574b793b3cf0f424099a6ca8",
+  "body_bytes": 380826,
+  "sequence": 75,
+  "timestamp": 1790962489.378125
+}

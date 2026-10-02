@@ -1,0 +1,45 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "message_count": 4,
+  "messages": [
+    {
+      "index": 0,
+      "role": "system",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 15314
+      }
+    },
+    {
+      "index": 1,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 358
+      }
+    },
+    {
+      "index": 2,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "NoneType"
+      }
+    },
+    {
+      "index": 3,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 356
+      }
+    }
+  ],
+  "body_sha256": "12a9a9692052005064491643ece7ea55e432496c0f51b12e5584e83e443706fb",
+  "body_bytes": 33767,
+  "sequence": 86,
+  "timestamp": 1790962752.2031176
+}

@@ -1,0 +1,30 @@
+{
+  "id": "016",
+  "category": "19",
+  "question": "What is a Twin-Screw Extruder? What are the Structural and Operational Characteristics of a Twin-Screw Extruder?",
+  "answer": "A twin-screw extruder is a machine that features two intermeshing screws rotating within a single barrel. These two screws work together to complete the forced conveying and plasticization of plastic material.\nThe structural and operational characteristics of a twin-screw extruder are as follows: It combines a screw plasticization structure with a plunger injection structure to jointly perform the plasticization and injection operations. During operation, when pellets fall into the barrel, in the first step, similar to a single-screw pre-plasticizer, the material is plasticized into a molten state and pushed by the rotating screw to the front of the barrel, where it flows into the injection chamber through a check valve. When the injection begins, the entire plasticization mechanism moves forward, driven by the piston in the injection cylinder. At this point, the front cylinder, which is integral with the barrel, acts as a plunger, injecting the well-plasticized melt from the injection chamber into the mold cavity through the nozzle. The final product is formed after cooling and solidification.",
+  "key_points": [
+    {
+      "id": "point_1",
+      "description": "Defines a twin-screw extruder as a machine with two intermeshing screws rotating within a single barrel, which work together for forced conveying and plasticization of material."
+    },
+    {
+      "id": "point_2",
+      "description": "Identifies the key structural characteristic as the combination of a screw plasticization structure with a plunger injection structure."
+    },
+    {
+      "id": "point_3",
+      "description": "Describes the first operational step (plasticization), where the rotating screws melt the material and push it forward into an injection chamber."
+    },
+    {
+      "id": "point_4",
+      "description": "Describes the second operational step (injection), where the entire plasticization mechanism moves forward, acting as a plunger to inject the melt from the chamber into the mold."
+    }
+  ],
+  "scoring_weights": {
+    "point_1": 0.4,
+    "point_2": 0.2,
+    "point_3": 0.2,
+    "point_4": 0.2
+  }
+}

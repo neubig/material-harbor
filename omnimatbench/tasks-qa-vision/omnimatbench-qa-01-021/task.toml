@@ -1,0 +1,17 @@
+schema_version = "1.0"
+[metadata]
+dataset = "wanhaoliu/OmniMatBench"
+source_revision = "f933f03c733bb378ce5dd85b96452d9d5683c17e"
+protocol = "omnimatbench-qa-keypoints-v1"
+modality = "vision"
+[agent]
+timeout_sec = 900.0
+[verifier]
+timeout_sec = 300.0
+[environment]
+workdir = "/tmp"
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 2048
+network_mode = "public"

@@ -1,0 +1,30 @@
+{
+  "id": "024",
+  "category": "19",
+  "question": "What is the technology of Flame-Retardant Polyvinylidene Fluoride (PVDF) Latex Foam Material? And how many times is the full combustion time of 15.875mm thick PVDF/2-layer glass fiber reinforced foam that of 9.525mm thick sample with the same structure? Round the final answer to 1 decimal place.",
+  "answer": "The American chemical company Atofina has developed a highly flame-retardant polyvinylidene fluoride (PVDF) foam material. This product combines the company's KynarPVDF liquid polymer with glass fiber laminates, or with other fiber-reinforced materials, to create an open-cell foam. Initial laboratory tests have shown that these foam materials have excellent flame retardancy. This technology considers the combination of various reinforcing materials, including glass fibers, carbon fibers, natural fibers, and even conductive metal fibers. This foam material only releases a very small amount of smoke and flame during combustion. At high temperatures, KynarPVDF becomes transparent, resists ultraviolet radiation at high temperatures, has good fire resistance, and is chemically stable. In construction, it can be used as fire protection boards for buildings, sealing layers for ventilation ducts in high-rise buildings, and fire protection barriers for facades subjected to wind loads.\nIn a flame test on Kynar foam under sealant layers and multi-layer randomly cut glass mat conditions, a propane torch was placed 50.8mm × 152.4mm (2in × 6in) flat sample at a distance of 50.8mm (2in). Several formulations with different densities were exposed to the same flame conditions for a comparative test, using ordinary glass fiber sheets and 3.175mm (0.125in) thick aluminum sheets as reference objects. This test mainly measured the time it took for the flame to penetrate through the flat surface of the sample. The specific test results are as follows: For 9.525mm (0.375in) thick PVDF/1-layer glass mat samples, the full combustion time is 80s when density is 0.33g/cm³, 65s when density is 0.26g/cm³, 45s when density is 0.21g/cm³, 40s when density is 0.11g/cm³; for 9.525mm thick PVDF/2-layer glass mat sample with density 0.27g/cm³, the time is 120s; for 9.525mm thick PVDF/3-layer glass mat sample with density 0.28g/cm³, the time is 130s; for 15.875mm (0.625in) thick PVDF/2-layer glass mat sample with density 0.26g/cm³, the time is over 300s; 19.05mm (0.75in) thick pure glass mat sample has a full combustion time of 4s, 3.175mm thick aluminum sheet has a time of 90s. All reinforced foam samples exhibited equivalent flame retardant effects to reference materials such as ordinary glass fibers and 3.175mm (0.125in) thick aluminum sheets. The fully burned time increased with the increase in foam density, and also increased with the increase in the number of glass fiber reinforcement layers. Notably, a small change in sheet thickness can lead to a significant difference in the time required for complete combustion. More importantly, the time required for a 15.875mm (0.625in) thick PVDF/2-layer glass fiber reinforced foam to completely burn was 2.5 times that of a 9.525mm (0.375in) thick sample.",
+  "key_points": [
+    {
+      "id": "point_1",
+      "description": "Describes the core composition of the technology: combining KynarPVDF liquid polymer with reinforcing materials (like glass fiber laminates) to create an open-cell foam."
+    },
+    {
+      "id": "point_2",
+      "description": "Mentions the key flame-retardant properties of the material, such as excellent flame retardancy and releasing a very small amount of smoke and flame during combustion."
+    },
+    {
+      "id": "point_3",
+      "description": "Lists other beneficial properties (e.g., UV resistance, chemical stability at high temperatures) or its applications in construction (e.g., fire protection boards, sealing layers)."
+    },
+    {
+      "id": "point_4",
+      "description": "Provides the correct numerical answer that the full combustion time of the 15.875mm thick sample is 2.5 times that of the 9.525mm thick sample."
+    }
+  ],
+  "scoring_weights": {
+    "point_1": 0.2,
+    "point_2": 0.2,
+    "point_3": 0.1,
+    "point_4": 0.5
+  }
+}
