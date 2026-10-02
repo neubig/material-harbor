@@ -1,0 +1,8 @@
+{
+  "qid": "2a4ef1ce14554ac18ba85fb1e9e1c15b",
+  "type": "vision",
+  "kind": "XRD",
+  "question": "{image}The paper this image came from describes the in situ characterization of a Mn-doped indium oxide specimen (c-In1.85Mn0.15O3) at a pressure of 8 GPa while being heated step-wise from 250 \u00b0C up to 950 \u00b0C.\n\nWhat is a caption that is suitable for this image?",
+  "answer": "In situ energy-dispersive X-ray diffraction (XRD) patterns recorded for a specimen while being heated under pressure. The horizontal axis represents energy (E) in keV. Stacked plots show individual traces for various temperature and time steps, ranging from 250 \u00b0C to 950 \u00b0C, including a final trace for the sample quenched to room temperature (r.t.). Vertical tick marks within the grey shaded rows indicate the reference Bragg positions for the phases c-In2O3, o-InOOH, and rh-In2O3. Upward-pointing arrows identify the occurrence (1) and disappearance (2) of the o-InOOH phase, and the formation of the rh-In2O3 phase (3).",
+  "image_path": "images/2a4ef1ce-1455-4ac1-8ba8-5fb1e9e1c15b.png"
+}

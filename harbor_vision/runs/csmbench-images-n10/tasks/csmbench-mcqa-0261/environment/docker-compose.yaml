@@ -1,0 +1,4 @@
+services:
+  main:
+    extra_hosts:
+      - "llm-proxy-host:host-gateway"

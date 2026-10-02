@@ -1,0 +1,8 @@
+{
+  "qid": "f9ccbf111d60467db645196c88e00ed2",
+  "type": "vision",
+  "kind": "SEM-BSE",
+  "question": "{image}The paper this image came from examines the dispersion and local concentration of indium within zeolite frameworks following high-temperature thermal treatments in air.\n\nWhat is a caption that is suitable for this image?",
+  "answer": "(a) SEM micrograph displaying clusters of particulate matter. Two circular regions, labeled 1 and 2, denote areas where localized elemental analysis was conducted. An associated text box provides the indium (In) weight percentages for the overall image (6.7 wt. %), Zone 1 (7.3 wt. %), and Zone 2 (12.9 wt. %). Scale bar: 5 \u00b5m. (b) SEM micrograph of a different sample region. A dashed rectangular frame indicates the area for mapping, and a circular region marks Zone 1. The indium weight percentages are reported as 7.5 wt. % for the general area and 17.8 wt. % for Zone 1. Scale bar: 10 \u00b5m. (c) Elemental map showing the spatial distribution of indium within the rectangular sector defined in (b), where brighter pixels represent higher concentrations of the element.",
+  "image_path": "images/f9ccbf11-1d60-467d-b645-196c88e00ed2.png"
+}

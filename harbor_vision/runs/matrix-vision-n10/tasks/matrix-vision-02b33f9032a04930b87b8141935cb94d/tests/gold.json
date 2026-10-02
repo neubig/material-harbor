@@ -1,0 +1,8 @@
+{
+  "qid": "02b33f9032a04930b87b8141935cb94d",
+  "type": "vision",
+  "kind": "SEM-SE",
+  "question": "{image}The paper this image came from examines sample Pu108-01, an Al, Cr, Fe, Mn, and Ga-doped batch sintered at 1350\u00b0C in an Argon atmosphere for 4 hours. The material contains phases such as pyrochlore, zirconolite, loveringite (L), and magnetoplumbite (N), as well as porosity (A).\n\nWhat is a caption that is suitable for this image?",
+  "answer": "(a) Scanning electron micrograph (SEM) of the material surface at x1,000 magnification, featuring a light-grey matrix. Labels highlight various microstructural features: 'A' marks irregularly shaped regions of porosity, while 'L' and 'N' point to darker secondary phases. A 10 \u03bcm scale bar and imaging parameters, including a 15 kV acceleration voltage and a 15 mm working distance, are visible at the bottom of the micrograph.",
+  "image_path": "images/02b33f90-32a0-4930-b87b-8141935cb94d.png"
+}

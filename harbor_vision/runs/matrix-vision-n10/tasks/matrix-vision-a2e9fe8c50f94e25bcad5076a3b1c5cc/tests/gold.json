@@ -1,0 +1,8 @@
+{
+  "qid": "a2e9fe8c50f94e25bcad5076a3b1c5cc",
+  "type": "vision",
+  "kind": "EDS",
+  "question": "{image}The paper this image came from examines the formation of magnesium silicate hydrate (M-S-H) phases by reacting magnesium oxide with aqueous silica. The study involved embedding the reacted particles in resin and preparing polished cross-sections to analyze their internal elemental distribution under different initial silicon concentrations ([Si]in).\n\nWhat is a caption that is suitable for this image?",
+  "answer": "Scanning electron microscopy (SEM) images and energy-dispersive X-ray spectroscopy (EDS) elemental distribution maps of particle cross-sections. (a) SEM image of a particle from an experiment with an initial silicon concentration ([Si]in) of 1.5 mM. (b) SEM image of particles from an experiment with [Si]in of 0.15 mM. Yellow dotted boxes labeled 'EDS' in (a) and (b) indicate the regions chosen for elemental mapping. (c\u2013f) Elemental maps for magnesium (Mg, red), silicon (Si, green), oxygen (O, blue), and carbon from resin (C (resin), tan) for the sub-region indicated in (a). (g\u2013j) Corresponding elemental maps for the sub-region indicated in (b). The elemental distribution maps show that Si is primarily concentrated at the surface layers of the particles, while Mg and O are distributed throughout the particle bulk. Carbon signal is predominantly located in the surrounding embedding resin. Scale bars are provided in each panel for reference.",
+  "image_path": "images/a2e9fe8c-50f9-4e25-bcad-5076a3b1c5cc.png"
+}

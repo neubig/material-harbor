@@ -1,0 +1,8 @@
+{
+  "qid": "d66d379d4bcf442cb6b97225901aadee",
+  "type": "vision",
+  "kind": "SEM-BSE",
+  "question": "{image}The paper investigates the eutectoid transformation of gamma-uranium-molybdenum (U-Mo) alloys, where a high-temperature gamma phase decomposes into alpha-uranium and a gamma-prime phase during thermal treatment.\n\nWhat is a caption that is suitable for this image?",
+  "answer": "(a) Backscattered scanning electron microscopy (SEM) image at X 1,500 magnification showing a microstructure consisting of a smooth matrix and localized regions with a lamellar (striped) morphology. A scale bar at the bottom indicates 10 micrometers. (b) Schematic representation of the eutectoid phase transformation process and the involved crystal structures. An arrow from the smooth matrix in (a) points to a body-centered cubic-like structure labeled gamma-U10Mo. An arrow from the lamellar region in (a) points to an orthorhombic-like structure labeled alpha-U. A blue arrow indicates the transformation of the parent gamma-U10Mo phase into a combination of the alpha-U phase and a body-centered tetragonal-like structure labeled gamma'-U2Mo.",
+  "image_path": "images/d66d379d-4bcf-442c-b6b9-7225901aadee.png"
+}

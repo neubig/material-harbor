@@ -1,0 +1,24 @@
+schema_version = "1.0"
+[metadata]
+dataset = "radical-ai/MATRIX"
+source_revision = "80b39472f8a22c4e47ec40b6a9b78c7077af01eb"
+protocol = "matrix-five-level-official-style-v2"
+modality = "vision"
+[agent]
+timeout_sec = 900.0
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+[verifier.environment]
+docker_image = "python:3.12-slim@sha256:78387bc3881b8273120a12ebe6c1ab22b018ccc2c9adf565ae1ac9b536e184ea"
+network_mode = "public"
+cpus = 1
+memory_mb = 512
+[environment]
+docker_image = "material-harbor/openhands-sdk-vision:dad4aa5"
+workdir = "/tmp"
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 2048
+network_mode = "public"

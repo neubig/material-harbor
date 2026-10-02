@@ -1,0 +1,8 @@
+{
+  "qid": "ecf6c51769f34485beea93316d288050",
+  "type": "vision",
+  "kind": "XRD",
+  "question": "{image}The paper from which this image is taken investigates the effects of ion irradiation on the structural integrity of UO2 thin films grown epitaxially on YSZ substrates. Sample SN557 is an unirradiated control, while sample SN556 has been irradiated with 110 MeV U ions to a fluence of 5 x 10^12 ions/cm^2.\n\nWhat is a caption that is suitable for this image?",
+  "answer": "X-ray diffraction (XRD) patterns for sample SN557 (black line) and sample SN556* (red line), comparing an unirradiated and an irradiated UO2 film on a (111) YSZ substrate. The intensity is displayed on a logarithmic scale from 1 to 100,000, plotted against the diffraction angle 2-theta from 10 to 120 degrees. Labeled peaks correspond to the (111), (222), and (333) reflections of both UO2 and YSZ. The intensity curve for the irradiated sample SN556* is shifted upwards on the y-axis for clarity.",
+  "image_path": "images/ecf6c517-69f3-4485-beea-93316d288050.png"
+}

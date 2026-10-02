@@ -1,0 +1,188 @@
+{
+  "run": "csmbench-images-n10",
+  "source": "csmbench/tasks/pilot10",
+  "model": "openai/deepseek-v4.1-flash",
+  "base_image": "material-harbor/openhands-sdk-vision:dad4aa5",
+  "agent_import_path": "harbor_vision.vision_openhands_sdk:VisionOpenHandsSDK",
+  "sdk_commit": "dad4aa50208c27bf60cea4040b1db4dee2fd71c3",
+  "vision_supports_vision": true,
+  "max_iterations": 40,
+  "staged_tasks": 10,
+  "task_count_with_images": 10,
+  "transport": {
+    "recorded_requests": 106,
+    "list_content_messages": 428,
+    "string_content_messages": 2595,
+    "image_blocks_seen": 260,
+    "image_blocks_matching_task_images": 10,
+    "task_images_available": 10,
+    "matched_task_ids": [
+      "csmbench-mcqa-0023",
+      "csmbench-mcqa-0060",
+      "csmbench-mcqa-0128",
+      "csmbench-mcqa-0163",
+      "csmbench-mcqa-0261",
+      "csmbench-mcqa-0680",
+      "csmbench-mcqa-0797",
+      "csmbench-mcqa-0809",
+      "csmbench-mcqa-0817",
+      "csmbench-mcqa-0828"
+    ]
+  },
+  "rewards": {
+    "csmbench-images-n10-1790952520": {
+      "reward": null,
+      "exception_type": null,
+      "task_id": null
+    },
+    "csmbench-mcqa-0680__VwJmNC2": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0680"
+    },
+    "csmbench-mcqa-0817__eg7sCBs": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0817"
+    },
+    "csmbench-mcqa-0797__buxJ5SR": {
+      "reward": 0.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0797"
+    },
+    "csmbench-mcqa-0023__MEy3q7R": {
+      "reward": 0.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0023"
+    },
+    "csmbench-mcqa-0128__dS4EFm2": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0128"
+    },
+    "csmbench-mcqa-0163__4WLFkzz": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0163"
+    },
+    "csmbench-mcqa-0828__nw6u5bP": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0828"
+    },
+    "csmbench-mcqa-0060__tjGGuAV": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0060"
+    },
+    "csmbench-mcqa-0261__oJApBxc": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0261"
+    },
+    "csmbench-mcqa-0809__UCHtTBi": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0809"
+    }
+  },
+  "scored_trials": 10,
+  "solved": 8,
+  "mean_reward": 0.8,
+  "accuracy_percent": 80.0,
+  "harbor_returncode": 0,
+  "harbor_stdout_tail": "  10/10 Mean: 0.800 \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 0:21:23 0:00:00\n\ntasks \u2022 openhands-sdk \u2022 deepseek-v4.1-flash\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Trials \u2503 Exceptions \u2503  Mean \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502     10 \u2502          0 \u2502 0.800 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Reward \u2503 Count \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 1.0    \u2502     8 \u2502\n\u2502 0.0    \u2502     2 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\nJob Info\nTotal runtime: 21m 23s\nResults written to \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/csmbench-images-n10/jobs/csmbench-images-n10-\n1790952520/result.json\nInspect results by running `harbor view \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/csmbench-images-n10/jobs`\nShare results by running `harbor upload \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/csmbench-images-n10/jobs/csmbench-images-n10-\n1790952520`\n\n",
+  "harbor_stderr_tail": "",
+  "staged_manifest": [
+    {
+      "task_id": "csmbench-mcqa-0023",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "ef2c8aefe3b5dead7e225f3b7846344ded4c76058e0e058963bd8fbfc42008ee"
+        }
+      ]
+    },
+    {
+      "task_id": "csmbench-mcqa-0060",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "1b98f968f78a3a751e8d54409844b1316c6b9285c3b10a3a18fdf917f5bf0c31"
+        }
+      ]
+    },
+    {
+      "task_id": "csmbench-mcqa-0128",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "a3ef12a1d56e6f298b05a3ae158332fc5742b45e9faafceab6498791957cfe84"
+        }
+      ]
+    },
+    {
+      "task_id": "csmbench-mcqa-0163",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "66ddda95ca1e96bbae5025a4c1fbb65524020b4241163916d130d2e5b64848a6"
+        }
+      ]
+    },
+    {
+      "task_id": "csmbench-mcqa-0261",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "a0790a19164275b82ae88be1648b99c56c9a73eac8088ea2d8fbd1a9a1d3e79b"
+        }
+      ]
+    },
+    {
+      "task_id": "csmbench-mcqa-0680",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "2a6b54238dfca2a774ba0b1ede1e885488dd5b03a289635cbcfbaea1e300a34a"
+        }
+      ]
+    },
+    {
+      "task_id": "csmbench-mcqa-0797",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "3f733394a525df7084c912e6d4926bf62f3054a64baeb703b74a5862d7a3842b"
+        }
+      ]
+    },
+    {
+      "task_id": "csmbench-mcqa-0809",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "2da255aa2fa58cc221ac043c32bce4c84cd8bcc9f354ca8db31db25a18889d6e"
+        }
+      ]
+    },
+    {
+      "task_id": "csmbench-mcqa-0817",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "ac1e434c933f22230b3351d68d3bbc86af73682abec37bc6735b94dec5f514bf"
+        }
+      ]
+    },
+    {
+      "task_id": "csmbench-mcqa-0828",
+      "images": [
+        {
+          "path": "environment/data/image.jpg",
+          "sha256": "7d5cae7247dfce1d79121c215a892a9e975dc0fbdb1a1123e00a3f29ed6e7c2c"
+        }
+      ]
+    }
+  ]
+}

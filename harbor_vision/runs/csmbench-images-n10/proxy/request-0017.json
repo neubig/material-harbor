@@ -1,0 +1,91 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "message_count": 6,
+  "messages": [
+    {
+      "index": 0,
+      "role": "system",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 15314
+      }
+    },
+    {
+      "index": 1,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 1391
+      }
+    },
+    {
+      "index": 2,
+      "role": "assistant",
+      "has_tool_calls": true,
+      "content": {
+        "kind": "string",
+        "length": 58
+      }
+    },
+    {
+      "index": 3,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 75
+          }
+        ],
+        "image_block_count": 0,
+        "images": []
+      }
+    },
+    {
+      "index": 4,
+      "role": "tool",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 2133
+      }
+    },
+    {
+      "index": 5,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "list",
+        "blocks": [
+          {
+            "type": "text",
+            "length": 77
+          },
+          {
+            "type": "image_url",
+            "scheme": "data:image/jpeg",
+            "bytes": 328584,
+            "sha256": "3f733394a525df7084c912e6d4926bf62f3054a64baeb703b74a5862d7a3842b"
+          }
+        ],
+        "image_block_count": 1,
+        "images": [
+          {
+            "type": "image_url",
+            "scheme": "data:image/jpeg",
+            "bytes": 328584,
+            "sha256": "3f733394a525df7084c912e6d4926bf62f3054a64baeb703b74a5862d7a3842b"
+          }
+        ]
+      }
+    }
+  ],
+  "body_sha256": "5483df99a7f4c299900b8b85c653c56e49b2166d644af030023000154b523cc1",
+  "body_bytes": 475411,
+  "sequence": 17,
+  "timestamp": 1790952814.6655831
+}

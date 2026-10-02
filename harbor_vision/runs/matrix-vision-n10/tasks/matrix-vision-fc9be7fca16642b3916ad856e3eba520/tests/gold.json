@@ -1,0 +1,8 @@
+{
+  "qid": "fc9be7fca16642b3916ad856e3eba520",
+  "type": "vision",
+  "kind": "SEM-BSE",
+  "question": "{image}The paper this image came from describes the mineralogy and chemical composition of nataliakulikite within larnite-gehlenite rock samples from the Hatrurim Basin, Israel. The sample contains a variety of minerals including nataliakulikite (Ntk), magnesioferrite (Mgf), perovskite (Prv), gehlenite (Gh), larnite (Lar), flamite (Flm), fluorapatite (Ap), and hydrated Ca-silicates (CAS).\n\nWhat is a caption that is suitable for this image?",
+  "answer": "A collection of six SEM micrographs illustrating the textural relationships and spatial distribution of several mineral phases in a rock sample. The labeled phases include Mgf (magnesioferrite), Ntk (nataliakulikite), Prv (perovskite), Gh (gehlenite), CAS (hydrated Ca-silicates), Lar+Flm (larnite and flamite), and Ap (fluorapatite). The images show bright, irregularly shaped Mgf grains that are typically surrounded by a matrix of darker phases such as Gh and CAS. In the middle-left and bottom-left panels, small, highly bright Prv grains are visible, often appearing as cores. Ntk grains of intermediate brightness are frequently found in close association with the Mgf grains. Scale bars ranging from 10 \u00b5m to 40 \u00b5m are provided at the bottom of each panel to indicate the relative sizes of the mineral features.",
+  "image_path": "images/fc9be7fc-a166-42b3-916a-d856e3eba520.png"
+}

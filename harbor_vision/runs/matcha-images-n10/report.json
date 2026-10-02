@@ -1,0 +1,188 @@
+{
+  "run": "matcha-images-n10",
+  "source": "matcha/tasks/pilot10",
+  "model": "openai/deepseek-v4.1-flash",
+  "base_image": "material-harbor/openhands-sdk-vision:dad4aa5",
+  "agent_import_path": "harbor_vision.vision_openhands_sdk:VisionOpenHandsSDK",
+  "sdk_commit": "dad4aa50208c27bf60cea4040b1db4dee2fd71c3",
+  "vision_supports_vision": true,
+  "max_iterations": 40,
+  "staged_tasks": 10,
+  "task_count_with_images": 10,
+  "transport": {
+    "recorded_requests": 48,
+    "list_content_messages": 224,
+    "string_content_messages": 221,
+    "image_blocks_seen": 112,
+    "image_blocks_matching_task_images": 10,
+    "task_images_available": 10,
+    "matched_task_ids": [
+      "matcha-0043-00",
+      "matcha-0165-00",
+      "matcha-0180-00",
+      "matcha-0222-01",
+      "matcha-0349-01",
+      "matcha-0378-00",
+      "matcha-0430-00",
+      "matcha-0877-00",
+      "matcha-1070-00",
+      "matcha-1146-00"
+    ]
+  },
+  "rewards": {
+    "matcha-images-n10-1790953915": {
+      "reward": null,
+      "exception_type": null,
+      "task_id": null
+    },
+    "matcha-1146-00__h4U665W": {
+      "reward": 0.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-1146-00"
+    },
+    "matcha-0165-00__6UcnHgA": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-0165-00"
+    },
+    "matcha-0877-00__DbYVQvR": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-0877-00"
+    },
+    "matcha-0222-01__4oCiwKg": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-0222-01"
+    },
+    "matcha-0349-01__t4C7irn": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-0349-01"
+    },
+    "matcha-1070-00__SH3iAYw": {
+      "reward": 0.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-1070-00"
+    },
+    "matcha-0378-00__WQvmDKe": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-0378-00"
+    },
+    "matcha-0430-00__e3FSYGa": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-0430-00"
+    },
+    "matcha-0043-00__PLJcUrr": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-0043-00"
+    },
+    "matcha-0180-00__Mbo9tVK": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-0180-00"
+    }
+  },
+  "scored_trials": 10,
+  "solved": 8,
+  "mean_reward": 0.8,
+  "accuracy_percent": 80.0,
+  "harbor_returncode": 0,
+  "harbor_stdout_tail": "  10/10 Mean: 0.800 \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 0:14:03 0:00:00\n\ntasks \u2022 openhands-sdk \u2022 deepseek-v4.1-flash\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Trials \u2503 Exceptions \u2503  Mean \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502     10 \u2502          0 \u2502 0.800 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Reward \u2503 Count \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 1.0    \u2502     8 \u2502\n\u2502 0.0    \u2502     2 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\nJob Info\nTotal runtime: 14m 3s\nResults written to \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/matcha-images-n10/jobs/matcha-images-n10-1790\n953915/result.json\nInspect results by running `harbor view \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/matcha-images-n10/jobs`\nShare results by running `harbor upload \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/matcha-images-n10/jobs/matcha-images-n10-1790\n953915`\n\n",
+  "harbor_stderr_tail": "",
+  "staged_manifest": [
+    {
+      "task_id": "matcha-0043-00",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "ffc4d1cf8307d99f4260ae1122852aa03e101485fa5e01b55f5e14febb91ecf3"
+        }
+      ]
+    },
+    {
+      "task_id": "matcha-0165-00",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "02fa6ca22e9e812e34cc7d12658878c5436520a9713881ab45418a4a7c7b239c"
+        }
+      ]
+    },
+    {
+      "task_id": "matcha-0180-00",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "0ea3a777c65893caa467fa871054a6ba0443205cc30e83761b592da2f3a61a39"
+        }
+      ]
+    },
+    {
+      "task_id": "matcha-0222-01",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "17dce02209faf0c1d7b7b654bd84fb3e58ede4e4cd02fd3d17d7ad67aea8b0e4"
+        }
+      ]
+    },
+    {
+      "task_id": "matcha-0349-01",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "ec0c16a1d1f2eb34338c3924498b25f695e3ad9512668628a34fcb71391251ad"
+        }
+      ]
+    },
+    {
+      "task_id": "matcha-0378-00",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "3eb84cee0db7c0bc228a9b66d580326279998f54f1c5552b231b8553d14ffa77"
+        }
+      ]
+    },
+    {
+      "task_id": "matcha-0430-00",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "3d9ae060cdbbe01e447b49e7a19eb3f0a81d3e26a6a4e7dbdcbb5b594dda1d0f"
+        }
+      ]
+    },
+    {
+      "task_id": "matcha-0877-00",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "5ffdbb06f7efd09be08349894c48b54513ace88ab31838a189815de71c53fd31"
+        }
+      ]
+    },
+    {
+      "task_id": "matcha-1070-00",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "95020e30662d5cc96d2d503d65cd5ab91907b418c02da0303b511937e1578172"
+        }
+      ]
+    },
+    {
+      "task_id": "matcha-1146-00",
+      "images": [
+        {
+          "path": "environment/data/image-00.png",
+          "sha256": "f0a0d7b6a4e267fcde6a74a329fb113d79b7ef63345e8a1d079258b3e3ab3536"
+        }
+      ]
+    }
+  ]
+}

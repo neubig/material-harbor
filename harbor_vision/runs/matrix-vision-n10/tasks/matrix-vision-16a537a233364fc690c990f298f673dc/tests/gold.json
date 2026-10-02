@@ -1,0 +1,8 @@
+{
+  "qid": "16a537a233364fc690c990f298f673dc",
+  "type": "vision",
+  "kind": "EDS",
+  "question": "{image}The paper this image came from investigates the high-temperature stability and microstructural features of molybdenum-based TZM alloys. These alloys are primarily composed of molybdenum with small amounts of titanium and zirconium added to enhance high-temperature strength.\n\nWhat is a caption that is suitable for this image?",
+  "answer": "(a) SEM micrograph showing a surface with elongated grain structures and several dark, diamond-shaped precipitates. Panels (b) through (f) display corresponding elemental distribution maps for the same field of view: (b) carbon (C) in magenta, (c) oxygen (O) in red, (d) molybdenum (Mo) in orange, (e) zirconium (Zr) in green, and (f) titanium (Ti) in purple. The Zr map (e) and oxygen map (c) reveal localized high concentrations at the locations of the dark precipitates seen in (a), while the Mo map (d) indicates a depletion of molybdenum in those same areas. Each image includes a 30 \u03bcm scale bar.",
+  "image_path": "images/16a537a2-3336-4fc6-90c9-90f298f673dc.png"
+}
