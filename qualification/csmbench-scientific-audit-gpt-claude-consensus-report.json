@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "protocol": "scientific-audit-consensus-protocol.json",
+  "candidate": "csmbench",
+  "judges": [
+    "openai/gpt-5.1",
+    "claude-sonnet-4-6"
+  ],
+  "frozen_tasks": 30,
+  "consensus_tasks": 14,
+  "unresolved": 16,
+  "false_positive": {
+    "errors": 0,
+    "denominator": 42,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.08379879086570388
+    ]
+  },
+  "false_negative": {
+    "errors": 0,
+    "denominator": 14,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.21531080273763575
+    ]
+  },
+  "consensus_task_ids": [
+    "csmbench-mcqa-0449",
+    "csmbench-mcqa-0377",
+    "csmbench-mcqa-0876",
+    "csmbench-mcqa-0529",
+    "csmbench-mcqa-1018",
+    "csmbench-mcqa-0646",
+    "csmbench-mcqa-0644",
+    "csmbench-mcqa-0053",
+    "csmbench-mcqa-0705",
+    "csmbench-mcqa-0484",
+    "csmbench-mcqa-0797",
+    "csmbench-mcqa-0213",
+    "csmbench-mcqa-0819",
+    "csmbench-mcqa-0237"
+  ],
+  "conclusion": "POINT_ESTIMATES_PASS_BUT_UNCERTAINTY_INCONCLUSIVE"
+}

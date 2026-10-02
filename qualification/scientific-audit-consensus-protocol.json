@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "authored_before_secondary_outcomes": true,
+  "primary_model": "openai/gpt-5.1",
+  "secondary_model": "gemini-2.5-pro",
+  "scope": "Run the identical frozen 30-task blind image-grounded audits through a cross-provider secondary judge.",
+  "consensus": "Use only tasks where both judges independently return high confidence, unambiguous, exactly identical valid_options. All disagreements, errors and abstentions remain unresolved. Do not tune prompts or replace primary outcomes.",
+  "rates": "On consensus tasks, enumerate each option: accepted gold that consensus says wrong is FP; rejected nongold that consensus says valid is FN. Rates remain separate; disclose Wilson95.",
+  "source_hashes": {
+    "matcha-scientific-audit-manifest.json": "3899994a3ee8a59b0f8cbc4d308427e38b3f60363b3c2ea5c7a3c0a677b90832",
+    "csmbench-scientific-audit-manifest.json": "f0a187cb071f189d9eb9c40e7c3da98e974b6a7e1b4ceaac2b7b424448a6f2ce",
+    "matcha-scientific-audit-report.json": "e3f9ade286610f28cbb02fccceb911058fed00ceb1f3d507a559b8ec9aa9f2ad",
+    "csmbench-scientific-audit-report.json": "e54075ff9c042cccc2f166a736e0f8152c600fa3ed940acaeaaa0bef139cd89e"
+  },
+  "secondary_routing_correction": {
+    "failed_identifier": "openai/gemini-2.5-pro",
+    "failure": "30/30 HTTP 400, retained in qualification/matcha-scientific-audit-gemini-report.json",
+    "corrected_identifier": "gemini-2.5-pro",
+    "evidence": "Model catalog exposes gemini-2.5-pro; one routing-only smoke returned OK with 1000-token budget. No scientific outcome observed before correction."
+  },
+  "completion_budget_correction": {
+    "old_max_tokens": 1000,
+    "observed": "Gemini corrected-route attempt: 28/30 empty/JSON parse failures, retained; two usable outcomes insufficient and not inspected to tune semantics.",
+    "new_max_tokens": 5000,
+    "reason": "Reasoning-token allowance only; unchanged prompt, manifest, model, temperature, and consensus rule."
+  },
+  "tertiary_model": "claude-sonnet-4-6",
+  "tertiary_plan": "Run identical frozen tasks and unchanged 5000-token prompt. Because Gemini yielded insufficient CSMBench consensus, use exact high-confidence unambiguous agreement between primary GPT-5.1 and tertiary Claude as a separately reported cross-provider consensus audit; never pool denominator opportunistically. Retain all prior attempts.",
+  "tertiary_prompt_correction": {
+    "failed_attempt": "30/30 Claude outputs followed the solver letter-only instruction and were retained as parse failures. A one-task diagnostic confirmed response A despite later JSON request.",
+    "correction": "For tertiary run only, deterministically remove instruction text from first `Answer with` onward, retaining scientific question/options and all images; append unchanged blind audit JSON contract.",
+    "outcome_status": "No scientific tertiary outcomes observed before correction."
+  },
+  "tertiary_prompt_correction_2": {
+    "failed_attempt": "First correction still retained CSMBench prompt-level letter-only directives, causing 30/30 Claude parse failures; retained.",
+    "correction": "Construct neutral scientific question/options from environment/data/input.json for MATCHA or question.json options for CSMBench; no solver output directives. Images, choices, judge, manifest and blind JSON contract unchanged.",
+    "outcome_status": "No scientific outcomes observed in either prior Claude attempt."
+  }
+}

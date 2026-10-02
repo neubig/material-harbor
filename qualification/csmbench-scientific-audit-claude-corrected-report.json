@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "expected": 30,
+  "completed": 30,
+  "usable_high_confidence_unambiguous": 0,
+  "unresolved_or_errors": 30,
+  "false_positive": {
+    "errors": 0,
+    "denominator": 0,
+    "rate": null,
+    "wilson95": null
+  },
+  "false_negative": {
+    "errors": 0,
+    "denominator": 0,
+    "rate": null,
+    "wilson95": null
+  },
+  "interpretation": "Independent image-grounded scientific option audit. Parser perturbation audit is separate. Rates are not inferred from solver accuracy."
+}

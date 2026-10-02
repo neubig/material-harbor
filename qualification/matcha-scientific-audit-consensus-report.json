@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "protocol": "scientific-audit-consensus-protocol.json",
+  "candidate": "matcha",
+  "frozen_tasks": 30,
+  "consensus_tasks": 4,
+  "unresolved": 26,
+  "false_positive": {
+    "errors": 1,
+    "denominator": 10,
+    "rate": 0.1,
+    "wilson95": [
+      0.017876213095072896,
+      0.40415002679523837
+    ]
+  },
+  "false_negative": {
+    "errors": 1,
+    "denominator": 4,
+    "rate": 0.25,
+    "wilson95": [
+      0.0455872608097006,
+      0.699358157417598
+    ]
+  },
+  "consensus_task_ids": [
+    "matcha-0112-00",
+    "matcha-0626-02",
+    "matcha-0943-00",
+    "matcha-1008-00"
+  ],
+  "conclusion": "FAIL"
+}

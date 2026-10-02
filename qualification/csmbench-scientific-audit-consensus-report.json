@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "protocol": "scientific-audit-consensus-protocol.json",
+  "candidate": "csmbench",
+  "frozen_tasks": 30,
+  "consensus_tasks": 8,
+  "unresolved": 22,
+  "false_positive": {
+    "errors": 0,
+    "denominator": 24,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.13797620467498012
+    ]
+  },
+  "false_negative": {
+    "errors": 0,
+    "denominator": 8,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.3244075648838801
+    ]
+  },
+  "consensus_task_ids": [
+    "csmbench-mcqa-0377",
+    "csmbench-mcqa-0876",
+    "csmbench-mcqa-0529",
+    "csmbench-mcqa-1018",
+    "csmbench-mcqa-0646",
+    "csmbench-mcqa-0644",
+    "csmbench-mcqa-0053",
+    "csmbench-mcqa-0213"
+  ],
+  "conclusion": "INSUFFICIENT_CONSENSUS_FOR_DEFINITIVE_PASS"
+}

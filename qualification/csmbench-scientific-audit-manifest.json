@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "selection": "lowest SHA256(scientific-audit-v1:task_id), frozen before adjudication",
+  "n": 30,
+  "judge": "openai/gpt-5.1",
+  "temperature": 0,
+  "blind": "Gold labels withheld from judge; source figures and all choices shown.",
+  "decision_contract": "Judge returns every scientifically defensible option. Ambiguous/low-confidence items are unresolved, not forced.",
+  "task_ids": [
+    "csmbench-mcqa-0449",
+    "csmbench-mcqa-0377",
+    "csmbench-mcqa-0876",
+    "csmbench-mcqa-0412",
+    "csmbench-mcqa-0677",
+    "csmbench-mcqa-0529",
+    "csmbench-mcqa-0994",
+    "csmbench-mcqa-1018",
+    "csmbench-mcqa-0602",
+    "csmbench-mcqa-0646",
+    "csmbench-mcqa-0644",
+    "csmbench-mcqa-0204",
+    "csmbench-mcqa-0053",
+    "csmbench-mcqa-0577",
+    "csmbench-mcqa-0619",
+    "csmbench-mcqa-0582",
+    "csmbench-mcqa-0222",
+    "csmbench-mcqa-0766",
+    "csmbench-mcqa-1032",
+    "csmbench-mcqa-0705",
+    "csmbench-mcqa-0859",
+    "csmbench-mcqa-0283",
+    "csmbench-mcqa-0217",
+    "csmbench-mcqa-1033",
+    "csmbench-mcqa-0109",
+    "csmbench-mcqa-0484",
+    "csmbench-mcqa-0797",
+    "csmbench-mcqa-0213",
+    "csmbench-mcqa-0819",
+    "csmbench-mcqa-0237"
+  ],
+  "task_hashes": {
+    "csmbench-mcqa-0449": {
+      "instruction": "83187fc5764ecc60605d8e651b0c7961c357a03748f0c6c358171bfe18748c4b",
+      "images": [
+        "8fb8803e0a7b3f10cbe4e9ca21898e8682b0eba63c1732d615fdc83f832678b3"
+      ],
+      "gold_commitment": "f509be5f0ceb6b5628ff24c9894cf804f0c79f32ae295e4b599f2e5f03464034"
+    },
+    "csmbench-mcqa-0377": {
+      "instruction": "b718575f3b91c1ba1d036e61caeb969d066ad89e44483b5c72a3e85636fb0657",
+      "images": [
+        "68742d1ec06dfc0b7c4b60269f94f0c4381776105cf2b459aa195c8db8a1ddf7"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0876": {
+      "instruction": "1ffc1dced53e38a92dead7900517f00fe1993191b633219dcc7117b0bd68409a",
+      "images": [
+        "d355a7d9681897451eb47e719ad9c812b2be98392cdde2c53609cb5ac7add0ea"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0412": {
+      "instruction": "befc5ca2889d16864d12fea7898abdb331ae73d3713d6895e7d1b1246bb1dceb",
+      "images": [
+        "f01dade323a0eb123bec947969f0ab27431ddae618d70f949bd33efe44d9a904"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0677": {
+      "instruction": "4bb09f777eb9702f2ebd6bd6966765efe4496665763a0ff6035e4945d12a1015",
+      "images": [
+        "f03f16d60e3776252c1384a282d101de8f663392c5b87832e4ceae725a826265"
+      ],
+      "gold_commitment": "f509be5f0ceb6b5628ff24c9894cf804f0c79f32ae295e4b599f2e5f03464034"
+    },
+    "csmbench-mcqa-0529": {
+      "instruction": "9c1b4afaf81a5757a83416e958b64dbc6f63860ded988c1f7d11cfef827e2962",
+      "images": [
+        "5a073ce328588d1256466fe803d449676b44ead7ca93a167dcef3cc165562152"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    },
+    "csmbench-mcqa-0994": {
+      "instruction": "4e79b13e19d5bbdb14aba8a56a1c389e94dd5f015bc33336769b5dcbe548a305",
+      "images": [
+        "e50c71ecf222812fdb409adeb5b35501b62c18ba0a01fe3c85c7784a31bd3a28"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    },
+    "csmbench-mcqa-1018": {
+      "instruction": "b7f76c6684d756c69a9c656fdbe355b377598ad7b8e8485456f4a0a0c958283a",
+      "images": [
+        "2c45dbbcabc17bc412c8722efaadf3783cab4a0a31da30f5f65422026b0ccc0d"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0602": {
+      "instruction": "71ebfc21bf17255fcae12cf9a4f4fa9126ccf7904c6a1159a146fd5edcdf0d44",
+      "images": [
+        "74205abb72330df5e1572f9d9b2f373c45056165a5d594d19daed1e62ea5378d"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0646": {
+      "instruction": "36c5cb837c6537f0218f0f14a3b030f8a19e745f8ceadd4e47ecf94e2d12e0c6",
+      "images": [
+        "4ed7270e025c05433be8b7b2aeb1037763b8d1a060f2348d4b95ff0e2de706e9"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0644": {
+      "instruction": "50624b75ce067737c29e66219f4d3de78633c9fffd9f51d5293bd1da9a83ebb9",
+      "images": [
+        "0967665ba4e2cf5a6e37672d60ce107fdb6ec40e3998f5ef421ba1eb314f4607"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0204": {
+      "instruction": "dd67831571670fba8e50d3c6fc986131ae9691dc728122ad0d12fcd27dbe8858",
+      "images": [
+        "83488cd19e5bcdac1afad05f224fbd24704f128551513e7abee6ca5738c25e37"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    },
+    "csmbench-mcqa-0053": {
+      "instruction": "3b5e17df336402acfa67fda6deede1ca554ba7b732d0d573bf328adeb1d70e39",
+      "images": [
+        "2b07b561f8b1a58dd0a089e9a079b5dbe963d93b2db4c2bc3fd142e057307d3c"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0577": {
+      "instruction": "fd04c83ca02dd3449ba7a1db270784af0603b156acfdcbe4dd119f93c810e57a",
+      "images": [
+        "0a44df05f55b7a733b8979c0430af65efe5e97707dc3158443de91fa50eedccb"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0619": {
+      "instruction": "729dcb223f69c34fb8460f2190d0368f86060d797341b94c6d7db848d349c469",
+      "images": [
+        "770aa141dbe22daef6c5854479f30d3e45149bbee1c2c52964de4e1a1c5081dc"
+      ],
+      "gold_commitment": "9854bd2afc3ad6b5bb5bf7cbfba6daa7165bbb40b1ca7c0d127f1ca89887baa1"
+    },
+    "csmbench-mcqa-0582": {
+      "instruction": "83b3d6762c53e4548174bbe1575aae5300177e9110219a234e729b538d6e50d0",
+      "images": [
+        "b38cf3a1d2b49fafd1389dcfe73b1921dbed415dfafd5b59f844defd8cc7ccf6"
+      ],
+      "gold_commitment": "9854bd2afc3ad6b5bb5bf7cbfba6daa7165bbb40b1ca7c0d127f1ca89887baa1"
+    },
+    "csmbench-mcqa-0222": {
+      "instruction": "0c5ac976bae2629ab597a34f7c8cfca4142a26e761cfaee0713b9ef53bbf7159",
+      "images": [
+        "c4aa279b514e478a61dfe00262f9a40f9a716f2c94742f0d8a8f7893bb2ffcf7"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    },
+    "csmbench-mcqa-0766": {
+      "instruction": "1f9f8451bfab3fdfc7a9aa919684871e727602a7bd5074afd85b926c8a565e17",
+      "images": [
+        "f799e9310adb4465fcf7d53ebafba9c089afc0e59152d777e610272efff1b0ae"
+      ],
+      "gold_commitment": "9854bd2afc3ad6b5bb5bf7cbfba6daa7165bbb40b1ca7c0d127f1ca89887baa1"
+    },
+    "csmbench-mcqa-1032": {
+      "instruction": "e5d584aef84db17ae5c253c1d0fead019369c58504973f60fbf48307ed69863b",
+      "images": [
+        "f0cd34a555a4eaf80555929d902c6af292d3daa6ce5caf577248ef95bc4e49d0"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    },
+    "csmbench-mcqa-0705": {
+      "instruction": "c86dd3640ce5698dc4db15e92b7132507413df4cbc3f296add33da0f18da1403",
+      "images": [
+        "4f939a63a26e6a22bca20eca6bb228403abca4e09535745455e84820d5f9498e"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    },
+    "csmbench-mcqa-0859": {
+      "instruction": "ce69c13e048a9f01cdaabec976aa87aa2577c4f47fb3757df8d7024977604904",
+      "images": [
+        "3c09a830a22ccc51568942b48fe8316a1ed2067ea117669fa0788c899cd3d92c"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    },
+    "csmbench-mcqa-0283": {
+      "instruction": "1136d4545b0bb71829bdc378a037770c0ac108e9140c567b4ff1f778cf015e51",
+      "images": [
+        "cf14faa82e5b365e0cf835a9eba44fa8fc036061c4e3832bd44de513f69505fe"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    },
+    "csmbench-mcqa-0217": {
+      "instruction": "1895e861db23d5bd12b4e60e8e8890dc6d19ae8102b6358949a4c869740ad06a",
+      "images": [
+        "1fbad7d35b42c190ba9cac6c39dc323846212bc781a1ab744dbc9b1521302c44"
+      ],
+      "gold_commitment": "9854bd2afc3ad6b5bb5bf7cbfba6daa7165bbb40b1ca7c0d127f1ca89887baa1"
+    },
+    "csmbench-mcqa-1033": {
+      "instruction": "16a999b0dd20839eb0dcf95b31b38772de0272527ad6bc950f86ed268291269f",
+      "images": [
+        "2f785e38367b88ba0fed5393bfa4e5f1837704a24eaed441881e00c10916b602"
+      ],
+      "gold_commitment": "9854bd2afc3ad6b5bb5bf7cbfba6daa7165bbb40b1ca7c0d127f1ca89887baa1"
+    },
+    "csmbench-mcqa-0109": {
+      "instruction": "c47fe38fd76a072abff995e8f1303cf39f7c8812e0c013b6737c94efc1563f9c",
+      "images": [
+        "98ed945394e08993e18af1d3ad1fdca0909d096a0424db56da6198babe02301d"
+      ],
+      "gold_commitment": "f509be5f0ceb6b5628ff24c9894cf804f0c79f32ae295e4b599f2e5f03464034"
+    },
+    "csmbench-mcqa-0484": {
+      "instruction": "ac8cd399fb352e88fa5efca47c19af0e99596440cd775c0d8e15d3dda196d1ff",
+      "images": [
+        "a8591922c12384f56df97e16240530a316a82f908d0fd4fbb225a77f29947a38"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    },
+    "csmbench-mcqa-0797": {
+      "instruction": "7e36853ec6834db48831b9c17dc85ac63c2d759776f37823abc6db88ad172fd3",
+      "images": [
+        "3f733394a525df7084c912e6d4926bf62f3054a64baeb703b74a5862d7a3842b"
+      ],
+      "gold_commitment": "9854bd2afc3ad6b5bb5bf7cbfba6daa7165bbb40b1ca7c0d127f1ca89887baa1"
+    },
+    "csmbench-mcqa-0213": {
+      "instruction": "e0376b8f91f6105f6a0c87a3950aff6cdd038808f79c056bbfb073b731bfbd3b",
+      "images": [
+        "10caf6125bf76e04c233584ab15041f2e0733bb9ebd9755e8ab39bf68b6f717f"
+      ],
+      "gold_commitment": "90236a1171069defe14a5cd7003500fae9df3358519063426c430c29d57ba314"
+    },
+    "csmbench-mcqa-0819": {
+      "instruction": "9ebab2dc7b850e1247d13f6c20d2a3b9d56e5f60ea98983a4c2e90f1ef7b747f",
+      "images": [
+        "180800890fd1ac5f11dcbcddc2d4e0b9c9f449522f7d7841a2d776db5d9007e6"
+      ],
+      "gold_commitment": "f509be5f0ceb6b5628ff24c9894cf804f0c79f32ae295e4b599f2e5f03464034"
+    },
+    "csmbench-mcqa-0237": {
+      "instruction": "84e6b08cc5f94320f9ed90f3ef72c8bd1a5d5455710b0444554b4dd22ac3d542",
+      "images": [
+        "28a7f77620e4c2520bba20b6ebc5969e8889d61a5c662bbc179aa181b4cd289c"
+      ],
+      "gold_commitment": "a8d063a37218bc0043eeec517cb1ce7bd8558c55b3a3b7f4487f382fdaf7f8f3"
+    }
+  }
+}
