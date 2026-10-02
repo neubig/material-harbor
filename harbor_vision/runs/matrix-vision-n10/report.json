@@ -10,22 +10,84 @@
   "staged_tasks": 10,
   "task_count_with_images": 10,
   "transport": {
-    "recorded_requests": 0,
-    "list_content_messages": 0,
-    "string_content_messages": 0,
-    "image_blocks_seen": 0,
-    "image_blocks_matching_task_images": 0,
+    "recorded_requests": 106,
+    "list_content_messages": 507,
+    "string_content_messages": 1138,
+    "image_blocks_seen": 298,
+    "image_blocks_matching_task_images": 10,
     "task_images_available": 10,
-    "matched_task_ids": []
+    "matched_task_ids": [
+      "matrix-vision-02b33f9032a04930b87b8141935cb94d",
+      "matrix-vision-05f9cbb0edaf4755a6d5a996386e407e",
+      "matrix-vision-16a537a233364fc690c990f298f673dc",
+      "matrix-vision-2a4ef1ce14554ac18ba85fb1e9e1c15b",
+      "matrix-vision-a2e9fe8c50f94e25bcad5076a3b1c5cc",
+      "matrix-vision-d66d379d4bcf442cb6b97225901aadee",
+      "matrix-vision-e3d27a75a33e410d8d54e15bcc5789fd",
+      "matrix-vision-ecf6c51769f34485beea93316d288050",
+      "matrix-vision-f9ccbf111d60467db645196c88e00ed2",
+      "matrix-vision-fc9be7fca16642b3916ad856e3eba520"
+    ]
   },
-  "rewards": {},
-  "scored_trials": 0,
-  "solved": 0,
-  "mean_reward": null,
-  "accuracy_percent": null,
-  "harbor_returncode": 1,
-  "harbor_stdout_tail": "\u2838  3/10 Mean: 0.000 \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501                             0:10:49 -:--:--\n",
-  "harbor_stderr_tail": " \u2502\n\u2502 \u2502    458 \u2502   \u2502   finally:                                                  \u2502 \u2502\n\u2502 \u2502    459 \u2502   \u2502   \u2502   await self._stop_agent_environment()                  \u2502 \u2502\n\u2502 \u2502    460 \u2502   \u2502   self.result.finished_at = self._now()                     \u2502 \u2502\n\u2502 \u2502 \u2771  461 \u2502   \u2502                                                             \u2502 \u2502\n\u2502 \u2502        self.paths.result_path.write_text(self.result.model_dump_json(ind \u2502 \u2502\n\u2502 \u2502        ent=4))                                                           \u2502 \u2502\n\u2502 \u2502    462 \u2502   \u2502   await self._emit(TrialEvent.END)                          \u2502 \u2502\n\u2502 \u2502    463 \u2502                                                                 \u2502 \u2502\n\u2502 \u2502    464 \u2502   def _record_exception(self, exc: BaseException) -> None:      \u2502 \u2502\n\u2502 \u2502                                                                          \u2502 \u2502\n\u2502 \u2502 /usr/lib/python3.12/pathlib.py:1049 in write_text                        \u2502 \u2502\n\u2502 \u2502                                                                          \u2502 \u2502\n\u2502 \u2502   1046 \u2502   \u2502   \u2502   raise TypeError('data must be str, not %s' %          \u2502 \u2502\n\u2502 \u2502   1047 \u2502   \u2502   \u2502   \u2502   \u2502   \u2502   \u2502   data.__class__.__name__)              \u2502 \u2502\n\u2502 \u2502   1048 \u2502   \u2502   encoding = io.text_encoding(encoding)                     \u2502 \u2502\n\u2502 \u2502 \u2771 1049 \u2502   \u2502   with self.open(mode='w', encoding=encoding,               \u2502 \u2502\n\u2502 \u2502        errors=errors, newline=newline) as f:                             \u2502 \u2502\n\u2502 \u2502   1050 \u2502   \u2502   \u2502   return f.write(data)                                  \u2502 \u2502\n\u2502 \u2502   1051 \u2502                                                                 \u2502 \u2502\n\u2502 \u2502   1052 \u2502   def iterdir(self):                                            \u2502 \u2502\n\u2502 \u2502                                                                          \u2502 \u2502\n\u2502 \u2502 /usr/lib/python3.12/pathlib.py:1015 in open                              \u2502 \u2502\n\u2502 \u2502                                                                          \u2502 \u2502\n\u2502 \u2502   1012 \u2502   \u2502   \"\"\"                                                       \u2502 \u2502\n\u2502 \u2502   1013 \u2502   \u2502   if \"b\" not in mode:                                       \u2502 \u2502\n\u2502 \u2502   1014 \u2502   \u2502   \u2502   encoding = io.text_encoding(encoding)                 \u2502 \u2502\n\u2502 \u2502 \u2771 1015 \u2502   \u2502   return io.open(self, mode, buffering, encoding, errors,   \u2502 \u2502\n\u2502 \u2502        newline)                                                          \u2502 \u2502\n\u2502 \u2502   1016 \u2502                                                                 \u2502 \u2502\n\u2502 \u2502   1017 \u2502   def read_bytes(self):                                         \u2502 \u2502\n\u2502 \u2502   1018 \u2502   \u2502   \"\"\"                                                       \u2502 \u2502\n\u2502 \u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f \u2502\n\u2502 FileNotFoundError: [Errno 2] No such file or directory:                      \u2502\n\u2502 '/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c \u2502\n\u2502 7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/jobs/matrix-vision \u2502\n\u2502 -n10-1790955187/matrix-vision-02b33f9032a04930b8__kerUVhD/result.json'       \u2502\n\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f\n",
+  "rewards": {
+    "matrix-vision-d66d379d4bcf442cb6__5FjWLYh": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-d66d379d4bcf442cb6b97225901aadee"
+    },
+    "matrix-vision-ecf6c51769f34485be__8nWxTDF": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-ecf6c51769f34485beea93316d288050"
+    },
+    "matrix-vision-2a4ef1ce14554ac18b__rmt5W3w": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-2a4ef1ce14554ac18ba85fb1e9e1c15b"
+    },
+    "matrix-vision-16a537a233364fc690__MaUMMAh": {
+      "reward": 0.75,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-16a537a233364fc690c990f298f673dc"
+    },
+    "matrix-vision-05f9cbb0edaf4755a6__hjW9FgK": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-05f9cbb0edaf4755a6d5a996386e407e"
+    },
+    "matrix-vision-a2e9fe8c50f94e25bc__cuxro9a": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-a2e9fe8c50f94e25bcad5076a3b1c5cc"
+    },
+    "matrix-vision-02b33f9032a04930b8__H7z4kKg": {
+      "reward": 0.75,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-02b33f9032a04930b87b8141935cb94d"
+    },
+    "matrix-vision-f9ccbf111d60467db6__AGoFLWH": {
+      "reward": 0.5,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-f9ccbf111d60467db645196c88e00ed2"
+    },
+    "matrix-vision-fc9be7fca16642b391__u6jL7VS": {
+      "reward": 1.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-fc9be7fca16642b3916ad856e3eba520"
+    },
+    "matrix-vision-e3d27a75a33e410d8d__EDgZdZz": {
+      "reward": 0.0,
+      "exception_type": null,
+      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/tasks/matrix-vision-e3d27a75a33e410d8d54e15bcc5789fd"
+    }
+  },
+  "scored_trials": 10,
+  "solved": 9,
+  "mean_reward": 0.8,
+  "accuracy_percent": 80.0,
+  "harbor_returncode": 0,
+  "harbor_stdout_tail": "  10/10 Mean: 0.800 \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 0:16:54 0:00:00\n\ntasks \u2022 openhands-sdk \u2022 deepseek-v4.1-flash\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Trials \u2503 Exceptions \u2503  Mean \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502     10 \u2502          0 \u2502 0.800 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Reward \u2503 Count \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 0.75   \u2502     2 \u2502\n\u2502 0.0    \u2502     1 \u2502\n\u2502 1.0    \u2502     6 \u2502\n\u2502 0.5    \u2502     1 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\nJob Info\nTotal runtime: 16m 54s\nResults written to \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/matrix-vision-n10/jobs/matrix-vision-n10-1790\n959122/result.json\nInspect results by running `harbor view \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/matrix-vision-n10/jobs`\nShare results by running `harbor upload \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/matrix-vision-n10/jobs/matrix-vision-n10-1790\n959122`\n\n",
+  "harbor_stderr_tail": "",
   "staged_manifest": [
     {
       "task_id": "matrix-vision-02b33f9032a04930b87b8141935cb94d",

@@ -6,11 +6,28 @@ import urllib.request
 from pathlib import Path
 
 PROTOCOL = 'matrix-five-level-official-style-v2'
-FIDELITY = 'Reconstructed official-style, not official-exact; only hypothesis descriptors are published verbatim.'
+FIDELITY = ('Reconstructed official-style, not official-exact; only hypothesis descriptors are published verbatim. '
+            'The vision rubrics are reconstructed by this adapter: the release publishes vision kinds (TGA, XRD, EDS, '
+            'SEM-BSE, SEM-SE) but no rubrics for them, only a loader (matrix.py).')
 MODEL = 'gpt-5.1'
 ENDPOINT = 'https://llm-proxy.app.all-hands.dev/v1/chat/completions'
 SCORES = (0, 0.25, 0.5, 0.75, 1)
 RUBRICS = {'hypothesis': {'1.0': 'Excellent — Clear problem framing, scientifically plausible and well-grounded reasoning, and a specific, testable hypothesis directly tied to the reasoning.', '0.75': 'Good — Generally clear and plausible; minor gaps, vagueness, or missing details in either reasoning or hypothesis.', '0.5': 'Partial — Some correct ideas or partial framing, but weak or incomplete scientific grounding and/or hypothesis not clearly testable.', '0.25': 'Poor — Minimal structure; vague or generic problem, shallow or loosely related reasoning, and unclear hypothesis.', '0.0': 'Incorrect — Scientifically implausible, factually wrong, or irrelevant to the question.'}, 'foundational_theory': {'1.0': 'Excellent — Scientifically correct and complete answer, with coherent physical reasoning and correct use of core principles; addresses all central parts of the question.', '0.75': 'Good — Correct central principles and conclusion; minor gaps or missing details in explanation, without substantive scientific error.', '0.5': 'Partial — Some correct principles or conclusions, but incomplete reasoning or substantive errors or omissions prevent a complete answer.', '0.25': 'Poor — Minimal relevant scientific content; largely unsupported or confused reasoning and major errors or omissions.', '0.0': 'Incorrect — Scientifically incorrect, irrelevant, or no meaningful answer to the question.'}, 'research_reasoning': {'1.0': 'Excellent — Correct, well-grounded multi-step mechanistic reasoning that integrates the relevant concepts, context, assumptions and trade-offs to support the conclusion.', '0.75': 'Good — Generally correct and coherent mechanistic reasoning and conclusion, with minor gaps in assumptions, integration or detail.', '0.5': 'Partial — Some correct insights, but incomplete or weak multi-step reasoning, unsupported conclusions or substantive errors or omissions.', '0.25': 'Poor — Shallow or loosely relevant reasoning, major conceptual errors, or largely unsupported conclusions.', '0.0': 'Incorrect — Scientifically implausible, factually wrong, or irrelevant to the question.'}}
+
+# The release documents five vision kinds but publishes no rubrics for them, so
+# these levels are reconstructed here. They grade a figure description against
+# the reference caption: does the answer name the technique and read the actual
+# plotted/observed content, rather than reciting the prompt's context.
+_VISION_LEVELS = {
+    '1.0': 'Excellent — Correctly identifies the technique and describes the specific content of the figure (axes, phases, peaks, morphologies, or trends as applicable), consistent with the reference caption.',
+    '0.75': 'Good — Correct technique and mostly correct reading of the figure, with minor omissions or imprecision.',
+    '0.5': 'Partial — Some correct visual elements, but the description is incomplete or partly misreads the figure.',
+    '0.25': 'Poor — Little correct visual content; mostly generic restatement of the question context.',
+    '0.0': 'Incorrect — Misidentifies the technique or contradicts the figure.',
+}
+VISION_RUBRICS = {kind: dict(_VISION_LEVELS) for kind in ('TGA', 'XRD', 'EDS', 'SEM-BSE', 'SEM-SE')}
+RUBRICS.update(VISION_RUBRICS)
+
 
 
 def rubric(kind):
