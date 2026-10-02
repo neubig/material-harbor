@@ -1,0 +1,28 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "message_count": 2,
+  "messages": [
+    {
+      "index": 0,
+      "role": "system",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 15314
+      }
+    },
+    {
+      "index": 1,
+      "role": "user",
+      "has_tool_calls": false,
+      "content": {
+        "kind": "string",
+        "length": 505
+      }
+    }
+  ],
+  "body_sha256": "dbc1284b8930a02e7bbac41614e63ce40e3a031452e34cc1b5cf9e2cd7e3a518",
+  "body_bytes": 33166,
+  "sequence": 1,
+  "timestamp": 1790959207.8936012
+}

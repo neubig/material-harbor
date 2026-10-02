@@ -9,7 +9,6 @@ timeout_sec = 900.0
 [verifier]
 timeout_sec = 300.0
 [environment]
-docker_image = "material-harbor/openhands-sdk-vision:dad4aa5"
 workdir = "/tmp"
 build_timeout_sec = 600.0
 cpus = 2
