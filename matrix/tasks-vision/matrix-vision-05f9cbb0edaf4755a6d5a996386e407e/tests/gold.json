@@ -1,0 +1,8 @@
+{
+  "qid": "05f9cbb0edaf4755a6d5a996386e407e",
+  "type": "vision",
+  "kind": "SEM-SE",
+  "question": "{image}The paper from which this image is taken investigates the effects of mechanochemical processing (ball milling) on the morphology and properties of aluminum-based composite particles containing bismuth and nickel for hydrogen production via hydrolysis.\n\nWhat is a caption that is suitable for this image?",
+  "answer": "Scanning electron microscopy (SEM) micrographs showing the surface morphology of various particle samples at 500x magnification. (a) Displays particles with irregular, rounded, and elongated shapes. (b) through (e) show particles that have been processed, resulting in a more fragmented and angular flake-like morphology with a diverse size distribution. In image (c), a red circle highlights a relatively large, flattened flake with a textured surface. Each image contains a scale bar representing 300 micrometers at the bottom.",
+  "image_path": "images/05f9cbb0-edaf-4755-a6d5-a996386e407e.png"
+}

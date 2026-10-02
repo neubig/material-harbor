@@ -22,7 +22,7 @@ build = module('build')
 verify = module('verify')
 SOURCE = ROOT / 'source/test.jsonl'
 HAS_SOURCE = unittest.skipUnless(SOURCE.is_file(), 'Fetch pinned source with matrix/build.py --fetch --fetch-only')
-GOLD = {'question': 'Explain diffusion.', 'kind': 'foundational', 'answer': 'Transport down a chemical potential gradient.'}
+GOLD = {'question': 'Explain diffusion.', 'kind': 'foundational_theory', 'answer': 'Transport down a chemical potential gradient.'}
 
 
 
@@ -44,12 +44,11 @@ class MatrixTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             out = Path(tmp) / 'tasks'
             build.build(out)
-            for row in build.select(build.load_rows()):
+            for row in build.select(build.load_rows(), 100, build.MEASUREMENT_SEED):
                 task = out / ('matrix-' + row['qid'])
                 self.assertTrue((task / 'instruction.md').read_text().startswith(row['question'] + '\n\n'))
                 self.assertEqual(json.loads((task / 'tests/gold.json').read_text()), row)
-                self.assertEqual(list((task / 'environment').iterdir()), [task / 'environment/Dockerfile'])
-                self.assertNotIn('COPY', (task / 'environment/Dockerfile').read_text())
+                self.assertEqual(list((task / 'environment').iterdir()), [])
                 config = TaskConfig.model_validate(tomllib.loads((task / 'task.toml').read_text()))
                 self.assertEqual(config.verifier.environment_mode.value, 'separate')
                 self.assertEqual(config.environment.env, {})
@@ -82,10 +81,10 @@ class MatrixTests(unittest.TestCase):
                        '--source-file', str(SOURCE), '--source', str(destination),
                        '--output', str(root / 'tasks')]
             subprocess.run(command, check=True, capture_output=True)
-            self.assertEqual(len(list((root / 'tasks').iterdir())), 10)
-            before = (root / 'pilot-manifest.json').read_bytes()
+            self.assertEqual(len(list((root / 'tasks').iterdir())), 100)
+            before = (root / 'manifest100-v2.json').read_bytes()
             self.assertNotEqual(subprocess.run(command, capture_output=True).returncode, 0)
-            self.assertEqual((root / 'pilot-manifest.json').read_bytes(), before)
+            self.assertEqual((root / 'manifest100-v2.json').read_bytes(), before)
 
     def test_validation_survives_optimized_python(self):
         command = [sys.executable, '-O', '-c',
@@ -123,15 +122,44 @@ class MatrixTests(unittest.TestCase):
         self.assertEqual(task.environment.network_mode.value, 'no-network')
 
     def test_strict_judge_parser(self):
-        for value, expected in [('true', 1), ('false', 0), ('1', 1), ('0', 0)]:
-            self.assertEqual(verify.parse_judgment('{"correct":' + value + '}'), expected)
-        for text in ['{"correct":"false"}', '{"correct":0.0}', '{"correct":2}',
-                     '{"correct":null}', '{"correct":true,"extra":0}',
-                     '{"correct":true,"correct":false}', 'true', '[]',
-                     '```json\n{"correct":true}\n```', '{"correct":NaN}',
-                     '{"correct": true} trailing', '__import__("os").system("true")']:
+        for score in verify.SCORES:
+            value = {'score': score, 'rationale': 'Scientific reasoning.'}
+            self.assertEqual(verify.parse_judgment(json.dumps(value)), value)
+        for text in ['{"score":true,"rationale":"x"}', '{"score":"0.5","rationale":"x"}',
+                     '{"score":0.3,"rationale":"x"}', '{"score":null,"rationale":"x"}',
+                     '{"score":NaN,"rationale":"x"}', '{"score":Infinity,"rationale":"x"}',
+                     '{"score":1,"score":0,"rationale":"x"}', '{"score":1,"rationale":""}',
+                     '{"score":1,"rationale":0}', '{"score":1,"rationale":"x","extra":1}',
+                     '{"correct":true}', '[]', 'true', '```json\n{}\n```', '{} trailing']:
             with self.subTest(text=text), self.assertRaises(ValueError):
                 verify.parse_judgment(text)
+
+    @HAS_SOURCE
+    def test_fixed100_and_rubrics(self):
+        rows = build.load_rows()
+        selected = build.select(rows, 100, build.MEASUREMENT_SEED)
+        self.assertEqual(selected, build.select(rows[::-1], 100, build.MEASUREMENT_SEED))
+        self.assertEqual(len({r['qid'] for r in selected}), 100)
+        for row in selected:
+            self.assertIn(row['kind'], verify.RUBRICS)
+            self.assertIn('0.75:', verify.rubric(row['kind']))
+        with self.assertRaises(KeyError):
+            verify.rubric('unknown')
+        self.assertEqual(verify.RUBRICS['hypothesis']['1.0'], 'Excellent — Clear problem framing, scientifically plausible and well-grounded reasoning, and a specific, testable hypothesis directly tied to the reasoning.')
+
+    def test_native_verifier_environment_templating(self):
+        from harbor.models.trial.config import VerifierConfig
+        from harbor.utils.env import resolve_env_vars
+        key = 'MATRIX_TEST_SENTINEL'
+        os.environ[key] = 'non-secret-test-value'
+        try:
+            config = VerifierConfig(env={'MATRIX_JUDGE_API_KEY': '${' + key + '}'})
+            self.assertEqual(config.model_dump()['env']['MATRIX_JUDGE_API_KEY'], '${' + key + '}')
+            self.assertEqual(resolve_env_vars(config.env)['MATRIX_JUDGE_API_KEY'], 'non-secret-test-value')
+        finally:
+            del os.environ[key]
+        with self.assertRaises(ValueError):
+            resolve_env_vars(config.env)
 
     def test_missing_and_invalid_answer(self):
         with tempfile.TemporaryDirectory() as tmp:

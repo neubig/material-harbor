@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parent
 REVISION = '80b39472f8a22c4e47ec40b6a9b78c7077af01eb'
 SOURCE_SHA256 = 'fcc4b654a7d799ef3e93403939641ca7c51f8868237c8cb4a01001d2bbe58f10'
 SEED = 'matrix-text-pilot-20260814-v1'
+MEASUREMENT_SEED = 'matrix-text-fixed100-20260814-v2'
 IMAGE = 'python:3.12-slim@sha256:78387bc3881b8273120a12ebe6c1ab22b018ccc2c9adf565ae1ac9b536e184ea'
 
 
@@ -69,13 +70,13 @@ def fetch_source(destination=None, *, local_file=None):
     return destination
 
 
-def select(rows):
+def select(rows, count=10, seed=SEED):
     return sorted((r for r in rows if r['type'] == 'text'),
-                  key=lambda r: (hashlib.sha256((SEED + ':' + r['qid']).encode()).hexdigest(), r['qid']))[:10]
+                  key=lambda r: (hashlib.sha256((seed + ':' + r['qid']).encode()).hexdigest(), r['qid']))[:count]
 
 
 def build(output, source=None):
-    selected = select(load_rows(source))
+    selected = select(load_rows(source), 100, MEASUREMENT_SEED)
     output.mkdir(parents=True, exist_ok=False)
     for row in selected:
         task = output / ('matrix-' + row['qid'])
@@ -84,8 +85,6 @@ def build(output, source=None):
         environment.mkdir(parents=True)
         tests.mkdir()
         (task / 'instruction.md').write_text(row['question'] + '\n\nWrite your complete explanatory answer as plain UTF-8 text to /logs/artifacts/answer.txt (at most 65536 bytes).\n')
-        (environment / 'Dockerfile').write_text(f'FROM {IMAGE}\nWORKDIR /app\nRUN mkdir -p /logs/artifacts\n')
-        (tests / 'Dockerfile').write_text(f'FROM {IMAGE}\nCOPY . /tests\n')
         (tests / 'gold.json').write_text(json.dumps(row, indent=2))
         shutil.copyfile(ROOT / 'verify.py', tests / 'verify.py')
         (tests / 'test.sh').write_text('#!/bin/sh\nset -eu\npython -I /tests/verify.py\n')
@@ -94,26 +93,30 @@ def build(output, source=None):
 [metadata]
 dataset = "radical-ai/MATRIX"
 source_revision = "{REVISION}"
-protocol = "matrix-reference-binary-v1-not-official"
+protocol = "matrix-five-level-official-style-v2"
 [agent]
 timeout_sec = 600.0
 [verifier]
 timeout_sec = 120.0
 environment_mode = "separate"
 [verifier.environment]
+docker_image = "{IMAGE}"
+network_mode = "public"
 cpus = 1
 memory_mb = 512
 [environment]
+docker_image = "{IMAGE}"
+workdir = "/tmp"
 build_timeout_sec = 600.0
 cpus = 1
-memory_mb = 1024
+memory_mb = 4096
 storage_mb = 2048
-network_mode = "no-network"
+network_mode = "public"
 ''')
-    manifest = {'revision': REVISION, 'source_sha256': SOURCE_SHA256, 'seed': SEED,
+    manifest = {'revision': REVISION, 'source_sha256': SOURCE_SHA256, 'seed': MEASUREMENT_SEED,
                 'selection': 'lowest sha256(seed + colon + qid) among all 220 text tasks; no category filtering',
                 'tasks': [{'qid': r['qid'], 'kind': r['kind']} for r in selected]}
-    (output.parent / 'pilot-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
+    (output.parent / 'manifest100-v2.json').write_text(json.dumps(manifest, indent=2) + '\n')
     return manifest
 
 
@@ -123,7 +126,7 @@ if __name__ == '__main__':
     parser.add_argument('--fetch', action='store_true', help='Explicitly fetch the pinned source if absent')
     parser.add_argument('--source-file', type=Path, help='Import pinned bytes offline (requires --fetch)')
     parser.add_argument('--fetch-only', action='store_true')
-    parser.add_argument('--output', type=Path, default=ROOT / 'tasks')
+    parser.add_argument('--output', type=Path, default=ROOT / 'runs/fixed100-v2/tasks')
     args = parser.parse_args()
     if (args.source_file or args.fetch_only) and not args.fetch:
         parser.error('--source-file and --fetch-only require --fetch')

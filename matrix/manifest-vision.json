@@ -1,0 +1,68 @@
+{
+  "revision": "80b39472f8a22c4e47ec40b6a9b78c7077af01eb",
+  "seed": "matrix-vision-pilot-20260814-v1",
+  "modality": "vision",
+  "selection": "lowest sha256(seed + colon + qid) among all 250 vision rows; count 10",
+  "tasks": [
+    {
+      "task_id": "matrix-vision-16a537a233364fc690c990f298f673dc",
+      "qid": "16a537a233364fc690c990f298f673dc",
+      "kind": "EDS",
+      "image": "environment/data/image.png"
+    },
+    {
+      "task_id": "matrix-vision-02b33f9032a04930b87b8141935cb94d",
+      "qid": "02b33f9032a04930b87b8141935cb94d",
+      "kind": "SEM-SE",
+      "image": "environment/data/image.png"
+    },
+    {
+      "task_id": "matrix-vision-d66d379d4bcf442cb6b97225901aadee",
+      "qid": "d66d379d4bcf442cb6b97225901aadee",
+      "kind": "SEM-BSE",
+      "image": "environment/data/image.png"
+    },
+    {
+      "task_id": "matrix-vision-fc9be7fca16642b3916ad856e3eba520",
+      "qid": "fc9be7fca16642b3916ad856e3eba520",
+      "kind": "SEM-BSE",
+      "image": "environment/data/image.png"
+    },
+    {
+      "task_id": "matrix-vision-e3d27a75a33e410d8d54e15bcc5789fd",
+      "qid": "e3d27a75a33e410d8d54e15bcc5789fd",
+      "kind": "SEM-BSE",
+      "image": "environment/data/image.png"
+    },
+    {
+      "task_id": "matrix-vision-ecf6c51769f34485beea93316d288050",
+      "qid": "ecf6c51769f34485beea93316d288050",
+      "kind": "XRD",
+      "image": "environment/data/image.png"
+    },
+    {
+      "task_id": "matrix-vision-2a4ef1ce14554ac18ba85fb1e9e1c15b",
+      "qid": "2a4ef1ce14554ac18ba85fb1e9e1c15b",
+      "kind": "XRD",
+      "image": "environment/data/image.png"
+    },
+    {
+      "task_id": "matrix-vision-05f9cbb0edaf4755a6d5a996386e407e",
+      "qid": "05f9cbb0edaf4755a6d5a996386e407e",
+      "kind": "SEM-SE",
+      "image": "environment/data/image.png"
+    },
+    {
+      "task_id": "matrix-vision-f9ccbf111d60467db645196c88e00ed2",
+      "qid": "f9ccbf111d60467db645196c88e00ed2",
+      "kind": "SEM-BSE",
+      "image": "environment/data/image.png"
+    },
+    {
+      "task_id": "matrix-vision-a2e9fe8c50f94e25bcad5076a3b1c5cc",
+      "qid": "a2e9fe8c50f94e25bcad5076a3b1c5cc",
+      "kind": "EDS",
+      "image": "environment/data/image.png"
+    }
+  ]
+}

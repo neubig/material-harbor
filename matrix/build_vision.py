@@ -88,12 +88,6 @@ modality = "vision"
 timeout_sec = 900.0
 [verifier]
 timeout_sec = 300.0
-environment_mode = "separate"
-[verifier.environment]
-docker_image = "{VERIFIER_IMAGE}"
-network_mode = "public"
-cpus = 1
-memory_mb = 512
 [environment]
 docker_image = "{IMAGE}"
 workdir = "/tmp"

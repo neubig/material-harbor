@@ -64,11 +64,13 @@ def stage(source: Path, destination: Path, count: int | None) -> list[dict]:
         shutil.copytree(task_dir, target)
 
         dockerfile = target / "environment" / "Dockerfile"
-        if not dockerfile.exists():
+        if dockerfile.exists():
+            # Rebase the build onto the prebaked vision image so the pinned
+            # PR5460 SDK is what runs instead of Harbor's installed release.
+            _, _, rest = dockerfile.read_text().partition("\n")
+            dockerfile.write_text(f"FROM {BASE_IMAGE}\n{rest}")
+        elif BASE_IMAGE not in (target / "task.toml").read_text():
             continue
-        body = dockerfile.read_text()
-        _, _, rest = body.partition("\n")
-        dockerfile.write_text(f"FROM {BASE_IMAGE}\n{rest}")
 
         (target / "environment" / "docker-compose.yaml").write_text(
             "services:\n"
@@ -157,7 +159,12 @@ def collect_rewards(output: Path, job_name: str) -> dict:
             data = json.loads(path.read_text())
         except (OSError, json.JSONDecodeError):
             continue
-        trial_name = data.get("trial_name") or path.parent.name
+        # The job directory also holds an aggregate result.json (job id, stats)
+        # alongside one per-trial file. Only trials carry a trial_name; counting
+        # the aggregate would add a spurious null reward row.
+        if not data.get("trial_name"):
+            continue
+        trial_name = data["trial_name"]
         rewards[trial_name] = {
             "reward": ((data.get("verifier_result") or {}).get("rewards") or {}).get("reward"),
             "exception_type": (data.get("exception_info") or {}).get("exception_type"),

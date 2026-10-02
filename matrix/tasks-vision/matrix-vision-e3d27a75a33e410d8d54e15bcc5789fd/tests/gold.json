@@ -1,0 +1,8 @@
+{
+  "qid": "e3d27a75a33e410d8d54e15bcc5789fd",
+  "type": "vision",
+  "kind": "SEM-BSE",
+  "question": "{image}The paper this image came from investigates the formation of intermetallic layers at the interface of Ti2AlC/Zr-4 diffusion couples annealed at high temperatures (1100 \u00b0C, 1200 \u00b0C, and 1300 \u00b0C) for 30 hours.\n\nWhat is a caption that is suitable for this image?",
+  "answer": "Scanning electron microscopy (SEM) micrographs showing cross-sections of a diffusion interface at three different conditions labeled (a), (b), and (c). On the left side of each micrograph, a region of \"Epoxy\" is labeled. Moving right from the epoxy, multiple distinct layers are observed and labeled A, B, C, D, and E. In panel (a), layer A is very thick and exhibits several large cracks oriented both parallel and perpendicular to the layer interfaces. Panel (b) shows a layered structure where the interface between layers B and C has a scalloped morphology. In panel (c), the intermetallic layers A, B, and C appear more similar in thickness compared to the other conditions, and some horizontal cracking is visible. Beyond the intermetallic layers on the right, precipitates are visible along grain boundaries in the base material. A 100 \u03bcm scale bar is present in the lower right corner of each image.",
+  "image_path": "images/e3d27a75-a33e-410d-8d54-e15bcc5789fd.png"
+}

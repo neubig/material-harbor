@@ -1,0 +1,121 @@
+{
+  "run": "matrix-vision-n10",
+  "source": "matrix/tasks-vision",
+  "model": "openai/deepseek-v4.1-flash",
+  "base_image": "material-harbor/openhands-sdk-vision:dad4aa5",
+  "agent_import_path": "harbor_vision.vision_openhands_sdk:VisionOpenHandsSDK",
+  "sdk_commit": "dad4aa50208c27bf60cea4040b1db4dee2fd71c3",
+  "vision_supports_vision": true,
+  "max_iterations": 40,
+  "staged_tasks": 10,
+  "task_count_with_images": 10,
+  "transport": {
+    "recorded_requests": 0,
+    "list_content_messages": 0,
+    "string_content_messages": 0,
+    "image_blocks_seen": 0,
+    "image_blocks_matching_task_images": 0,
+    "task_images_available": 10,
+    "matched_task_ids": []
+  },
+  "rewards": {},
+  "scored_trials": 0,
+  "solved": 0,
+  "mean_reward": null,
+  "accuracy_percent": null,
+  "harbor_returncode": 1,
+  "harbor_stdout_tail": "\u2838  3/10 Mean: 0.000 \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501                             0:10:49 -:--:--\n",
+  "harbor_stderr_tail": " \u2502\n\u2502 \u2502    458 \u2502   \u2502   finally:                                                  \u2502 \u2502\n\u2502 \u2502    459 \u2502   \u2502   \u2502   await self._stop_agent_environment()                  \u2502 \u2502\n\u2502 \u2502    460 \u2502   \u2502   self.result.finished_at = self._now()                     \u2502 \u2502\n\u2502 \u2502 \u2771  461 \u2502   \u2502                                                             \u2502 \u2502\n\u2502 \u2502        self.paths.result_path.write_text(self.result.model_dump_json(ind \u2502 \u2502\n\u2502 \u2502        ent=4))                                                           \u2502 \u2502\n\u2502 \u2502    462 \u2502   \u2502   await self._emit(TrialEvent.END)                          \u2502 \u2502\n\u2502 \u2502    463 \u2502                                                                 \u2502 \u2502\n\u2502 \u2502    464 \u2502   def _record_exception(self, exc: BaseException) -> None:      \u2502 \u2502\n\u2502 \u2502                                                                          \u2502 \u2502\n\u2502 \u2502 /usr/lib/python3.12/pathlib.py:1049 in write_text                        \u2502 \u2502\n\u2502 \u2502                                                                          \u2502 \u2502\n\u2502 \u2502   1046 \u2502   \u2502   \u2502   raise TypeError('data must be str, not %s' %          \u2502 \u2502\n\u2502 \u2502   1047 \u2502   \u2502   \u2502   \u2502   \u2502   \u2502   \u2502   data.__class__.__name__)              \u2502 \u2502\n\u2502 \u2502   1048 \u2502   \u2502   encoding = io.text_encoding(encoding)                     \u2502 \u2502\n\u2502 \u2502 \u2771 1049 \u2502   \u2502   with self.open(mode='w', encoding=encoding,               \u2502 \u2502\n\u2502 \u2502        errors=errors, newline=newline) as f:                             \u2502 \u2502\n\u2502 \u2502   1050 \u2502   \u2502   \u2502   return f.write(data)                                  \u2502 \u2502\n\u2502 \u2502   1051 \u2502                                                                 \u2502 \u2502\n\u2502 \u2502   1052 \u2502   def iterdir(self):                                            \u2502 \u2502\n\u2502 \u2502                                                                          \u2502 \u2502\n\u2502 \u2502 /usr/lib/python3.12/pathlib.py:1015 in open                              \u2502 \u2502\n\u2502 \u2502                                                                          \u2502 \u2502\n\u2502 \u2502   1012 \u2502   \u2502   \"\"\"                                                       \u2502 \u2502\n\u2502 \u2502   1013 \u2502   \u2502   if \"b\" not in mode:                                       \u2502 \u2502\n\u2502 \u2502   1014 \u2502   \u2502   \u2502   encoding = io.text_encoding(encoding)                 \u2502 \u2502\n\u2502 \u2502 \u2771 1015 \u2502   \u2502   return io.open(self, mode, buffering, encoding, errors,   \u2502 \u2502\n\u2502 \u2502        newline)                                                          \u2502 \u2502\n\u2502 \u2502   1016 \u2502                                                                 \u2502 \u2502\n\u2502 \u2502   1017 \u2502   def read_bytes(self):                                         \u2502 \u2502\n\u2502 \u2502   1018 \u2502   \u2502   \"\"\"                                                       \u2502 \u2502\n\u2502 \u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f \u2502\n\u2502 FileNotFoundError: [Errno 2] No such file or directory:                      \u2502\n\u2502 '/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c \u2502\n\u2502 7c10/material-harbor/harbor_vision/runs/matrix-vision-n10/jobs/matrix-vision \u2502\n\u2502 -n10-1790955187/matrix-vision-02b33f9032a04930b8__kerUVhD/result.json'       \u2502\n\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f\n",
+  "staged_manifest": [
+    {
+      "task_id": "matrix-vision-02b33f9032a04930b87b8141935cb94d",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "6a5b906f21bd2484d37713c5e0b2294258d0dbcc773ce61308b9bd511eb46f98"
+        }
+      ]
+    },
+    {
+      "task_id": "matrix-vision-05f9cbb0edaf4755a6d5a996386e407e",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "bea7378ae3d3a5d204c1a352c83e52c9dc46bf1365ea89e3b8115d53d8696501"
+        }
+      ]
+    },
+    {
+      "task_id": "matrix-vision-16a537a233364fc690c990f298f673dc",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "b8436ab6a9af83e5839139dff87fda6b7e61cc23bd72a38eca3564cb7a8f9809"
+        }
+      ]
+    },
+    {
+      "task_id": "matrix-vision-2a4ef1ce14554ac18ba85fb1e9e1c15b",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "dea2dd1b130c3625bb893be85d72a35dcb8e43d78e4badfa09c60e2451fa9b2c"
+        }
+      ]
+    },
+    {
+      "task_id": "matrix-vision-a2e9fe8c50f94e25bcad5076a3b1c5cc",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "7a25d34c66d2a8ac39fe0605c60346c02c16169a8350ec6149bc27a88e847cd3"
+        }
+      ]
+    },
+    {
+      "task_id": "matrix-vision-d66d379d4bcf442cb6b97225901aadee",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "0e1caf18bfc67f6572e70e8cbd01b85533a56f231e02614896295229b3ffd7cb"
+        }
+      ]
+    },
+    {
+      "task_id": "matrix-vision-e3d27a75a33e410d8d54e15bcc5789fd",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "b227d5a90cd5e2ad11d3897c176f344ea30a8defd5d6a46030dcbe36bf9103c7"
+        }
+      ]
+    },
+    {
+      "task_id": "matrix-vision-ecf6c51769f34485beea93316d288050",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "7f587af0198e18aa035862db666270902459d25860faa7c12a5003ac3b2c6bd9"
+        }
+      ]
+    },
+    {
+      "task_id": "matrix-vision-f9ccbf111d60467db645196c88e00ed2",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "cdc19558e0344797b634340eb27ccad1d633e668070b360b3cc92a6f56ace677"
+        }
+      ]
+    },
+    {
+      "task_id": "matrix-vision-fc9be7fca16642b3916ad856e3eba520",
+      "images": [
+        {
+          "path": "environment/data/image.png",
+          "sha256": "11431d2e202072193bc08025ca78c14e546eb21ff6a8b035175e1ba4941b744c"
+        }
+      ]
+    }
+  ]
+}
