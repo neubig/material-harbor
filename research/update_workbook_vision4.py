@@ -1,10 +1,12 @@
 """Fourth workbook pass: record the completed OmniMatBench image-bearing QA run.
 
-Numbers come from the finished Harbor run ``omnimatbench-qa-vision-n10``. Seven
-of ten trials produced a judged reward (mean 0.957, worst 0.8); the other three
-produced no answer artifact at all -- two AgentTimeoutError and one
-iteration-limit exhaustion -- so they are infrastructure losses and are reported
-separately rather than folded in as zeros.
+SUPERSEDED by update_workbook_vision6.py, which corrects the headline metric.
+Numbers come from the finished Harbor run ``omnimatbench-qa-vision-n10``. Under a
+fixed budget the primary metric counts all 10 attempted trials with unanswered =
+0, giving mean 0.670 (6.7/10); the conditional mean 0.957 over the 7 answering
+trials is secondary and selection-conditioned. Two unanswered trials exhausted
+the agent iteration budget (a task failure, not an infrastructure fault); one
+raised AgentTimeoutError.
 
 The reward is weighted key-point coverage from a GPT-5.1 judge, because the
 release ships no runnable QA scorer. It is a graded proxy, so it is recorded as
@@ -33,11 +35,14 @@ YELLOW = PatternFill("solid", fgColor="FFFFEB9C")
 
 F24 = "Yes (Harbor 0.22.0; image-bearing QA adapter; 10 of 140 eligible)"
 G24 = (
+    "SUPERSEDED by update_workbook_vision6.py: fixed-budget primary mean 0.670 "
+    "over all 10 attempts; 0.957 is the selection-conditioned secondary view. "
+    "Historical text below. "
     "PROXY METRIC, not binary accuracy: mean weighted key-point coverage 0.957 "
     "over the 7/10 judged trials (worst 0.8) in Harbor run "
     "omnimatbench-qa-vision-n10, deepseek-v4.1-flash, real figures. The other 3 "
-    "trials wrote no answer at all (2 AgentTimeoutError, 1 iteration limit) and "
-    "are infrastructure losses, not zeros. Judge gpt-5.1; the release publishes "
+    "trials wrote no answer at all (2 budget-exhausted, 1 AgentTimeoutError) and "
+    "count as 0 under the fixed-budget protocol. Judge gpt-5.1; the release publishes "
     "key points but no runnable QA scorer, so the coverage judgement is this "
     "adapter's, and generic key-point wording likely flatters coverage."
 )

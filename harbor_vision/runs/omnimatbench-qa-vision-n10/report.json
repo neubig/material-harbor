@@ -1,183 +1,195 @@
 {
-  "run": "omnimatbench-qa-vision-n10",
-  "source": "omnimatbench/tasks-qa-vision",
-  "model": "openai/deepseek-v4.1-flash",
-  "base_image": "material-harbor/openhands-sdk-vision:dad4aa5",
-  "agent_import_path": "harbor_vision.vision_openhands_sdk:VisionOpenHandsSDK",
-  "sdk_commit": "dad4aa50208c27bf60cea4040b1db4dee2fd71c3",
-  "vision_supports_vision": true,
-  "max_iterations": 40,
-  "staged_tasks": 10,
-  "task_count_with_images": 10,
-  "transport": {
-    "recorded_requests": 169,
-    "list_content_messages": 1529,
-    "string_content_messages": 1879,
-    "image_blocks_seen": 768,
-    "image_blocks_matching_task_images": 10,
-    "task_images_available": 10,
-    "matched_task_ids": [
-      "omnimatbench-qa-01-021",
-      "omnimatbench-qa-01-024",
-      "omnimatbench-qa-03-001",
-      "omnimatbench-qa-06-009",
-      "omnimatbench-qa-11-016",
-      "omnimatbench-qa-13-006",
-      "omnimatbench-qa-16-011",
-      "omnimatbench-qa-16-019",
-      "omnimatbench-qa-19-016",
-      "omnimatbench-qa-19-024"
-    ]
-  },
-  "rewards": {
-    "omnimatbench-qa-03-001__xxrZdmU": {
-      "reward": 1.0,
-      "exception_type": null,
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-03-001"
-    },
-    "omnimatbench-qa-01-024__yVSqEKD": {
-      "reward": 1.0,
-      "exception_type": null,
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-01-024"
-    },
-    "omnimatbench-qa-16-011__t2r365w": {
-      "reward": 0.0,
-      "exception_type": "AgentTimeoutError",
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-16-011"
-    },
-    "omnimatbench-qa-19-016__VkGmgUs": {
-      "reward": 1.0,
-      "exception_type": null,
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-19-016"
-    },
-    "omnimatbench-qa-13-006__mg5JCWL": {
-      "reward": 0.0,
-      "exception_type": null,
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-13-006"
-    },
-    "omnimatbench-qa-11-016__3h57zTE": {
-      "reward": 0.8,
-      "exception_type": null,
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-11-016"
-    },
-    "omnimatbench-qa-01-021__kT6Spdg": {
-      "reward": 1.0,
-      "exception_type": null,
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-01-021"
-    },
-    "omnimatbench-qa-16-019__YBfcVe6": {
-      "reward": 1.0,
-      "exception_type": null,
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-16-019"
-    },
-    "omnimatbench-qa-06-009__TsPguCN": {
-      "reward": 0.0,
-      "exception_type": null,
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-06-009"
-    },
-    "omnimatbench-qa-19-024__FKm7SpZ": {
-      "reward": 0.9,
-      "exception_type": null,
-      "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-19-024"
-    }
-  },
-  "scored_trials": 10,
-  "solved": 7,
-  "mean_reward": 0.67,
-  "accuracy_percent": 67.0,
-  "harbor_returncode": 0,
-  "harbor_stdout_tail": "  10/10 Mean: 0.670 \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 1:06:04 0:00:00\n\ntasks \u2022 openhands-sdk \u2022 deepseek-v4.1-flash\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Trials \u2503 Exceptions \u2503  Mean \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502     10 \u2502          1 \u2502 0.670 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Reward \u2503 Count \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 0.0    \u2502     3 \u2502\n\u2502 1.0    \u2502     5 \u2502\n\u2502 0.8    \u2502     1 \u2502\n\u2502 0.9    \u2502     1 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Exception         \u2503 Count \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 AgentTimeoutError \u2502     1 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\nJob Info\nTotal runtime: 1h 6m 4s\nResults written to \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/jobs/omnimatbench-\nqa-vision-n10-1790960470/result.json\nInspect results by running `harbor view \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/jobs`\nShare results by running `harbor upload \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/jobs/omnimatbench-\nqa-vision-n10-1790960470`\n\n",
-  "harbor_stderr_tail": "",
-  "staged_manifest": [
-    {
-      "task_id": "omnimatbench-qa-01-021",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "e5f7730293628e9ff4e83b05d727885c9d08436d5198ffc12e1e60f848862943"
-        }
-      ]
-    },
-    {
-      "task_id": "omnimatbench-qa-01-024",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "a5050c5ee110255bc7f5e888053b82fb9a83344b1d7584de5717813862db8329"
-        }
-      ]
-    },
-    {
-      "task_id": "omnimatbench-qa-03-001",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "6406524dadb2ba5f430fc414ab341f1bfc4dddedf7b8f93af1be9cbb6e998f9f"
-        }
-      ]
-    },
-    {
-      "task_id": "omnimatbench-qa-06-009",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "9c9d0b023d90261a8b28d72feb6bfe45d0dee761f0dc6a74627b22468cacd723"
-        }
-      ]
-    },
-    {
-      "task_id": "omnimatbench-qa-11-016",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "c73c4a6fb563627b09be1d219e2939e570e4ea14a01b5416482ae5a82f371d56"
-        }
-      ]
-    },
-    {
-      "task_id": "omnimatbench-qa-13-006",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "cc3f7f2f330582ac38c42be5123dfecbac1a6593c2e80bf58a3d7c0ccc99a1f4"
-        }
-      ]
-    },
-    {
-      "task_id": "omnimatbench-qa-16-011",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "15d300c340f1eeb1c38d31215a1fa1220299811afe75f3fb20b22f39a1034ba6"
-        }
-      ]
-    },
-    {
-      "task_id": "omnimatbench-qa-16-019",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "4fb9e2770acbfb4542bd7120ed80d18930b193f273d8d3e4214acf31d0a3bebb"
-        }
-      ]
-    },
-    {
-      "task_id": "omnimatbench-qa-19-016",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "a09678221f6b883347b56be57fbde0185e361eac3ee0966adc88aae27540474b"
-        }
-      ]
-    },
-    {
-      "task_id": "omnimatbench-qa-19-024",
-      "images": [
-        {
-          "path": "environment/data/image.png",
-          "sha256": "452b7d8d3efeee8a3feafd71c26a1f26f04c151fee8b5f0b99275af710212414"
-        }
-      ]
-    }
+ "run": "omnimatbench-qa-vision-n10",
+ "source": "omnimatbench/tasks-qa-vision",
+ "model": "openai/deepseek-v4.1-flash",
+ "base_image": "material-harbor/openhands-sdk-vision:dad4aa5",
+ "agent_import_path": "harbor_vision.vision_openhands_sdk:VisionOpenHandsSDK",
+ "sdk_commit": "dad4aa50208c27bf60cea4040b1db4dee2fd71c3",
+ "vision_supports_vision": true,
+ "max_iterations": 40,
+ "staged_tasks": 10,
+ "task_count_with_images": 10,
+ "transport": {
+  "recorded_requests": 169,
+  "list_content_messages": 1529,
+  "string_content_messages": 1879,
+  "image_blocks_seen": 768,
+  "image_blocks_matching_task_images": 10,
+  "task_images_available": 10,
+  "matched_task_ids": [
+   "omnimatbench-qa-01-021",
+   "omnimatbench-qa-01-024",
+   "omnimatbench-qa-03-001",
+   "omnimatbench-qa-06-009",
+   "omnimatbench-qa-11-016",
+   "omnimatbench-qa-13-006",
+   "omnimatbench-qa-16-011",
+   "omnimatbench-qa-16-019",
+   "omnimatbench-qa-19-016",
+   "omnimatbench-qa-19-024"
   ]
+ },
+ "rewards": {
+  "omnimatbench-qa-03-001__xxrZdmU": {
+   "reward": 1.0,
+   "exception_type": null,
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-03-001"
+  },
+  "omnimatbench-qa-01-024__yVSqEKD": {
+   "reward": 1.0,
+   "exception_type": null,
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-01-024"
+  },
+  "omnimatbench-qa-16-011__t2r365w": {
+   "reward": 0.0,
+   "exception_type": "AgentTimeoutError",
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-16-011"
+  },
+  "omnimatbench-qa-19-016__VkGmgUs": {
+   "reward": 1.0,
+   "exception_type": null,
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-19-016"
+  },
+  "omnimatbench-qa-13-006__mg5JCWL": {
+   "reward": 0.0,
+   "exception_type": null,
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-13-006"
+  },
+  "omnimatbench-qa-11-016__3h57zTE": {
+   "reward": 0.8,
+   "exception_type": null,
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-11-016"
+  },
+  "omnimatbench-qa-01-021__kT6Spdg": {
+   "reward": 1.0,
+   "exception_type": null,
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-01-021"
+  },
+  "omnimatbench-qa-16-019__YBfcVe6": {
+   "reward": 1.0,
+   "exception_type": null,
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-16-019"
+  },
+  "omnimatbench-qa-06-009__TsPguCN": {
+   "reward": 0.0,
+   "exception_type": null,
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-06-009"
+  },
+  "omnimatbench-qa-19-024__FKm7SpZ": {
+   "reward": 0.9,
+   "exception_type": null,
+   "task_id": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/tasks/omnimatbench-qa-19-024"
+  }
+ },
+ "scored_trials": 10,
+ "solved": 7,
+ "mean_reward": 0.67,
+ "accuracy_percent": 67.0,
+ "harbor_returncode": 0,
+ "harbor_stdout_tail": "  10/10 Mean: 0.670 \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 1:06:04 0:00:00\n\ntasks \u2022 openhands-sdk \u2022 deepseek-v4.1-flash\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Trials \u2503 Exceptions \u2503  Mean \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502     10 \u2502          1 \u2502 0.670 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Reward \u2503 Count \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 0.0    \u2502     3 \u2502\n\u2502 1.0    \u2502     5 \u2502\n\u2502 0.8    \u2502     1 \u2502\n\u2502 0.9    \u2502     1 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u250f\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2533\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2513\n\u2503 Exception         \u2503 Count \u2503\n\u2521\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2547\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2529\n\u2502 AgentTimeoutError \u2502     1 \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\nJob Info\nTotal runtime: 1h 6m 4s\nResults written to \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/jobs/omnimatbench-\nqa-vision-n10-1790960470/result.json\nInspect results by running `harbor view \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/jobs`\nShare results by running `harbor upload \n/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/\nmaterial-harbor/harbor_vision/runs/omnimatbench-qa-vision-n10/jobs/omnimatbench-\nqa-vision-n10-1790960470`\n\n",
+ "harbor_stderr_tail": "",
+ "staged_manifest": [
+  {
+   "task_id": "omnimatbench-qa-01-021",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "e5f7730293628e9ff4e83b05d727885c9d08436d5198ffc12e1e60f848862943"
+    }
+   ]
+  },
+  {
+   "task_id": "omnimatbench-qa-01-024",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "a5050c5ee110255bc7f5e888053b82fb9a83344b1d7584de5717813862db8329"
+    }
+   ]
+  },
+  {
+   "task_id": "omnimatbench-qa-03-001",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "6406524dadb2ba5f430fc414ab341f1bfc4dddedf7b8f93af1be9cbb6e998f9f"
+    }
+   ]
+  },
+  {
+   "task_id": "omnimatbench-qa-06-009",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "9c9d0b023d90261a8b28d72feb6bfe45d0dee761f0dc6a74627b22468cacd723"
+    }
+   ]
+  },
+  {
+   "task_id": "omnimatbench-qa-11-016",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "c73c4a6fb563627b09be1d219e2939e570e4ea14a01b5416482ae5a82f371d56"
+    }
+   ]
+  },
+  {
+   "task_id": "omnimatbench-qa-13-006",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "cc3f7f2f330582ac38c42be5123dfecbac1a6593c2e80bf58a3d7c0ccc99a1f4"
+    }
+   ]
+  },
+  {
+   "task_id": "omnimatbench-qa-16-011",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "15d300c340f1eeb1c38d31215a1fa1220299811afe75f3fb20b22f39a1034ba6"
+    }
+   ]
+  },
+  {
+   "task_id": "omnimatbench-qa-16-019",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "4fb9e2770acbfb4542bd7120ed80d18930b193f273d8d3e4214acf31d0a3bebb"
+    }
+   ]
+  },
+  {
+   "task_id": "omnimatbench-qa-19-016",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "a09678221f6b883347b56be57fbde0185e361eac3ee0966adc88aae27540474b"
+    }
+   ]
+  },
+  {
+   "task_id": "omnimatbench-qa-19-024",
+   "images": [
+    {
+     "path": "environment/data/image.png",
+     "sha256": "452b7d8d3efeee8a3feafd71c26a1f26f04c151fee8b5f0b99275af710212414"
+    }
+   ]
+  }
+ ],
+ "metric_protocol": "fixed_budget_all_attempted",
+ "primary_mean_reward_all_attempted": 0.67,
+ "primary_accuracy_percent_all_attempted": 67.0,
+ "conditional_mean_reward_answered_only": 0.957143,
+ "conditional_answered_trials": 7,
+ "unanswered_trials": 3,
+ "unanswered_budget_exhausted_no_exception": 2,
+ "unanswered_harness_exception": 1,
+ "harness_exceptions": {
+  "omnimatbench-qa-16-011__t2r365w": "AgentTimeoutError"
+ },
+ "metric_note": "Primary metric counts all 10 attempted trials with unanswered=0, per fixed-budget protocol. The conditional mean over the 7 answering trials is secondary and selection-conditioned. Two unanswered trials exhausted the agent iteration budget (a task failure, not infrastructure); one raised AgentTimeoutError."
 }
