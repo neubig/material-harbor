@@ -182,6 +182,24 @@ def collect_rewards(output: Path, job_name: str) -> dict:
     return rewards
 
 
+def summarize_rewards(rewards: dict, expected: int) -> dict:
+    scored = [r['reward'] for r in rewards.values()
+              if isinstance(r.get('reward'), (int, float))]
+    attempted = len(rewards)
+    complete = attempted == expected and attempted > 0
+    binary = all(value in (0, 1) for value in scored)
+    return {
+        'attempted_trials': attempted,
+        'unobserved_tasks': max(0, expected - attempted),
+        'scored_trials': len(scored),
+        'missing_rewards': attempted - len(scored),
+        'solved': sum(value == 1 for value in scored),
+        'mean_reward': sum(scored) / attempted if attempted else None,
+        'accuracy_percent': 100 * sum(scored) / attempted if complete and binary else None,
+        'metric': 'binary' if binary else 'graded_proxy_not_accuracy',
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=Path, required=True)
@@ -244,11 +262,6 @@ def main() -> None:
 
     transport = analyze_transport(run_dir / "proxy", staged)
     rewards = collect_rewards(run_dir / "jobs", job_name)
-    scored = [
-        r["reward"] for r in rewards.values() if isinstance(r.get("reward"), (int, float))
-    ]
-    solved = sum(1 for r in scored if r and r > 0)
-
     report = {
         "run": args.name,
         "source": str(args.source),
@@ -262,10 +275,7 @@ def main() -> None:
         "task_count_with_images": sum(1 for t in staged if t["images"]),
         "transport": transport,
         "rewards": rewards,
-        "scored_trials": len(scored),
-        "solved": solved,
-        "mean_reward": (sum(scored) / len(scored)) if scored else None,
-        "accuracy_percent": (100.0 * sum(scored) / len(scored)) if scored else None,
+        **summarize_rewards(rewards, len(staged)),
         "harbor_returncode": result.returncode,
         "harbor_stdout_tail": result.stdout[-3000:],
         "harbor_stderr_tail": result.stderr[-3000:],

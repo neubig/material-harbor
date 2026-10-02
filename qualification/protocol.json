@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "authored_by": "OpenHands AI agent on behalf of user",
+  "scope": "rows19-25",
+  "structural_rule": "Any definitive gate failure stops costly remaining gates; unknown is not failure. Evidence-backed unavailable external contract is blocker.",
+  "accuracy": {
+    "model": "openai/deepseek-v4.1-flash",
+    "image_policy": "All image-bearing inputs must reach model; byte hashes audited; no no-image controls.",
+    "metric": "Only declared native binary verifier outcomes; never reconstructed graded proxies.",
+    "denominator": "Every attempted task; missing answers and agent budget exhaustion zero. Infrastructure failures retained and disclosed, never excluded. Unattempted tasks remain explicit unresolved.",
+    "pilot": "Existing n10 diagnostic only; new cohort independent runs, no reuse. Existing pilot overlap disclosed.",
+    "looks": [
+      100,
+      300,
+      "full public nonduplicate population"
+    ],
+    "inference": "At most 3 looks: two-sided Wilson 98.333333% interval (Bonferroni 0.05/3), paper-cluster bootstrap same confidence where paper groups available, 100000 replicates seed20260814. Require agreement; missing paper IDs invalidate population-independent confidence claim.",
+    "pass": "Entire CI strictly within (0.10,0.70)",
+    "fail": "Entire CI <=0.10 or >=0.70. Full population point estimate outside open band fails finite-population gate.",
+    "stop": "Stop on structural/verifier fail or conclusive accuracy interval; otherwise expand only at prespecified looks. At full population disclose finite benchmark vs stochastic agent uncertainty.",
+    "budget": {
+      "concurrency": 4,
+      "max_iterations": 40,
+      "agent_timeout_seconds": 1800,
+      "max_wall_seconds_per_100": 50400
+    },
+    "matcha_selection": "Existing frozen manifest100 sha256 below; first100 fixed before these runs. Subsequent deterministic sha256 qualification-v1:task_id ordering among unselected IDs.",
+    "matcha_manifest_sha256": "ba9295c92252de529c69a14ec070aa82946475452d1e0d384d001fd400754712",
+    "csm_selection": "Lowest SHA256 qualification-v1:file_name across pinned metadata; freeze IDs before execution."
+  },
+  "verifier_audit": {
+    "separation": "Parser contract audit is not scientific gold audit. Independent adjudication must use figure/source evidence, blinded to gold before decision, with correct/incorrect classes and adversarial perturbations.",
+    "rates": "FP=accepted independently wrong/independently wrong; FN=rejected independently correct/independently correct. Each strictly <15%; uncertainty and ambiguous labels disclosed.",
+    "unavailable_expertise": "Do not fabricate scientific labels or infer verifier rates from solver accuracy."
+  },
+  "binary_contracts": "MATRIX/Omni/BioReason-Pro must have defensible native binary semantics before accuracy run; absence of official graded-to-binary mapping cannot be repaired by relabeling proxy."
+}
