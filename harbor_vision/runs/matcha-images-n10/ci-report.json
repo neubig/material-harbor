@@ -1,0 +1,178 @@
+{
+  "bootstrap_ci": [
+    0.5,
+    1.0
+  ],
+  "bootstrap_classification": "inconclusive",
+  "classification": "inconclusive",
+  "config_excluded_fields": [
+    "job_id",
+    "task",
+    "trial_name",
+    "trials_dir"
+  ],
+  "denominators": {
+    "expected": 10,
+    "observed_binary": 10,
+    "reward_failures": 2,
+    "successes": 8,
+    "unresolved": 0
+  },
+  "expected_agent_info_sha256": "c6f819d8cc5acd793585979415beeb0850a4c5917b15827562696ae556fb0d11",
+  "expected_config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+  "expected_papers": null,
+  "failure_counts": {},
+  "manifest_sha256": "c701afc5faffdda52a36316a444bbf5e79189bd7dd8290b8ee91cc2a31ed9577",
+  "observed_only_point_estimate": 0.8,
+  "point_estimate": 0.8,
+  "protocol": {
+    "classification_guard": "Wilson agreement",
+    "confidence": 0.95,
+    "method": "empirical percentile",
+    "numpy_version": "2.5.2",
+    "quantile_method": "linear",
+    "resamples": 100000,
+    "rng": "PCG64",
+    "sampling_plan": "Fixed 10 tasks from the deterministic published selection for matcha-images-n10; selection frozen before outcomes were observed.",
+    "scope": "iid",
+    "seed": 20260915,
+    "target_open_interval": [
+      0.1,
+      0.7
+    ]
+  },
+  "trials": [
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "4a88cf2b4f29bc1d556402638011a77a61f0d15752802f1d5a016fae3613227f",
+      "issues": [],
+      "paper_id": "matcha-0043-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0043-00__PLJcUrr/result.json",
+      "result_sha256": "66806684870507df0412da2732e0dc30f90dc1daa702361ed3a71332f173bc02",
+      "reward": 1,
+      "task_checksum": "5169046630d672ec87f29502701b2189de595c29fe8ff8e5e233b7d24b73aa64",
+      "task_id": "matcha-0043-00",
+      "trial_id": "d1778d4f-7743-4a93-92dc-56f101cb90dc"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "d8fc8e8b008d47f326bfb789d9965a0c53108ab860109ec4b9b4285f05a0b128",
+      "issues": [],
+      "paper_id": "matcha-0165-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0165-00__6UcnHgA/result.json",
+      "result_sha256": "616ed2a931e369eebdcdf00eab617771bc9108051c1453e00ed8b2c8eec17f1e",
+      "reward": 1,
+      "task_checksum": "0f5d0e946e71043ce9f4c0c603e17dfae9b110d98e2d4811bc80a66eed3a9d7a",
+      "task_id": "matcha-0165-00",
+      "trial_id": "efbb554a-325d-449e-92bc-ecd527c56452"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "27cdb9df5ab8e4c7027b2d39f1844885e13a67e1f354233b621e39ca97d3571f",
+      "issues": [],
+      "paper_id": "matcha-0180-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0180-00__Mbo9tVK/result.json",
+      "result_sha256": "445d2e1e2cbbe19f2d77f9f4f6bc7fbe4069fbb3709861cdc6a77a49195f2782",
+      "reward": 1,
+      "task_checksum": "dbc8984dd48bbfc3365ce1fafc4b1cbd901335d96a3d870902dcb381e16aa30e",
+      "task_id": "matcha-0180-00",
+      "trial_id": "63b9b94b-070b-4168-952f-c691669400b9"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "05edfc6183bc0671b0fc6f2f1488cc8df96a337a1b1a51ac77feb0bddb15fde5",
+      "issues": [],
+      "paper_id": "matcha-0222-01",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0222-01__4oCiwKg/result.json",
+      "result_sha256": "4e9ba7c56ec03f3e7e3e86caac8e59d5b02d94a32fa84920bca0e3939db98674",
+      "reward": 1,
+      "task_checksum": "adea5554a69c3712b62fd4a09325ee1c7e4ac6f8231a9deece575a9bd80561ab",
+      "task_id": "matcha-0222-01",
+      "trial_id": "d891af6a-633f-48c9-b493-a7871a63507e"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "bf68dc381033e4ad090e892569dc13c3fc277b55fb59f1ba45cb0fe03ae05698",
+      "issues": [],
+      "paper_id": "matcha-0349-01",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0349-01__t4C7irn/result.json",
+      "result_sha256": "fcc474b20f361374eee5f6b9097b48d84f67c430193ca215f3381cb611afbdb3",
+      "reward": 1,
+      "task_checksum": "3bb79a8c35a5fb5350e062c7df1f1bc6dade11807f35e8af10198eefb0f7f965",
+      "task_id": "matcha-0349-01",
+      "trial_id": "cc0526c2-a067-485b-8eba-664d107f295f"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "de7a7366caab891c30b23d2a2d1c54d3a563b936f33e04ff2ccf70e5db28e4d9",
+      "issues": [],
+      "paper_id": "matcha-0378-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0378-00__WQvmDKe/result.json",
+      "result_sha256": "dcfba0a5696986fdeff1e94bc10a06e8d7d39335499ac33968b462b6e117d2b1",
+      "reward": 1,
+      "task_checksum": "78a9556f034c29f5e5e5939fe42b0de5ce4124bd593b8d4d65eadd336e63e56c",
+      "task_id": "matcha-0378-00",
+      "trial_id": "dd7f6883-6622-491f-9cee-35f08d35e956"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "01f25667adbdc2b4cf39822c78301aeb62e2a9ee7cc4dc007d71958051510c04",
+      "issues": [],
+      "paper_id": "matcha-0430-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0430-00__e3FSYGa/result.json",
+      "result_sha256": "9733810738eda92bf82bd5ae19e9cc864f7c585be8edb74778eb133a5c54ff35",
+      "reward": 1,
+      "task_checksum": "e7798b3457749a8b272a943f95cc9ccf4d7249357e5c39fc7134e1efba6b4059",
+      "task_id": "matcha-0430-00",
+      "trial_id": "f103ff0e-f8a1-491e-8a67-1c01c68c7bc9"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "01eb60585f3b1eeedf69c51e477eb73e91afc6028d1420ee5559190746ce8b57",
+      "issues": [],
+      "paper_id": "matcha-0877-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0877-00__DbYVQvR/result.json",
+      "result_sha256": "894a258c5d1e501352e5f84d779eb6cb7f474cba7b6d850b02b82157090a9570",
+      "reward": 1,
+      "task_checksum": "a8b272c292750cee8f00dc08cb8eaec10db0a258af64d911f97fe53d82129b69",
+      "task_id": "matcha-0877-00",
+      "trial_id": "f695209e-1656-458c-a55c-52850a42da48"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "8121d0a68dad9aa7a96db9f9ef5c192f92b148c2caba8cbbd30771255a8b2e0c",
+      "issues": [],
+      "paper_id": "matcha-1070-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-1070-00__SH3iAYw/result.json",
+      "result_sha256": "73ce210d2fec4fae0cecdf3f121ef5b51137d571e3a5fd89367d24980feac5f7",
+      "reward": 0,
+      "task_checksum": "b62602269c316b1f8f9f1d73eccbb133f321a7ea25b0ab7f497eaddbd90c1394",
+      "task_id": "matcha-1070-00",
+      "trial_id": "e4919851-5c65-4627-a162-aadca635c188"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "9976c02095a17ff8e919e99b01aeb741ebd5745d4e7793ab923ea491de845cae",
+      "issues": [],
+      "paper_id": "matcha-1146-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-1146-00__h4U665W/result.json",
+      "result_sha256": "0673afba5fd7aace7775b38e0ea64adc0b3d2024f6bf1de3912149e2562d9edc",
+      "reward": 0,
+      "task_checksum": "995b1dc0e36d5e6bec50089a1bb15c4710b07c92eccea0d9b395c1d649d6cf29",
+      "task_id": "matcha-1146-00",
+      "trial_id": "a45dd74f-5e0b-43c8-94fa-2e2f7ff2ffaa"
+    }
+  ],
+  "unknown_outcome_bounds": [
+    0.8,
+    0.8
+  ],
+  "warnings": [
+    "Fixed sample size only; repeated outcome-dependent stopping invalidates nominal coverage.",
+    "Empirical bootstrap reflects sampled tasks/papers, not model-run randomness or unrepresented populations."
+  ],
+  "wilson_ci": [
+    0.49016247153664183,
+    0.9433178485456247
+  ]
+}

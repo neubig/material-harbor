@@ -1,0 +1,144 @@
+{
+  "sampling_plan": "Fixed 10 tasks from the deterministic published selection for matcha-images-n10; selection frozen before outcomes were observed.",
+  "expected_config": {
+    "task": {
+      "path": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/tasks/matcha-0043-00",
+      "git_url": null,
+      "git_commit_id": null,
+      "name": null,
+      "ref": null,
+      "overwrite": false,
+      "download_dir": null,
+      "source": "tasks"
+    },
+    "trial_name": "matcha-0043-00__PLJcUrr",
+    "trials_dir": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/matcha-images-n10/jobs/matcha-images-n10-1790953915",
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent_timeout_multiplier": 2.0,
+    "verifier_timeout_multiplier": null,
+    "agent_setup_timeout_multiplier": null,
+    "environment_build_timeout_multiplier": null,
+    "agent": {
+      "name": "harbor_vision.vision_openhands_sdk:VisionOpenHandsSDK",
+      "import_path": null,
+      "model_name": "openai/deepseek-v4.1-flash",
+      "n_concurrent": null,
+      "concurrency_group": null,
+      "skills": [],
+      "override_timeout_sec": null,
+      "override_setup_timeout_sec": null,
+      "max_timeout_sec": null,
+      "resume_trajectory": false,
+      "load_trajectory": null,
+      "extra_allowed_hosts": [],
+      "kwargs": {
+        "vision_supports_vision": true,
+        "load_skills": false,
+        "max_iterations": 40
+      },
+      "env": {
+        "LLM_BASE_URL": "http://llm-proxy-host:18110/v1"
+      },
+      "mcp_servers": []
+    },
+    "user_agent": null,
+    "environment": {
+      "type": "docker",
+      "import_path": null,
+      "force_build": false,
+      "delete": true,
+      "cpu_enforcement_policy": "auto",
+      "memory_enforcement_policy": "auto",
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "override_gpus": null,
+      "override_tpu": null,
+      "mounts": null,
+      "extra_docker_compose": [],
+      "kwargs": {},
+      "extra_allowed_hosts": []
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "disable": false
+    },
+    "artifacts": [],
+    "extra_instruction_paths": [],
+    "extra_instructions": [],
+    "job_id": "9e25d22d-b3e4-40a7-bf5b-75d1d480d8eb",
+    "source_trial": null
+  },
+  "expected_agent_info": {
+    "name": "openhands-sdk",
+    "version": "1.50.1",
+    "model_info": {
+      "name": "deepseek-v4.1-flash",
+      "provider": "openai"
+    }
+  },
+  "tasks": [
+    {
+      "task_id": "matcha-0043-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0043-00__PLJcUrr/result.json",
+      "paper_id": "matcha-0043-00",
+      "validation_issues": []
+    },
+    {
+      "task_id": "matcha-0165-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0165-00__6UcnHgA/result.json",
+      "paper_id": "matcha-0165-00",
+      "validation_issues": []
+    },
+    {
+      "task_id": "matcha-0180-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0180-00__Mbo9tVK/result.json",
+      "paper_id": "matcha-0180-00",
+      "validation_issues": []
+    },
+    {
+      "task_id": "matcha-0222-01",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0222-01__4oCiwKg/result.json",
+      "paper_id": "matcha-0222-01",
+      "validation_issues": []
+    },
+    {
+      "task_id": "matcha-0349-01",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0349-01__t4C7irn/result.json",
+      "paper_id": "matcha-0349-01",
+      "validation_issues": []
+    },
+    {
+      "task_id": "matcha-0378-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0378-00__WQvmDKe/result.json",
+      "paper_id": "matcha-0378-00",
+      "validation_issues": []
+    },
+    {
+      "task_id": "matcha-0430-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0430-00__e3FSYGa/result.json",
+      "paper_id": "matcha-0430-00",
+      "validation_issues": []
+    },
+    {
+      "task_id": "matcha-0877-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-0877-00__DbYVQvR/result.json",
+      "paper_id": "matcha-0877-00",
+      "validation_issues": []
+    },
+    {
+      "task_id": "matcha-1070-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-1070-00__SH3iAYw/result.json",
+      "paper_id": "matcha-1070-00",
+      "validation_issues": []
+    },
+    {
+      "task_id": "matcha-1146-00",
+      "result_path": "jobs/matcha-images-n10-1790953915/matcha-1146-00__h4U665W/result.json",
+      "paper_id": "matcha-1146-00",
+      "validation_issues": []
+    }
+  ]
+}

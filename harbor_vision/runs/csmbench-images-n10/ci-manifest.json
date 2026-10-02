@@ -1,0 +1,144 @@
+{
+  "sampling_plan": "Fixed 10 tasks from the deterministic published selection for csmbench-images-n10; selection frozen before outcomes were observed.",
+  "expected_config": {
+    "task": {
+      "path": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/tasks/csmbench-mcqa-0023",
+      "git_url": null,
+      "git_commit_id": null,
+      "name": null,
+      "ref": null,
+      "overwrite": false,
+      "download_dir": null,
+      "source": "tasks"
+    },
+    "trial_name": "csmbench-mcqa-0023__MEy3q7R",
+    "trials_dir": "/mnt/statusquo_block_storage/workspace/project/5230a85e0b064255bed14ae6291c7c10/material-harbor/harbor_vision/runs/csmbench-images-n10/jobs/csmbench-images-n10-1790952520",
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent_timeout_multiplier": 2.0,
+    "verifier_timeout_multiplier": null,
+    "agent_setup_timeout_multiplier": null,
+    "environment_build_timeout_multiplier": null,
+    "agent": {
+      "name": "harbor_vision.vision_openhands_sdk:VisionOpenHandsSDK",
+      "import_path": null,
+      "model_name": "openai/deepseek-v4.1-flash",
+      "n_concurrent": null,
+      "concurrency_group": null,
+      "skills": [],
+      "override_timeout_sec": null,
+      "override_setup_timeout_sec": null,
+      "max_timeout_sec": null,
+      "resume_trajectory": false,
+      "load_trajectory": null,
+      "extra_allowed_hosts": [],
+      "kwargs": {
+        "vision_supports_vision": true,
+        "load_skills": false,
+        "max_iterations": 40
+      },
+      "env": {
+        "LLM_BASE_URL": "http://llm-proxy-host:18110/v1"
+      },
+      "mcp_servers": []
+    },
+    "user_agent": null,
+    "environment": {
+      "type": "docker",
+      "import_path": null,
+      "force_build": false,
+      "delete": true,
+      "cpu_enforcement_policy": "auto",
+      "memory_enforcement_policy": "auto",
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "override_gpus": null,
+      "override_tpu": null,
+      "mounts": null,
+      "extra_docker_compose": [],
+      "kwargs": {},
+      "extra_allowed_hosts": []
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "disable": false
+    },
+    "artifacts": [],
+    "extra_instruction_paths": [],
+    "extra_instructions": [],
+    "job_id": "853e1404-cf25-47c9-ad2c-d38b677c1818",
+    "source_trial": null
+  },
+  "expected_agent_info": {
+    "name": "openhands-sdk",
+    "version": "1.50.1",
+    "model_info": {
+      "name": "deepseek-v4.1-flash",
+      "provider": "openai"
+    }
+  },
+  "tasks": [
+    {
+      "task_id": "csmbench-mcqa-0023",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0023__MEy3q7R/result.json",
+      "paper_id": "csmbench-mcqa-0023",
+      "validation_issues": []
+    },
+    {
+      "task_id": "csmbench-mcqa-0060",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0060__tjGGuAV/result.json",
+      "paper_id": "csmbench-mcqa-0060",
+      "validation_issues": []
+    },
+    {
+      "task_id": "csmbench-mcqa-0128",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0128__dS4EFm2/result.json",
+      "paper_id": "csmbench-mcqa-0128",
+      "validation_issues": []
+    },
+    {
+      "task_id": "csmbench-mcqa-0163",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0163__4WLFkzz/result.json",
+      "paper_id": "csmbench-mcqa-0163",
+      "validation_issues": []
+    },
+    {
+      "task_id": "csmbench-mcqa-0261",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0261__oJApBxc/result.json",
+      "paper_id": "csmbench-mcqa-0261",
+      "validation_issues": []
+    },
+    {
+      "task_id": "csmbench-mcqa-0680",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0680__VwJmNC2/result.json",
+      "paper_id": "csmbench-mcqa-0680",
+      "validation_issues": []
+    },
+    {
+      "task_id": "csmbench-mcqa-0797",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0797__buxJ5SR/result.json",
+      "paper_id": "csmbench-mcqa-0797",
+      "validation_issues": []
+    },
+    {
+      "task_id": "csmbench-mcqa-0809",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0809__UCHtTBi/result.json",
+      "paper_id": "csmbench-mcqa-0809",
+      "validation_issues": []
+    },
+    {
+      "task_id": "csmbench-mcqa-0817",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0817__eg7sCBs/result.json",
+      "paper_id": "csmbench-mcqa-0817",
+      "validation_issues": []
+    },
+    {
+      "task_id": "csmbench-mcqa-0828",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0828__nw6u5bP/result.json",
+      "paper_id": "csmbench-mcqa-0828",
+      "validation_issues": []
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "bootstrap_ci": [
+    0.5,
+    1.0
+  ],
+  "bootstrap_classification": "inconclusive",
+  "classification": "inconclusive",
+  "config_excluded_fields": [
+    "job_id",
+    "task",
+    "trial_name",
+    "trials_dir"
+  ],
+  "denominators": {
+    "expected": 10,
+    "observed_binary": 10,
+    "reward_failures": 2,
+    "successes": 8,
+    "unresolved": 0
+  },
+  "expected_agent_info_sha256": "c6f819d8cc5acd793585979415beeb0850a4c5917b15827562696ae556fb0d11",
+  "expected_config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+  "expected_papers": null,
+  "failure_counts": {},
+  "manifest_sha256": "d69bafba1d9a7c5bd5cf6c8d11807edab58376a5fe90e7bc61a3a67832bc63cc",
+  "observed_only_point_estimate": 0.8,
+  "point_estimate": 0.8,
+  "protocol": {
+    "classification_guard": "Wilson agreement",
+    "confidence": 0.95,
+    "method": "empirical percentile",
+    "numpy_version": "2.5.2",
+    "quantile_method": "linear",
+    "resamples": 100000,
+    "rng": "PCG64",
+    "sampling_plan": "Fixed 10 tasks from the deterministic published selection for csmbench-images-n10; selection frozen before outcomes were observed.",
+    "scope": "iid",
+    "seed": 20260915,
+    "target_open_interval": [
+      0.1,
+      0.7
+    ]
+  },
+  "trials": [
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "e3a0481096bae7d2b8f895f0821705236acb4886a0035b5524bf60048255f254",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0023",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0023__MEy3q7R/result.json",
+      "result_sha256": "03469c33792359bc00e22a1a741542fc04d78f90003ef1fcebe8240a096054a8",
+      "reward": 0,
+      "task_checksum": "c845c2d87e48acd5f5817e2ac4526c3e13ff9228ca7678ea3efe33b2abba8bbd",
+      "task_id": "csmbench-mcqa-0023",
+      "trial_id": "dafe8b20-6dbb-4a02-bb25-105906681c6a"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "2f02788a5e56c2a05489671f0ac24fddcd8a43eeb4c8ab17e05a04c398ea5fb9",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0060",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0060__tjGGuAV/result.json",
+      "result_sha256": "470c96b71066287c8b4b2fe1364df1df1ec9cdf1c875d055e5fa3878466d3ad4",
+      "reward": 1,
+      "task_checksum": "b857a76d3b661aa911586577d7ad2451890e6722dd3899533315e7b96945ec42",
+      "task_id": "csmbench-mcqa-0060",
+      "trial_id": "06a7a10e-449f-4717-a532-4b993bb51811"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "28509efedf7ee1cd6117ea73fb7c30ccdcee3f334e366424b27ab2a8e18a03a9",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0128",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0128__dS4EFm2/result.json",
+      "result_sha256": "76b39d69f1f3da89cba65b212d4ccc43b6bdad3bae2ca7e1b4b2ac54d807fbdd",
+      "reward": 1,
+      "task_checksum": "69ace902debc0ea4234e67d916932a2b47b3fd1ab52974a81664c5df0e1adb3e",
+      "task_id": "csmbench-mcqa-0128",
+      "trial_id": "7507a690-dd44-46b1-98af-38a086a2dada"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "8f2bc05a0dc8177d49c87c21dd07f2e5f087b27c1d974730d5ec77a674d339c0",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0163",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0163__4WLFkzz/result.json",
+      "result_sha256": "a4de571078b158d490a8c8f21ab886a6c29f463aea1fd92329bfb4cabf7b41c1",
+      "reward": 1,
+      "task_checksum": "f9a288dc397ff64dc8d7429bef9f07c10c74a270ba3704999b2a830b91daa213",
+      "task_id": "csmbench-mcqa-0163",
+      "trial_id": "4b0fb59c-eb94-4797-baf2-ab936798ed7e"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "7016d51f4bcb6864e422c76f12d702a9df263440e069d61f9fa1cd445a4a6fc7",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0261",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0261__oJApBxc/result.json",
+      "result_sha256": "4af1a53c894437f140d059c7478e55c11595a25290afbda167c52829a3e2ad0a",
+      "reward": 1,
+      "task_checksum": "228f7646440939083f7921f9ae276f3a7287e8302f8c8f4a18900eea6cff9152",
+      "task_id": "csmbench-mcqa-0261",
+      "trial_id": "aa7b0ab0-cda0-421e-9ae0-5a8934e6caf4"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "5cc2730e36d6a8a3542e57476a163b9328c01038c8d88d7a6d2d7658bf4ea340",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0680",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0680__VwJmNC2/result.json",
+      "result_sha256": "726a9ca8c50c7f98656316627e835d833c795e3ec5a5dcd901c4560b7916935c",
+      "reward": 1,
+      "task_checksum": "c04041d1d6bc6d864f933ab2a1762700f61e479ad8b4fad519de3026ed83c1d7",
+      "task_id": "csmbench-mcqa-0680",
+      "trial_id": "65245798-7c69-4de9-8871-0bcb9b9503c2"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "fb0e35298a0a89950a5700081555b2fa4615546d2a8e15db02259fb5b00e606d",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0797",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0797__buxJ5SR/result.json",
+      "result_sha256": "cf6c154a71e2c6067a1e7dab45069386ac0d1dabaf24b913a12d737264bb001b",
+      "reward": 0,
+      "task_checksum": "2f09026f9c46a23cf47b617aaa7c310d6d6e932d2afed32f7ac91ad1a9534591",
+      "task_id": "csmbench-mcqa-0797",
+      "trial_id": "e31d4365-4ae1-489b-a95c-ef71420eb9d0"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "772ea8dc8b7f15a18f2fcea8f01ae39812f3bd917111a5ef0e62a387f3c86386",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0809",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0809__UCHtTBi/result.json",
+      "result_sha256": "4190cd9c4f11e3d12c571726c4b90b9bfbc77fdcf3a46f95feee5229e4d30c78",
+      "reward": 1,
+      "task_checksum": "10a3bf0572721bfb9f46db4e84736507b0ff33c3ab0f761ed879585267264b32",
+      "task_id": "csmbench-mcqa-0809",
+      "trial_id": "fef61000-8c73-42b1-b8c0-037cdb568d30"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "9f83a58ebefdd31899d8b18b3b896367248c39b7e033b4c1e7419a1cfa9a625c",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0817",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0817__eg7sCBs/result.json",
+      "result_sha256": "4ce4e2059eff8c333f9b8d1344f82eb2e4333241d6ca4bf366e9fc4561a6759b",
+      "reward": 1,
+      "task_checksum": "b6a3524a1ed0e4476a8ed5e1daa8ffe322fb7ef457297bc9291a41174e6528b0",
+      "task_id": "csmbench-mcqa-0817",
+      "trial_id": "73d389da-3170-4e5f-a424-91e3a7be17d9"
+    },
+    {
+      "config_sha256": "89b33a11f47992ed6b19d4e86e504575b026ff31d36df0863289c71953020b5f",
+      "full_config_sha256": "1da7522c3c5f0926591bb2c96644855b184760f773ab622a40de988f8b23a7df",
+      "issues": [],
+      "paper_id": "csmbench-mcqa-0828",
+      "result_path": "jobs/csmbench-images-n10-1790952520/csmbench-mcqa-0828__nw6u5bP/result.json",
+      "result_sha256": "0be4540fe436d5c115a4c0f280605311b58c852564f45ffb8a3443d3ef3eacbd",
+      "reward": 1,
+      "task_checksum": "05e03ac39e4c32d730dc37766232e177aa796e3873d13f553e733a3f2d090ad3",
+      "task_id": "csmbench-mcqa-0828",
+      "trial_id": "6f583b3b-8300-4c2c-b084-da62073cecc9"
+    }
+  ],
+  "unknown_outcome_bounds": [
+    0.8,
+    0.8
+  ],
+  "warnings": [
+    "Fixed sample size only; repeated outcome-dependent stopping invalidates nominal coverage.",
+    "Empirical bootstrap reflects sampled tasks/papers, not model-run randomness or unrepresented populations."
+  ],
+  "wilson_ci": [
+    0.49016247153664183,
+    0.9433178485456247
+  ]
+}
