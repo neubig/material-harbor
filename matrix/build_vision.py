@@ -69,6 +69,13 @@ def build(output: Path, count: int, source: Path) -> dict:
         tests.mkdir(parents=True)
 
         shutil.copyfile(source_image, environment / "data" / "image.png")
+        # The figure must be baked into the agent image. Declaring
+        # environment.docker_image alone does not copy environment/data into the
+        # container, so /app/data/image.png would be missing and the agent could
+        # only answer from the prompt text.
+        (environment / "Dockerfile").write_text(
+            f"FROM {IMAGE}\nWORKDIR /app\nCOPY data /app/data\n"
+        )
         question = row["question"].replace("{image}", "").strip()
         (task / "instruction.md").write_text(
             f"The image for this question is /app/data/image.png.\n\n"
@@ -89,7 +96,6 @@ timeout_sec = 900.0
 [verifier]
 timeout_sec = 300.0
 [environment]
-docker_image = "{IMAGE}"
 workdir = "/tmp"
 build_timeout_sec = 600.0
 cpus = 2

@@ -115,6 +115,13 @@ def start_proxy(log_dir: Path, seconds: float) -> subprocess.Popen:
         text=True,
     )
     time.sleep(2)
+    if process.poll() is not None:
+        # Without this the port never binds, every agent gets a connection
+        # error, and the run reports a plausible-looking 0% instead of failing.
+        raise SystemExit(
+            "recording proxy exited during startup: "
+            + (process.stdout.read() if process.stdout else "")
+        )
     return process
 
 

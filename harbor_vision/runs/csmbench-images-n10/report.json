@@ -30,11 +30,6 @@
     ]
   },
   "rewards": {
-    "csmbench-images-n10-1790952520": {
-      "reward": null,
-      "exception_type": null,
-      "task_id": null
-    },
     "csmbench-mcqa-0680__VwJmNC2": {
       "reward": 1.0,
       "exception_type": null,
