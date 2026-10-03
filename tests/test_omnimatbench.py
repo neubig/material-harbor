@@ -182,6 +182,12 @@ class OmniMatBenchVisionTests(unittest.TestCase):
         self.assertEqual(transport['image_enabled_attempts'], 100)
         self.assertTrue(all(task['image_use_proven'] for task in transport['tasks']))
         self.assertFalse(transport['rerun_required'])
+        scientific = json.loads((ROOT.parent / 'qualification/omnimat-scientific-label-audit-report.json').read_text())
+        self.assertEqual(scientific['gate'], 'fail_false_negative_rate')
+        self.assertEqual(scientific['native_v1']['false_negative']['errors'], 6)
+        self.assertEqual(scientific['adapter_v2']['false_negative']['errors'], 6)
+        self.assertGreater(scientific['adapter_v2']['false_negative']['wilson_95'][0], 0.15)
+        self.assertEqual(scientific['adapter_v2']['false_positive']['errors'], 0)
 
 
 

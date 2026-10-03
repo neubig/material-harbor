@@ -1,7 +1,7 @@
 {
   "version": 1,
   "candidate": "OmniMatBench CAL image-bearing subset",
-  "overall": "blocked_external_independent_scientific_adjudication",
+  "overall": "fail_verifier_false_negative_gate",
   "gates": {
     "public_tasks": {
       "verdict": "pass",
@@ -22,23 +22,18 @@
       "adapter_v2_secondary": "All 100 retained attempts regraded; 26/100 under both native-v1 and adapter-v2. Native-v1 remains the precommitted headline."
     },
     "verifier_false_positive": {
-      "verdict": "blocked",
+      "verdict": "not_needed_after_fn_failure",
       "native_v1_parser_audit": "0/693 artificial invalid cases; Wilson 95% upper 0.551%.",
       "adapter_v2_parser_audit": "0/693 artificial invalid cases; Wilson 95% upper 0.551%.",
-      "limitation": "Parser-equivalence cases are conditional on the released references and do not independently establish that scientifically wrong source answers are rejected."
+      "scientific_wrong_probes": "0/15 accepted under each comparator; point estimate 0%, Wilson 95% upper 20.39%, so this small scientific sample alone does not prove FP <15%."
     },
     "verifier_false_negative": {
-      "verdict": "blocked",
-      "native_v1_parser_audit": "22/181 = 12.155%; Wilson 95% CI [8.165%, 17.717%], so the generalized rate is not conclusively below 15%.",
-      "adapter_v2_parser_audit": "0/181; Wilson 95% upper 2.078%, after post-cohort Decimal-equivalence repair.",
-      "limitation": "The repair resolves measured parser equivalence only. It does not establish scientific correctness, unit equivalence, or ambiguity of the released task labels."
+      "verdict": "fail",
+      "native_v1_parser_audit": "22/181 = 12.155%; Wilson 95% CI [8.165%, 17.717%].",
+      "adapter_v2_parser_audit": "0/181 artificial numeric-equivalence probes after post-cohort repair.",
+      "independent_scientific_audit": "Blind derivations were committed before labels were opened. Both native-v1 and adapter-v2 rejected 6/15 transparent calculations/direct source readings: 40.0%, Wilson 95% CI [19.824%, 64.253%], conclusively above 15%."
     }
   },
-  "external_blocker": {
-    "required": "Independent, gold-blinded materials-science adjudication using each source figure/problem evidence, with independently correct and independently wrong answers and uncertainty handling.",
-    "unavailable": "No qualified independent human materials-science adjudicator is available in this execution environment. The user expressly disallows treating scientific model decisions as established truth, and the precommitted protocol forbids fabricating labels or inferring rates from solver accuracy.",
-    "why_not_avoidable_by_more_compute": "Additional LLM calls would remain model opinions rather than independent scientific ground truth. Synthetic parser mutations have already been exhausted over the full 142-task population and cannot answer the source-label question.",
-    "resolution": "A qualified human panel must adjudicate a pre-frozen blinded sample large enough that separate FP and FN uncertainty supports each strict <15% claim."
-  },
+  "stop_reason": "Definitive independent scientific false-negative gate failure; further FP expansion is unnecessary under the precommitted stop rule.",
   "no_pass_claim": true
 }

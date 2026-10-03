@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "manifest": "omnimat-scientific-audit-manifest.json",
+  "blind_derivations": "omnimat-scientific-audit-blind-derivations.json",
+  "selection": "15 high-confidence transparent calculations/direct source readings within the precommitted 30; 14 unresolved/insufficient-input items and one explicitly source-unanswerable item are not forced.",
+  "independence": "Derived answers and methods were committed before released final_answer_list values were opened. No solver outputs or judge/model votes are used as truth.",
+  "native_v1": {
+    "false_positive": {
+      "errors": 0,
+      "total": 15,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.20388330103584854
+      ]
+    },
+    "false_negative": {
+      "errors": 6,
+      "total": 15,
+      "rate": 0.4,
+      "wilson_95": [
+        0.19824496141341585,
+        0.6425316987937539
+      ]
+    }
+  },
+  "adapter_v2": {
+    "false_positive": {
+      "errors": 0,
+      "total": 15,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.20388330103584854
+      ]
+    },
+    "false_negative": {
+      "errors": 6,
+      "total": 15,
+      "rate": 0.4,
+      "wilson_95": [
+        0.19824496141341585,
+        0.6425316987937539
+      ]
+    }
+  },
+  "gate": "fail_false_negative_rate",
+  "gate_reason": "Both comparator versions reject 6/15 independently derived scientifically correct answers (40.0%; Wilson 95% lower bound 19.8%), conclusively above the strict 15% ceiling. Numeric representation canonicalization does not repair qualitative equivalence, scientifically equivalent scenario labels, or source-label calculation errors.",
+  "rows": [
+    {
+      "task_id": "cal/18/019",
+      "blind_basis": "Direct mechanics definition and supplied Figure 12.3/12.4.",
+      "independently_derived_answer": [
+        "A particle with sufficient inertia departs from a curving gas streamline and collides with the collector.",
+        "A particle following a streamline contacts the collector because its finite radius brings it within one particle radius of the surface."
+      ],
+      "released_reference": [
+        "Inertial impaction occurs when suspended particles in a gas stream are unable to follow the curved streamlines around an obstacle because of their inertia; instead, they continue on a straighter path and collide with the obstacle, where they may be collected.",
+        "Interception occurs when a particle follows the gas streamline more closely, but still touches and is captured by the obstacle because the particle has a finite size. In interception, collection occurs due to geometric contact rather than because the particle departs strongly from the streamline."
+      ],
+      "native_v1_correct_probe_reward": 0,
+      "adapter_v2_correct_probe_reward": 0,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/08/024",
+      "blind_basis": "Supplied worked table gives sum(dF/dP)FL=12548.20 kN^2 m; divide by AE=1100 mm^2*200 GPa with unit conversion.",
+      "independently_derived_answer": [
+        57.0
+      ],
+      "released_reference": [
+        "57.0"
+      ],
+      "native_v1_correct_probe_reward": 1,
+      "adapter_v2_correct_probe_reward": 1,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/18/032",
+      "blind_basis": "Arithmetic mean of 25 listed velocities times 8 ft^2 duct area.",
+      "independently_derived_answer": [
+        189.8
+      ],
+      "released_reference": [
+        "189.8"
+      ],
+      "native_v1_correct_probe_reward": 1,
+      "adapter_v2_correct_probe_reward": 1,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/19/003",
+      "blind_basis": "rho/sigma mass index: composite density 1.625 g/cm3 and longitudinal rule-of-mixtures strength 1.9675 GPa; its mass ratio is about 0.0477 and five-times unit price still gives lower total price.",
+      "independently_derived_answer": [
+        "carbon/epoxy composite rod",
+        "carbon/epoxy composite rod"
+      ],
+      "released_reference": [
+        "carbon/epoxy composite rod",
+        "carbon/epoxy composite rod"
+      ],
+      "native_v1_correct_probe_reward": 1,
+      "adapter_v2_correct_probe_reward": 1,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/13/007",
+      "blind_basis": "Under transformed pure shear, set |tau cos2theta|/F6=|tau sin2theta|/F2c; F2c=133.33 MPa and F6=100 MPa, giving theta=0.5 atan(4/3).",
+      "independently_derived_answer": [
+        26.6
+      ],
+      "released_reference": [
+        "26.6"
+      ],
+      "native_v1_correct_probe_reward": 1,
+      "adapter_v2_correct_probe_reward": 1,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/14/015",
+      "blind_basis": "Use labeled A=(0.00474,326 MPa), B=(0.0252,565 MPa), E=326/0.00474 GPa, and elastic unloading slope E.",
+      "independently_derived_answer": [
+        [
+          68.8
+        ],
+        [
+          "0.01698"
+        ],
+        [
+          150.71,
+          150.0
+        ],
+        [
+          153.78,
+          152.55
+        ]
+      ],
+      "released_reference": [
+        [
+          "68.8"
+        ],
+        [
+          "0.01698"
+        ],
+        [
+          "150.71",
+          "150.00"
+        ],
+        [
+          "153.78",
+          "152.55"
+        ]
+      ],
+      "native_v1_correct_probe_reward": 1,
+      "adapter_v2_correct_probe_reward": 1,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/07/012",
+      "blind_basis": "Hot-side convection+radiation gives 7092.37 W/m2, conduction gives cold surface 368.478 K; solve 60(Ts-Tinf)+sigma(Ts^4-Tinf^4)=7092.37 with emissivity/view factor one.",
+      "independently_derived_answer": [
+        263.2
+      ],
+      "released_reference": [
+        "263.3"
+      ],
+      "native_v1_correct_probe_reward": 0,
+      "adapter_v2_correct_probe_reward": 0,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/13/009",
+      "blind_basis": "0-degree transverse compliance is -nu12/E1=-0.00193 GPa^-1; transformed 45-degree Sbar12 is about -0.00810 GPa^-1, so the 0-degree section contracts less.",
+      "independently_derived_answer": [
+        "scenario c"
+      ],
+      "released_reference": [
+        "c"
+      ],
+      "native_v1_correct_probe_reward": 0,
+      "adapter_v2_correct_probe_reward": 0,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/01/011",
+      "blind_basis": "Process 2 scheduled holds sum 90+90+40+240+120=580 minutes; unspecified cooling transitions cannot be timed.",
+      "independently_derived_answer": [
+        580,
+        "9 hours 40 minutes"
+      ],
+      "released_reference": [
+        "580",
+        "9 hours 40 minutes"
+      ],
+      "native_v1_correct_probe_reward": 1,
+      "adapter_v2_correct_probe_reward": 1,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/05/018",
+      "blind_basis": "Solve Ramberg-Osgood epsilon=sigma/E+(sigma/H')^(1/n') at 0.035, then Masing range 0.03=DeltaSigma/E+2(DeltaSigma/(2H'))^(1/n').",
+      "independently_derived_answer": [
+        663,
+        -490
+      ],
+      "released_reference": [
+        "663",
+        "-490"
+      ],
+      "native_v1_correct_probe_reward": 1,
+      "adapter_v2_correct_probe_reward": 1,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/06/012",
+      "blind_basis": "Using table values in units of 10^3 cm^-1, CD+AB-EF gives 2.01/(sin6+cos6)+1.95/(sin56+cos56)-4.46/(sin32.5+cos32.5)=0.003.",
+      "independently_derived_answer": [
+        [
+          "It checks dislocation conservation at a triple junction directly from measured densities and misorientations."
+        ],
+        [
+          "0.003"
+        ]
+      ],
+      "released_reference": [
+        [
+          "it avoids the need to measure the misorientation across each grain boundary"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "native_v1_correct_probe_reward": 0,
+      "adapter_v2_correct_probe_reward": 0,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/06/003",
+      "blind_basis": "Direct read at 1620 C from the supplied dedicated CO/CO2 equilibrium nomogram.",
+      "independently_derived_answer": [
+        "5.56e6"
+      ],
+      "released_reference": [
+        "5.56 \\times 10^6"
+      ],
+      "native_v1_correct_probe_reward": 1,
+      "adapter_v2_correct_probe_reward": 1,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/05/016",
+      "blind_basis": "Direct arithmetic mean, Bessel-corrected sample standard deviation, and 100*s/mean over all 100 supplied strengths.",
+      "independently_derived_answer": [
+        418.6,
+        45.3,
+        10.8
+      ],
+      "released_reference": [
+        "418.6",
+        "45.3",
+        "10.8"
+      ],
+      "native_v1_correct_probe_reward": 1,
+      "adapter_v2_correct_probe_reward": 1,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/02/025",
+      "blind_basis": "Hess law for C8H8+10O2->8CO2+4H2O(l), using supplied combustion and tabulated formation enthalpies.",
+      "independently_derived_answer": [
+        146
+      ],
+      "released_reference": [
+        "141"
+      ],
+      "native_v1_correct_probe_reward": 0,
+      "adapter_v2_correct_probe_reward": 0,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    },
+    {
+      "task_id": "cal/01/017",
+      "blind_basis": "Volume ratio=0.82*1.12^2=1.028608; isotropic equivalent linear strain=cuberoot(volume ratio)-1; stress=200 GPa times strain.",
+      "independently_derived_answer": [
+        2.86,
+        0.94,
+        "1.889e9"
+      ],
+      "released_reference": [
+        "2.87",
+        "0.96",
+        "1.92 \\times 10^9"
+      ],
+      "native_v1_correct_probe_reward": 0,
+      "adapter_v2_correct_probe_reward": 0,
+      "native_v1_wrong_probe_reward": 0,
+      "adapter_v2_wrong_probe_reward": 0
+    }
+  ]
+}
