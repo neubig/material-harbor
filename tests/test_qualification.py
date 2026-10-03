@@ -157,6 +157,16 @@ class QualificationTests(unittest.TestCase):
         self.assertLess(report["false_positive"]["wilson95"][0], 0.15)
         self.assertGreater(report["false_positive"]["wilson95"][1], 0.15)
         self.assertEqual(report["overall"], "unresolved")
+
+    def test_matcha_cumulative_cross_provider_fp_failure_is_bounded(self):
+        report = json.loads((ROOT / "qualification/matcha-scientific-audit-cumulative300-report.json").read_text())
+        self.assertEqual(report["false_positive"]["denominator"], 300)
+        self.assertEqual(report["false_positive"]["corroborated_errors"], 61)
+        self.assertGreater(report["false_positive"]["wilson97_5_two_look"][0], 0.15)
+        self.assertGreater(report["false_positive"]["paper_group_bootstrap97_5"][0], 0.15)
+        self.assertEqual(report["overall"], "fail_verifier_false_positive_gate")
+
+
     def test_bioreason_accuracy_uses_all_scheduled_attempts(self):
         report = json.loads((ROOT / "qualification/bioreason-go-accuracy-report.json").read_text())
         self.assertEqual(report["scheduled"], 100)

@@ -1,7 +1,7 @@
 {
-  "version": 5,
+  "version": 6,
   "candidate": "MATCHA image-bearing subset",
-  "overall": "unresolved_accuracy_expansion_resumed",
+  "overall": "fail_verifier_false_positive_gate",
   "gates": {
     "public_nonduplicate_tasks": {
       "verdict": "pass",
@@ -16,19 +16,19 @@
       "evidence": "All 100 frozen tasks were scheduled through Harbor with real images; pilot transport recordings matched staged images byte-for-byte."
     },
     "deepseek_binary_accuracy": {
-      "verdict": "unresolved_expansion_resumed",
-      "evidence": "70/100 full-credit binary successes over all scheduled attempts; no missing rewards. Precommitted 98.333% Wilson and paper-cluster intervals cross the strict 70% ceiling. The expansion resumed using only the 183 not-yet-completed tasks; all 17 completed expansion attempts are retained and never rerun."
+      "verdict": "unresolved_superseded_by_verifier_failure",
+      "evidence": "Primary n100 is 70/100 at the excluded strict upper boundary with simultaneous intervals crossing70%. Of frozen additional200, 161 completed (111 successes) before the precommitted stop rule; 39 unrun tasks are not replaced, and no incomplete-expansion point estimate is used."
     },
     "verifier_false_positive": {
-      "verdict": "unresolved",
-      "evidence": "Blind GPT-5.1/Claude corroboration supports 20/100 conservative sampled-task FPs. Wilson 95% CI [13.34%, 28.88%] and paper-group bootstrap [13%, 28%] cross 15%; no pass or fail claim."
+      "verdict": "fail",
+      "evidence": "Blind GPT-5.1/Claude corroboration supports 61/300 sampled-task FPs. Two-look Wilson97.5% CI [15.63%,26.01%] and paper-group bootstrap97.5% CI [15.23%,25.74%] both have lower bounds strictly above15%."
     },
     "verifier_false_negative": {
-      "verdict": "unresolved",
-      "evidence": "The judges agree on a specific rejected non-gold option for 17/100 sampled tasks. Wilson 95% CI [10.89%, 25.55%] and paper-group bootstrap [10%, 25%] cross 15%; no pass or fail claim."
+      "verdict": "unresolved_not_needed",
+      "evidence": "Exact specific-option cross-provider agreement on 50/300. Two-look Wilson97.5% CI [12.40%,22.03%] and paper-group bootstrap [11.96%,21.64%] cross15%."
     }
   },
-  "audit_independence": "Claude Sonnet 4.6 reviewed all 28 primary flags blind to gold, GPT outcomes and verifier outcomes. It corroborated 17 exact alternate options, independently excluded gold on three additional tasks, selected gold on seven primary flags, and left one unresolved.",
-  "stop_reason": null,
+  "audit_independence": "Both providers reviewed actual images blind to gold, each other, verifier outcomes and DeepSeek answers. GPT audited all300; Claude audited all96 GPT flags. Thirty-one primary flags were contradicted by Claude, eleven agreed gold was invalid but disagreed on the alternate, and four were unresolved; all count conservatively.",
+  "stop_reason": "Verifier FP lower bounds are strictly above15% under both precommitted two-look Wilson and paper-group cluster inference; stop remaining costly accuracy tasks.",
   "no_pass_claim": true
 }

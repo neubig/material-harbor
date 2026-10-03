@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Replay MATRIX verification in task containers over preserved Harbor artifacts."""
+import argparse
 import hashlib
 import json
 import math
@@ -86,12 +87,21 @@ def replay(item):
 
 
 def main():
+    global RUN, TASKS
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--run", default=str(RUN.relative_to(ROOT)))
+    parser.add_argument("--tasks", default=str(TASKS.relative_to(ROOT)))
+    parser.add_argument("--output", default="qualification/matrix-accuracy-report.json")
+    args = parser.parse_args()
+    RUN = ROOT / args.run
+    TASKS = ROOT / args.tasks
     if "LLM_API_KEY" not in os.environ:
         raise SystemExit("LLM_API_KEY is required")
-    expected = [row["task_id"] for row in json.loads((ROOT / "qualification/matrix-binary-vision-manifest.json").read_text())["tasks"]]
+    expected = sorted(path.name for path in TASKS.iterdir() if path.is_dir())
+    total = len(expected)
     trials = find_trials()
     if set(trials) != set(expected):
-        raise SystemExit(f"run incomplete: {len(trials)} of {len(expected)} scheduled results")
+        raise SystemExit(f"run incomplete: {len(trials)} of {total} scheduled results")
     with ThreadPoolExecutor(max_workers=6) as pool:
         rows = list(pool.map(replay, [(task_id, trials[task_id]) for task_id in expected]))
     rows.sort(key=lambda row: row["task_id"])
@@ -103,21 +113,21 @@ def main():
     report = {"version": 2, "protocol": "matrix-full-credit-binary-v1",
               "execution": "Each retained answer was verified by /tests/test.sh inside its task Dockerfile image. The agent was not rerun. Missing artifacts and verifier infrastructure failures count as zero.",
               "source_run": str(RUN.relative_to(ROOT)), "solver_model": "openai/deepseek-v4.1-flash",
-              "verifier_model": MODEL, "scheduled": 100, "attempted": 100,
+              "verifier_model": MODEL, "scheduled": total, "attempted": total,
               "retained_answer_artifacts": sum(row["status"] != "missing_answer" for row in rows),
-              "successes": successes, "failures_including_missing": 100 - successes,
-              "binary_accuracy": successes / 100, "binary_mapping": "Only exact rubric score 1 succeeds.",
+              "successes": successes, "failures_including_missing": total - successes,
+              "binary_accuracy": successes / total, "binary_mapping": "Only exact rubric score 1 succeeds.",
               "fractional_score_distribution": fractional,
               "missing_or_infrastructure_counted_zero": sum(row["status"] != "judged" for row in rows),
-              "confidence": CONFIDENCE, "wilson": wilson(successes, 100),
+              "confidence": CONFIDENCE, "wilson": wilson(successes, total),
               "container_provenance": {"dockerfile_sha256": sha(next(TASKS.glob("*/environment/Dockerfile"))),
                                        "test_sh_sha256": sha(next(TASKS.glob("*/tests/test.sh"))),
                                        "verify_binary_sha256": sha(next(TASKS.glob("*/tests/verify_binary.py"))),
                                        "network": "host access enabled only for authorized GPT-5.1 judge endpoint"},
-              "inference_caveat": "This n=100 sample has no released paper/source grouping. MATRIX's frozen additional 140 remains required if the simultaneous interval crosses a boundary.",
+              "inference_caveat": "MATRIX provides no released paper/source grouping. The primary100 and frozen additional140 together form the complete predeclared bounded 240-image population.",
               "fidelity_caveat": "MATRIX publishes five vision kinds and a loader, but no vision evaluation rubric. This is a derived adapter rubric, not an official or reconstructed-official rubric.",
               "rows": rows}
-    (ROOT / "qualification/matrix-accuracy-report.json").write_text(json.dumps(report, indent=2) + "\n")
+    (ROOT / args.output).write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps({key: value for key, value in report.items() if key != "rows"}, indent=2))
 
 
