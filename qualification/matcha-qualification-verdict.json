@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "candidate": "MATCHA image-bearing subset",
+  "overall": "fail_deepseek_binary_accuracy_gate",
+  "gates": {
+    "public_nonduplicate_tasks": {
+      "verdict": "pass",
+      "evidence": "Frozen 100-task image cohort from released MATCHA tasks."
+    },
+    "relevant_foundation_model": {
+      "verdict": "pass",
+      "evidence": "Named relevant model evidence retained in qualification research."
+    },
+    "harbor": {
+      "verdict": "pass",
+      "evidence": "100 image tasks executed through Harbor across interruption-safe disjoint runs."
+    },
+    "deepseek_binary_accuracy": {
+      "verdict": "fail",
+      "evidence": "70/100 = 70.0%, exactly outside the strict >10% and <70% gate."
+    },
+    "verifier_fp_fn": {
+      "verdict": "not_needed_after_accuracy_failure"
+    }
+  },
+  "stop_reason": "Definitive strict accuracy-gate failure; later costly verifier audit stopped by protocol."
+}

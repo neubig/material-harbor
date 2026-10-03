@@ -100,6 +100,18 @@ class QualificationTests(unittest.TestCase):
         self.assertFalse(completed & remaining)
         self.assertEqual(completed | remaining, original)
 
+
+    def test_matcha_final_accuracy_uses_all_scheduled_attempts(self):
+        report = json.loads((ROOT / "qualification/matcha-accuracy-report.json").read_text())
+        self.assertEqual(report["scheduled"], 100)
+        self.assertEqual(report["attempted"], 100)
+        self.assertEqual(report["successes"], 70)
+        self.assertEqual(report["failures_including_missing"], 30)
+        self.assertEqual(report["missing_rewards"], 0)
+        self.assertEqual(report["accuracy"], 0.70)
+        self.assertEqual(report["strict_gate"]["verdict"], "fail")
+        self.assertEqual(len({row["task_id"] for row in report["rows"]}), 100)
+
     def test_matcha_n300_expansion_is_frozen_and_disjoint(self):
         plan = json.loads((ROOT / "qualification/matcha-n300-manifest.json").read_text())
         first = plan["first100_task_ids"]

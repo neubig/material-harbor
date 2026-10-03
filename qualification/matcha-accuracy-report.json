@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "protocol": "matcha-vision-binary-v1",
+  "model": "openai/deepseek-v4.1-flash",
+  "scheduled": 100,
+  "attempted": 100,
+  "successes": 70,
+  "failures_including_missing": 30,
+  "missing_rewards": 0,
+  "accuracy": 0.7,
+  "accuracy_percent": 70,
+  "wilson_95": [
+    0.6041514536665333,
+    0.7810511470506722
+  ],
+  "strict_gate": {
+    "required": "accuracy > 0.10 and accuracy < 0.70",
+    "verdict": "fail"
+  },
+  "reason": "70/100 is exactly the excluded upper boundary, not strictly below 70%; no confidence-interval convention can make the observed point estimate satisfy the strict inequality.",
+  "interruption_accounting": "The original 23 completed attempts were retained unchanged; only the disjoint frozen 77-task remainder ran. No task was rerun. Missing rewards, if any, would count as failures in the scheduled denominator.",
+  "cohort_expansion_not_run": "The pre-frozen additional 200 tasks are unnecessary after a definitive strict-boundary failure and were not evaluated.",
+  "rows": [
+    {
+      "task_id": "matcha-0011-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0011-00__oiwtDkW/result.json"
+    },
+    {
+      "task_id": "matcha-0043-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0043-00__ZdBbGTi/result.json"
+    },
+    {
+      "task_id": "matcha-0045-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0045-00__QXGPJMy/result.json"
+    },
+    {
+      "task_id": "matcha-0050-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0050-00__ZjaboG7/result.json"
+    },
+    {
+      "task_id": "matcha-0054-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0054-00__ZoAGeSm/result.json"
+    },
+    {
+      "task_id": "matcha-0073-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0073-00__Dxc3kSq/result.json"
+    },
+    {
+      "task_id": "matcha-0076-01",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0076-01__fpaRYsw/result.json"
+    },
+    {
+      "task_id": "matcha-0091-01",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0091-01__CNhwyBs/result.json"
+    },
+    {
+      "task_id": "matcha-0112-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0112-00__ubzLo9g/result.json"
+    },
+    {
+      "task_id": "matcha-0115-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0115-00__jZuoHnC/result.json"
+    },
+    {
+      "task_id": "matcha-0127-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0127-00__MLjNQDA/result.json"
+    },
+    {
+      "task_id": "matcha-0129-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0129-00__dQUigYK/result.json"
+    },
+    {
+      "task_id": "matcha-0141-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0141-00__U5XKUUQ/result.json"
+    },
+    {
+      "task_id": "matcha-0152-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0152-00__gh4pwRQ/result.json"
+    },
+    {
+      "task_id": "matcha-0153-01",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0153-01__uPe2LoG/result.json"
+    },
+    {
+      "task_id": "matcha-0158-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0158-00__xsxGS2Z/result.json"
+    },
+    {
+      "task_id": "matcha-0162-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0162-00__svPf6BT/result.json"
+    },
+    {
+      "task_id": "matcha-0165-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0165-00__YaBAVca/result.json"
+    },
+    {
+      "task_id": "matcha-0180-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0180-00__j72egn4/result.json"
+    },
+    {
+      "task_id": "matcha-0199-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0199-00__npKE2iD/result.json"
+    },
+    {
+      "task_id": "matcha-0222-01",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0222-01__hYec4cd/result.json"
+    },
+    {
+      "task_id": "matcha-0247-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0247-00__4NFKkZy/result.json"
+    },
+    {
+      "task_id": "matcha-0254-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0254-00__rZ25PiN/result.json"
+    },
+    {
+      "task_id": "matcha-0259-01",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0259-01__b7fLkVh/result.json"
+    },
+    {
+      "task_id": "matcha-0260-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0260-00__zAXHygJ/result.json"
+    },
+    {
+      "task_id": "matcha-0273-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0273-00__s9gina2/result.json"
+    },
+    {
+      "task_id": "matcha-0306-02",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0306-02__rfi5bLn/result.json"
+    },
+    {
+      "task_id": "matcha-0316-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0316-00__hnALAL3/result.json"
+    },
+    {
+      "task_id": "matcha-0331-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0331-00__ieFBoDg/result.json"
+    },
+    {
+      "task_id": "matcha-0340-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0340-00__a637uyQ/result.json"
+    },
+    {
+      "task_id": "matcha-0344-01",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0344-01__rHdC42E/result.json"
+    },
+    {
+      "task_id": "matcha-0345-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0345-00__GDGHRwD/result.json"
+    },
+    {
+      "task_id": "matcha-0346-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0346-00__ujsb9ms/result.json"
+    },
+    {
+      "task_id": "matcha-0349-01",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0349-01__UfwgCsK/result.json"
+    },
+    {
+      "task_id": "matcha-0356-01",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0356-01__GxLW7J5/result.json"
+    },
+    {
+      "task_id": "matcha-0358-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0358-00__JrCcgvs/result.json"
+    },
+    {
+      "task_id": "matcha-0360-01",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0360-01__q7dVUp6/result.json"
+    },
+    {
+      "task_id": "matcha-0378-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0378-00__ZuzCQov/result.json"
+    },
+    {
+      "task_id": "matcha-0413-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0413-00__TU59GSR/result.json"
+    },
+    {
+      "task_id": "matcha-0416-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0416-00__oJfwUGK/result.json"
+    },
+    {
+      "task_id": "matcha-0421-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0421-00__3Uh2rNq/result.json"
+    },
+    {
+      "task_id": "matcha-0430-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0430-00__tyQLbEy/result.json"
+    },
+    {
+      "task_id": "matcha-0435-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0435-00__DaoeSN7/result.json"
+    },
+    {
+      "task_id": "matcha-0450-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0450-00__B45m35A/result.json"
+    },
+    {
+      "task_id": "matcha-0454-01",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0454-01__kPSoeB6/result.json"
+    },
+    {
+      "task_id": "matcha-0488-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0488-00__LpZnzvj/result.json"
+    },
+    {
+      "task_id": "matcha-0501-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0501-00__Z8x3tSb/result.json"
+    },
+    {
+      "task_id": "matcha-0525-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0525-00__zdE6cfK/result.json"
+    },
+    {
+      "task_id": "matcha-0531-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0531-00__6LSKt4Y/result.json"
+    },
+    {
+      "task_id": "matcha-0538-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0538-00__uaFxSP3/result.json"
+    },
+    {
+      "task_id": "matcha-0556-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0556-00__9TaKyzU/result.json"
+    },
+    {
+      "task_id": "matcha-0563-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0563-00__rikV76H/result.json"
+    },
+    {
+      "task_id": "matcha-0567-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0567-00__QTZBPQG/result.json"
+    },
+    {
+      "task_id": "matcha-0572-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0572-00__x3fYiUX/result.json"
+    },
+    {
+      "task_id": "matcha-0580-01",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0580-01__s6TDtB5/result.json"
+    },
+    {
+      "task_id": "matcha-0591-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0591-00__LUtC6se/result.json"
+    },
+    {
+      "task_id": "matcha-0592-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0592-00__PPBUmjj/result.json"
+    },
+    {
+      "task_id": "matcha-0593-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0593-00__SfAk52T/result.json"
+    },
+    {
+      "task_id": "matcha-0626-02",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0626-02__zdCoMmT/result.json"
+    },
+    {
+      "task_id": "matcha-0655-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0655-00__CDWkhYy/result.json"
+    },
+    {
+      "task_id": "matcha-0659-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0659-00__MrbHRLR/result.json"
+    },
+    {
+      "task_id": "matcha-0660-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0660-00__vVMGkg9/result.json"
+    },
+    {
+      "task_id": "matcha-0702-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0702-00__aUythax/result.json"
+    },
+    {
+      "task_id": "matcha-0711-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0711-00__sp5zqj6/result.json"
+    },
+    {
+      "task_id": "matcha-0718-01",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0718-01__aEh5VFY/result.json"
+    },
+    {
+      "task_id": "matcha-0723-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0723-00__7BbWL3n/result.json"
+    },
+    {
+      "task_id": "matcha-0795-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0795-00__Y4EkqCi/result.json"
+    },
+    {
+      "task_id": "matcha-0854-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0854-00__Gg8eLdN/result.json"
+    },
+    {
+      "task_id": "matcha-0859-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0859-00__RAJuz8P/result.json"
+    },
+    {
+      "task_id": "matcha-0877-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0877-00__EqJv2if/result.json"
+    },
+    {
+      "task_id": "matcha-0891-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0891-00__53cbHzG/result.json"
+    },
+    {
+      "task_id": "matcha-0901-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0901-00__j84oaqG/result.json"
+    },
+    {
+      "task_id": "matcha-0910-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0910-00__BctmruZ/result.json"
+    },
+    {
+      "task_id": "matcha-0943-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0943-00__NGdkCso/result.json"
+    },
+    {
+      "task_id": "matcha-0967-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0967-00__Y87hgmF/result.json"
+    },
+    {
+      "task_id": "matcha-0970-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0970-00__TxQyRX8/result.json"
+    },
+    {
+      "task_id": "matcha-0993-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-0993-00__xfniBXC/result.json"
+    },
+    {
+      "task_id": "matcha-0997-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-0997-00__gS92T5D/result.json"
+    },
+    {
+      "task_id": "matcha-1008-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1008-00__SaJ9gPd/result.json"
+    },
+    {
+      "task_id": "matcha-1027-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1027-00__6wdK5Zy/result.json"
+    },
+    {
+      "task_id": "matcha-1048-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-1048-00__2TWjbtL/result.json"
+    },
+    {
+      "task_id": "matcha-1061-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-1061-00__u6zgQsA/result.json"
+    },
+    {
+      "task_id": "matcha-1062-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1062-00__BHYgAmS/result.json"
+    },
+    {
+      "task_id": "matcha-1070-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1070-00__pioQZsx/result.json"
+    },
+    {
+      "task_id": "matcha-1071-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1071-00__r74CjqE/result.json"
+    },
+    {
+      "task_id": "matcha-1088-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1088-00__2ToDAS6/result.json"
+    },
+    {
+      "task_id": "matcha-1091-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1091-00__oZfVw86/result.json"
+    },
+    {
+      "task_id": "matcha-1115-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1115-00__bacz9Sw/result.json"
+    },
+    {
+      "task_id": "matcha-1133-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1133-00__wowffiS/result.json"
+    },
+    {
+      "task_id": "matcha-1146-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1146-00__95tSkZH/result.json"
+    },
+    {
+      "task_id": "matcha-1160-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1160-00__oupATB9/result.json"
+    },
+    {
+      "task_id": "matcha-1163-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1163-00__EJWpdQK/result.json"
+    },
+    {
+      "task_id": "matcha-1170-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-1170-00__33Quknf/result.json"
+    },
+    {
+      "task_id": "matcha-1190-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-1190-00__p9HXVyT/result.json"
+    },
+    {
+      "task_id": "matcha-1197-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1197-00__wCcPibA/result.json"
+    },
+    {
+      "task_id": "matcha-1198-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1198-00__UenPQct/result.json"
+    },
+    {
+      "task_id": "matcha-1203-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1203-00__ciQXvQV/result.json"
+    },
+    {
+      "task_id": "matcha-1227-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1227-00__shG22Pg/result.json"
+    },
+    {
+      "task_id": "matcha-1254-00",
+      "reward": 0.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100-resume77/jobs/matcha-qualification-n100-resume77-1791047162/matcha-1254-00__MmAEX4H/result.json"
+    },
+    {
+      "task_id": "matcha-1255-00",
+      "reward": 1.0,
+      "result": "harbor_vision/runs/matcha-qualification-n100/jobs/matcha-qualification-n100-1790966948/matcha-1255-00__85ZQvUH/result.json"
+    }
+  ]
+}
