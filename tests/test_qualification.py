@@ -100,6 +100,19 @@ class QualificationTests(unittest.TestCase):
         self.assertFalse(completed & remaining)
         self.assertEqual(completed | remaining, original)
 
+    def test_matcha_n300_expansion_is_frozen_and_disjoint(self):
+        plan = json.loads((ROOT / "qualification/matcha-n300-manifest.json").read_text())
+        first = plan["first100_task_ids"]
+        additional = plan["next200_task_ids"]
+        cumulative = plan["cumulative_n300_task_ids"]
+        self.assertEqual(first, json.loads((ROOT / "matcha/manifest100.json").read_text())["task_ids"])
+        self.assertEqual(len(first), 100)
+        self.assertEqual(len(additional), 200)
+        self.assertFalse(set(first) & set(additional))
+        self.assertEqual(cumulative, first + additional)
+        self.assertEqual(len(set(cumulative)), 300)
+
+
 
 if __name__ == "__main__":
     unittest.main()

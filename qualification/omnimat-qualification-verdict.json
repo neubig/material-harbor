@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "candidate": "OmniMatBench CAL image-bearing subset",
+  "overall": "blocked_external_independent_scientific_adjudication",
+  "gates": {
+    "public_tasks": {
+      "verdict": "pass",
+      "evidence": "142 released image-bearing CAL tasks; frozen qualification cohort contains 100 distinct task IDs and image files."
+    },
+    "relevant_domain_foundation_model": {
+      "verdict": "pass_with_task_fit_caveat",
+      "evidence": "Official Intern-S1 sources establish a named materials-relevant multimodal scientific foundation model and report MatBench 75.0.",
+      "caveat": "No primary source establishes Intern-S1 fit or improvement on OmniMatBench CAL tasks."
+    },
+    "harbor": {
+      "verdict": "pass",
+      "evidence": "100/100 frozen attempts ran in Harbor 0.22.0. Ninety-eight requests matched the complete original image bytes; two trials viewed deterministic source-image crops whose reconstructed PNG hashes exactly match proxy records, proving image use in all 100 attempts."
+    },
+    "deepseek_v4_1_flash_binary_accuracy": {
+      "verdict": "pass",
+      "native_v1": "26/100 = 26.0%; all attempted denominator; Wilson 98.333% CI [17.006%, 37.596%]; cluster bootstrap 98.333% CI [15.556%, 36.458%].",
+      "adapter_v2_secondary": "All 100 retained attempts regraded; 26/100 under both native-v1 and adapter-v2. Native-v1 remains the precommitted headline."
+    },
+    "verifier_false_positive": {
+      "verdict": "blocked",
+      "native_v1_parser_audit": "0/693 artificial invalid cases; Wilson 95% upper 0.551%.",
+      "adapter_v2_parser_audit": "0/693 artificial invalid cases; Wilson 95% upper 0.551%.",
+      "limitation": "Parser-equivalence cases are conditional on the released references and do not independently establish that scientifically wrong source answers are rejected."
+    },
+    "verifier_false_negative": {
+      "verdict": "blocked",
+      "native_v1_parser_audit": "22/181 = 12.155%; Wilson 95% CI [8.165%, 17.717%], so the generalized rate is not conclusively below 15%.",
+      "adapter_v2_parser_audit": "0/181; Wilson 95% upper 2.078%, after post-cohort Decimal-equivalence repair.",
+      "limitation": "The repair resolves measured parser equivalence only. It does not establish scientific correctness, unit equivalence, or ambiguity of the released task labels."
+    }
+  },
+  "external_blocker": {
+    "required": "Independent, gold-blinded materials-science adjudication using each source figure/problem evidence, with independently correct and independently wrong answers and uncertainty handling.",
+    "unavailable": "No qualified independent human materials-science adjudicator is available in this execution environment. The user expressly disallows treating scientific model decisions as established truth, and the precommitted protocol forbids fabricating labels or inferring rates from solver accuracy.",
+    "why_not_avoidable_by_more_compute": "Additional LLM calls would remain model opinions rather than independent scientific ground truth. Synthetic parser mutations have already been exhausted over the full 142-task population and cannot answer the source-label question.",
+    "resolution": "A qualified human panel must adjudicate a pre-frozen blinded sample large enough that separate FP and FN uncertainty supports each strict <15% claim."
+  },
+  "no_pass_claim": true
+}

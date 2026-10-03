@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "gate": ">50 public runnable nonduplicate evaluation tasks with a declared answer contract",
+  "candidates": {
+    "MatSciFig": {
+      "verdict": "fail",
+      "basis": "The released MatSciFig rows are a multimodal training corpus of panel/sub-caption/category/summary records, not public evaluation tasks with solver inputs, held-out answers, and a scorer. The same official paper separately identifies MaterialScope as the manually annotated detector benchmark; those detector annotations are not MatSciFig answer tasks.",
+      "primary_release_surfaces_checked": [
+        "https://huggingface.co/datasets/CMEG-IITR/MatSciFig",
+        "https://arxiv.org/html/2606.29667v2",
+        "https://github.com/CMEG-IITR/matmmextract"
+      ],
+      "evidence": [
+        "The official paper calls MatSciFig a large-scale panel-level dataset/training corpus built from scientific literature and describes its fields as grounded sub-caption, visualization labels, and generated summary.",
+        "The official paper's contributions name MaterialScope, not MatSciFig, as the manually annotated figure benchmark.",
+        "Cross-modal retrieval experiments train/fine-tune on MatSciFig; no released MatSciFig task manifest plus answer/verifier contract is defined."
+      ],
+      "countable_tasks": 0,
+      "stop_rule": "Definitive public-task gate failure; Harbor, accuracy, and verifier-rate work is unnecessary."
+    },
+    "MatMech": {
+      "verdict": "fail",
+      "basis": "The official release is a causal-mechanism dataset construction/training pipeline and knowledge base, not a public evaluation suite with held-out answer contracts and a scorer.",
+      "primary_release_surfaces_checked": [
+        "https://github.com/61peng/matmech",
+        "https://arxiv.org/html/2606.29667v2"
+      ],
+      "evidence": [
+        "The official repository identifies itself as Material Mechanism Dataset Construction and documents corpus construction, annotation schemas, training, and vLLM inference.",
+        "The official MatSciFig paper comparison table classifies MatMech's purpose as Knowledge Base, contrasting it with MatCha/MatQnA/MATRIX evaluation benchmarks.",
+        "No released test-task manifest, hidden/reference answer contract, or evaluation scorer is defined on the official repository surface."
+      ],
+      "countable_tasks": 0,
+      "stop_rule": "Definitive public-task gate failure; Harbor, accuracy, and verifier-rate work is unnecessary."
+    }
+  }
+}
