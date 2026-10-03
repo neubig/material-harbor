@@ -1,11 +1,11 @@
 {
-  "version": 2,
+  "version": 3,
   "candidate": "MATCHA image-bearing subset",
-  "overall": "unresolved_accuracy_expand_to_n300",
+  "overall": "fail_verifier_fp_and_fn_gates",
   "gates": {
     "public_nonduplicate_tasks": {
       "verdict": "pass",
-      "evidence": "Frozen 100-task image cohort from released MATCHA tasks; a disjoint additional 200 is precommitted."
+      "evidence": "1,500 released VQA questions with distinct image-geometry tuples; 899 released source images."
     },
     "relevant_foundation_model": {
       "verdict": "pass_with_fit_caveat",
@@ -13,15 +13,22 @@
     },
     "harbor": {
       "verdict": "pass",
-      "evidence": "100 image tasks executed through Harbor across interruption-safe disjoint runs."
+      "evidence": "All 100 frozen tasks were scheduled through Harbor with real images; pilot transport recordings matched staged images byte-for-byte."
     },
     "deepseek_binary_accuracy": {
-      "verdict": "unresolved",
-      "evidence": "70/100 = 70.0% does not satisfy the sample strict inequality, but the 98.333% simultaneous intervals cross 70%; the frozen cumulative n=300 look is required."
+      "verdict": "inconclusive_superseded_by_verifier_failure",
+      "evidence": "70/100 full-credit binary successes over all scheduled attempts; no missing rewards. Precommitted 98.333% Wilson and paper-cluster intervals cross the strict 70% ceiling. The frozen expansion was stopped only after verifier failure became definitive; completed attempts are retained and never rerun."
     },
-    "verifier_fp_fn": {
-      "verdict": "pending_accuracy_resolution"
+    "verifier_false_positive": {
+      "verdict": "fail",
+      "evidence": "28/100 released labels accepted by the exact-letter verifier were independently judged scientifically indefensible. All 100 frozen first-cohort tasks remain in the denominator; six unresolved tasks conservatively count as non-errors."
+    },
+    "verifier_false_negative": {
+      "verdict": "fail",
+      "evidence": "28/100 tasks had at least one independently adjudicated scientifically defensible non-gold option rejected by the exact-letter verifier. Each task contributes at most one error."
     }
   },
-  "stop_reason": null
+  "audit_independence": "GPT-5.1 received released figures, questions, and all choices but not gold labels or verifier outcomes. It could abstain as ambiguous. Rates are independent of DeepSeek solver accuracy.",
+  "stop_reason": "Both complete-cohort task-level verifier rates are 28%, strictly above the 15% ceiling; stop costly accuracy expansion.",
+  "no_pass_claim": true
 }

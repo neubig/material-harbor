@@ -137,6 +137,17 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(report["false_negative"]["finite_population_gate"], "fail")
         self.assertEqual(report["false_positive"]["errors"], 0)
 
+    def test_matcha_verifier_audit_keeps_full_cohort_denominator(self):
+        report = json.loads((ROOT / "qualification/matcha-scientific-audit-full-cohort-report.json").read_text())
+        self.assertEqual(report["completed"], 100)
+        self.assertEqual(report["usable_high_confidence_unambiguous"], 94)
+        self.assertEqual(report["unresolved_counted_non_error"], 6)
+        self.assertEqual(report["false_positive"]["denominator"], 100)
+        self.assertEqual(report["false_negative"]["denominator"], 100)
+        self.assertGreater(report["false_positive"]["rate"], 0.15)
+        self.assertGreater(report["false_negative"]["rate"], 0.15)
+
+
 
 
 

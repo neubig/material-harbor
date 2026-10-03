@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "candidate": "MATCHA",
+  "protocol": "Blind image-grounded scientific option audit over all 100 tasks in the frozen first accuracy cohort",
+  "sampling_frame": {
+    "tasks": 100,
+    "coverage": "complete finite population of the frozen first cohort",
+    "first30_manifest": "matcha-scientific-audit-manifest.json",
+    "remaining70_manifest": "matcha-scientific-audit-expansion-manifest.json"
+  },
+  "independence": "GPT-5.1 received the released figures, questions, and every option, but not the gold label or native verifier outcome. It returned every scientifically defensible option and could abstain as ambiguous. This is an independent label/verifier adjudication, not an estimate derived from solver accuracy.",
+  "accounting": "Each task contributes at most one FP and one FN. The 94 high-confidence unambiguous tasks are classified; all six unresolved tasks remain in the 100-task denominator and are conservatively counted as non-errors. No task is excluded.",
+  "completed": 100,
+  "usable_high_confidence_unambiguous": 94,
+  "unresolved_counted_non_error": 6,
+  "false_positive": {
+    "errors": 28,
+    "denominator": 100,
+    "rate": 0.28,
+    "gate": "fail",
+    "definition": "released gold accepted by native verifier but independent adjudicator found it scientifically indefensible"
+  },
+  "false_negative": {
+    "errors": 28,
+    "denominator": 100,
+    "rate": 0.28,
+    "gate": "fail",
+    "definition": "native single-letter verifier rejects at least one independently adjudicated scientifically defensible non-gold option"
+  },
+  "finite_population_inference": "28/100 is strictly above the 15% ceiling. This enumerates the complete frozen first cohort and does not extrapolate from the selected usable subset; unresolved items are retained as non-errors.",
+  "original_first30_summary": "The retained earlier run had 9 FP and 9 FN errors among 27 usable tasks. A fixed-manifest evidence-retention replay yielded 8 and 8 among all 30; the lower replay count is used, not the larger prior count.",
+  "raw_retention": {
+    "policy": "Detailed judge outputs remain outside git. Only hashes and aggregate bounded results are committed.",
+    "first30_replay_sha256": "3f4a93633d6c97b302a517803ecf556412fc9f20b4b79fe247f37e5bed846526",
+    "remaining70_sha256": "feeb2be3fb4eac172b2e1e2122c50aa00c06865cdfedaece294256a2e2f5edf8"
+  },
+  "supporting_parser_audit": "Native strict-letter parser perturbations remain separate; scientific option errors determine this failure.",
+  "overall": "fail"
+}
