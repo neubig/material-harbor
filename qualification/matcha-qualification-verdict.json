@@ -1,27 +1,27 @@
 {
-  "version": 1,
+  "version": 2,
   "candidate": "MATCHA image-bearing subset",
-  "overall": "fail_deepseek_binary_accuracy_gate",
+  "overall": "unresolved_accuracy_expand_to_n300",
   "gates": {
     "public_nonduplicate_tasks": {
       "verdict": "pass",
-      "evidence": "Frozen 100-task image cohort from released MATCHA tasks."
+      "evidence": "Frozen 100-task image cohort from released MATCHA tasks; a disjoint additional 200 is precommitted."
     },
     "relevant_foundation_model": {
-      "verdict": "pass",
-      "evidence": "Named relevant model evidence retained in qualification research."
+      "verdict": "pass_with_fit_caveat",
+      "evidence": "Intern-S1 is a named multimodal scientific foundation model with reported materials relevance; benchmark-specific MATCHA benefit is not established."
     },
     "harbor": {
       "verdict": "pass",
       "evidence": "100 image tasks executed through Harbor across interruption-safe disjoint runs."
     },
     "deepseek_binary_accuracy": {
-      "verdict": "fail",
-      "evidence": "70/100 = 70.0%, exactly outside the strict >10% and <70% gate."
+      "verdict": "unresolved",
+      "evidence": "70/100 = 70.0% does not satisfy the sample strict inequality, but the 98.333% simultaneous intervals cross 70%; the frozen cumulative n=300 look is required."
     },
     "verifier_fp_fn": {
-      "verdict": "not_needed_after_accuracy_failure"
+      "verdict": "pending_accuracy_resolution"
     }
   },
-  "stop_reason": "Definitive strict accuracy-gate failure; later costly verifier audit stopped by protocol."
+  "stop_reason": null
 }

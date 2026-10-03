@@ -1,7 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "protocol": "matcha-vision-binary-v1",
   "model": "openai/deepseek-v4.1-flash",
+  "look": 100,
   "scheduled": 100,
   "attempted": 100,
   "successes": 70,
@@ -9,17 +10,31 @@
   "missing_rewards": 0,
   "accuracy": 0.7,
   "accuracy_percent": 70,
-  "wilson_95": [
-    0.6041514536665333,
-    0.7810511470506722
-  ],
+  "confidence": 0.9833333333333333,
+  "intervals": {
+    "wilson": [
+      0.5819184497265392,
+      0.7963996150522518
+    ],
+    "paper_cluster_bootstrap": {
+      "groups": 100,
+      "confidence": 0.9833333333333333,
+      "ci": [
+        0.59,
+        0.81
+      ],
+      "resamples": 100000,
+      "seed": 20260814
+    }
+  },
   "strict_gate": {
     "required": "accuracy > 0.10 and accuracy < 0.70",
-    "verdict": "fail"
+    "observed_sample_point": "not_met_at_excluded_upper_boundary",
+    "population_verdict": "unresolved_expand_to_precommitted_n300",
+    "reason": "The sample point is exactly 70%, so it does not itself satisfy the strict inequality. It is not a definitive population failure: both precommitted simultaneous intervals cross the 70% boundary. Protocol failure requires the entire interval to be >=70% (or a full-population result outside the band)."
   },
-  "reason": "70/100 is exactly the excluded upper boundary, not strictly below 70%; no confidence-interval convention can make the observed point estimate satisfy the strict inequality.",
-  "interruption_accounting": "The original 23 completed attempts were retained unchanged; only the disjoint frozen 77-task remainder ran. No task was rerun. Missing rewards, if any, would count as failures in the scheduled denominator.",
-  "cohort_expansion_not_run": "The pre-frozen additional 200 tasks are unnecessary after a definitive strict-boundary failure and were not evaluated.",
+  "interruption_accounting": "The original 23 completed attempts were retained unchanged; only the disjoint frozen 77-task remainder ran. No task was rerun. Missing rewards count as failures in the scheduled denominator.",
+  "required_next_step": "Run exactly the frozen next200_task_ids without replacing or rerunning the original 100, then apply the cumulative n=300 inference rule.",
   "rows": [
     {
       "task_id": "matcha-0011-00",

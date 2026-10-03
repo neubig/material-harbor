@@ -109,7 +109,10 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(report["failures_including_missing"], 30)
         self.assertEqual(report["missing_rewards"], 0)
         self.assertEqual(report["accuracy"], 0.70)
-        self.assertEqual(report["strict_gate"]["verdict"], "fail")
+        self.assertEqual(report["strict_gate"]["observed_sample_point"], "not_met_at_excluded_upper_boundary")
+        self.assertEqual(report["strict_gate"]["population_verdict"], "unresolved_expand_to_precommitted_n300")
+        self.assertLess(report["intervals"]["wilson"][0], 0.70)
+        self.assertGreater(report["intervals"]["wilson"][1], 0.70)
         self.assertEqual(len({row["task_id"] for row in report["rows"]}), 100)
 
     def test_matcha_n300_expansion_is_frozen_and_disjoint(self):
