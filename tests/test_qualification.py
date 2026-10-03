@@ -144,8 +144,9 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(report["unresolved_counted_non_error"], 6)
         self.assertEqual(report["false_positive"]["denominator"], 100)
         self.assertEqual(report["false_negative"]["denominator"], 100)
-        self.assertGreater(report["false_positive"]["rate"], 0.15)
-        self.assertGreater(report["false_negative"]["rate"], 0.15)
+        self.assertEqual(report["false_positive"]["gate"], "preliminary_single_provider_unresolved")
+        self.assertEqual(report["false_negative"]["gate"], "preliminary_single_provider_unresolved")
+        self.assertEqual(report["overall"], "unresolved_pending_cross_provider_corroboration")
 
 
 

@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "authored_before_secondary_outcomes": true,
+  "purpose": "Corroborate every GPT-5.1-flagged MATCHA scientific option disagreement using an independent provider, blind to released gold and GPT outcomes. Single-provider flags are not ground truth.",
+  "sampling_frame": "Original frozen 100-task probability sample from the 1,500-task benchmark. This is a sample, not the complete benchmark population.",
+  "secondary_model": "claude-sonnet-4-6",
+  "secondary_input": "Actual released figures, question and all options; withhold gold labels, GPT outcomes, native verifier outcomes and why the task was selected.",
+  "secondary_decision": "Require high-confidence unambiguous Claude adjudication. FP is corroborated only if both judges exclude released gold. FN is corroborated only for a specific non-gold option both judges independently include. Every disagreement, ambiguity, error and unreviewed task counts as non-error in denominator 100.",
+  "inference": "Report 95% Wilson intervals over the original n=100 sample. A gate fails only if the relevant conservative Wilson lower bound is strictly >15%. Also report paper-group clustered bootstrap where source grouping is recoverable; otherwise state the limitation and do not call the sample a finite-population census.",
+  "raw_policy": "Detailed judge outputs remain outside git; commit only aggregate results, task IDs, decision categories and raw SHA256 commitments.",
+  "primary_raw_sha256": {
+    "first30": "3f4a93633d6c97b302a517803ecf556412fc9f20b4b79fe247f37e5bed846526",
+    "remaining70": "feeb2be3fb4eac172b2e1e2122c50aa00c06865cdfedaece294256a2e2f5edf8"
+  },
+  "flagged_count": 28,
+  "flagged": [
+    {
+      "task_id": "matcha-0795-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-1133-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-0538-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "D"
+      ]
+    },
+    {
+      "task_id": "matcha-1071-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "B"
+      ]
+    },
+    {
+      "task_id": "matcha-0345-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-1070-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "F"
+      ]
+    },
+    {
+      "task_id": "matcha-0891-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "A"
+      ]
+    },
+    {
+      "task_id": "matcha-0054-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "A"
+      ]
+    },
+    {
+      "task_id": "matcha-0091-01",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "A"
+      ]
+    },
+    {
+      "task_id": "matcha-0129-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "B"
+      ]
+    },
+    {
+      "task_id": "matcha-0901-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "A"
+      ]
+    },
+    {
+      "task_id": "matcha-0416-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "D"
+      ]
+    },
+    {
+      "task_id": "matcha-0316-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "A"
+      ]
+    },
+    {
+      "task_id": "matcha-0162-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-0259-01",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-0592-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "D"
+      ]
+    },
+    {
+      "task_id": "matcha-1255-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-1163-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-0488-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "A"
+      ]
+    },
+    {
+      "task_id": "matcha-1115-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "D"
+      ]
+    },
+    {
+      "task_id": "matcha-1227-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "B"
+      ]
+    },
+    {
+      "task_id": "matcha-1061-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "B"
+      ]
+    },
+    {
+      "task_id": "matcha-0413-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-0340-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-1160-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "B"
+      ]
+    },
+    {
+      "task_id": "matcha-1146-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "B"
+      ]
+    },
+    {
+      "task_id": "matcha-1062-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "C"
+      ]
+    },
+    {
+      "task_id": "matcha-1254-00",
+      "gpt_fp_flag": true,
+      "gpt_fn_valid_non_gold": [
+        "A"
+      ]
+    }
+  ]
+}

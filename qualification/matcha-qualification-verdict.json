@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "candidate": "MATCHA image-bearing subset",
-  "overall": "fail_verifier_fp_and_fn_gates",
+  "overall": "unresolved_pending_cross_provider_verifier_corroboration",
   "gates": {
     "public_nonduplicate_tasks": {
       "verdict": "pass",
@@ -16,19 +16,19 @@
       "evidence": "All 100 frozen tasks were scheduled through Harbor with real images; pilot transport recordings matched staged images byte-for-byte."
     },
     "deepseek_binary_accuracy": {
-      "verdict": "inconclusive_superseded_by_verifier_failure",
-      "evidence": "70/100 full-credit binary successes over all scheduled attempts; no missing rewards. Precommitted 98.333% Wilson and paper-cluster intervals cross the strict 70% ceiling. The frozen expansion was stopped only after verifier failure became definitive; completed attempts are retained and never rerun."
+      "verdict": "unresolved_expansion_required_if_verifier_not_failed",
+      "evidence": "70/100 full-credit binary successes over all scheduled attempts; no missing rewards. Precommitted 98.333% Wilson and paper-cluster intervals cross the strict 70% ceiling. A prematurely stopped expansion retains every completed attempt and will resume without rerunning them if corroboration does not establish verifier failure."
     },
     "verifier_false_positive": {
-      "verdict": "fail",
-      "evidence": "28/100 released labels accepted by the exact-letter verifier were independently judged scientifically indefensible. All 100 frozen first-cohort tasks remain in the denominator; six unresolved tasks conservatively count as non-errors."
+      "verdict": "unresolved_pending_cross_provider_corroboration",
+      "evidence": "GPT-5.1 flagged 28/100 sampled tasks, but single-judge disagreement is not scientific ground truth. Every flag is frozen for a second blind provider; disagreements and abstentions count as non-errors in denominator 100."
     },
     "verifier_false_negative": {
-      "verdict": "fail",
-      "evidence": "28/100 tasks had at least one independently adjudicated scientifically defensible non-gold option rejected by the exact-letter verifier. Each task contributes at most one error."
+      "verdict": "unresolved_pending_cross_provider_corroboration",
+      "evidence": "GPT-5.1 flagged 28/100 sampled tasks, but each specific alternate must be independently corroborated blind before counting. Wilson and paper-group cluster uncertainty are required because this is a sample of 1,500, not a census."
     }
   },
-  "audit_independence": "GPT-5.1 received released figures, questions, and all choices but not gold labels or verifier outcomes. It could abstain as ambiguous. Rates are independent of DeepSeek solver accuracy.",
-  "stop_reason": "Both complete-cohort task-level verifier rates are 28%, strictly above the 15% ceiling; stop costly accuracy expansion.",
+  "audit_independence": "Primary flags are not a verdict. Claude Sonnet 4.6 will receive figures, questions and options while blind to gold, GPT outcomes and verifier outcomes.",
+  "stop_reason": null,
   "no_pass_claim": true
 }
