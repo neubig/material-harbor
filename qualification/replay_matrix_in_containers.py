@@ -14,6 +14,7 @@ from statistics import NormalDist
 
 ROOT = Path(__file__).resolve().parents[1]
 RUN = ROOT / "harbor_vision/runs/matrix-binary-vision-qualification-n100-network-retry"
+RUNS = [RUN]
 TASKS = ROOT / "matrix/tasks-binary-vision100"
 ENDPOINT = "https://llm-proxy.app.all-hands.dev/v1/chat/completions"
 MODEL = "gpt-5.1"
@@ -35,10 +36,14 @@ def wilson(k, n):
 
 def find_trials():
     found = {}
-    for path in RUN.rglob("result.json"):
-        value = json.loads(path.read_text())
-        if value.get("task_name"):
-            found[value["task_name"]] = path.parent
+    for run in RUNS:
+        for path in run.rglob("result.json"):
+            value = json.loads(path.read_text())
+            task = value.get("task_name")
+            if task:
+                if task in found:
+                    raise ValueError(f"Duplicate completed task across runs: {task}")
+                found[task] = path.parent
     return found
 
 
@@ -87,13 +92,15 @@ def replay(item):
 
 
 def main():
-    global RUN, TASKS
+    global RUN, RUNS, TASKS
     parser = argparse.ArgumentParser()
-    parser.add_argument("--run", default=str(RUN.relative_to(ROOT)))
+    parser.add_argument("--run", default=str(RUN.relative_to(ROOT)),
+                        help="Comma-separated disjoint run directories")
     parser.add_argument("--tasks", default=str(TASKS.relative_to(ROOT)))
     parser.add_argument("--output", default="qualification/matrix-accuracy-report.json")
     args = parser.parse_args()
-    RUN = ROOT / args.run
+    RUNS = [ROOT / value for value in args.run.split(",")]
+    RUN = RUNS[0]
     TASKS = ROOT / args.tasks
     if "LLM_API_KEY" not in os.environ:
         raise SystemExit("LLM_API_KEY is required")
@@ -112,7 +119,7 @@ def main():
         fractional[key] = fractional.get(key, 0) + 1
     report = {"version": 2, "protocol": "matrix-full-credit-binary-v1",
               "execution": "Each retained answer was verified by /tests/test.sh inside its task Dockerfile image. The agent was not rerun. Missing artifacts and verifier infrastructure failures count as zero.",
-              "source_run": str(RUN.relative_to(ROOT)), "solver_model": "openai/deepseek-v4.1-flash",
+              "source_runs": [str(run.relative_to(ROOT)) for run in RUNS], "solver_model": "openai/deepseek-v4.1-flash",
               "verifier_model": MODEL, "scheduled": total, "attempted": total,
               "retained_answer_artifacts": sum(row["status"] != "missing_answer" for row in rows),
               "successes": successes, "failures_including_missing": total - successes,

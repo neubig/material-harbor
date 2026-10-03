@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "recorded_at_utc": "2026-10-03T20:21:55.365642+00:00",
+  "branch": "vision-multimodal-harbor-measurements",
+  "restart_state": {
+    "surviving_benchmark_or_replay_processes": 0,
+    "matrix_additional140_completed": 126,
+    "matrix_additional140_remaining": 14,
+    "completed_run_counts": {
+      "matrix-binary-vision-qualification-additional140": 31,
+      "matrix-binary-vision-qualification-additional140-resume109": 95
+    }
+  },
+  "definitive_candidate_state": {
+    "MatSciFig": "fail",
+    "MatMech": "fail",
+    "MATCHA": "fail",
+    "CSMBench": "fail",
+    "OmniMatBench": "fail",
+    "BioReason-Pro GO": "fail",
+    "MATRIX": "pending additional140 completion and container replay"
+  },
+  "outstanding_steps": [
+    "Run only matrix-expansion-restart2-manifest remaining14 through Harbor with unchanged deepseek-v4.1-flash solver",
+    "Container-replay mandatory MATRIX verifier over all preserved additional140 answers; missing answers remain zero",
+    "Combine primary100 plus additional140 into bounded240 verdict",
+    "Run qualification tests and workbook same-path integrity checks",
+    "Update workbook Evidence/Detailed assessments/colors",
+    "Commit locally; do not push before parent review"
+  ]
+}
