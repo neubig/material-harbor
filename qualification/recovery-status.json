@@ -4,11 +4,12 @@
   "branch": "vision-multimodal-harbor-measurements",
   "restart_state": {
     "surviving_benchmark_or_replay_processes": 0,
-    "matrix_additional140_completed": 126,
-    "matrix_additional140_remaining": 14,
+    "matrix_additional140_completed": 140,
+    "matrix_additional140_remaining": 0,
     "completed_run_counts": {
       "matrix-binary-vision-qualification-additional140": 31,
-      "matrix-binary-vision-qualification-additional140-resume109": 95
+      "matrix-binary-vision-qualification-additional140-resume109": 95,
+      "matrix-binary-vision-qualification-additional140-restart2-remaining14": 14
     }
   },
   "definitive_candidate_state": {
@@ -18,14 +19,59 @@
     "CSMBench": "fail",
     "OmniMatBench": "fail",
     "BioReason-Pro GO": "fail",
-    "MATRIX": "pending additional140 completion and container replay"
+    "MATRIX": "fail_image_transport_gate"
   },
-  "outstanding_steps": [
-    "Run only matrix-expansion-restart2-manifest remaining14 through Harbor with unchanged deepseek-v4.1-flash solver",
-    "Container-replay mandatory MATRIX verifier over all preserved additional140 answers; missing answers remain zero",
-    "Combine primary100 plus additional140 into bounded240 verdict",
-    "Run qualification tests and workbook same-path integrity checks",
-    "Update workbook Evidence/Detailed assessments/colors",
-    "Commit locally; do not push before parent review"
-  ]
+  "outstanding_steps": [],
+  "matrix_final": {
+    "successes": 84,
+    "scheduled": 240,
+    "binary_accuracy": 0.35,
+    "retained_answer_sensitivity": 0.5915492957746479,
+    "exact_image_transport_proven": 158,
+    "transport_scheduled": 240,
+    "verdict": "fail_image_transport_gate"
+  },
+  "workbook": {
+    "path": "GENESIS Benchmark Brainstorming.xlsx",
+    "before_sha256": "0859f0e2468fbe45439cf3d95d1050b4c8750aa8bfe94cf960562c38b85ddd39",
+    "after_sha256": "aabf6269ceb48def81fc88d848a8ff2508d20d9caae85d4ff8006f0ff867afed",
+    "rows_finalized": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "evidence_rows_added": [
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    "same_path_save": true,
+    "integrity_checks": "pass",
+    "superseded_evidence_rows_marked": [
+      52,
+      53,
+      54,
+      55,
+      63,
+      64,
+      69,
+      76
+    ]
+  },
+  "validation": {
+    "qualification_tests": "17 passed",
+    "full_test_suite": "113 passed, 1 skipped",
+    "workbook_integrity": "pass",
+    "qualification_json_parse": "pass",
+    "seven_definitive_failures": "pass"
+  }
 }

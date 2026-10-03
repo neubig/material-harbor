@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "candidate": "MATRIX vision",
+  "overall": "fail_image_transport_gate",
+  "gates": {
+    "public_runnable_nonduplicate_tasks": {
+      "decision": "pass",
+      "evidence": "250 released vision test records; 240 disjoint non-pilot tasks comprise the complete frozen bounded qualification population."
+    },
+    "relevant_domain_foundation_model": {
+      "decision": "pass",
+      "evidence": "MATRIX-PT is the benchmark\u2019s own Qwen2-VL-7B materials-science post-training release."
+    },
+    "harbor_containerization": {
+      "decision": "fail",
+      "scheduled_image_bearing_attempts": 240,
+      "exact_source_image_transport_proven": 158,
+      "absent_or_unprovable_transport": 82,
+      "evidence": "All tasks were staged and retained answers were container-replayed, but the preserved outbound proxy audit proves exact source-image bytes for only 158/240 scheduled attempts. The other 82 were pre-agent infrastructure failures (60 had only unrelated concurrent proxy images in their trial windows; 22 had none) and conservatively fail the mandatory image-use requirement."
+    },
+    "deepseek_v4_1_flash_binary_accuracy": {
+      "decision": "pass_with_infrastructure_sensitivity",
+      "scheduled": 240,
+      "attempted": 240,
+      "successes": 84,
+      "accuracy": 0.35,
+      "simultaneous_wilson98_333": [
+        0.28057258891362924,
+        0.4264242523886408
+      ],
+      "retained_answer_sensitivity": {
+        "successes": 84,
+        "denominator": 142,
+        "accuracy": 0.5915492957746479,
+        "simultaneous_wilson98_333": [
+          0.49111599203905637,
+          0.6848794015277665
+        ]
+      },
+      "evidence": "The mandatory all-scheduled result is 84/240 = 35.00%, with all 98 missing outcomes retained as zero. The non-primary 84/142 sensitivity and its simultaneous upper bound 68.49% show the strict <70% conclusion does not depend on counting infrastructure failures as zero. This accuracy pass cannot rescue the independent transport failure."
+    },
+    "verifier_false_positive": {
+      "decision": "pass",
+      "errors": 0,
+      "denominator": 60,
+      "rate": 0.0,
+      "wilson95": [
+        0,
+        0.06017185214208983
+      ],
+      "evidence": "Independent blind cross-provider audit of actual images and adversarial wrong probes; Wilson upper bound strictly below15%."
+    },
+    "verifier_false_negative": {
+      "decision": "pass",
+      "errors": 0,
+      "denominator": 30,
+      "rate": 0.0,
+      "wilson95": [
+        0,
+        0.11351339317396873
+      ],
+      "evidence": "Independent blind cross-provider audit of actual images and valid reference probes; Wilson upper bound strictly below15%. Frozen tertiary adjudication resolved the sole medium-confidence case as valid."
+    }
+  },
+  "caveats": [
+    "MATRIX releases no official vision rubric; the qualification measures a frozen adapter-derived binary task contract, not official benchmark accuracy.",
+    "The all-scheduled denominator remains mandatory. Of 98 missing outputs, 82 were pre-agent infrastructure failures, 12 rate-limit errors after image transport, and 4 max-iteration outcomes after image transport. The 84/142 retained-answer sensitivity is diagnostic only and does not replace the primary result.",
+    "Exact original source bytes were independently matched in outbound DeepSeek requests for all 158 agent-executed attempts, including all 142 retained-answer attempts, but not for the 82 pre-agent failures. Under the precommitted all-scheduled image requirement, this is a definitive transport failure."
+  ]
+}

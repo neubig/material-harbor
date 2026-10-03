@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "scope": "Workbook rows 19-25 under frozen bounded qualification protocols",
+  "complete": true,
+  "pass_count": 0,
+  "fail_count": 7,
+  "pending_count": 0,
+  "candidates": [
+    {
+      "row": 19,
+      "candidate": "MatSciFig",
+      "verdict": "fail",
+      "decisive_gate": "public_runnable_nonduplicate_tasks",
+      "evidence": "391,285 authorized panel/caption corpus rows are not released runnable benchmark tasks with an answer contract."
+    },
+    {
+      "row": 20,
+      "candidate": "MatMech",
+      "verdict": "fail",
+      "decisive_gate": "public_runnable_nonduplicate_tasks",
+      "evidence": "The public extraction corpus has no released benchmark task contract. Foundation-model absence is not asserted or needed after this definitive structural failure."
+    },
+    {
+      "row": 21,
+      "candidate": "MATRIX vision",
+      "verdict": "fail",
+      "decisive_gate": "harbor_image_transport",
+      "transport": {
+        "exact_original_bytes_proven": 158,
+        "scheduled": 240,
+        "absent_or_unprovable": 82
+      },
+      "accuracy": {
+        "successes": 84,
+        "scheduled": 240,
+        "rate": 0.35,
+        "missing_or_infrastructure_counted_zero": 98,
+        "retained_answer_sensitivity": {
+          "successes": 84,
+          "denominator": 142,
+          "rate": 0.5915492957746479
+        }
+      },
+      "verifier_audit": {
+        "false_positive": {
+          "errors": 0,
+          "denominator": 60,
+          "wilson95_upper": 0.06017185214208983
+        },
+        "false_negative": {
+          "errors": 0,
+          "denominator": 30,
+          "wilson95_upper": 0.11351339317396873
+        }
+      },
+      "evidence": "Exact source bytes reached DeepSeek in 158/240 scheduled attempts; all 82 absent/unprovable cases were pre-agent infrastructure failures and conservatively fail the mandatory image-use requirement. The primary accuracy remains 84/240; the 84/142 sensitivity interval [49.11%, 68.49%] supports the <70% ceiling but cannot rescue transport.",
+      "caveat": "MATRIX releases no official vision rubric; the frozen verifier is adapter-derived."
+    },
+    {
+      "row": 22,
+      "candidate": "MATCHA",
+      "verdict": "fail",
+      "decisive_gate": "verifier_false_positive",
+      "evidence": "Independent blind cross-provider actual-image adjudication corroborated 61 false-positive labels over the frozen 300-task audit; both prespecified simultaneous lower bounds exceed 15%."
+    },
+    {
+      "row": 23,
+      "candidate": "CSMBench",
+      "verdict": "fail",
+      "decisive_gate": "deepseek_v4_1_flash_binary_accuracy",
+      "accuracy": {
+        "successes": 91,
+        "scheduled": 100,
+        "rate": 0.91,
+        "missing_rewards_counted_zero": 4
+      },
+      "foundation_model_gate": "pass_with_task_fit_caveat",
+      "evidence": "Intern-S1 passes the relevant scientific/materials foundation-model existence gate. DeepSeek full-credit binary accuracy was 91/100; simultaneous Wilson and paper-cluster intervals are entirely above the excluded 70% ceiling."
+    },
+    {
+      "row": 24,
+      "candidate": "OmniMatBench native-v1",
+      "verdict": "fail",
+      "decisive_gate": "verifier_false_negative",
+      "accuracy": {
+        "successes": 26,
+        "scheduled": 100,
+        "rate": 0.26
+      },
+      "evidence": "Native-v1 rejected 24 of 142 proven exact-decimal or algebraically equivalent declared task probes, a complete-population rate of 16.90%. Adapter-v2 does not retroactively qualify native-v1."
+    },
+    {
+      "row": 25,
+      "candidate": "BioReason-Pro GO annotation recovery",
+      "verdict": "fail",
+      "decisive_gate": "deepseek_v4_1_flash_binary_accuracy",
+      "accuracy": {
+        "successes": 0,
+        "scheduled": 100,
+        "rate": 0.0,
+        "wilson98_333_upper": 0.0542
+      },
+      "evidence": "The conservative simultaneous upper bound is strictly below the required 10% floor; labels remained verifier-only."
+    }
+  ],
+  "workbook": "../GENESIS Benchmark Brainstorming.xlsx",
+  "raw_data_policy": "Raw answers, trial logs, and detailed judge rows remain untracked in Harbor run directories. Only aggregate evidence is versioned."
+}

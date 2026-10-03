@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "protocol": "matrix-exact-outbound-image-transport-and-missing-outcome-audit-v1",
+  "scheduled": 240,
+  "transport_requirement": "Exact staged source image bytes must appear in a recorded outbound model request during that task trial. Staging and image tool invocation alone do not pass.",
+  "solver_model": "openai/deepseek-v4.1-flash",
+  "proxy_diagnostics": {
+    "matrix-binary-vision-qualification-n100-network-retry": {
+      "valid_image_records": 3611,
+      "malformed_request_files": []
+    },
+    "matrix-binary-vision-qualification-additional140": {
+      "valid_image_records": 1111,
+      "malformed_request_files": []
+    },
+    "matrix-binary-vision-qualification-additional140-resume109": {
+      "valid_image_records": 1006,
+      "malformed_request_files": [
+        {
+          "file": "request-0391.json",
+          "bytes": 0,
+          "error": "JSONDecodeError"
+        }
+      ]
+    },
+    "matrix-binary-vision-qualification-additional140-restart2-remaining14": {
+      "valid_image_records": 59,
+      "malformed_request_files": []
+    }
+  },
+  "transport_counts": {
+    "exact_original_bytes_in_model_request": 158,
+    "no_proxy_image_in_trial_window": 22,
+    "proxy_image_present_but_source_transport_unproven": 60
+  },
+  "transport_failures": 82,
+  "transport_success_rate": 0.6583333333333333,
+  "transport_gate": "fail",
+  "transport_gate_rule": "All 240 scheduled image-bearing attempts require independently proven source-image transport; absent, malformed, unmatched, and unprovable cases fail conservatively.",
+  "source_digest_unique_tasks": 240,
+  "transport_by_outcome": {
+    "full_credit": {
+      "exact_original_bytes_in_model_request": 84
+    },
+    "missing_answer": {
+      "exact_original_bytes_in_model_request": 16,
+      "no_proxy_image_in_trial_window": 22,
+      "proxy_image_present_but_source_transport_unproven": 60
+    },
+    "retained_answer_not_full_credit": {
+      "exact_original_bytes_in_model_request": 58
+    }
+  },
+  "failed_transport_by_missing_cause": {
+    "pre_agent_infrastructure_failure": 82
+  },
+  "outcome_counts": {
+    "full_credit": 84,
+    "missing_answer": 98,
+    "retained_answer_not_full_credit": 58
+  },
+  "missing_answer_cause_counts": {
+    "max_iterations_without_answer": 4,
+    "model_rate_limit_error": 12,
+    "pre_agent_infrastructure_failure": 82
+  },
+  "primary_all_scheduled": {
+    "successes": 84,
+    "denominator": 240,
+    "binary_accuracy": 0.35,
+    "simultaneous_wilson98_333": [
+      0.28057258891362924,
+      0.4264242523886408
+    ],
+    "rule": "All missing answers and infrastructure outcomes remain zero."
+  },
+  "retained_answer_sensitivity": {
+    "successes": 84,
+    "denominator": 142,
+    "binary_accuracy": 0.5915492957746479,
+    "simultaneous_wilson98_333": [
+      0.49111599203905637,
+      0.6848794015277665
+    ],
+    "strict_band_supported": true,
+    "interpretation": "Sensitivity diagnostic only; never replaces the all-scheduled primary result. Its simultaneous interval checks whether the primary in-band conclusion depends on missing outcomes."
+  },
+  "qualification_interpretation": "The strict 10-70 accuracy gate is supportable only if exact image transport is proven across all scheduled attempts and missing causes do not make the retained-answer sensitivity exceed the 70% ceiling.",
+  "detail_rows_count": 240,
+  "detail_rows_sha256": "ccd09e12929bbf9736191b31062607e8cef2660db24b5d831173c4072406ec84",
+  "detail_rows_policy": "Per-task transport sequences, hashes, trial names, and failure details remain untracked under harbor_vision/runs."
+}

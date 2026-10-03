@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "protocol": "matrix-full-credit-binary-v1",
+  "population": "Complete predeclared bounded 240-image qualification population: primary100 plus disjoint additional140; 10 pilot images excluded prospectively.",
+  "solver_model": "openai/deepseek-v4.1-flash",
+  "verifier_model": "gpt-5.1",
+  "scheduled": 240,
+  "attempted": 240,
+  "all_scheduled_denominator": true,
+  "successes": 84,
+  "failures_including_missing": 156,
+  "binary_accuracy": 0.35,
+  "strict_accuracy_gate": {
+    "required": "strictly >0.10 and <0.70",
+    "decision": "pass_with_infrastructure_sensitivity",
+    "basis": "The mandatory all-scheduled result is in band. The non-primary 84/142 retained-answer sensitivity has simultaneous interval [0.49112, 0.68488], supporting the strict <70% conclusion despite 82 pre-agent failures."
+  },
+  "retained_answer_sensitivity": {
+    "successes": 84,
+    "denominator": 142,
+    "binary_accuracy": 0.5915492957746479,
+    "simultaneous_wilson98_333": [
+      0.49111599203905637,
+      0.6848794015277665
+    ],
+    "interpretation": "Diagnostic only; does not replace the all-scheduled primary result."
+  },
+  "image_transport_gate": {
+    "decision": "fail",
+    "exact_original_bytes_proven": 158,
+    "scheduled": 240,
+    "absent_or_unprovable": 82,
+    "evidence": "Every one of 158 agent-executed attempts transported the exact source image, but 82 pre-agent infrastructure failures supplied no provable task image to the solver. All absent or unprovable scheduled attempts fail conservatively."
+  },
+  "descriptive_simultaneous_wilson": {
+    "confidence": 0.9833333333333333,
+    "interval": [
+      0.28057258891362924,
+      0.4264242523886408
+    ]
+  },
+  "retained_answer_artifacts": 142,
+  "missing_or_infrastructure_counted_zero": 98,
+  "fractional_score_distribution": {
+    "1": 84,
+    "0": 58,
+    "missing_or_error": 98
+  },
+  "cohorts": [
+    {
+      "report": "qualification/matrix-accuracy-report.json",
+      "scheduled": 100,
+      "successes": 59,
+      "detail_rows_sha256": "298a824af25bbaeb21392cb5d0563fc599176fe9c2679c8a08160190dbb369bc"
+    },
+    {
+      "report": "qualification/matrix-accuracy-additional140-report.json",
+      "scheduled": 140,
+      "successes": 25,
+      "detail_rows_sha256": "084f1e2915c0fff03291250d68951620bc289e4b09a17de0be0e0d2a9e5d1962"
+    }
+  ],
+  "image_requirement": "All 240 tasks stage real MATRIX image.png inputs and no no-image control is used. Staging is not transport proof; the separate exact outbound proxy audit must establish that each supplied image reached the model.",
+  "mandatory_verification": "Every retained answer was replayed via /tests/test.sh inside its task Dockerfile image. No solver agent was rerun during replay.",
+  "fidelity_caveat": "MATRIX publishes five vision task kinds and data but no official vision evaluation rubric. The frozen full-credit binary verifier is adapter-derived, not official-exact."
+}

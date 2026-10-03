@@ -89,6 +89,21 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(result["point_estimate"], 0.9)
         self.assertEqual(result["classification"], "fail_outside_band")
 
+    def test_csmbench_fails_accuracy_not_foundation_model_gate(self):
+        verdict = json.loads((ROOT / "qualification/csmbench-qualification-verdict.json").read_text())
+        self.assertEqual(verdict["gates"]["relevant_domain_foundation_model"]["verdict"], "pass_with_task_fit_caveat")
+        self.assertEqual(verdict["gates"]["deepseek_v4_1_flash_binary_accuracy"]["verdict"], "fail")
+        self.assertEqual(verdict["overall"], "fail_deepseek_binary_accuracy_gate")
+
+    def test_matmech_failure_does_not_assert_foundation_model_absence(self):
+        report = json.loads((ROOT / "qualification/structural-disqualifications.json").read_text())
+        matmech = report["candidates"]["MatMech"]
+        self.assertEqual(matmech["verdict"], "fail")
+        self.assertEqual(matmech["countable_tasks"], 0)
+        self.assertNotIn("foundation model", matmech["basis"].lower())
+
+
+
 
     def test_matcha_resume_preserves_frozen_cohort_without_reruns(self):
         original = set(json.loads((ROOT / "matcha/manifest100.json").read_text())["task_ids"])
@@ -189,6 +204,29 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(report["false_negative"]["errors"], 0)
         self.assertEqual(report["false_positive"]["errors"], 0)
         self.assertEqual(report["gate"], "pass")
+
+
+    def test_matrix_bounded240_fails_exact_image_transport(self):
+        report = json.loads((ROOT / "qualification/matrix-bounded240-accuracy-report.json").read_text())
+        transport = json.loads((ROOT / "qualification/matrix-transport-failure-audit-report.json").read_text())
+        verdict = json.loads((ROOT / "qualification/matrix-qualification-verdict.json").read_text())
+        self.assertEqual(report["scheduled"], 240)
+        self.assertEqual(report["attempted"], 240)
+        self.assertEqual(report["successes"], 84)
+        self.assertEqual(report["failures_including_missing"], 156)
+        self.assertEqual(report["missing_or_infrastructure_counted_zero"], 98)
+        self.assertEqual(report["strict_accuracy_gate"]["decision"], "pass_with_infrastructure_sensitivity")
+        self.assertLess(report["retained_answer_sensitivity"]["simultaneous_wilson98_333"][1], 0.70)
+        self.assertEqual(transport["scheduled"], 240)
+        self.assertEqual(transport["transport_counts"]["exact_original_bytes_in_model_request"], 158)
+        self.assertEqual(transport["transport_failures"], 82)
+        self.assertEqual(transport["failed_transport_by_missing_cause"], {"pre_agent_infrastructure_failure": 82})
+        self.assertEqual(transport["transport_gate"], "fail")
+        self.assertEqual(verdict["overall"], "fail_image_transport_gate")
+        self.assertEqual(verdict["gates"]["harbor_containerization"]["decision"], "fail")
+        self.assertNotIn("rows", json.loads((ROOT / "qualification/matrix-accuracy-report.json").read_text()))
+        self.assertNotIn("rows", json.loads((ROOT / "qualification/matrix-accuracy-additional140-report.json").read_text()))
+
 
 
 

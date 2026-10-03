@@ -2,26 +2,30 @@
   "version": 2,
   "protocol": "matrix-full-credit-binary-v1",
   "execution": "Each retained answer was verified by /tests/test.sh inside its task Dockerfile image. The agent was not rerun. Missing artifacts and verifier infrastructure failures count as zero.",
-  "source_run": "harbor_vision/runs/matrix-binary-vision-qualification-n100-network-retry",
+  "source_runs": [
+    "harbor_vision/runs/matrix-binary-vision-qualification-additional140",
+    "harbor_vision/runs/matrix-binary-vision-qualification-additional140-resume109",
+    "harbor_vision/runs/matrix-binary-vision-qualification-additional140-restart2-remaining14"
+  ],
   "solver_model": "openai/deepseek-v4.1-flash",
   "verifier_model": "gpt-5.1",
-  "scheduled": 100,
-  "attempted": 100,
-  "retained_answer_artifacts": 86,
-  "successes": 59,
-  "failures_including_missing": 41,
-  "binary_accuracy": 0.59,
+  "scheduled": 140,
+  "attempted": 140,
+  "retained_answer_artifacts": 56,
+  "successes": 25,
+  "failures_including_missing": 115,
+  "binary_accuracy": 0.17857142857142858,
   "binary_mapping": "Only exact rubric score 1 succeeds.",
   "fractional_score_distribution": {
-    "1": 59,
-    "0": 27,
-    "missing_or_error": 14
+    "missing_or_error": 84,
+    "0": 31,
+    "1": 25
   },
-  "missing_or_infrastructure_counted_zero": 14,
+  "missing_or_infrastructure_counted_zero": 84,
   "confidence": 0.9833333333333333,
   "wilson": [
-    0.4705093948146836,
-    0.6997337343357721
+    0.11421615874845695,
+    0.2682082122990973
   ],
   "container_provenance": {
     "dockerfile_sha256": "de74700fa0007ba1dbfd9981779e060abd872bcb21a811ce36bd4e28d9590088",
@@ -29,9 +33,9 @@
     "verify_binary_sha256": "1b056fd0a065f2e90d339ef063be116dd5b79fb425c1e173b1de1682ded860d8",
     "network": "host access enabled only for authorized GPT-5.1 judge endpoint"
   },
-  "inference_caveat": "This n=100 sample has no released paper/source grouping. MATRIX's frozen additional 140 remains required if the simultaneous interval crosses a boundary.",
+  "inference_caveat": "MATRIX provides no released paper/source grouping. The primary100 and frozen additional140 together form the complete predeclared bounded 240-image population.",
   "fidelity_caveat": "MATRIX publishes five vision kinds and a loader, but no vision evaluation rubric. This is a derived adapter rubric, not an official or reconstructed-official rubric.",
-  "detail_rows_count": 100,
-  "detail_rows_sha256": "298a824af25bbaeb21392cb5d0563fc599176fe9c2679c8a08160190dbb369bc",
+  "detail_rows_count": 140,
+  "detail_rows_sha256": "084f1e2915c0fff03291250d68951620bc289e4b09a17de0be0e0d2a9e5d1962",
   "detail_rows_policy": "Detailed answer hashes/judge outputs remain in untracked run artifacts; aggregate evidence only is versioned."
 }
