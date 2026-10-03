@@ -1,0 +1,1211 @@
+{
+  "version": 1,
+  "primary_manifest": "bioreason-go-manifest.json",
+  "first_look_n": 100,
+  "additional_task_count": 200,
+  "cumulative_n": 300,
+  "trigger": "If n=100 inference is inconclusive under the prespecified strict-band confidence rule, run these frozen tasks without rerunning the first100.",
+  "selection": "Next 200 SHA256(seed:sequence)-ordered clean unique sequences after primary100.",
+  "tasks": [
+    {
+      "task_id": "bioreason-go-100-d47587689eedaf37",
+      "opaque_id": "d47587689eedaf37",
+      "sequence_sha256": "4a3ecaf949c5d3cc4cc5b6e6050b8cd97b16ea1557557fd5d2d7dd2e46158373",
+      "source_protein_id_sha256": "99e28509d7a380447b7f3552f7133db6a920a8e4343a5f52dea856e0f4e7f569"
+    },
+    {
+      "task_id": "bioreason-go-101-d8427b5f8744831b",
+      "opaque_id": "d8427b5f8744831b",
+      "sequence_sha256": "3cde7eacd35e6030626d9d3267cfa7a12f4c957d9d7b02bdb9d9db43171b69ac",
+      "source_protein_id_sha256": "3cde5421cdd74647e470bc434438f59ad6e22ddb15e7f728e3d2eddd2d24c541"
+    },
+    {
+      "task_id": "bioreason-go-102-677a523ac6650093",
+      "opaque_id": "677a523ac6650093",
+      "sequence_sha256": "aae3f0823bd500d79f497dfab071d62364b98764396b2525cc15d897f0bcc19f",
+      "source_protein_id_sha256": "1528e4ac9d53523b2504a5fdff59182cb9730687012933af1cd73fab09f406b9"
+    },
+    {
+      "task_id": "bioreason-go-103-baf6c56ca1f39224",
+      "opaque_id": "baf6c56ca1f39224",
+      "sequence_sha256": "be28f2c91195dfbbb77db8317fd42fcc4a84784bbb05259e7372d9001bcc5bd8",
+      "source_protein_id_sha256": "b9e5012e784d5844c350fbc7f85270a03be16cbc7716731b45bda082df899a9f"
+    },
+    {
+      "task_id": "bioreason-go-104-59d448ea508e9030",
+      "opaque_id": "59d448ea508e9030",
+      "sequence_sha256": "fade78339c29fde4d575f8baf8f6960cc36f0ff256fcb6f51303ca793bf94e69",
+      "source_protein_id_sha256": "c3f582181520797864a4286e8f3a78399eee5fe8e8dfbc6921e3f900e58235d3"
+    },
+    {
+      "task_id": "bioreason-go-105-bb2fff270fb12778",
+      "opaque_id": "bb2fff270fb12778",
+      "sequence_sha256": "1d8c767e063e997294c83516c373923e137a11620d3f7f2b719d61d2dc0e545d",
+      "source_protein_id_sha256": "00ded79364c178afd69e64a5e84e09e85ad5ad81c95ad448e46167bd53c5c44c"
+    },
+    {
+      "task_id": "bioreason-go-106-e3dd46973097d38d",
+      "opaque_id": "e3dd46973097d38d",
+      "sequence_sha256": "8b3b889fef2cefc55f6173b5581dd1a5284083c0937a0ed9441339decc851e7c",
+      "source_protein_id_sha256": "dcb7eedd5121d5b37f64737059f51a4c4064cc3259b198323bec620c39fcbeea"
+    },
+    {
+      "task_id": "bioreason-go-107-772b463671e64521",
+      "opaque_id": "772b463671e64521",
+      "sequence_sha256": "4a28bce769622c6a9d90d8f845a02ba1fc518f24f16746de71a253047bfb5830",
+      "source_protein_id_sha256": "cced17483d6e43329f53642eb70a9c8edf06a8dbc6b4795586c799c00c264d3a"
+    },
+    {
+      "task_id": "bioreason-go-108-fe76c3e93954dcff",
+      "opaque_id": "fe76c3e93954dcff",
+      "sequence_sha256": "2a2337ca320fe9db32c742ed9e6e46979193e1c321f29e1bcb04bb1d4f44065e",
+      "source_protein_id_sha256": "a7b04db5315f59db60fb17af3179e3ad76d93028b13784e26a18b3307a91fb7b"
+    },
+    {
+      "task_id": "bioreason-go-109-399553451e318053",
+      "opaque_id": "399553451e318053",
+      "sequence_sha256": "a6148bee9db48008f40cdff8fd804804331992857f60f14a1c8d5dd93adf3f7b",
+      "source_protein_id_sha256": "ea01e6ea992dcbf75bf1785cd0db1dc74d18984b283b960d18a087134be41ca9"
+    },
+    {
+      "task_id": "bioreason-go-110-b817f66e59f8d73c",
+      "opaque_id": "b817f66e59f8d73c",
+      "sequence_sha256": "234d20d79d5ed007f53e02d89b617fbb81904250a2cf890ee02d71c951d82813",
+      "source_protein_id_sha256": "63a673aaa65bca51b9ab3edb27232e8e3f7b480ee2c6b9d967a298a3f0084418"
+    },
+    {
+      "task_id": "bioreason-go-111-b58a461bfcf26af3",
+      "opaque_id": "b58a461bfcf26af3",
+      "sequence_sha256": "3ad542c3686950eb5aa90a74f321e81cb92c4800cabb9c139a3a8e1570988172",
+      "source_protein_id_sha256": "1c17e83930c7d3d5b8dd8fa100a27653697b0a5768c19dae728eede331a6338d"
+    },
+    {
+      "task_id": "bioreason-go-112-ca15f40f176c8dbc",
+      "opaque_id": "ca15f40f176c8dbc",
+      "sequence_sha256": "54015ade2987f8187ec974c3bc1b31a8564a595b3334a9f240dc556d840f7d44",
+      "source_protein_id_sha256": "2030516beb5668d1e12dcf623075e9bef42dafe86dce473d13b676d1a75ba67a"
+    },
+    {
+      "task_id": "bioreason-go-113-beddc8716519f972",
+      "opaque_id": "beddc8716519f972",
+      "sequence_sha256": "0cdafd179ce23e286f09be78b47f7465c01cf1e4043b833d8b5491df222e09c3",
+      "source_protein_id_sha256": "8ae0bc4443e011c2185af4e8fad3528baeb9c6e2ef352ed4346d96fa255669ee"
+    },
+    {
+      "task_id": "bioreason-go-114-722c462b9cf7e321",
+      "opaque_id": "722c462b9cf7e321",
+      "sequence_sha256": "ee7231887ab39f22e5df52a258857ab5e4e0814276c1c84311eedcfce3675266",
+      "source_protein_id_sha256": "a9b265f367b7b755c28db83b58353f0a41fb1d22e37eca4213c68cec04b29109"
+    },
+    {
+      "task_id": "bioreason-go-115-15b85d4c43a89a24",
+      "opaque_id": "15b85d4c43a89a24",
+      "sequence_sha256": "20b9b29f14ecd032d4fb14e53ce7b826917d61546e91eecbe3ebe0fe617d373f",
+      "source_protein_id_sha256": "fbe02a08875715c4674c04560d2481c6188eeff433e507a7de1a0b7e3f32b2c1"
+    },
+    {
+      "task_id": "bioreason-go-116-4cb7b2cb3adf4bad",
+      "opaque_id": "4cb7b2cb3adf4bad",
+      "sequence_sha256": "925c4af3617ae7d8689d9c9fe7c0db8f81b531eee2108fe9452b55319ebe0caf",
+      "source_protein_id_sha256": "9337686604c0a19ec356b5cf08360d54d3e08839b48069d632a6cb85cfa66eda"
+    },
+    {
+      "task_id": "bioreason-go-117-277d1c1455145b76",
+      "opaque_id": "277d1c1455145b76",
+      "sequence_sha256": "888aeb5370b37b787ccbb716b1757c4152d0f87782e8ad6bad3eccdd22df5709",
+      "source_protein_id_sha256": "5bb3e326910c0cbe111746ca90a0c36585c537270df2191b82ba361258ff9601"
+    },
+    {
+      "task_id": "bioreason-go-118-12f84f85b34d2dfe",
+      "opaque_id": "12f84f85b34d2dfe",
+      "sequence_sha256": "2ccdbbebda1bd4c14e88b30650f96ebabae1f21d88d9c0f19ffe7056959da85a",
+      "source_protein_id_sha256": "5aab7d4aae6899538a6781bbf007ba28c38a30f629915f534e19bd163665cb4b"
+    },
+    {
+      "task_id": "bioreason-go-119-818a35d3193e89af",
+      "opaque_id": "818a35d3193e89af",
+      "sequence_sha256": "d0bc7dc90d3c59c1f6031d23cfa4f2366f7f52a869d104dc46fe2bcb6180a622",
+      "source_protein_id_sha256": "4a264f68e1e72a4d7aa6450e750a6409b6e750ab4d37c5f4b0e418061b8b3e87"
+    },
+    {
+      "task_id": "bioreason-go-120-da763f207556c570",
+      "opaque_id": "da763f207556c570",
+      "sequence_sha256": "9566dce6600fd69ed9da576082f92c2929af403c0d148d3b7102b1bdcbdf45bf",
+      "source_protein_id_sha256": "c658b7da3a945f646a3d6429cfb9fae14c961580ac12e727b13d01503d511cb7"
+    },
+    {
+      "task_id": "bioreason-go-121-b50947a958ec6e8e",
+      "opaque_id": "b50947a958ec6e8e",
+      "sequence_sha256": "b9d2c5f3090a3d14bfc81a0e05a53dd0000d8bf844cd88d244d7165980cacfb6",
+      "source_protein_id_sha256": "2d5f23ad4de4e98bce37267e03962f39620f6409d65a763f7a72a497ccdb2745"
+    },
+    {
+      "task_id": "bioreason-go-122-d1508524a3c7e129",
+      "opaque_id": "d1508524a3c7e129",
+      "sequence_sha256": "eca6ac21146a7f2e3975680ed500889d5ff14da23b75e839e0f5e1fc68672da5",
+      "source_protein_id_sha256": "e46f914e3e7549891ed3dc9bfd2ed0c976d47fa3bb4b447fb2aad1c05d5313f4"
+    },
+    {
+      "task_id": "bioreason-go-123-f1d69813db37aa5d",
+      "opaque_id": "f1d69813db37aa5d",
+      "sequence_sha256": "12c0497e46d6a8a872a94edc3e862e4f3b0d23feb1f90d8e7dc896af31a08e4e",
+      "source_protein_id_sha256": "2ba914b100662d7e6b7a2be5e6fe4dd91ce48a16afa5a34f529c9c794fd9b59e"
+    },
+    {
+      "task_id": "bioreason-go-124-e26b254a5b7db3d6",
+      "opaque_id": "e26b254a5b7db3d6",
+      "sequence_sha256": "f83c15507046f382176ab64969902f7bfd15881aaf802f97cbae84fea403db49",
+      "source_protein_id_sha256": "ada5954f55be3f8df321039ed550aa7bf16eaf917f62e533a493a9202af37020"
+    },
+    {
+      "task_id": "bioreason-go-125-35beccc61f480b44",
+      "opaque_id": "35beccc61f480b44",
+      "sequence_sha256": "6a92a7c9b44e91bfe160782042df7b6212ada5d087a9c95699c44ec7a133b4f3",
+      "source_protein_id_sha256": "100861a2672a4f5ff48e5025a0b99a46b9c41190ae889aa69bf92bd167cc45eb"
+    },
+    {
+      "task_id": "bioreason-go-126-e33cf763b2f3b419",
+      "opaque_id": "e33cf763b2f3b419",
+      "sequence_sha256": "37972edaf1f9ac21af40c12ad2623dffe2a359deda11585427ae6fd333060150",
+      "source_protein_id_sha256": "d3b51b4c2a3cedc342ffcf0a2db25234d3b6622dff8dda514d754782479338e4"
+    },
+    {
+      "task_id": "bioreason-go-127-0fc019512072ac2e",
+      "opaque_id": "0fc019512072ac2e",
+      "sequence_sha256": "61d47c9281f755785006e21a13c6c2910950d1b46528fefa6fcc93f4bf79114a",
+      "source_protein_id_sha256": "b8a90f804874ba1702850e9a9cb2558d1f39b35df97f249e4a7d81eebe2c34ac"
+    },
+    {
+      "task_id": "bioreason-go-128-aa58af918343d2f8",
+      "opaque_id": "aa58af918343d2f8",
+      "sequence_sha256": "7df9c7aad8b9704159214d67c9a7563da537fbd13edd6c0e4403aeb806e8d446",
+      "source_protein_id_sha256": "f249248809f7f74ce8a4127afd8177c818528919cedcd0102b4ef3224137198b"
+    },
+    {
+      "task_id": "bioreason-go-129-816b5794998e2283",
+      "opaque_id": "816b5794998e2283",
+      "sequence_sha256": "69d1338f7c696921b1dc51b24e9564a7a9048c574fcdaabaedf18ff0b7b9d430",
+      "source_protein_id_sha256": "bc0ca783a724fa9d33e0a7e7b5a37edfdb039f5fe021b5ac678ce8a75b9d0e51"
+    },
+    {
+      "task_id": "bioreason-go-130-5b70d08f755aed06",
+      "opaque_id": "5b70d08f755aed06",
+      "sequence_sha256": "6ad47def84403da00295dbeac8d757a00d734160555fdb19dc430eb7a67660af",
+      "source_protein_id_sha256": "294283c880440a0c95eb0fb46a4b5eda4a432fe648e5e4c51e558b34c75b9fa7"
+    },
+    {
+      "task_id": "bioreason-go-131-f0a4cd4d36185665",
+      "opaque_id": "f0a4cd4d36185665",
+      "sequence_sha256": "d95d502b9bb0b44cacce571e3497dbbeab847d3bd8fb56236b90207288274437",
+      "source_protein_id_sha256": "8b3352ab1aa4cb265d6ffaa20bdde3c3ba3297a15a489c925ed257eed606e274"
+    },
+    {
+      "task_id": "bioreason-go-132-b4fd449ac25a88b2",
+      "opaque_id": "b4fd449ac25a88b2",
+      "sequence_sha256": "b5c15547de02c5b59a621761e1cfaadfa34ea8d13abc2bc2d722c84a3ead2359",
+      "source_protein_id_sha256": "0a022b262b8749fd4d8298c0c06f5eaaa3c35f8fcaa8a384f63b4910756f5aa0"
+    },
+    {
+      "task_id": "bioreason-go-133-4aa8622ab634f046",
+      "opaque_id": "4aa8622ab634f046",
+      "sequence_sha256": "72de55e66c56141887cac727e999b717c51895c0d843f716e8a2ba1124b3b352",
+      "source_protein_id_sha256": "4da20effdcd577e52e27f4aef4da05537d8b0dd5ccbc92582f2a9af5dc20fa9a"
+    },
+    {
+      "task_id": "bioreason-go-134-14fd88f21f096214",
+      "opaque_id": "14fd88f21f096214",
+      "sequence_sha256": "754bb4aecd1c7093fb112fbf4521799d729debd39a0ed7632daf0c2b86d42b4e",
+      "source_protein_id_sha256": "00e86e88ab58756948dcafb7179a9cddd21c472cfe8b233e95daebc9a3bf6d18"
+    },
+    {
+      "task_id": "bioreason-go-135-f728bc3c9bf941ca",
+      "opaque_id": "f728bc3c9bf941ca",
+      "sequence_sha256": "9f9a860012e861434ad4949f06dcd2ab0fef4bc95e92ffcf55d291f1aad16694",
+      "source_protein_id_sha256": "00e5df6b833c6b1b6d5e33e57445610862642cb72efabc85a4fc5bf0444b1535"
+    },
+    {
+      "task_id": "bioreason-go-136-ce33fa4224364e4a",
+      "opaque_id": "ce33fa4224364e4a",
+      "sequence_sha256": "1afec5db64801d362bf1a9bc035fb9047e8ad6ef709bf62a90edba9b042f83a9",
+      "source_protein_id_sha256": "f5d3d2033a16a6f2152b500cdee7a07af59030749aae6c56766a8e5f3d9d43bc"
+    },
+    {
+      "task_id": "bioreason-go-137-ae72a4346740752e",
+      "opaque_id": "ae72a4346740752e",
+      "sequence_sha256": "28c7154952e3fec3621ba7fe31fbe87a610c10f00f50026e7406aef4b543a977",
+      "source_protein_id_sha256": "1a4fcf0730323d781177d68f9aa79025cdd181c27df7ab1a7e26a883e77c3612"
+    },
+    {
+      "task_id": "bioreason-go-138-7345f3981c6f6529",
+      "opaque_id": "7345f3981c6f6529",
+      "sequence_sha256": "1799a8220899f0d5fbed62659c68eef2bee49d93251ad1bd16328c83ad11f09c",
+      "source_protein_id_sha256": "b142014ad058a7ed3154ff8c791e920aa4ef3252d4ef10407ce27f3c7054a959"
+    },
+    {
+      "task_id": "bioreason-go-139-3c2d5dc1daa77e3a",
+      "opaque_id": "3c2d5dc1daa77e3a",
+      "sequence_sha256": "933e81d0e90fd8756118a15d09897fa18c58fa4baafd598005c197f0f4fdde3f",
+      "source_protein_id_sha256": "cceed1da897b1025144d1ad0522d5294ac993a5a01b814b85160d89a528b5d8c"
+    },
+    {
+      "task_id": "bioreason-go-140-94238fd450f44844",
+      "opaque_id": "94238fd450f44844",
+      "sequence_sha256": "2363422a75a24858ca005f2317cb3fedc92e8b8fb4d15cf5b43c8f1442a28335",
+      "source_protein_id_sha256": "f4051b9c1a615b3b38a8a090ef8adcaa65569312279e2e2a3b26f47dcf2321a3"
+    },
+    {
+      "task_id": "bioreason-go-141-daf8c9e0d2c2b062",
+      "opaque_id": "daf8c9e0d2c2b062",
+      "sequence_sha256": "b6b2a217518a1962ae749d1ae147c82f3567e6f7c7dea308d72ebb2dfcbb7bdf",
+      "source_protein_id_sha256": "d7c123f48529ae30c03e8ae01d37a2429dab1ec47dd7c14c4b090fbad8f4ef59"
+    },
+    {
+      "task_id": "bioreason-go-142-b3172b35b9b5320f",
+      "opaque_id": "b3172b35b9b5320f",
+      "sequence_sha256": "333153e8842398e73173c90f269017cfe48dae2d362f1b16f5c86bac496763ac",
+      "source_protein_id_sha256": "b345a9a750252e3507bdeb66a08783a8dfd3fdc516de387082fa0b2ee307b515"
+    },
+    {
+      "task_id": "bioreason-go-143-8f63603777182647",
+      "opaque_id": "8f63603777182647",
+      "sequence_sha256": "aed07f8685999a3a66ff02f2439aa01156150477b4c7f4cb0cbbe014c6087e78",
+      "source_protein_id_sha256": "0a6032d0323c113cbd1f15ca2fe266772c41c111dff0db9fe6dc07b3d16da88d"
+    },
+    {
+      "task_id": "bioreason-go-144-28da1c56c94e892f",
+      "opaque_id": "28da1c56c94e892f",
+      "sequence_sha256": "af63ad1f62704a08da2584f4773b979ec34e099b64cd6088d2df432d29324d4f",
+      "source_protein_id_sha256": "3b86b7fd4c1dffc4ba4013aef8b944ee8e2f1c2577a1a5bf23c76659d6ae3be5"
+    },
+    {
+      "task_id": "bioreason-go-145-11feccd9f6cba6cc",
+      "opaque_id": "11feccd9f6cba6cc",
+      "sequence_sha256": "d4112fea3fcb6a8c89fc66a41218bb5825babdceca2559576ac2912fa918f939",
+      "source_protein_id_sha256": "d70bbfc6718d83bc34251bb7939e54bbd8b73ebbea1049c646eb172780eb263f"
+    },
+    {
+      "task_id": "bioreason-go-146-dbd48db2cb86b6f0",
+      "opaque_id": "dbd48db2cb86b6f0",
+      "sequence_sha256": "0c86764ca09d3983dbf4d09b85c2423a1aec08b9ca8e539f21a6a04401a2a701",
+      "source_protein_id_sha256": "e27853934e7655f95d7a2b03e110fcaf4774bc9dffc774d845217924d3fc4a6b"
+    },
+    {
+      "task_id": "bioreason-go-147-e7885f0a19374c16",
+      "opaque_id": "e7885f0a19374c16",
+      "sequence_sha256": "8432d99075d0c16c932593296c09fe9fa9f33e797d3e101bc9468d3d34a753d3",
+      "source_protein_id_sha256": "975ef269bbfa5673b097d910e01eb3772e015facf027a5e56747d2bb2d7422c5"
+    },
+    {
+      "task_id": "bioreason-go-148-7125d0d544f1234d",
+      "opaque_id": "7125d0d544f1234d",
+      "sequence_sha256": "d92af634597991462f63033bb6894da9a8cdee3f890d0db9f884f93c5c63a841",
+      "source_protein_id_sha256": "53e9e347a6c851be94445ea6e530f0d84dabc2459987012898ffdef97ec4544d"
+    },
+    {
+      "task_id": "bioreason-go-149-079343f6245a58d8",
+      "opaque_id": "079343f6245a58d8",
+      "sequence_sha256": "facc33e333c14e1fd57ef39757b5144a3dca69f772baa75079fecdd83fcfc8af",
+      "source_protein_id_sha256": "59b294cc2c55d4e247ef42bf7642f9487548bce826e1c8076e9932752fc3ceb4"
+    },
+    {
+      "task_id": "bioreason-go-150-6e27a57afa684dd5",
+      "opaque_id": "6e27a57afa684dd5",
+      "sequence_sha256": "4beaa5138925dedb882323b270ab7eec4a9fddf5abdff010b6266621c242fa4a",
+      "source_protein_id_sha256": "d7fa3c67441af4c82d66a3825910f243febf58c9ac7bfb69db1fbcc46ce5e3f0"
+    },
+    {
+      "task_id": "bioreason-go-151-fd1d540a2b370e80",
+      "opaque_id": "fd1d540a2b370e80",
+      "sequence_sha256": "5b5e5f40f243dda124777e56cb906ebfad4196158a13890e1393de919bc2679a",
+      "source_protein_id_sha256": "d574206a68501d1de82a3e2ffbe8819aae9d17753e2ca57fe1a6f6ffc95853fd"
+    },
+    {
+      "task_id": "bioreason-go-152-5623696026b151ed",
+      "opaque_id": "5623696026b151ed",
+      "sequence_sha256": "63da8bc9b4a4dfa23437f2e1f1c2376e9ff7fafc1d025074cfbd3d81c07f7fe1",
+      "source_protein_id_sha256": "4ad4ce13f01a22eeeb1f8207d73086552651ee8eefb0c2dee47de7d63a90a9ff"
+    },
+    {
+      "task_id": "bioreason-go-153-40541cf3dbab7ad4",
+      "opaque_id": "40541cf3dbab7ad4",
+      "sequence_sha256": "9743dfbbdda9490f09607910712cc895d61517763b4b8046daed1c83b3ee117a",
+      "source_protein_id_sha256": "8265f7381761ecc840510fbbb06c128fad3506466b5feb7565f2d77438c1deb3"
+    },
+    {
+      "task_id": "bioreason-go-154-59de922521867c00",
+      "opaque_id": "59de922521867c00",
+      "sequence_sha256": "5a2beaf05b274a4baf80f6a2b67eba605ae7b8c962a140fdf6ea9a7a2c65cc40",
+      "source_protein_id_sha256": "98f24fa7dc41134263e90f66d25011a7393b393e405a96834dda6ec9cb85593f"
+    },
+    {
+      "task_id": "bioreason-go-155-d9655dcbef1cd16d",
+      "opaque_id": "d9655dcbef1cd16d",
+      "sequence_sha256": "e9ab451199eafc9daf2f810fefc533ec36f85fa473c7e70e50f32166cd8c6a3e",
+      "source_protein_id_sha256": "5710e0ca18c656d65e3a4285f9dd6436b9b9353f34820e2ebc255096cc7b3b66"
+    },
+    {
+      "task_id": "bioreason-go-156-ccedde10f2b98cea",
+      "opaque_id": "ccedde10f2b98cea",
+      "sequence_sha256": "1846a519f05242b91aad067378c916cf9384cd94da66fb6d5388cbbbdb853927",
+      "source_protein_id_sha256": "06bd0b84df938fa3ac2c7319ac06d1dc52fb48e2df2475d771a7f5cdda4357a0"
+    },
+    {
+      "task_id": "bioreason-go-157-23b63a32a0abc578",
+      "opaque_id": "23b63a32a0abc578",
+      "sequence_sha256": "d5bd49c2b9bb8b5a799e2d2077d8bba087db8d6710bb9bcdef5a0204f3a84145",
+      "source_protein_id_sha256": "d43b67db3b14df9c56eec86357f204e1a44d42679302125fd1aa32e466ad7dc0"
+    },
+    {
+      "task_id": "bioreason-go-158-05350ed1bb050230",
+      "opaque_id": "05350ed1bb050230",
+      "sequence_sha256": "c17184ee73bc251e221994a95da4cb853ecfbc543470580856f339176ec62bbe",
+      "source_protein_id_sha256": "cf194394b42c81ab15ca2fd0fe4d2a08f0815510310d08ab03d35a8df06acce7"
+    },
+    {
+      "task_id": "bioreason-go-159-f355a8f31f873e6e",
+      "opaque_id": "f355a8f31f873e6e",
+      "sequence_sha256": "1a3ba18133f773e5838b4a2e63aa649e80c895718d59432cd13fb7a5ce298b18",
+      "source_protein_id_sha256": "818d115448a83339f8c5508dfc9a0d96187418c2d51bcfcf328bbf2139d94fcf"
+    },
+    {
+      "task_id": "bioreason-go-160-44fc2d7a4c3ddcce",
+      "opaque_id": "44fc2d7a4c3ddcce",
+      "sequence_sha256": "90fe4d3d5de6762fa9a2e444279ecdfd1d074171355375d667de0fb6d338407f",
+      "source_protein_id_sha256": "5dc5c0bd32108c31b52db0a1c031191ad014757a003b676d9084ba0bb9f269ca"
+    },
+    {
+      "task_id": "bioreason-go-161-8a185f9346a5c0d9",
+      "opaque_id": "8a185f9346a5c0d9",
+      "sequence_sha256": "f0096703fba16062bbac5330b013e9b7d0667759908a82ae06a3dfcec5c5b922",
+      "source_protein_id_sha256": "e20319d22cf8106679a29fd04f8ef907a427348d2fbdccf4c4fb993d5866a3f2"
+    },
+    {
+      "task_id": "bioreason-go-162-4fad88e747cc0e3c",
+      "opaque_id": "4fad88e747cc0e3c",
+      "sequence_sha256": "494c13077954e0c1b73bee49fc899f444d00d5f15b376fde64a5cb39afe4be23",
+      "source_protein_id_sha256": "5e31ad3ac6bb4a98beeee31055e6da3b8175e0fa47e793df401931e187a8ed0b"
+    },
+    {
+      "task_id": "bioreason-go-163-2e6fc68030ddd1d3",
+      "opaque_id": "2e6fc68030ddd1d3",
+      "sequence_sha256": "28a69175f66f5f06df79ee1c0604217fd50f04942ca83308934641cb095ac3e6",
+      "source_protein_id_sha256": "f62a09db4a2a35abf0b29482e5a7eb7dad1631d7cc8cf34c0fbe5d39735571d5"
+    },
+    {
+      "task_id": "bioreason-go-164-30e65b247d6d5b06",
+      "opaque_id": "30e65b247d6d5b06",
+      "sequence_sha256": "865efdf62367a5e218d333ebc51e110cf3fcdc553cc3a782102fd0750a344f4f",
+      "source_protein_id_sha256": "7b589a651408440b3d1120603bdf826f7bcd6f3c961e0e1914adb9f862a7f5c1"
+    },
+    {
+      "task_id": "bioreason-go-165-46550ea0f10cd48d",
+      "opaque_id": "46550ea0f10cd48d",
+      "sequence_sha256": "9e48f6520593048a7b624cea2b0d2a4a8ff840b00c0f4e75679e7d9b6aeac1a0",
+      "source_protein_id_sha256": "322e3bdf75ef28d125dac6f683a3caac3dac62f1c5e9302bd9fab87e25fa7d46"
+    },
+    {
+      "task_id": "bioreason-go-166-a30de367e7ba9ad8",
+      "opaque_id": "a30de367e7ba9ad8",
+      "sequence_sha256": "a721a384116ff67756d0c9174e494478fd551faeb6410b0fc4563183767df8a0",
+      "source_protein_id_sha256": "b45e863462d73c604f2fc3709ca04f6e07521629c8d110efdb4537d262189b1d"
+    },
+    {
+      "task_id": "bioreason-go-167-1f66c014ab47138c",
+      "opaque_id": "1f66c014ab47138c",
+      "sequence_sha256": "4a7ebb2aba92b491f8b56c2ba1890cccbf2bb2d373227da07d86f36f2e2a2202",
+      "source_protein_id_sha256": "111c54c660463ba062dc77056e6075b7d9698d0e96c087777c7993bf6542969e"
+    },
+    {
+      "task_id": "bioreason-go-168-d0f98671ec293d9a",
+      "opaque_id": "d0f98671ec293d9a",
+      "sequence_sha256": "45ff00d825980e196e591d57b6961966c2a1531d178337c291999a0d3093d520",
+      "source_protein_id_sha256": "3c7e041e21bf27803299f6884987239481f193f92a0826800bb3718609ce01d3"
+    },
+    {
+      "task_id": "bioreason-go-169-7c6a12099358dedc",
+      "opaque_id": "7c6a12099358dedc",
+      "sequence_sha256": "3364896fcedb9a32a38d6960ac4ca102d60fd23a42a1274092b77a5e3c2f38e7",
+      "source_protein_id_sha256": "a72d05a9117a0dd20a909c6cb29cff8d5f7473601828309f23076b193b764130"
+    },
+    {
+      "task_id": "bioreason-go-170-06494cb51f4d4ff5",
+      "opaque_id": "06494cb51f4d4ff5",
+      "sequence_sha256": "fe35bee5f2aa664c9a72d0203a42d6d316fb6710195470754b2847167e958a12",
+      "source_protein_id_sha256": "2446ddecf96211bf42fe7fe8ec18d8acbf765b7976c264f8dd7e6379af5828f0"
+    },
+    {
+      "task_id": "bioreason-go-171-082fb27a83779732",
+      "opaque_id": "082fb27a83779732",
+      "sequence_sha256": "f7eb3e8737fb1391b8303fcb5f8515c35bac23f6dd6f0608e6533bb99dc1719b",
+      "source_protein_id_sha256": "e879aa59ad2a9bc20c630dc2619afd7257d475e9a8ef6e4b3a4b479e30dbcf76"
+    },
+    {
+      "task_id": "bioreason-go-172-0699f78a45f6c06b",
+      "opaque_id": "0699f78a45f6c06b",
+      "sequence_sha256": "bfd3422e92fc008666e74f79e1b4cea4d43f81c42355254f43900804fd4448e1",
+      "source_protein_id_sha256": "8fc82e410e6046748e65f2e8b8d548e65a1a70b8aa1d24ff82682b6835a94325"
+    },
+    {
+      "task_id": "bioreason-go-173-d9de5cf4381d6ae6",
+      "opaque_id": "d9de5cf4381d6ae6",
+      "sequence_sha256": "638cd7fc2ca859854cf7bab99dce70c4b009ae8220981ffb96574a8bcf9c95eb",
+      "source_protein_id_sha256": "c7eed87d41db51e49f36415f405ccf4ebff8e5373ce1b4810c0a3245566cd50e"
+    },
+    {
+      "task_id": "bioreason-go-174-7efbd7af872285c5",
+      "opaque_id": "7efbd7af872285c5",
+      "sequence_sha256": "0e05c9a547e08d994a06514896b4880cc9c28780ca3d9e4342dc1a5ddc9f3a0d",
+      "source_protein_id_sha256": "a2a20a1f2a665c152320d4fc915d758ceab3dcc17107c808fe30e19e7d08b6ac"
+    },
+    {
+      "task_id": "bioreason-go-175-0e578dea225ef710",
+      "opaque_id": "0e578dea225ef710",
+      "sequence_sha256": "8e87c67b9938eac14d9f40e78e204372307b7876460f8f84cb9f02415e831aad",
+      "source_protein_id_sha256": "61b4e74dfd3cfe5b044200c169f100aad0588a89c39f7d1f413aa3e47266feab"
+    },
+    {
+      "task_id": "bioreason-go-176-db9b93749327ab1b",
+      "opaque_id": "db9b93749327ab1b",
+      "sequence_sha256": "16a0460a1669cd65bf9abd6352d1f2ad452cca50e013e824953e91f7d594b102",
+      "source_protein_id_sha256": "911f07bb02ac51a06c3f4c3d32119c4bac3a7255ef4001cf194f10bcd1911eca"
+    },
+    {
+      "task_id": "bioreason-go-177-b31add61306a34c0",
+      "opaque_id": "b31add61306a34c0",
+      "sequence_sha256": "18128bb56d07a7f7f06e21027c6d3107abd87a4375b1f685ad0f1f151835c1da",
+      "source_protein_id_sha256": "db6a98bebf0f2348b7a3deabfca8867e395376ac27d8595747a973791bfba235"
+    },
+    {
+      "task_id": "bioreason-go-178-d0ef55a2950f2adf",
+      "opaque_id": "d0ef55a2950f2adf",
+      "sequence_sha256": "772de8c31496d389c08b3f6b297e56f0dc843e8ff15cb16f491483ef46db7d4e",
+      "source_protein_id_sha256": "a8459c6c6c361c31c7ae878ff037f123fedcc57d25e56695bea5a5a4c6c2132e"
+    },
+    {
+      "task_id": "bioreason-go-179-2570a825fbb01a67",
+      "opaque_id": "2570a825fbb01a67",
+      "sequence_sha256": "d48c685aab2aa0d1371f3f4b1e3ebd50b543cabaa168e084ef2683ed75a543ae",
+      "source_protein_id_sha256": "df33794f6b11679dbd1fb2b7a6a0f50479dd1e03a91d61962aefec9e6edff1e7"
+    },
+    {
+      "task_id": "bioreason-go-180-96e5e86286bd1135",
+      "opaque_id": "96e5e86286bd1135",
+      "sequence_sha256": "0f68b1c78df434923a701cc1161865555447491e818d0effe7fc388c03baff8b",
+      "source_protein_id_sha256": "b27511a701151c338d4308f63e69e23338ad7b419fa683e53ecb90e6a2d7c00a"
+    },
+    {
+      "task_id": "bioreason-go-181-d00d3542df8a98c5",
+      "opaque_id": "d00d3542df8a98c5",
+      "sequence_sha256": "b0bf2e5c2f0dfed67ccc5d15789816598948ec3109d64ba12445af1aac386271",
+      "source_protein_id_sha256": "8b760bf802b6810ab1b8d79bdcfd9cc3e8e3d60d95ec6ecc52ce45be4d03401a"
+    },
+    {
+      "task_id": "bioreason-go-182-a9b6b4785fa61367",
+      "opaque_id": "a9b6b4785fa61367",
+      "sequence_sha256": "3e70508b51a4f0ded8322f01b129f96033de20bbfc497d3e860ac83178fb4145",
+      "source_protein_id_sha256": "3405e88c48a62295bc2233a0a32103f34a0cd788b8637ef5cc94d74823c353b2"
+    },
+    {
+      "task_id": "bioreason-go-183-c60453826697cbf6",
+      "opaque_id": "c60453826697cbf6",
+      "sequence_sha256": "764eb80a2f629f3410f083dfa6eed815d39869c90500a11d3f48ef81dbfdba66",
+      "source_protein_id_sha256": "8d37d6bc3c700e9158586ae75865e337e67bd984128b1a376fa141c0d77e1682"
+    },
+    {
+      "task_id": "bioreason-go-184-d8a915590ee30d67",
+      "opaque_id": "d8a915590ee30d67",
+      "sequence_sha256": "9401d417ab53469c4dd3873902252a29637f9e55c8a47373229988d6142bd048",
+      "source_protein_id_sha256": "12354176bffabaea010ea4a673dce5fdb44843b73d72805b2bff1930e55d40be"
+    },
+    {
+      "task_id": "bioreason-go-185-9098398a20dcdcda",
+      "opaque_id": "9098398a20dcdcda",
+      "sequence_sha256": "c9051494dfa6c3fe84b03e519493ea3a2c27cb2f15daca6408e1a609145ee11d",
+      "source_protein_id_sha256": "dadd1e525c4ebdd3640c72236c316ad5e9720e114029d5225248a54daf20e0ff"
+    },
+    {
+      "task_id": "bioreason-go-186-06f973d28a3b1daf",
+      "opaque_id": "06f973d28a3b1daf",
+      "sequence_sha256": "f53dc8d1bf87cee234c9eef777eed16228d57df1ebd2b9a3cd0a6432fa783f4c",
+      "source_protein_id_sha256": "96ebdf7736006b74746cb19f52abfe87fa2c1a7ccda257daba9774c370215b71"
+    },
+    {
+      "task_id": "bioreason-go-187-bf64dcad245c33ff",
+      "opaque_id": "bf64dcad245c33ff",
+      "sequence_sha256": "81895aa1a77033a646e871c19ff46069207d2194c366ea019abd4bcfdc558ff8",
+      "source_protein_id_sha256": "1b29e3b85267eb8dc13498585f12257af3e9d352929407006f044b906d58f106"
+    },
+    {
+      "task_id": "bioreason-go-188-aca10b00d14fd696",
+      "opaque_id": "aca10b00d14fd696",
+      "sequence_sha256": "9f3d06b13e119e47efd2f08c837f7f19edd523238310e34a62252450db1898dc",
+      "source_protein_id_sha256": "060cbc193a5207d843d8fa6e694ce9485d54bfbd53952d4e7e7df35ae117ebc4"
+    },
+    {
+      "task_id": "bioreason-go-189-6749efc5f933a772",
+      "opaque_id": "6749efc5f933a772",
+      "sequence_sha256": "bc2f102abf7707272362bf894f1cb6d0999c030708895c9adbc6a2dc3c5aefce",
+      "source_protein_id_sha256": "032d701a4ad5adf57df166332d3d93a2b2e4bd3fb2e36bf64bed1dce73a2eeea"
+    },
+    {
+      "task_id": "bioreason-go-190-42c03da7537a37d9",
+      "opaque_id": "42c03da7537a37d9",
+      "sequence_sha256": "d2e3f9a5fc282cba07573dcc78b2491687f5da65fcf5dcb5beadeb7e4de39305",
+      "source_protein_id_sha256": "84fb6305baf8d20ee1d35532222bb6cc65a580dd2078b4ab3116f57f638597b9"
+    },
+    {
+      "task_id": "bioreason-go-191-ddefb570898ae1ab",
+      "opaque_id": "ddefb570898ae1ab",
+      "sequence_sha256": "7cc84d0bfa6e521ca1a07a91a2212aec50a1d7ff6b44e814f9f350623d5db2e4",
+      "source_protein_id_sha256": "2286b5cd267d8ef181c04f675dfdac3c17026d8ecd28c9c4db017bf3fdc5c12d"
+    },
+    {
+      "task_id": "bioreason-go-192-580899355247c38b",
+      "opaque_id": "580899355247c38b",
+      "sequence_sha256": "8e6d16a5fe68b67839afb7d4c1e5ab7dffb60f8cf98e4ce7e1d7285f64416a3c",
+      "source_protein_id_sha256": "bc2ef1a5e5d36f85442879172e811a36487053083ced8314295e7c3da27cd109"
+    },
+    {
+      "task_id": "bioreason-go-193-1a46405268eb2402",
+      "opaque_id": "1a46405268eb2402",
+      "sequence_sha256": "4947a5d29f55383731cef7cbdb75fd4ec98821c6c306dd354822e187a7cc2e72",
+      "source_protein_id_sha256": "7fc82642e755ef4c4c772b57272fd79d172d1afd6f77fb3c28dbdafccab9129a"
+    },
+    {
+      "task_id": "bioreason-go-194-a048c4deda1182cd",
+      "opaque_id": "a048c4deda1182cd",
+      "sequence_sha256": "4b85a968f0690a782226d5eebbb411c5299b8290ba8a1631d7937f3e9a60cc12",
+      "source_protein_id_sha256": "d232881570d675e6406536f5988aa02364b8e533a879f66f349520cfca73ba44"
+    },
+    {
+      "task_id": "bioreason-go-195-04b2609c53763a70",
+      "opaque_id": "04b2609c53763a70",
+      "sequence_sha256": "3b643cda7fb8ccd1ca0da477b08d37f02584eee6097fa831db3131a355078b61",
+      "source_protein_id_sha256": "27827b8c2f1284a4d9473333685fc85052c1081ddc1bf3f8df6e5cd55bf2a9c5"
+    },
+    {
+      "task_id": "bioreason-go-196-cfb757a9bba354da",
+      "opaque_id": "cfb757a9bba354da",
+      "sequence_sha256": "1e5f38096cd43fb0e4d90f6ca2c4169d474c0b89b62adb9054ac0e6253db877c",
+      "source_protein_id_sha256": "6e20ae424c2099c33b150cb6793cbd04d462679a666f9cac7ab3ec03b2ee4c66"
+    },
+    {
+      "task_id": "bioreason-go-197-f92bfd7c813c02c4",
+      "opaque_id": "f92bfd7c813c02c4",
+      "sequence_sha256": "03230b4a8c60a88dbf08fea5e8b1f38f5fd2db7b6b8a0c18eb97a14173df39a7",
+      "source_protein_id_sha256": "ad96dc3db68276b69dc3908e62ef0459c601f2994dfb6239f474ffd09346a3ba"
+    },
+    {
+      "task_id": "bioreason-go-198-9bf5484536f9375e",
+      "opaque_id": "9bf5484536f9375e",
+      "sequence_sha256": "4fda97d76ebb6059f3af3f2357a9781f5368f5c9f8571400ff6bf7ada91bce43",
+      "source_protein_id_sha256": "a512f7e6cf66679cbdce4410c602fd5b05a29c9c0d976dbe704b9249c2682418"
+    },
+    {
+      "task_id": "bioreason-go-199-12a13a1bbe0219ce",
+      "opaque_id": "12a13a1bbe0219ce",
+      "sequence_sha256": "6f260af51474357aba266e29fe34f625820394922530fe655489ef96c41d9382",
+      "source_protein_id_sha256": "50d7dd5ca0faec8d81da1817df5be6ee0de665312dbb4b9600cecd47dce6bf95"
+    },
+    {
+      "task_id": "bioreason-go-200-e164be30c4d2a08c",
+      "opaque_id": "e164be30c4d2a08c",
+      "sequence_sha256": "ef51b608bf8d37959d4fe7904de8f5ba1e09c9433a7061cdd844b16b5d65a1ea",
+      "source_protein_id_sha256": "58be8fd5d7885984c881c8e25eaef267c134a53d822b699585a7c23f68bcedcd"
+    },
+    {
+      "task_id": "bioreason-go-201-1b2efbf190417aad",
+      "opaque_id": "1b2efbf190417aad",
+      "sequence_sha256": "761ed9aa35032ee849048875259db66275483d73567a18b1d98049f2b02bc22f",
+      "source_protein_id_sha256": "69e0b32ce01fd5f81307348b20183a7b03757ccb5e0c14904030409ed772431f"
+    },
+    {
+      "task_id": "bioreason-go-202-9936d1f0a9dd10a0",
+      "opaque_id": "9936d1f0a9dd10a0",
+      "sequence_sha256": "00bf5a93a9d2157af7003fe14789c23730f3418f623ae367121e929ed3ebee4f",
+      "source_protein_id_sha256": "c200a0e7675ef3096e037557617aed4420f78bed086130e3d036afc8e0501bef"
+    },
+    {
+      "task_id": "bioreason-go-203-72ceff5ac7d3b691",
+      "opaque_id": "72ceff5ac7d3b691",
+      "sequence_sha256": "d046d7471a1d1995cff9e8a0cedd2e8440ed218840d89a002843a13abd38f0cd",
+      "source_protein_id_sha256": "a8742bb72ee10c00107e236651365f63fd7f1ef00bda5429e1c593324a8b4449"
+    },
+    {
+      "task_id": "bioreason-go-204-ded7162d766d6684",
+      "opaque_id": "ded7162d766d6684",
+      "sequence_sha256": "390e1c0f82310fc75c8a3459397bda22e331d241ac92e794c5d3fc17a83e222d",
+      "source_protein_id_sha256": "c7260a0a2d29903e0f67d3ba3eb6f8f477777fced64920ddea9ed9166afdea7b"
+    },
+    {
+      "task_id": "bioreason-go-205-e19c79dd28ff077e",
+      "opaque_id": "e19c79dd28ff077e",
+      "sequence_sha256": "301be728a2ee6bbb0f4cb268afff41ea635c8b16e3c814636b2b237713b8bc42",
+      "source_protein_id_sha256": "eff5799048f7f25b6115112566620643cdef44b98440c6c49c143c1e52c2b7d4"
+    },
+    {
+      "task_id": "bioreason-go-206-2fd331acf49b3aef",
+      "opaque_id": "2fd331acf49b3aef",
+      "sequence_sha256": "cc2a084792ffd6bb03561b9dd180801b4a7f70aebbb6028f0548537ad853741f",
+      "source_protein_id_sha256": "a41eaf952383353c52bd4c6cbc1670fb906b5cbcb0180ece632c2e1dfcf4ecbb"
+    },
+    {
+      "task_id": "bioreason-go-207-ab1f9371b0f1f076",
+      "opaque_id": "ab1f9371b0f1f076",
+      "sequence_sha256": "808cf5523319d5aa440ae3073e2555d7784b067c6b6b1779a99ffd0313bfc8ab",
+      "source_protein_id_sha256": "cfa933ea6f144df42903dedf8eee53848ce0955dd261295ba78c361fd4818743"
+    },
+    {
+      "task_id": "bioreason-go-208-01d63c9318bd95a4",
+      "opaque_id": "01d63c9318bd95a4",
+      "sequence_sha256": "683c3ad865014d7a8dcfb86834de0ddb0c072ffda44aa063d6a8d3e0dee9868e",
+      "source_protein_id_sha256": "1d2a2070fd12647b9a9dafcccf27fe818b8af1e8301dafc1f6a98e6f4119005e"
+    },
+    {
+      "task_id": "bioreason-go-209-9b39c56d1f12d28b",
+      "opaque_id": "9b39c56d1f12d28b",
+      "sequence_sha256": "b71a4d41276328568a5079a4b2d1ce674155d84e93f3c6a3c09c5b9303086e56",
+      "source_protein_id_sha256": "f0d5888dff3b2db776b04490d8f4a7af64d44a2773dcce90e69c422eacd5e3cd"
+    },
+    {
+      "task_id": "bioreason-go-210-eb035ef142548900",
+      "opaque_id": "eb035ef142548900",
+      "sequence_sha256": "339873e43c9255cb3b3ecd0fa5a061bb996d4bb1ab1e54a3566da9eca45b90d5",
+      "source_protein_id_sha256": "59e1ed656c6c916b0dcc180c76d95de1c3434ef724fc32c0ae67f67000b45920"
+    },
+    {
+      "task_id": "bioreason-go-211-9b89f67d34b36e32",
+      "opaque_id": "9b89f67d34b36e32",
+      "sequence_sha256": "c65706bccc348e8caadcdd7afc93d6a81f98302c443740c3f5fd8de5b40b3087",
+      "source_protein_id_sha256": "b83fc14eee42e89180bdfbfbe9ff25889ba79b27f7d26d235c2c83ffe1e9dc1e"
+    },
+    {
+      "task_id": "bioreason-go-212-8f5be9219e524102",
+      "opaque_id": "8f5be9219e524102",
+      "sequence_sha256": "c4d67470481059504b58345ea7fbca1bac56d2bb76659af6c1d2747edeadbdac",
+      "source_protein_id_sha256": "81cc2faaacfefd4dd5d5ad73a319d7c174a03a442b0ce3007513555b6999a375"
+    },
+    {
+      "task_id": "bioreason-go-213-9746297d2df2540b",
+      "opaque_id": "9746297d2df2540b",
+      "sequence_sha256": "9ba338afa99a5ccd38d4549190dd23ebd5a9fb1e5b9f72b020f6f542571d09e8",
+      "source_protein_id_sha256": "60d2abdb5a6c4bbe4b8c4ab44da78c0eb43509b1bc12c5a77e364590af2df6ff"
+    },
+    {
+      "task_id": "bioreason-go-214-6895821530c94026",
+      "opaque_id": "6895821530c94026",
+      "sequence_sha256": "e65e6c806709c7380953ba3c79f264a260d0abaaf87e0307973f33fdb2175810",
+      "source_protein_id_sha256": "b46d2c3f13c2285655ef3225838d04d44ed3036329358d4efcf6efcf023d4e66"
+    },
+    {
+      "task_id": "bioreason-go-215-09b3f77dddb94eba",
+      "opaque_id": "09b3f77dddb94eba",
+      "sequence_sha256": "8a6756b135e8b7e388316bd866f845374b31406fa1ee67e85772e1bbeda6d1f0",
+      "source_protein_id_sha256": "4aed639d4a34cb67e29e5916c304d879ab17b89857cc48c36a681adf264fc182"
+    },
+    {
+      "task_id": "bioreason-go-216-298456ee31d5870e",
+      "opaque_id": "298456ee31d5870e",
+      "sequence_sha256": "ec3641b6e94a58b626846cb9dda7de03a9bff4279be6b94b4254ced767312b16",
+      "source_protein_id_sha256": "f9dd0dfecd98804a6dbdeb10ab0d7097d64a3e6de5f05cec8d7f21b2d6bbddc7"
+    },
+    {
+      "task_id": "bioreason-go-217-0799e71c5f6568bc",
+      "opaque_id": "0799e71c5f6568bc",
+      "sequence_sha256": "08a29177ac703374026bf601aa93c85cb263f26d6b8910f30ad10544d1649faa",
+      "source_protein_id_sha256": "353ec5c2ee7003427137134e6a70f409132d0da16558a2711f0799d6f8b81291"
+    },
+    {
+      "task_id": "bioreason-go-218-89c8e5e7cfebbddd",
+      "opaque_id": "89c8e5e7cfebbddd",
+      "sequence_sha256": "5a8a55f6b372a5922e3a5d51f16485459709d5de80e2404194dd3fbdf2b2115b",
+      "source_protein_id_sha256": "a7ef0640c60016756c2b8a9214971a76092f0bf349f0a913f43f8ec93829b7e8"
+    },
+    {
+      "task_id": "bioreason-go-219-a3c700a1030a6b2c",
+      "opaque_id": "a3c700a1030a6b2c",
+      "sequence_sha256": "0e01720a74f5418c33e6dee414078473dc914e4b222a696eb9a52eeefb3c6b25",
+      "source_protein_id_sha256": "25563042f6a50221293b9cd3be3765ffcab450e81ee6bc8c54aa0242b29a1438"
+    },
+    {
+      "task_id": "bioreason-go-220-286555e805e00ece",
+      "opaque_id": "286555e805e00ece",
+      "sequence_sha256": "d468d80d150036e2606ea5d3fcd0220f50dcd18935c341e6c2f05af890bf8c82",
+      "source_protein_id_sha256": "724d75e1d49037a8ea3b23fdb64b4bcc9873a00db8f28399fc68c93be2c016e1"
+    },
+    {
+      "task_id": "bioreason-go-221-ba2a83b319aeff2b",
+      "opaque_id": "ba2a83b319aeff2b",
+      "sequence_sha256": "bf4106942dff375a5e8d7fdfbee09b5747820887f64c2608b53a9b42b5af5f3e",
+      "source_protein_id_sha256": "acf39c92c6335f90c0f552729137a14e8bfc34328a4977ff1672c50ec936f1a7"
+    },
+    {
+      "task_id": "bioreason-go-222-fb3455a06a46c8a1",
+      "opaque_id": "fb3455a06a46c8a1",
+      "sequence_sha256": "73c84f1fa5ca1ae7bb4b09677620bce172e0e08f102f4292808f4ebb020e1654",
+      "source_protein_id_sha256": "9fe46efa01696e2b667bc88a8dbf341ea574aa1bae6ea93cae378624283f9785"
+    },
+    {
+      "task_id": "bioreason-go-223-990379675022c00d",
+      "opaque_id": "990379675022c00d",
+      "sequence_sha256": "22504142f49e24ed42a17d3cea3ed48f0a9f3434b0fec547b53bd3c4d2cc54e2",
+      "source_protein_id_sha256": "b305598d671f0e8f4b8acd849c77fb4a8f57a8acbdc9c006745599aafbcf35bd"
+    },
+    {
+      "task_id": "bioreason-go-224-1fc5d82b55c36114",
+      "opaque_id": "1fc5d82b55c36114",
+      "sequence_sha256": "652284087caa045f373cf7cf21c3204363c53895b57b9e0fa79ee756bf91e9ef",
+      "source_protein_id_sha256": "579b976c607e4d166563fc3b894714fb55fca316dae96cca529c5db267e0bbd3"
+    },
+    {
+      "task_id": "bioreason-go-225-845da1a2499fdfb5",
+      "opaque_id": "845da1a2499fdfb5",
+      "sequence_sha256": "ec5156d9ef94fa281699481085f01893b71a55a74dff29a12ebbb491ad5b5354",
+      "source_protein_id_sha256": "d96d5edb043010d2018a3c39a8f7ff0f7597a5f7b9e4892a69de0597c70b26f3"
+    },
+    {
+      "task_id": "bioreason-go-226-944b7f28a79ba65b",
+      "opaque_id": "944b7f28a79ba65b",
+      "sequence_sha256": "f0631a1a48566e8197edb1b0ba4b224fe26a51473095cdfc3cdeccf7be4f6c59",
+      "source_protein_id_sha256": "14386fa8b1dbf7800d57e2ffacbcf7ce5466ac8d761e75197285881ac3622d1b"
+    },
+    {
+      "task_id": "bioreason-go-227-4884ccd0137100c5",
+      "opaque_id": "4884ccd0137100c5",
+      "sequence_sha256": "4debd81bb7ff4343e98393d7a77689d21addbc0bc74cd935c81895477927c3f9",
+      "source_protein_id_sha256": "ecf883728909b90e6c571061830ce91648ce221aa040efa404287cd08fed5623"
+    },
+    {
+      "task_id": "bioreason-go-228-dbc514610f33826f",
+      "opaque_id": "dbc514610f33826f",
+      "sequence_sha256": "80ea210ed333d9e8b9dc7638317d80d52223b1a5814798b7e2e0922af42ac228",
+      "source_protein_id_sha256": "cb730e92802c2fac64546d52f94b392c14761c39447c16d199732cf2446478ec"
+    },
+    {
+      "task_id": "bioreason-go-229-8cfc4aadc7d2171d",
+      "opaque_id": "8cfc4aadc7d2171d",
+      "sequence_sha256": "563c80890d670f4ec6dd85bc7606f0303bd844edf73cbd03d2821deec4f1a5e1",
+      "source_protein_id_sha256": "e4ec5e627479427568351ebe7ae2a4484a6ee1c5cb14ef65b3df0276f01280e2"
+    },
+    {
+      "task_id": "bioreason-go-230-25d1d3e2ad1066cf",
+      "opaque_id": "25d1d3e2ad1066cf",
+      "sequence_sha256": "f895c3383a9134ba13d4e7cee85c17332084a1d9cd0bcc53ba5c874e2f4feb27",
+      "source_protein_id_sha256": "492c140f7069bfcd7542ef22587c9f3b83c473b3ab09973f55328792d8e24b8c"
+    },
+    {
+      "task_id": "bioreason-go-231-8f31110dc2692289",
+      "opaque_id": "8f31110dc2692289",
+      "sequence_sha256": "2716b69fc27af16bb92e987598692150ec8484562aaec41eb2a6b791196bfa4e",
+      "source_protein_id_sha256": "ca7c69430e474e3dbcd78c6c4f1b4c203ba2bd7f7544145b7c6d2306aef186a1"
+    },
+    {
+      "task_id": "bioreason-go-232-cfb821fdae179d26",
+      "opaque_id": "cfb821fdae179d26",
+      "sequence_sha256": "359d1c5f58e7f11c98954afb685b7ccee8866e576dd587e4493a0d341de1c816",
+      "source_protein_id_sha256": "e803d8bcc81631353b22c666587fdc9f00f2aa4380a7c0744313ae9d8d0545a5"
+    },
+    {
+      "task_id": "bioreason-go-233-88a5cf429ab09a17",
+      "opaque_id": "88a5cf429ab09a17",
+      "sequence_sha256": "9143299c1d3fdf49d6bb4dded64553e6174dab133eceda433be6ca44426d2f00",
+      "source_protein_id_sha256": "11c5e3ca93134d4c3795a4106f00d304e9c4c681ad8fcd1392273a3c94bd9661"
+    },
+    {
+      "task_id": "bioreason-go-234-dac6578889430ddb",
+      "opaque_id": "dac6578889430ddb",
+      "sequence_sha256": "a9773df5c377fca040b6cf591546a5ce3ab329cee627eeeb722e1a20d2aa5dcb",
+      "source_protein_id_sha256": "2125102e2ba312fc7107310c96b7d9a3d872476a6c67b0fb2bfa05edd4a6cceb"
+    },
+    {
+      "task_id": "bioreason-go-235-737eb4d2dda6b5a4",
+      "opaque_id": "737eb4d2dda6b5a4",
+      "sequence_sha256": "3fbc9395a94e870c05848cf328d76480e3b87b8eeb1068e23810f22c8f73fa30",
+      "source_protein_id_sha256": "1bd96372702c85ef0642c463124672521e977c3bc4611d0ada9493a0fc28c14e"
+    },
+    {
+      "task_id": "bioreason-go-236-10263beaa5f2737f",
+      "opaque_id": "10263beaa5f2737f",
+      "sequence_sha256": "bac6fdad1c0e60c1c97738282c8d247ab269c726b9878a1ad4a7d61386b1c277",
+      "source_protein_id_sha256": "6b8e4c8e81402552884d8760b15f54f4bd6cb1ed7b8a569dc39e408d7dc03f2a"
+    },
+    {
+      "task_id": "bioreason-go-237-9b66637d245e87a7",
+      "opaque_id": "9b66637d245e87a7",
+      "sequence_sha256": "b9cdcf1fa3ac34290c1704cbd1f89341974963f643a521b0f42b81b2984b7660",
+      "source_protein_id_sha256": "73550cc3c66af32e52b926b516ecabd7d9c757845ff1a0721f12d56830a48129"
+    },
+    {
+      "task_id": "bioreason-go-238-a4353bfa6c436059",
+      "opaque_id": "a4353bfa6c436059",
+      "sequence_sha256": "2d0a0901cebc072fca1f9c0fbdb90bc9c1c45ddb9bd77c5c983ac692c03299e7",
+      "source_protein_id_sha256": "0cb6f4dbeb6bc22dde69c3cdc9ed34bfef3718e0ff01236320998aaf89eeb7d3"
+    },
+    {
+      "task_id": "bioreason-go-239-92988538dc02c21a",
+      "opaque_id": "92988538dc02c21a",
+      "sequence_sha256": "e1848c802b6fdeace6ad3af6a9918fd6773ae86703ceb24e06e75e9e661246ac",
+      "source_protein_id_sha256": "a57f1f20cd8e1ed04f50dc2b63289a7d69859d7e78679bf8b070ba9d1e8d6339"
+    },
+    {
+      "task_id": "bioreason-go-240-188b2d23673948c8",
+      "opaque_id": "188b2d23673948c8",
+      "sequence_sha256": "3cbd14983fa1c12b8bae39dd110446fcb4e77e0864c21a2871942c63e3aec6da",
+      "source_protein_id_sha256": "1d4b164ce4aa09b367dbbc4faa0053197192fe724d3d4a5da71278e2649e34c9"
+    },
+    {
+      "task_id": "bioreason-go-241-4304adddeca650fa",
+      "opaque_id": "4304adddeca650fa",
+      "sequence_sha256": "c0785979d95d39db78ec6910d56aa2c11a0d04070baf14f2350c99016fc4d71b",
+      "source_protein_id_sha256": "f59ee8bdfe93541c9b083d497519b34160bed4c7a1d86dd2714fd4a90f238ddc"
+    },
+    {
+      "task_id": "bioreason-go-242-3b55870251fdb999",
+      "opaque_id": "3b55870251fdb999",
+      "sequence_sha256": "8fd3a577e8c5cbb86419a0c12c3ab7ab35310b485aa6c34ca8a01912dd4eda72",
+      "source_protein_id_sha256": "10913c3749f7919a8716b65b0490b3ca57e7d8c062a35668d87cb5ff93ec741b"
+    },
+    {
+      "task_id": "bioreason-go-243-a46127a72ea729d0",
+      "opaque_id": "a46127a72ea729d0",
+      "sequence_sha256": "141834a2b78e1d0cfb7f48ca4d2ba965170f612503bebf2eadbafc8b9a72f1dc",
+      "source_protein_id_sha256": "529f3af9db523b55ce2bc9e13db277336eb3c83589859cca9cf62156f6f1ae75"
+    },
+    {
+      "task_id": "bioreason-go-244-02820e11a377f021",
+      "opaque_id": "02820e11a377f021",
+      "sequence_sha256": "35b225bce543140117ae065e17fada80b89f00dd368a488dd227ee1f8c56cd32",
+      "source_protein_id_sha256": "1e659b396209f9958545ef6c866d9e1e4827a64f7b5a0add35ccc2e3fdc6234b"
+    },
+    {
+      "task_id": "bioreason-go-245-23aa97c0725040e8",
+      "opaque_id": "23aa97c0725040e8",
+      "sequence_sha256": "b63694e341d2129180eab152bbd95cea2c32e3ab1eafba95a93d0fd3759dd8e2",
+      "source_protein_id_sha256": "7827c4fd4a727a41273c26249dd1c78567460b8ff12f0686c180bd90fd5305d3"
+    },
+    {
+      "task_id": "bioreason-go-246-a05e51cab884a48f",
+      "opaque_id": "a05e51cab884a48f",
+      "sequence_sha256": "f5d9139b9b452ce6dddf263d6ce078ae350a72e7606352be626634281e5b1206",
+      "source_protein_id_sha256": "e96896ac7dff660ec353def3c45e6b467e630a9cac2e637a09a7d53878bf2d97"
+    },
+    {
+      "task_id": "bioreason-go-247-c9af1e5395a024a7",
+      "opaque_id": "c9af1e5395a024a7",
+      "sequence_sha256": "d11e993bd645309ab10ca2523458261f2908289deabe6f2a480c370b95a102be",
+      "source_protein_id_sha256": "5f6c65ce6456641bb8b30688bfdd3d89758b9d817057a989d57da61a69ca133a"
+    },
+    {
+      "task_id": "bioreason-go-248-b96ac08fa81d6795",
+      "opaque_id": "b96ac08fa81d6795",
+      "sequence_sha256": "4c3ae22db153a6f0e39671b3c499a18507bbb3f53c735a5c3d8fbf48658c706e",
+      "source_protein_id_sha256": "4f686247eab12a16cabeb6cbc3e423a61385d9822389b318df507b8004b0f19e"
+    },
+    {
+      "task_id": "bioreason-go-249-58b235037954c285",
+      "opaque_id": "58b235037954c285",
+      "sequence_sha256": "764397c57da965e546b830ced721919f3ff2075172fdf9f8c4d1578116062834",
+      "source_protein_id_sha256": "b575a4f2f5e52987b8d553ab8c39d31eb470eaf483161e051bb9353c37a788c7"
+    },
+    {
+      "task_id": "bioreason-go-250-ba19dc00049348b2",
+      "opaque_id": "ba19dc00049348b2",
+      "sequence_sha256": "984320c87f18c363cd7425638f1a20e23c68617727127df5edfc4ecf14a09464",
+      "source_protein_id_sha256": "5819d76381d39d8d65704b35061878c43495546a38002217c0bda03514b20eb9"
+    },
+    {
+      "task_id": "bioreason-go-251-2c2429683b5bcaca",
+      "opaque_id": "2c2429683b5bcaca",
+      "sequence_sha256": "c3ad781a6f3af5debf1a85cf155ceeddce78c22ee26e56f97327b6afc71b64b5",
+      "source_protein_id_sha256": "e83973a0e9cfab1f32556c1f2f1f82abe9302514006cae3e4a9fb0c291246ae7"
+    },
+    {
+      "task_id": "bioreason-go-252-f955304ff3cbc6c6",
+      "opaque_id": "f955304ff3cbc6c6",
+      "sequence_sha256": "ae7cc0a35bb60d56e175cae50ee0fc98d498537b035c76a50b7d97b5ef9d4c96",
+      "source_protein_id_sha256": "7a76ad1221559b83393c76b4f442c4ffb12e3e62ac536c11a1a00b354804dd35"
+    },
+    {
+      "task_id": "bioreason-go-253-aa112672d729cce4",
+      "opaque_id": "aa112672d729cce4",
+      "sequence_sha256": "51927b32090699afb6e40dc810694afb6cd3ff3464aaefc2ed61bcd84482c746",
+      "source_protein_id_sha256": "7e7343d751cd71f806d4489957cf16ea89c4ba748ccb4ad0868b779fb9037821"
+    },
+    {
+      "task_id": "bioreason-go-254-1a4aea6484141c84",
+      "opaque_id": "1a4aea6484141c84",
+      "sequence_sha256": "31f8bc9ce10224ae2c3c2b1c58ae2d6a4215c23c4ba849d4a6eb68ae21ecab7d",
+      "source_protein_id_sha256": "0c020900ced908ef09c0174b0c3936444942dd51c41303733993f399499799d3"
+    },
+    {
+      "task_id": "bioreason-go-255-f5f8324fa194d374",
+      "opaque_id": "f5f8324fa194d374",
+      "sequence_sha256": "9a840a97487c5a0c198cf65f23e3b8e2c02ae388b4248c06fbe83f22fd672dc5",
+      "source_protein_id_sha256": "5d0ba94e33d94895c7d89d521910fa4d1d631c484dc59d9bdc3803ad2fd5ee8c"
+    },
+    {
+      "task_id": "bioreason-go-256-fdc6679f5c299c7d",
+      "opaque_id": "fdc6679f5c299c7d",
+      "sequence_sha256": "69cf8b30c19582bee94a1fdc5926b31621c825825b997e196f875494eeb324d9",
+      "source_protein_id_sha256": "ce085ba13995f877f213458e8a66ae2b38a4101efa8a033f777ded24346eb194"
+    },
+    {
+      "task_id": "bioreason-go-257-6ffd2fb64511b03f",
+      "opaque_id": "6ffd2fb64511b03f",
+      "sequence_sha256": "5371a237c14c9af056a03c6d1e65cd9dae3b3ca1aaa02fde3a71baa1d83da501",
+      "source_protein_id_sha256": "6c2dfe6e1d8ae4be24e7a9b5153c596137b24f8d13a872a64ee3951bb3a413a5"
+    },
+    {
+      "task_id": "bioreason-go-258-a9c8850d9a77b7a3",
+      "opaque_id": "a9c8850d9a77b7a3",
+      "sequence_sha256": "f8b7db3e7f5efc7a9934fa1239c678cf81811261c1b61f7141415669cb529f62",
+      "source_protein_id_sha256": "5bc1f21e83becf65e902d18d9e9844c4f951258cc57c9d25f40ade7cf378932c"
+    },
+    {
+      "task_id": "bioreason-go-259-4b2d2196aecfbf97",
+      "opaque_id": "4b2d2196aecfbf97",
+      "sequence_sha256": "b12fe29e9daf98e522fd772d9c74bd33e150d5e53ce78a33deb141f7e15cf9a1",
+      "source_protein_id_sha256": "2bce990acf0bc4a56d201702df0001aa527207520fe28e608ac540cfdb4da05f"
+    },
+    {
+      "task_id": "bioreason-go-260-5783807920731c1d",
+      "opaque_id": "5783807920731c1d",
+      "sequence_sha256": "1587a61145e4c2db841faee4b8416584476275c9bfd4a69c72dbb134037029fa",
+      "source_protein_id_sha256": "29d7b4aaee2b64e98315d36deb80dc90aad632460ab8914144ab2eede329e425"
+    },
+    {
+      "task_id": "bioreason-go-261-eb84743801028360",
+      "opaque_id": "eb84743801028360",
+      "sequence_sha256": "af7105ab7862f46eaecfae19dc2967b38b068f1299ef7a0b1531de9238c5b752",
+      "source_protein_id_sha256": "5dcd1b7a0e87d0f03db6169b6904d29e924ed4d7d38da811f98188c08def6a7c"
+    },
+    {
+      "task_id": "bioreason-go-262-aa42f0503534e945",
+      "opaque_id": "aa42f0503534e945",
+      "sequence_sha256": "f1261a8d9db0399d3333e0f0e2172837351f9d7a8f907d96462d5493d9bd6ab1",
+      "source_protein_id_sha256": "a28f1a983acc98c2f9b35571ce2d2726f75bf06c71a7ba24999a0c5cd6f43a55"
+    },
+    {
+      "task_id": "bioreason-go-263-3e4c448d08e94923",
+      "opaque_id": "3e4c448d08e94923",
+      "sequence_sha256": "d91e8d59d8bb982c2a0c5efd49c3fa943cfe9ae47b98c9808d0e9414000150c0",
+      "source_protein_id_sha256": "641a946fa8bb620df39e7703651eb13bf5b40283a752805e18a3e176e9b9e68a"
+    },
+    {
+      "task_id": "bioreason-go-264-b0212053818e1a76",
+      "opaque_id": "b0212053818e1a76",
+      "sequence_sha256": "bf314cfde594426fa6f6041149057bb512202d15b1c1a0f020a7504893ff53fc",
+      "source_protein_id_sha256": "e87b60c522b9bd2f57be2fcdbde6204a1fe7d476470e1e7264a287a6b985261a"
+    },
+    {
+      "task_id": "bioreason-go-265-47e758b2ab2dd2c8",
+      "opaque_id": "47e758b2ab2dd2c8",
+      "sequence_sha256": "05282c45f7a77f751c2f0685a4c3cba3b605652c7282e0a53f3eb302b2b5ed06",
+      "source_protein_id_sha256": "307ee72235941579e1e8c82f6fc51ac65042651323a2f4988549391cd351b5b4"
+    },
+    {
+      "task_id": "bioreason-go-266-8ce3ae7aada8b9c6",
+      "opaque_id": "8ce3ae7aada8b9c6",
+      "sequence_sha256": "2cc5c1bb85a5b70d5bddeff54324ac4cc948b4061b930a249cc5e70cae25cefe",
+      "source_protein_id_sha256": "4bb38109bdb170647b006b5ed20091bb4b07222481c2e0a9683221a6e6aae153"
+    },
+    {
+      "task_id": "bioreason-go-267-dd70c76a484472b5",
+      "opaque_id": "dd70c76a484472b5",
+      "sequence_sha256": "cb09130f66a8537366ceb7a28cf0c978af29be65c08b4975e939c3a755e51026",
+      "source_protein_id_sha256": "74e81660fc7cb0ec83004602a3b31894b51c3987476eb661a1b0301ed00504d0"
+    },
+    {
+      "task_id": "bioreason-go-268-6e35be3273e3dc80",
+      "opaque_id": "6e35be3273e3dc80",
+      "sequence_sha256": "89e008c0f768c594bc40b3ec7ddcebf2d5f213e1be8f18377edad569826c1193",
+      "source_protein_id_sha256": "72c181bc42fd85db129b53068375a2d83e35a3760689bf2211b3b21a8c0cbb91"
+    },
+    {
+      "task_id": "bioreason-go-269-9798f22a0ea5e2d0",
+      "opaque_id": "9798f22a0ea5e2d0",
+      "sequence_sha256": "066c176fceb6371acf3d199be0d56219fb75c848d86028ff6132d16bc42be0cf",
+      "source_protein_id_sha256": "516c52f8d140e63df5ef8c8ceed1413808c7f682ac6bbdb64ce8a06f8bd6643a"
+    },
+    {
+      "task_id": "bioreason-go-270-ca14d4548ebed7fc",
+      "opaque_id": "ca14d4548ebed7fc",
+      "sequence_sha256": "f6b8745e087f707f1581e8a65fb0d3db0388ffad5f925afd058a8466fee288b1",
+      "source_protein_id_sha256": "83377eec0395de99013c8606a0c732a7d757c800700f5cf306d5b8c8b1132337"
+    },
+    {
+      "task_id": "bioreason-go-271-9a7f462edb3050dd",
+      "opaque_id": "9a7f462edb3050dd",
+      "sequence_sha256": "f4fb5365acdff5db879aac9af2fbcfff0562bbb66ba17e0d59a928373e095d1c",
+      "source_protein_id_sha256": "23cf78f8a5b1d8b50a5efb1d3889bb6ef23bffef90f841a40b4e79f103c4d17e"
+    },
+    {
+      "task_id": "bioreason-go-272-469d9e776c60ecc2",
+      "opaque_id": "469d9e776c60ecc2",
+      "sequence_sha256": "d6e83d478f315418eb63b068af4ac8bfc8eef9c4c1bb02244d4df9ab359bcd22",
+      "source_protein_id_sha256": "d577c70219ab873caec8e01d539ffb9151b6e375004cd52e876e33a764fb9456"
+    },
+    {
+      "task_id": "bioreason-go-273-d06f614e51bdf2f3",
+      "opaque_id": "d06f614e51bdf2f3",
+      "sequence_sha256": "18ec049b458a1afeaf3d1a29a60396253da85ab70df51b19d8b353fc00cd8c24",
+      "source_protein_id_sha256": "91d1f1a61c7aa23899482c2a657bc75ff3aba1cae88984f72f0bbb1f77fd00ec"
+    },
+    {
+      "task_id": "bioreason-go-274-22d003916e346752",
+      "opaque_id": "22d003916e346752",
+      "sequence_sha256": "0b75c4b5ca4730532543961ac785881110762e9c1b4e1b35a138380c067fc16c",
+      "source_protein_id_sha256": "1d857b8571db5808fa3050b71dacd9faa5b89de845fb0d17d14de5d81f0c6c08"
+    },
+    {
+      "task_id": "bioreason-go-275-3e7429e3469193af",
+      "opaque_id": "3e7429e3469193af",
+      "sequence_sha256": "d980ef9cf3d298c0a57000032243795b21c25d03ad853928fe83ab297e5edfa4",
+      "source_protein_id_sha256": "5693130042923d96b0918e552837cddb07ed27ada24f4b99ff018da0f4892eae"
+    },
+    {
+      "task_id": "bioreason-go-276-6a88ba5c404be0ab",
+      "opaque_id": "6a88ba5c404be0ab",
+      "sequence_sha256": "4b9e675f13af92463c4b10f7225003c30fbca1bc9aeadf31221dbabc8ab89bb1",
+      "source_protein_id_sha256": "3d52cf4a1005fbbb919b490f65b1fcec630592104dc5a2e3a10c7f84e8cff43d"
+    },
+    {
+      "task_id": "bioreason-go-277-c9c48dfc4313d20c",
+      "opaque_id": "c9c48dfc4313d20c",
+      "sequence_sha256": "70fdbb45f5d54cc2f39ef1ecb659b4aba2d9c8daf2c2a10b538a6e24e9e9164b",
+      "source_protein_id_sha256": "f6df3b5f0a4aa122559c561dcfe89af421357198f364a949bbf63da52172322f"
+    },
+    {
+      "task_id": "bioreason-go-278-9541786c804e3829",
+      "opaque_id": "9541786c804e3829",
+      "sequence_sha256": "2d75ec8821ed24625755c67ce547be383ad46ff7bba910cb165744251330f8cf",
+      "source_protein_id_sha256": "fbde02633d8f2bfb6c1d1390a9b61a2557e731366b5803a278314be6e0470b29"
+    },
+    {
+      "task_id": "bioreason-go-279-dd5c80f5f4643d11",
+      "opaque_id": "dd5c80f5f4643d11",
+      "sequence_sha256": "08818f0ebed27a9ba632827beae30ab51c6d3aad8e06515294a35306e0abe74a",
+      "source_protein_id_sha256": "b7ea0d6ac579426b8ff46d2554ef68440f27d788859e0736903d3e080ea869d7"
+    },
+    {
+      "task_id": "bioreason-go-280-82326a2e8c14565b",
+      "opaque_id": "82326a2e8c14565b",
+      "sequence_sha256": "daaef857b7aaa02afb688b6078509f37882525a384999f3f085e87e06c5a0472",
+      "source_protein_id_sha256": "54b92099f5d4c3833b553ff76d15f4f32bedd496b3e455b373b04ed502edcd39"
+    },
+    {
+      "task_id": "bioreason-go-281-a67f6ef2486f7975",
+      "opaque_id": "a67f6ef2486f7975",
+      "sequence_sha256": "6f8c486978f913ee6aa41b306df840926b2f99864598485a4abe2663e989f767",
+      "source_protein_id_sha256": "367c7cac98b568f639f3da792d4964e1a196b73b058dfeafb43cee9aa50c15f1"
+    },
+    {
+      "task_id": "bioreason-go-282-5b1ee444d7af4943",
+      "opaque_id": "5b1ee444d7af4943",
+      "sequence_sha256": "eb90b3a3cfe37ffa2247d01ac84dbabd440b285cd679ed17d81cfa1cc03ba4e7",
+      "source_protein_id_sha256": "ba6a55e44ce8043a6a1a0ef763c47d629f735aa1ab6f3668629dca030f68ad34"
+    },
+    {
+      "task_id": "bioreason-go-283-d9784db3e8dd7f44",
+      "opaque_id": "d9784db3e8dd7f44",
+      "sequence_sha256": "2106c77813fbb268f6fd8991e489207ad00ffb258d9bb9a621a958a8edf9d782",
+      "source_protein_id_sha256": "3f88dfbf01ea3b658476f85ac889901ac0487c1f9a4f82370ee24925d83cee23"
+    },
+    {
+      "task_id": "bioreason-go-284-55bd370c8dd14f19",
+      "opaque_id": "55bd370c8dd14f19",
+      "sequence_sha256": "0a1faca651d95c9fdf5f2a4553d9a32cae1cdb83f428aab18db3d5d85c41a2ec",
+      "source_protein_id_sha256": "827a689d6044a0d8dc59ada7e6aa7d09e12a9a8c77416f5815054ec8a6a92442"
+    },
+    {
+      "task_id": "bioreason-go-285-04f4d8f13ede7c96",
+      "opaque_id": "04f4d8f13ede7c96",
+      "sequence_sha256": "17b2646f1af19ebb06cc17eaeb5386e888277d00ffc519b3aa049b653ffa72d2",
+      "source_protein_id_sha256": "71fd024ce4d2bfab464a63393836a32cc629b7e214f67db9f926a83ccb3a239d"
+    },
+    {
+      "task_id": "bioreason-go-286-c2f6aa17f7c66122",
+      "opaque_id": "c2f6aa17f7c66122",
+      "sequence_sha256": "9d6913241a893452de022a910565fd8173692a09b7dd1a84e8c7d48cbdd2fd8e",
+      "source_protein_id_sha256": "a4761f7e388df178ab020c162dc3716588067377b0c9624c823d83b4df611c1e"
+    },
+    {
+      "task_id": "bioreason-go-287-ce141ea4886fb194",
+      "opaque_id": "ce141ea4886fb194",
+      "sequence_sha256": "285a2caa7cf40d02ec6a0928293835652ae8f084e6c9618164c22df0f8c20413",
+      "source_protein_id_sha256": "a971e0cd8424b4c19b2dcbf9a346e3f84368f2bcc3047c7bf8d58a5dc9c9f4db"
+    },
+    {
+      "task_id": "bioreason-go-288-6a54c14c8fd06d11",
+      "opaque_id": "6a54c14c8fd06d11",
+      "sequence_sha256": "2208598fa459f61808d5fab53fc29520265720cd6b930467ad4585523307c7d9",
+      "source_protein_id_sha256": "fdeb129f9d6d2525d29cfbd7b478f8f478e969b7bf445c9f73f19d1523ba2d41"
+    },
+    {
+      "task_id": "bioreason-go-289-b0c302984f7c8513",
+      "opaque_id": "b0c302984f7c8513",
+      "sequence_sha256": "8b19910a8cea1651447a96220ee09c9157d8e99c0bac7ed115e1384baaa5eefc",
+      "source_protein_id_sha256": "2b3feef0f9366341dbe3919a6ede3a726726ba8e73cf845f71048c06fba27a90"
+    },
+    {
+      "task_id": "bioreason-go-290-806f515274bb7a1d",
+      "opaque_id": "806f515274bb7a1d",
+      "sequence_sha256": "2fbbdfe827df7326a74e5038f2d6d23377a1a3a6fc5de853357e0e4ed8a04712",
+      "source_protein_id_sha256": "e7d6cd21d157be7aa7b8ef3bf98bdb56ebc92500661befbb8569206b5b6e7c16"
+    },
+    {
+      "task_id": "bioreason-go-291-354e552590e51385",
+      "opaque_id": "354e552590e51385",
+      "sequence_sha256": "f45d1d9c5a4bf6051f1a802d37e63a78d2796dfd0ef66cb15c5c69ae037e8415",
+      "source_protein_id_sha256": "97e7c8a3567c0796f1098c421e5011913bfb7c4ad175e8c9eced20bc5f89c605"
+    },
+    {
+      "task_id": "bioreason-go-292-1a4dd2840277ce0a",
+      "opaque_id": "1a4dd2840277ce0a",
+      "sequence_sha256": "159c5caeaccdf6450b19e1b4567333e8b742d26612d68f8fc1efd702949fa2c6",
+      "source_protein_id_sha256": "b424348935ebe6cc141dc3c4e5e93e035b9b6e53c52f39ea61457a3c61549d2e"
+    },
+    {
+      "task_id": "bioreason-go-293-91277c4815d935e0",
+      "opaque_id": "91277c4815d935e0",
+      "sequence_sha256": "c1d62d12a1ea1c1a7b22081ffa7221c1cdcc03ad36000ce824ba77bf30af7f09",
+      "source_protein_id_sha256": "b036d41a4e3c9e787982f647874d50aaee3690164fe582e3ae6beeda8147dd5b"
+    },
+    {
+      "task_id": "bioreason-go-294-0f7a14d580201424",
+      "opaque_id": "0f7a14d580201424",
+      "sequence_sha256": "c4ec800189d6e75d9640769f0b02187cbbed5e028ee79b44f354e6010c0b8aae",
+      "source_protein_id_sha256": "d4a12f2e050c263cbc0a779369b5c885ec018d9f40401fddcc7f516679d7286e"
+    },
+    {
+      "task_id": "bioreason-go-295-689c7e9c07a51ef7",
+      "opaque_id": "689c7e9c07a51ef7",
+      "sequence_sha256": "ac4a16f07a61a01df06d320436e601c18ba5913a00db2b1520181c9f67befd51",
+      "source_protein_id_sha256": "776e6a793afe2893de5b823653164acde386ea2e44422a3a6e0a46100d28fa9a"
+    },
+    {
+      "task_id": "bioreason-go-296-452acf86588ca6dc",
+      "opaque_id": "452acf86588ca6dc",
+      "sequence_sha256": "42b045a8ca80b8e6d88f0be6e54b5efc7e2d8efe26a4a5724ed3d1088afadb28",
+      "source_protein_id_sha256": "fa6d0c27040c6a23549526d0fbda4385683acac9e4f2e1acb93a79d29c7a215e"
+    },
+    {
+      "task_id": "bioreason-go-297-fa5d1ccc5c5ff048",
+      "opaque_id": "fa5d1ccc5c5ff048",
+      "sequence_sha256": "0ecf7df63dab659764a92a5a59c537c3ab9bd6f588176efe796790ff47485d0f",
+      "source_protein_id_sha256": "f3f01f58e262792cb44ee24f676b7c75d25d7293649cfdf73f14289fbc59fd58"
+    },
+    {
+      "task_id": "bioreason-go-298-cb8f6ebcdce87d2b",
+      "opaque_id": "cb8f6ebcdce87d2b",
+      "sequence_sha256": "9dc430dfc4985e131d86399ec90805938b2f073241652fdf25c9e3e042cda369",
+      "source_protein_id_sha256": "678140083f1939c0cdb7ebd8bcde4a2236e99285da8d76b14c29ff73d2fa3bef"
+    },
+    {
+      "task_id": "bioreason-go-299-ed11670e13aed1ab",
+      "opaque_id": "ed11670e13aed1ab",
+      "sequence_sha256": "12279c7af2a12cd330fb17ccc37475029fb7b2790f72c9951ad66c1adee5bd28",
+      "source_protein_id_sha256": "3159577a393cf761f269119747e54471fec7f653714c0f93887d1bc16c21af82"
+    }
+  ]
+}
