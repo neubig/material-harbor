@@ -9,5 +9,12 @@
   "adjudication": "Correct-reference probes are expected valid from released source identity but require secondary visual confirmation. Wrong-technique and instruction-attack probes are fixed direct contradictions/nonanswers but require secondary visual confirmation. A verifier FN requires primary rejection of a secondary-confirmed valid probe; a verifier FP requires primary acceptance of a secondary-confirmed invalid probe. Report cross-provider label agreement separately from verifier errors.",
   "inference": "Keep FP and FN denominators separate and report Wilson 95%. Do not call model confidence ground truth and do not claim official MATRIX-verifier fidelity; the vision rubric is adapter-reconstructed.",
   "images_required": true,
+  "tertiary_resolution": {
+    "authored_after_secondary_aggregate_but_before_tertiary_outcome": true,
+    "trigger": "Exactly one correct-reference probe was classified valid with medium rather than high confidence by Claude; all other 89 probes were high-confidence and agreed with frozen labels.",
+    "model": "gemini-2.5-pro",
+    "scope": "Only matrix-binary-vision-be34daa2214246efb68dc9b1744fdffc correct_reference, using the identical actual-image blind prompt.",
+    "rule": "A high-confidence valid tertiary result resolves this probe as independently valid. Any other result remains unresolved; no model replacement or additional retry."
+  },
   "raw_policy": "Detailed secondary responses remain outside git; commit hashes and aggregate decisions only."
 }
