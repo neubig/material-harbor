@@ -1,7 +1,7 @@
 {
-  "version": 2,
+  "version": 3,
   "candidate": "OmniMatBench CAL image-bearing subset",
-  "overall": "unresolved_verifier_false_negative_gate",
+  "overall": "fail_verifier_false_negative_gate",
   "gates": {
     "public_tasks": {
       "verdict": "pass",
@@ -22,19 +22,17 @@
       "adapter_v2_secondary": "All 100 retained attempts regraded; 26/100 under both native-v1 and adapter-v2. Native-v1 remains the precommitted headline."
     },
     "verifier_false_positive": {
-      "verdict": "not_needed_after_fn_failure",
-      "native_v1_parser_audit": "0/693 artificial invalid cases; Wilson 95% upper 0.551%.",
-      "adapter_v2_parser_audit": "0/693 artificial invalid cases; Wilson 95% upper 0.551%.",
-      "scientific_wrong_probes": "0/15 accepted under each comparator; point estimate 0%, Wilson 95% upper 20.39%, so this small scientific sample alone does not prove FP <15%."
+      "verdict": "pass_observed_adversarial_population",
+      "evidence": "Native-v1 accepted 0/142 mechanically definitely wrong, arity-preserving adversarial responses: one for every released image task. This is a task-level full-population perturbation audit, not a claim about every possible wrong string.",
+      "supporting_parser_audit": "0/693 artificial invalid cases."
     },
     "verifier_false_negative": {
-      "verdict": "unresolved_pending_full_population_audit",
-      "native_v1_parser_audit": "22/181 = 12.155%; Wilson 95% CI [8.165%, 17.717%], which crosses 15% and is not definitive.",
-      "adapter_v2_parser_audit": "0/181 artificial numeric-equivalence probes after post-cohort repair; adapter-v2 was not the frozen headline verifier.",
-      "preliminary_scientific_audit": "Both comparator versions rejected 6/15 high-confidence derivations selected from a precommitted 30. This is conditional descriptive evidence only: selection after adjudication invalidates an unconditional 6/15 population CI, while conservative 6/30 inference crosses 15%. The one source-unanswerable and all unresolved cases remain accounted for.",
-      "resolution_plan": "Audit all 142 image tasks at task level using mechanically exact numeric equivalences and frozen independently adjudicated algebraic identities. At least 22 distinct native-v1 false-negative tasks proves a finite-population rate >15% without extrapolation."
+      "verdict": "fail",
+      "evidence": "Native-v1 rejected a proven semantically identical response on 24/142 distinct released image tasks = 16.901%, strictly above 15%. All 142 tasks are in the denominator, each task contributes at most one error, and the source-unanswerable case is retained as non-error. Fourteen tasks use mechanically asserted exact-Decimal equality; ten use frozen algebraic identities independently confirmed with high confidence by both GPT-5.1 and Claude Sonnet 4.6 before counting.",
+      "finite_population_inference": "This is an enumerated finite-population result, not a selected-sample CI: 24/142 >15%, and only 22 errors were required.",
+      "preliminary_audit_caveat": "The earlier 6/15 selected scientific audit is retained as conditional descriptive evidence only and is not used in this verdict."
     }
   },
-  "stop_reason": null,
+  "stop_reason": "Definitive native-v1 task-level full-population false-negative rate 24/142 = 16.901%, above the strict 15% ceiling.",
   "no_pass_claim": true
 }

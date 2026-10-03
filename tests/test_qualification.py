@@ -127,6 +127,17 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(cumulative, first + additional)
         self.assertEqual(len(set(cumulative)), 300)
 
+    def test_omnimat_full_population_audit_uses_task_denominator(self):
+        report = json.loads((ROOT / "qualification/omnimat-full-population-fn-audit-report.json").read_text())
+        self.assertEqual(report["population"], 142)
+        self.assertEqual(len(report["rows"]), 142)
+        self.assertEqual(len({row["task_id"] for row in report["rows"]}), 142)
+        self.assertEqual(report["false_negative"]["errors"], 24)
+        self.assertGreater(report["false_negative"]["rate"], 0.15)
+        self.assertEqual(report["false_negative"]["finite_population_gate"], "fail")
+        self.assertEqual(report["false_positive"]["errors"], 0)
+
+
 
 
 if __name__ == "__main__":
