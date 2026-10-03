@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "authored_before_replay_outcomes": true,
+  "source_run": "harbor_vision/runs/matrix-binary-vision-qualification-n100-network-retry",
+  "reason": "The frozen Harbor agent attempts ran with pixels recorded but the GPT-5.1 verifier configuration was not injected into its container, producing infrastructure_error/null rewards after answer generation.",
+  "preservation": "Never rerun an agent attempt that produced a Harbor result. Replay only matrix-full-credit-binary-v1 over the exact preserved artifacts/logs/artifacts/answer.txt bytes.",
+  "scheduled_denominator": 100,
+  "missing_policy": "Missing/empty answers and any unresolved replay infrastructure errors count as binary zero in the all-scheduled primary denominator.",
+  "judge": "gpt-5.1 via authorized all-hands LLM proxy, temperature 0, identical frozen reconstructed official-style vision rubric",
+  "binary_mapping": "Exactly graded score 1 succeeds; 0, 0.25, 0.5, 0.75, missing, and errors fail. Fractional scores remain reported separately.",
+  "inference": "Compute the precommitted 98.333333% Wilson interval. MATRIX vision rows provide no paper/source grouping, so no pseudo-cluster interval is permitted. Regardless of n100, execute the already frozen remaining 150 to obtain the full 250-image finite population before a definitive gate claim.",
+  "fidelity_caveat": "The MATRIX release publishes vision kinds and a loader but no vision rubrics. The endpoint is reconstructed official-style, not official-exact. This caveat remains attached to every result."
+}
