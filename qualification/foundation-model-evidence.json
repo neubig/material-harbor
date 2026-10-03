@@ -12,7 +12,28 @@
   "gate_outcomes": {
     "MATCHA": "pass_existence",
     "CSMBench": "pass_existence",
-    "OmniMatBench": "pass_existence"
+    "OmniMatBench": "pass_existence",
+    "MATRIX": "pass_direct_association",
+    "BioReason-Pro_GO": "pass_direct_association"
   },
-  "caveat": "This establishes a named multimodal scientific foundation model with materials relevance only. It does not establish fit, improvement, or successful tool integration on MATCHA, CSMBench, or OmniMatBench specifically."
+  "candidate_specific_primary_evidence": {
+    "MATRIX": {
+      "model": "MATRIX-PT",
+      "model_url": "https://huggingface.co/radical-ai/MATRIX-PT",
+      "paper_evidence": "The official MATRIX paper introduces the materials-science benchmark and corresponding MATRIX-PT text, vision, and full post-trained Qwen models; it reports 10-25% experimental-interpretation and 5-16% text-reasoning gains from visual supervision.",
+      "verdict": "pass"
+    },
+    "BioReason-Pro_GO": {
+      "model": "BioReason-Pro SFT/RL",
+      "repository": "https://github.com/bowang-lab/BioReason-Pro",
+      "model_urls": [
+        "https://huggingface.co/wanglab/bioreason-pro-sft",
+        "https://huggingface.co/wanglab/bioreason-pro-rl"
+      ],
+      "primary_evidence": "The official release describes a multimodal reasoning LLM for protein function prediction, integrating ESM3 protein embeddings, a GO graph encoder, InterPro/STRING biological context, and Qwen3-4B; public SFT and RL checkpoints are released.",
+      "task_scope_caveat": "The qualification task is the distinct nonvisual Gene Ontology annotation-recovery endpoint, not an evaluation of BioReason-Pro free-form summaries or structure-image reasoning.",
+      "verdict": "pass"
+    }
+  },
+  "caveat": "Intern-S1 establishes a named multimodal scientific foundation model with materials relevance only. It does not establish fit, improvement, or successful tool integration on MATCHA, CSMBench, or OmniMatBench specifically. MATRIX and BioReason-Pro instead have directly associated released domain models documented above."
 }

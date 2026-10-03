@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "candidate": "OmniMatBench CAL image-bearing subset",
-  "overall": "fail_verifier_false_negative_gate",
+  "overall": "unresolved_verifier_false_negative_gate",
   "gates": {
     "public_tasks": {
       "verdict": "pass",
@@ -28,12 +28,13 @@
       "scientific_wrong_probes": "0/15 accepted under each comparator; point estimate 0%, Wilson 95% upper 20.39%, so this small scientific sample alone does not prove FP <15%."
     },
     "verifier_false_negative": {
-      "verdict": "fail",
-      "native_v1_parser_audit": "22/181 = 12.155%; Wilson 95% CI [8.165%, 17.717%].",
-      "adapter_v2_parser_audit": "0/181 artificial numeric-equivalence probes after post-cohort repair.",
-      "independent_scientific_audit": "Blind derivations were committed before labels were opened. Both native-v1 and adapter-v2 rejected 6/15 transparent calculations/direct source readings: 40.0%, Wilson 95% CI [19.824%, 64.253%], conclusively above 15%."
+      "verdict": "unresolved_pending_full_population_audit",
+      "native_v1_parser_audit": "22/181 = 12.155%; Wilson 95% CI [8.165%, 17.717%], which crosses 15% and is not definitive.",
+      "adapter_v2_parser_audit": "0/181 artificial numeric-equivalence probes after post-cohort repair; adapter-v2 was not the frozen headline verifier.",
+      "preliminary_scientific_audit": "Both comparator versions rejected 6/15 high-confidence derivations selected from a precommitted 30. This is conditional descriptive evidence only: selection after adjudication invalidates an unconditional 6/15 population CI, while conservative 6/30 inference crosses 15%. The one source-unanswerable and all unresolved cases remain accounted for.",
+      "resolution_plan": "Audit all 142 image tasks at task level using mechanically exact numeric equivalences and frozen independently adjudicated algebraic identities. At least 22 distinct native-v1 false-negative tasks proves a finite-population rate >15% without extrapolation."
     }
   },
-  "stop_reason": "Definitive independent scientific false-negative gate failure; further FP expansion is unnecessary under the precommitted stop rule.",
+  "stop_reason": null,
   "no_pass_claim": true
 }

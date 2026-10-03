@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "candidate": "CSMBench image-bearing subset",
+  "overall": "fail_deepseek_binary_accuracy_gate",
+  "gates": {
+    "public_nonduplicate_tasks": {
+      "verdict": "pass",
+      "evidence": "Frozen 100-task cohort from the released 1,024-question image-bearing MCQA population; task IDs and image commitments are distinct."
+    },
+    "relevant_domain_foundation_model": {
+      "verdict": "pass_with_task_fit_caveat",
+      "evidence": "Official Intern-S1 sources establish a named multimodal scientific foundation model with materials relevance.",
+      "caveat": "No primary source establishes Intern-S1 improvement on CSMBench specifically."
+    },
+    "harbor": {
+      "verdict": "pass",
+      "evidence": "100/100 frozen image tasks executed through Harbor; recording proxy observed original-byte image matches for all 100 tasks."
+    },
+    "deepseek_v4_1_flash_binary_accuracy": {
+      "verdict": "fail",
+      "evidence": "91/100 = 91.0% with four missing rewards retained as zero; 98.333% Wilson CI [81.754%, 95.801%] and paper-cluster bootstrap CI [82.0%, 98.0%] are both entirely >=70%."
+    },
+    "verifier_false_positive_and_false_negative": {
+      "verdict": "not_needed_after_accuracy_failure"
+    }
+  },
+  "stop_reason": "Definitive strict upper accuracy-gate failure under both precommitted intervals; further costly verifier qualification is unnecessary.",
+  "no_pass_claim": true
+}

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "scope": "All 142 released image-bearing OmniMatBench CAL tasks, not the earlier selected 15/30 subset.",
+  "reason": "The preliminary 6/15 scientific FN result was selected from a precommitted 30 after adjudication and cannot estimate the full population; 6/30 is also inconclusive. It is retained only as preliminary conditional evidence.",
+  "task_level_definition": "A task is a false-negative task if at least one response proven semantically identical to its released reference is rejected by native-v1. Each task contributes at most one error, regardless of how many probes reject.",
+  "denominator": 142,
+  "finite_population_rule": "Audit every released image task. A minimum of 22 distinct false-negative tasks proves the finite-population task-level rate is >15% because 22/142 = 15.493%. No sample CI or extrapolation is used.",
+  "numeric_equivalence": "For every numeric reference slot, parse both released and alternate forms as exact Decimal values. A decimal expansion is valid only when exact Decimal equality is mechanically asserted. Choose at most one rejected valid probe per task.",
+  "symbolic_equivalence": "The ten frozen candidates below are algebraic identities preserving all slots and the requested equation/value. Equivalence is adjudicated independently by GPT-5.1 and Claude Sonnet 4.6 without verifier outcomes; count only exact high-confidence agreement. No candidate is added after adjudication.",
+  "symbolic_candidates": [
+    {"task_id":"cal/01/015","slot":0,"alternate":"W = \\frac{G l b^2}{4\\pi (1-\\nu)} \\frac{(s-a)^2}{s^2+a^2}","identity":"factor an identical quotient"},
+    {"task_id":"cal/06/025","slot":0,"alternate":"6\\mu \\pi R v_\\infty","identity":"commutativity of scalar multiplication"},
+    {"task_id":"cal/08/019","slot":0,"alternate":"\\frac{6M_0}{4L}","identity":"multiply numerator and denominator by two"},
+    {"task_id":"cal/13/013","slot":0,"alternate":"0.3590 t^{-1}","identity":"x/t equals x times t^-1"},
+    {"task_id":"cal/15/012","slot":0,"alternate":"E_n = -Rhc(Z-\\sigma)^2/n^2","identity":"equivalent fraction notation"},
+    {"task_id":"cal/15/014","slot":0,"alternate":"\\frac{\\cos\\theta_B \\Delta\\theta}{2}","identity":"commutativity of numerator factors"},
+    {"task_id":"cal/16/011","slot":0,"alternate":"\\frac{BW}{\\pi d^2}\\bigl(\\cos(160^\\circ)-1\\bigr)","identity":"-(1-cos x)=cos x-1"},
+    {"task_id":"cal/16/019","slot":1,"alternate":"\\tau = -\\frac{k_e q p \\sin\\alpha}{r^2}","identity":"combine scalar factors in numerator"},
+    {"task_id":"cal/16/020","slot":0,"alternate":"R(\\sqrt{3}+1)","identity":"commutativity of addition"},
+    {"task_id":"cal/18/022","slot":3,"alternate":"\\sigma_{y_0}=\\frac{s}{4.3}","identity":"equivalent slash and fraction notation"}
+  ],
+  "false_positive_audit": "Retain the full-population malformed/wrong probes. Every definitely wrong probe is adjudicated from numeric inequality or structural arity, not solver accuracy; report task-level and probe-level results separately.",
+  "source_unanswerable_policy": "The earlier source-unanswerable case is not excluded. It remains in the 142-task denominator and is not counted as an FN absent a proven correct response."
+}
