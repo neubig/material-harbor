@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "selection": "lowest SHA256(omnimat-scientific-audit-v1:task_id) across all 142 released image-bearing CAL tasks, frozen before source-label adjudication",
+  "n": 30,
+  "blind": "Gold values withheld during independent derivation; commitments fixed here.",
+  "decision_contract": "Use deterministic calculation, source textbook solution evidence, or direct figure reading. LLM/model opinion alone is not adjudication. Unavailable/ambiguous cases remain unresolved.",
+  "task_ids": [
+    "cal/18/019",
+    "cal/08/024",
+    "cal/11/022",
+    "cal/18/032",
+    "cal/19/003",
+    "cal/12/012",
+    "cal/13/007",
+    "cal/16/008",
+    "cal/14/015",
+    "cal/07/012",
+    "cal/13/009",
+    "cal/13/011",
+    "cal/12/006",
+    "cal/08/002",
+    "cal/07/006",
+    "cal/02/025",
+    "cal/01/011",
+    "cal/17/002",
+    "cal/18/020",
+    "cal/09/005",
+    "cal/05/018",
+    "cal/17/005",
+    "cal/02/021",
+    "cal/06/012",
+    "cal/06/003",
+    "cal/01/017",
+    "cal/06/013",
+    "cal/05/016",
+    "cal/18/009",
+    "cal/16/018"
+  ],
+  "tasks": [
+    {
+      "task_id": "cal/18/019",
+      "source_jsonl": "cal/18/18_Nanomaterials_and_Technology_Cal/18_Nanomaterials_and_Technology_Cal_with_final_answers.jsonl",
+      "question_sha256": "828f6f0c6fc094a3e02f73317a436c68d0ef3d15257484cb3533302f4a0d2045",
+      "image_url": "18_Cal_019_img",
+      "gold_commitment_sha256": "772fa1695f4ee0a07980a3eca4366e190818b891a29dba735a1eb2bfade159cc"
+    },
+    {
+      "task_id": "cal/08/024",
+      "source_jsonl": "cal/08/08_Intelligent_Materials_and_Structures_Cal/08_Intelligent_Materials_and_Structures_Cal_with_final_answers.jsonl",
+      "question_sha256": "8265ad3015ebee0abd294958b3b9f86324431a33fbcbb3eab02b2e0a33870cd9",
+      "image_url": "08_Cal_024_img",
+      "gold_commitment_sha256": "898a6a1c1c74c3b693adf9809db37cb6761db922227ef236fc7ca0112fc26832"
+    },
+    {
+      "task_id": "cal/11/022",
+      "source_jsonl": "cal/11/11_Inorganic_Non_metallic_Materials_Cal/11_Inorganic_Non_metallic_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "8eb353122ecde1e264f32df8a231ef9bd923a6d4121a7495700a88df8538074f",
+      "image_url": "11_Cal_022_img",
+      "gold_commitment_sha256": "7b000a8eea3ebf5d611499f4ed7720a2046190867c6b0d64be70074d14a0501b"
+    },
+    {
+      "task_id": "cal/18/032",
+      "source_jsonl": "cal/18/18_Nanomaterials_and_Technology_Cal/18_Nanomaterials_and_Technology_Cal_with_final_answers.jsonl",
+      "question_sha256": "858b34c587a2819e6e53c00ee15053824ea3e5108bbe0a8a00ebb4009de5763e",
+      "image_url": "18_Cal_032_img",
+      "gold_commitment_sha256": "7193673c780e517eed5d74ee40ee7bfb939c2fcb5cf2cf97f22363edf09db6fc"
+    },
+    {
+      "task_id": "cal/19/003",
+      "source_jsonl": "cal/19/19_Composite_Materials_Molding_Cal/19_Composite_Materials_Molding_Cal_with_final_answers.jsonl",
+      "question_sha256": "64660530d6ba5d0cd6a255e53bc001053230271ac4957a5cdf5db49a68a0ef04",
+      "image_url": "19_Cal_003_img",
+      "gold_commitment_sha256": "4d25b9b36ed06bf055df1fddc017b8a99e254991e7fe8d08e0fc1db7b26252b4"
+    },
+    {
+      "task_id": "cal/12/012",
+      "source_jsonl": "cal/12/12_Polymer_Materials_Cal/12_Polymer_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "79543de13bc5d8dcb5fb6a08a95209e8d0497af2f69b817d9e804c39476e66cc",
+      "image_url": "12_Cal_012_img",
+      "gold_commitment_sha256": "e3de1fec456429319c121faf8b7b771b10d514183ea060d5cc286301b789c1a3"
+    },
+    {
+      "task_id": "cal/13/007",
+      "source_jsonl": "cal/13/13_Composite_Materials_Cal/13_Composite_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "c0ae549ccb1ee27cf75fe0a09cec9e971bd97caee7454c34395f90fbde11dd3a",
+      "image_url": "13_Cal_007_img",
+      "gold_commitment_sha256": "57329347e21988bfb028d98b8211acc71c237ef15393f1020053a85d3123d9b5"
+    },
+    {
+      "task_id": "cal/16/008",
+      "source_jsonl": "cal/16/16_Functional_Materials_Cal/16_Functional_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "91a38fd09b4cd9f1747b973b9b925dd3bfd85a94636471991f9d86d1fc77fa2b",
+      "image_url": "16_Cal_008_img",
+      "gold_commitment_sha256": "b3b73217c2ef6dd8212d75e383785a20dfa088d05e7ea9d775ff65e2fe1eb8f9"
+    },
+    {
+      "task_id": "cal/14/015",
+      "source_jsonl": "cal/14/14_Powder_Materials_Cal/14_Powder_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "ab31f86462fe181481ceb8f052fc5f5f8172dcc8461f543ba1200c283762bd04",
+      "image_url": "14_Cal_015_img",
+      "gold_commitment_sha256": "072981954999a773aec973d576dd20196c7c414220daf9ff0c3cc587ae95ca5f"
+    },
+    {
+      "task_id": "cal/07/012",
+      "source_jsonl": "cal/07/07_Welding_Technology_and_Engineering_Cal/07_Welding_Technology_and_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "4b2e8744349460a06961bc381b1967ca90a3709e79c75c9657e84e0d6ea1dbd6",
+      "image_url": "07_Cal_012_img",
+      "gold_commitment_sha256": "4d324ca2395db7bdaaf1b71c376d77bd8c342021ded499e0696420fba31dd6f9"
+    },
+    {
+      "task_id": "cal/13/009",
+      "source_jsonl": "cal/13/13_Composite_Materials_Cal/13_Composite_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "6064333e6efeca73d795cf92dbc338373737d2d96e9aad6e3920e85a71fcf95d",
+      "image_url": "13_Cal_009_img",
+      "gold_commitment_sha256": "8ed6c4c4941b3b037a3513a0d53910778cb5a9ba3445794c8dcf5c80be49c21e"
+    },
+    {
+      "task_id": "cal/13/011",
+      "source_jsonl": "cal/13/13_Composite_Materials_Cal/13_Composite_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "a03a92bcfc03c675c55d134d333641ee64d83e050657723c7e0601753d2e4444",
+      "image_url": "13_Cal_011_img",
+      "gold_commitment_sha256": "2a9995bc48c73b14ba2629da128695be9fae57e375a941a0e2c5e9e4f6177c26"
+    },
+    {
+      "task_id": "cal/12/006",
+      "source_jsonl": "cal/12/12_Polymer_Materials_Cal/12_Polymer_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "2ec17b06d1e7bb9def281529db6bb3efe35fa0cc49cd65da4559b15fe87bef76",
+      "image_url": "12_Cal_006_img",
+      "gold_commitment_sha256": "2001ad53c5ce8c81c13ab4a20a0d87ba4515c6b0833a6b4fa00bae2b89017d1f"
+    },
+    {
+      "task_id": "cal/08/002",
+      "source_jsonl": "cal/08/08_Intelligent_Materials_and_Structures_Cal/08_Intelligent_Materials_and_Structures_Cal_with_final_answers.jsonl",
+      "question_sha256": "e26fa3bc3cabd17fa6e844fbbf2ece66440637ac34ee35721a8e1a3a581fc0d1",
+      "image_url": "08_Cal_002_img",
+      "gold_commitment_sha256": "47681d80d9804a27fc1a14042ccf91fd03082ecc372ee3f7d563b4b05c50d35f"
+    },
+    {
+      "task_id": "cal/07/006",
+      "source_jsonl": "cal/07/07_Welding_Technology_and_Engineering_Cal/07_Welding_Technology_and_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "0fb6e3e8e7a881db4c16dec2d095708dcb74bf0602f4ffd71cf345c0ded5c1f2",
+      "image_url": "07_Cal_006_img",
+      "gold_commitment_sha256": "d4eb0c5cd31d90c1801239269d90b9dd32d31a2d3eff179dcd555fee65fec1eb"
+    },
+    {
+      "task_id": "cal/02/025",
+      "source_jsonl": "cal/02/02_Soft_Matter_Science_and_Engineering_Cal/02_Soft_Matter_Science_and_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "6a0cef979e17105d5231815a690497eb01f1ebc5d60d1fb52f19ce9dc9955309",
+      "image_url": "02_Cal_025_img",
+      "gold_commitment_sha256": "3594aebe19b576b638fa84075704ba07507533e55eeb13db6659c0bce3d4dd75"
+    },
+    {
+      "task_id": "cal/01/011",
+      "source_jsonl": "cal/01/01_Materials_Science_and_Engineering_Cal/01_Materials_Science_and_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "c70e6f15ae3fa62d728fab8b8b828c015de028b447129f91cf31ff133b5c5f6a",
+      "image_url": "01_Cal_011_img",
+      "gold_commitment_sha256": "87731f0933d3204fdf7ba41ba3031beb07d7456c9d1954abb6e8e5074db560e2"
+    },
+    {
+      "task_id": "cal/17/002",
+      "source_jsonl": "cal/17/17_Electronic_Information_Materials_Cal/17_Electronic_Information_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "ec659b6b23b015f523afb504bbf5494a77bd0de62e061a2e5b478c1c45b9ccb2",
+      "image_url": "17_Cal_002_img",
+      "gold_commitment_sha256": "b6f18d1b0f8cbce19be3545d6229964005ccfd37df992ee85888657036f261f3"
+    },
+    {
+      "task_id": "cal/18/020",
+      "source_jsonl": "cal/18/18_Nanomaterials_and_Technology_Cal/18_Nanomaterials_and_Technology_Cal_with_final_answers.jsonl",
+      "question_sha256": "3b3bd92f1097c2a2e881640e6778ae93b5773c8ce882cead5a7d610a83a8fed4",
+      "image_url": "18_Cal_020_img",
+      "gold_commitment_sha256": "4cac8732b2b3cb6bca1c777f5f29dd89c61147d722e48757ece48eaa9702ce28"
+    },
+    {
+      "task_id": "cal/09/005",
+      "source_jsonl": "cal/09/09_New_Energy_Materials_and_Devices_Cal/09_New_Energy_Materials_and_Devices_Cal_with_final_answers.jsonl",
+      "question_sha256": "2620e764afac4118727262dd2ff101b80fc01598f54d792c682bd7848cbaa5e8",
+      "image_url": "09_Cal_005_img",
+      "gold_commitment_sha256": "f935b0290bef142bcad6459353fc798d2779eb69cb698799800e410d44f4b48e"
+    },
+    {
+      "task_id": "cal/05/018",
+      "source_jsonl": "cal/05/05_Materials_Design_Science_and_Engineering_Cal/05_Materials_Design_Science_and_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "cf81a37e6dc454c412b918b2a1ba01011729ccb6ab07dcab3993acbc56e89fde",
+      "image_url": "05_Cal_018_img",
+      "gold_commitment_sha256": "7e1aff592b0907d9ae429fbf9a8607709d69a8a6896f3754114874e07163c8af"
+    },
+    {
+      "task_id": "cal/17/005",
+      "source_jsonl": "cal/17/17_Electronic_Information_Materials_Cal/17_Electronic_Information_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "eab66aab3d78dac436a153057e8ef77b4ed4ec625b0578e7453afdfd08127c65",
+      "image_url": "17_Cal_005_img",
+      "gold_commitment_sha256": "a48a4a09537f37c0237895a9d3cac25b4e1e0d185e8c10d5b7a525114a493691"
+    },
+    {
+      "task_id": "cal/02/021",
+      "source_jsonl": "cal/02/02_Soft_Matter_Science_and_Engineering_Cal/02_Soft_Matter_Science_and_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "471fbde82bae443f42a3d642f90a47e3c75d20ad7303c5bf254e27a8336c7f6b",
+      "image_url": "02_Cal_021_img",
+      "gold_commitment_sha256": "b09aa5847de76f5efe7f7dd7fd764c818b27b2680684683f18eca0f3c2d4467b"
+    },
+    {
+      "task_id": "cal/06/012",
+      "source_jsonl": "cal/06/06_Metallurgical_Engineering_Cal/06_Metallurgical_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "59a73123101d178c93f65cd7d8ba5bad6534249acb952f1030e833e3d2a17adc",
+      "image_url": "06_Cal_012_img",
+      "gold_commitment_sha256": "d19a4a980b8ff14377b2797ab0112e4c2640d921f25f112f0d0c77ed9c7fb5dd"
+    },
+    {
+      "task_id": "cal/06/003",
+      "source_jsonl": "cal/06/06_Metallurgical_Engineering_Cal/06_Metallurgical_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "de1868625cf018dff6fcac7169d34b8aaaf71722e3ea07a0ab8af149ebd57661",
+      "image_url": "06_Cal_003_img",
+      "gold_commitment_sha256": "92d5c2b81ca68bcbc71641288bfbd029a5ce2a777bfcdd2d06878f79caa12416"
+    },
+    {
+      "task_id": "cal/01/017",
+      "source_jsonl": "cal/01/01_Materials_Science_and_Engineering_Cal/01_Materials_Science_and_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "cf5117ca4656c73c5c2ce3e7027818bd93010ce7de40003accda48082a7c395a",
+      "image_url": "01_Cal_017_img",
+      "gold_commitment_sha256": "96eb32654e5fcc840eaf19ac2fb29c28dac3e04d559ba25a9505f42cffbefe09"
+    },
+    {
+      "task_id": "cal/06/013",
+      "source_jsonl": "cal/06/06_Metallurgical_Engineering_Cal/06_Metallurgical_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "836e056e0fea36faa0c1973e0b131b9d96258c86ff1a6c9cca0f18ccc9a4c0bd",
+      "image_url": "06_Cal_013_img",
+      "gold_commitment_sha256": "97554f92306d84868cdb9e36322e20a9770d222f5a3242d6223a93ad92929e54"
+    },
+    {
+      "task_id": "cal/05/016",
+      "source_jsonl": "cal/05/05_Materials_Design_Science_and_Engineering_Cal/05_Materials_Design_Science_and_Engineering_Cal_with_final_answers.jsonl",
+      "question_sha256": "c51e3c8d266ced9735ecfa5accde74709540f7158b1b5bd5d49bbca5ea774b29",
+      "image_url": "05_Cal_016_img",
+      "gold_commitment_sha256": "b1902a052fd1476b69d309dc714f316889e007e610edbea3d88742020bd80da2"
+    },
+    {
+      "task_id": "cal/18/009",
+      "source_jsonl": "cal/18/18_Nanomaterials_and_Technology_Cal/18_Nanomaterials_and_Technology_Cal_with_final_answers.jsonl",
+      "question_sha256": "7c35256686f969a65c150b934dcbc9e02322b306257db50c9cb08984abc9ed0b",
+      "image_url": "18_Cal_009_img",
+      "gold_commitment_sha256": "e5d7acb504a5df5248fa97b7faa9e1882d247d85f57257b5926c50ce63a34150"
+    },
+    {
+      "task_id": "cal/16/018",
+      "source_jsonl": "cal/16/16_Functional_Materials_Cal/16_Functional_Materials_Cal_with_final_answers.jsonl",
+      "question_sha256": "c3fa13c50873b8a4fcb3b17908f6baeedc4b7f52d824d9e8e20537c1b502b91e",
+      "image_url": "16_Cal_018_img",
+      "gold_commitment_sha256": "58e1c4d03ca8ed56910211c8cec096f59adaa234e4c6c518b1ecd5d72c54353b"
+    }
+  ]
+}
