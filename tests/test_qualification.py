@@ -130,8 +130,8 @@ class QualificationTests(unittest.TestCase):
     def test_omnimat_full_population_audit_uses_task_denominator(self):
         report = json.loads((ROOT / "qualification/omnimat-full-population-fn-audit-report.json").read_text())
         self.assertEqual(report["population"], 142)
-        self.assertEqual(len(report["rows"]), 142)
-        self.assertEqual(len({row["task_id"] for row in report["rows"]}), 142)
+        self.assertIn("task-equivalence/adversarial robustness", report["population_scope"])
+        self.assertEqual(len(set(report["false_negative"]["task_ids"])), 24)
         self.assertEqual(report["false_negative"]["errors"], 24)
         self.assertGreater(report["false_negative"]["rate"], 0.15)
         self.assertEqual(report["false_negative"]["finite_population_gate"], "fail")
@@ -157,6 +157,30 @@ class QualificationTests(unittest.TestCase):
         self.assertLess(report["false_positive"]["wilson95"][0], 0.15)
         self.assertGreater(report["false_positive"]["wilson95"][1], 0.15)
         self.assertEqual(report["overall"], "unresolved")
+    def test_bioreason_accuracy_uses_all_scheduled_attempts(self):
+        report = json.loads((ROOT / "qualification/bioreason-go-accuracy-report.json").read_text())
+        self.assertEqual(report["scheduled"], 100)
+        self.assertEqual(report["attempted"], 100)
+        self.assertEqual(report["successes"], 0)
+        self.assertLess(report["wilson98_333"][1], 0.10)
+        self.assertEqual(report["decision"], "fail_below_strict_10_percent_floor")
+
+    def test_matrix_replay_is_containerized_and_missing_is_zero(self):
+        report = json.loads((ROOT / "qualification/matrix-accuracy-report.json").read_text())
+        self.assertIn("inside its task Dockerfile image", report["execution"])
+        self.assertEqual(report["scheduled"], 100)
+        self.assertEqual(report["successes"] + report["failures_including_missing"], 100)
+        self.assertEqual(report["retained_answer_artifacts"], 86)
+        self.assertEqual(report["missing_or_infrastructure_counted_zero"], 14)
+
+    def test_matrix_cross_provider_audit_uses_actual_images(self):
+        report = json.loads((ROOT / "qualification/matrix-verifier-cross-provider-report.json").read_text())
+        self.assertEqual(report["actual_images_used"], 90)
+        self.assertEqual(report["false_negative"]["errors"], 0)
+        self.assertEqual(report["false_positive"]["errors"], 0)
+        self.assertEqual(report["gate"], "pass")
+
+
 
 
 

@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "candidate": "OmniMatBench CAL image-bearing subset",
   "overall": "fail_verifier_false_negative_gate",
   "gates": {
@@ -22,17 +22,18 @@
       "adapter_v2_secondary": "All 100 retained attempts regraded; 26/100 under both native-v1 and adapter-v2. Native-v1 remains the precommitted headline."
     },
     "verifier_false_positive": {
-      "verdict": "pass_observed_adversarial_population",
-      "evidence": "Native-v1 accepted 0/142 mechanically definitely wrong, arity-preserving adversarial responses: one for every released image task. This is a task-level full-population perturbation audit, not a claim about every possible wrong string.",
-      "supporting_parser_audit": "0/693 artificial invalid cases."
+      "verdict": "pass_observed_adversarial_probe_population",
+      "evidence": "Native-v1 accepted 0/142 mechanically definitely wrong, arity-preserving adversarial responses: one for every released image task. This is the complete declared task-probe population, not a claim about every possible wrong response or naturally occurring FP prevalence.",
+      "supporting_parser_audit": "Adapter-v2 rejected 693/693 artificial invalid cases; that repaired endpoint is separate from native-v1."
     },
     "verifier_false_negative": {
       "verdict": "fail",
-      "evidence": "Native-v1 rejected a proven semantically identical response on 24/142 distinct released image tasks = 16.901%, strictly above 15%. All 142 tasks are in the denominator, each task contributes at most one error, and the source-unanswerable case is retained as non-error. Fourteen tasks use mechanically asserted exact-Decimal equality; ten use frozen algebraic identities independently confirmed with high confidence by both GPT-5.1 and Claude Sonnet 4.6 before counting.",
-      "finite_population_inference": "This is an enumerated finite-population result, not a selected-sample CI: 24/142 >15%, and only 22 errors were required.",
+      "evidence": "Native-v1 rejected a proven numerically or algebraically identical response on 24/142 distinct released image tasks = 16.901%, strictly above 15%. All 142 tasks are in the declared probe denominator, each task contributes at most one error, and the source-unanswerable case is retained as non-error. Fourteen tasks use exact-Decimal equality; ten use frozen algebraic identities independently confirmed high-confidence by GPT-5.1 and Claude Sonnet 4.6.",
+      "finite_population_inference": "This enumerates the complete predeclared task-equivalence probe population, not a selected-sample CI: observed 24/142=16.90%; the minimum failure proof is 22/142=15.49%.",
+      "scope_caveat": "This establishes adversarial equivalence robustness failure across released tasks. It does not estimate the frequency of alternate notation in natural model answers.",
       "preliminary_audit_caveat": "The earlier 6/15 selected scientific audit is retained as conditional descriptive evidence only and is not used in this verdict."
     }
   },
-  "stop_reason": "Definitive native-v1 task-level full-population false-negative rate 24/142 = 16.901%, above the strict 15% ceiling.",
+  "stop_reason": "Native-v1 fails the complete declared task-equivalence robustness probe gate: 24/142 = 16.901%, above the strict 15% ceiling.",
   "no_pass_claim": true
 }

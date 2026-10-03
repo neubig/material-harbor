@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "protocol": "matrix-verifier-cross-provider-protocol.json",
+  "secondary_model": "claude-sonnet-4-6",
+  "sample_tasks": 30,
+  "actual_images_used": 90,
+  "blind_secondary_judgments": 90,
+  "expected_label_disagreements": [],
+  "false_negative": {
+    "errors": 0,
+    "denominator": 30,
+    "unresolved": 0,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.11351339317396873
+    ]
+  },
+  "false_positive": {
+    "errors": 0,
+    "denominator": 60,
+    "unresolved": 0,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.06017185214208983
+    ]
+  },
+  "gate": "pass",
+  "fidelity_caveat": "Both providers audit the adapter-reconstructed rubric, not an official MATRIX vision verifier. The secondary provider saw each actual released figure.",
+  "raw_sha256": "467b25fd65250b9c9f5e8ff9341ad04e39712876d4df5a556a02ef228d5c8ead",
+  "raw_policy": "Detailed secondary reasons remain outside git.",
+  "tertiary_resolution": {
+    "task_id": "matrix-binary-vision-be34daa2214246efb68dc9b1744fdffc",
+    "probe": "correct_reference",
+    "model": "gemini-2.5-pro",
+    "fully_correct": true,
+    "confidence": "high",
+    "raw_sha256": "c9cc38b22c9e29ad0cf9fb841d1f14341c764c997050065ec20d45144101aa2b"
+  },
+  "inference": "Cross-provider image-grounded audit observes 0/30 FN and 0/60 FP; Wilson 95% upper bounds 11.35% and 6.02%, each strictly below 15%. The single medium-confidence Claude-valid reference was independently confirmed high-confidence valid by the frozen Gemini tertiary rule."
+}

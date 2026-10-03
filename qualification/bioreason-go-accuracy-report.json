@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "candidate": "BioReason-Pro GO annotation-recovery track",
+  "protocol": "bioreason-go-complete-v1",
+  "solver_model": "openai/deepseek-v4.1-flash",
+  "scheduled": 100,
+  "attempted": 100,
+  "successes": 0,
+  "failures": 100,
+  "missing_or_infrastructure_counted_zero": 0,
+  "binary_accuracy": 0.0,
+  "confidence": 0.9833333333333333,
+  "wilson98_333": [
+    0.0,
+    0.054204838053022515
+  ],
+  "decision": "fail_below_strict_10_percent_floor",
+  "inference": "The conservative simultaneous Wilson upper bound is 5.42%, strictly below 10%; the frozen n=300 expansion is not triggered.",
+  "runs": {
+    "retained_original_task": "bioreason-go-qualification-n100 (1 task)",
+    "declared_network_retry": "bioreason-go-qualification-n100-resume99-network-retry (99 disjoint tasks)"
+  },
+  "retry_provenance": "The original completed task was never rerun. The 99-task cohort retried only after the prior run failed from a shared proxy/network incident, under the declared infrastructure retry; all final trials completed with numeric rewards.",
+  "cluster_caveat": "The public data do not provide an independence/cluster unit for these deduplicated proteins. No pseudo-cluster interval is reported; the conservative task-level simultaneous Wilson interval is the decision basis.",
+  "task_contract_caveat": "This is a newly defined exact released-annotation recovery task over the nonvisual GO split, not a released BioReason-Pro benchmark task contract. Labels remain verifier-only; no open-world biological completeness claim."
+}
