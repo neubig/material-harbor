@@ -1,0 +1,577 @@
+{
+  "version": 1,
+  "authored_before_expansion_outcomes": true,
+  "sampling_frame": "all 100 tasks in the frozen first accuracy cohort",
+  "selection": "Retain original lowest-hash first30 and adjudicate every disjoint remaining task, yielding a finite-population cohort audit",
+  "cumulative_n": 100,
+  "retained_first30_manifest": "matcha-scientific-audit-manifest.json",
+  "additional_n": 70,
+  "judge": "openai/gpt-5.1",
+  "temperature": 0,
+  "blind": "Gold labels withheld from judge; source figures and all choices shown.",
+  "decision_contract": "Judge returns every scientifically defensible option. Ambiguous/low-confidence items are unresolved, not forced.",
+  "additional_task_ids": [
+    "matcha-0091-01",
+    "matcha-0591-00",
+    "matcha-0711-00",
+    "matcha-0531-00",
+    "matcha-0450-00",
+    "matcha-0129-00",
+    "matcha-0659-00",
+    "matcha-0165-00",
+    "matcha-0723-00",
+    "matcha-0050-00",
+    "matcha-0970-00",
+    "matcha-0901-00",
+    "matcha-0416-00",
+    "matcha-0501-00",
+    "matcha-0199-00",
+    "matcha-0316-00",
+    "matcha-0162-00",
+    "matcha-0306-02",
+    "matcha-0259-01",
+    "matcha-0556-00",
+    "matcha-0593-00",
+    "matcha-0859-00",
+    "matcha-0254-00",
+    "matcha-0592-00",
+    "matcha-1255-00",
+    "matcha-0356-01",
+    "matcha-0152-00",
+    "matcha-0260-00",
+    "matcha-1163-00",
+    "matcha-0378-00",
+    "matcha-1190-00",
+    "matcha-0127-00",
+    "matcha-0488-00",
+    "matcha-0180-00",
+    "matcha-1048-00",
+    "matcha-0580-01",
+    "matcha-1198-00",
+    "matcha-0655-00",
+    "matcha-0076-01",
+    "matcha-1203-00",
+    "matcha-1115-00",
+    "matcha-1227-00",
+    "matcha-0718-01",
+    "matcha-1061-00",
+    "matcha-0273-00",
+    "matcha-1091-00",
+    "matcha-0043-00",
+    "matcha-0413-00",
+    "matcha-0340-00",
+    "matcha-0854-00",
+    "matcha-0346-00",
+    "matcha-0993-00",
+    "matcha-0011-00",
+    "matcha-0222-01",
+    "matcha-0358-00",
+    "matcha-0153-01",
+    "matcha-0430-00",
+    "matcha-1160-00",
+    "matcha-0073-00",
+    "matcha-0331-00",
+    "matcha-1027-00",
+    "matcha-0525-00",
+    "matcha-1146-00",
+    "matcha-1062-00",
+    "matcha-0563-00",
+    "matcha-0360-01",
+    "matcha-0435-00",
+    "matcha-1170-00",
+    "matcha-1197-00",
+    "matcha-1254-00"
+  ],
+  "task_hashes": {
+    "matcha-0091-01": {
+      "instruction": "91a996ba22586ce7c04637a71be0569ccf0be02615fb8c7be89eeaeb966e1adf",
+      "images": [
+        "ba8fff7934e5309ec86a2e92e65d2d3710889983a52ea9b9f67e7c617ebc94ba"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0591-00": {
+      "instruction": "bd07a94ed8767b492997310042a395e663993e7dcd6c60718a5dc734eac93895",
+      "images": [
+        "a8f0589e0b3c5fd0f73fb5ad0ae6403a971ffa4f41632f03450a4a30e4d8e2bf"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0711-00": {
+      "instruction": "01746c6f6604345567bd7ff3d3fd049d1ef097831a9449e760f6d462d9286afb",
+      "images": [
+        "9cbaf9044b615edd56ab1e02bec07d5dc8cae38b94d0e93f688cb8a9600a05f2"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-0531-00": {
+      "instruction": "5892c1cefe6cd785fa8651c526ce61cbf7f744ca2d22c7c4ed3861c27aa39502",
+      "images": [
+        "24bb6fb536de981c6b596fe86170fb9805ff7dc2cc77198068176d2eab359dec"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0450-00": {
+      "instruction": "25900f73d99cf4ac607b71f4dd0b037bfdb61ac230bf2cf96ca35ff177d64e35",
+      "images": [
+        "3e80e759db1664456ae41946fc695221b3b7e7e1314de0b7df66c20f5a8690b6"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0129-00": {
+      "instruction": "5d9e1aed40ed167c8467f3fcd970c00db25203d1646574e5d5857cb87d213efd",
+      "images": [
+        "0e3e51c494f322ceeb7889eb3e835cd93c6fc71cda265e9aa4def2771a4ca267"
+      ],
+      "gold_commitment": "bc511f26ca52c9188a47863c57bcd87633d1b9d606aa9a31cab274e66439a779"
+    },
+    "matcha-0659-00": {
+      "instruction": "c648f5c35530e460110d511cc9b25d7e37b850b2a84432d2f2f9d11e8a2776e2",
+      "images": [
+        "25fccf568bd22050b087704db2ce0ff6f87a77099362cea001da5e3a2ed48340"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0165-00": {
+      "instruction": "14877be8a595ae320c27a4bff35715dc103e838e21a3ab14fc8f850b22b8b705",
+      "images": [
+        "02fa6ca22e9e812e34cc7d12658878c5436520a9713881ab45418a4a7c7b239c"
+      ],
+      "gold_commitment": "bc511f26ca52c9188a47863c57bcd87633d1b9d606aa9a31cab274e66439a779"
+    },
+    "matcha-0723-00": {
+      "instruction": "30263ff3a6b50ce5cc76e6791c3b705d6a94082e1544144ef035e87a38d8d3b4",
+      "images": [
+        "a4f9226867d3e948ee65d641b7f931a79812e3dc27d69dab0e4546d59def1f8e"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-0050-00": {
+      "instruction": "64e194400e297cd47cb31cc6df8c3ff37cfa1e697feb1f7a69d70c9ba4aa07a6",
+      "images": [
+        "3b6ceb36de500a1a5b1480a6b5492fae3e6d096406d9684383af50b818864607"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0970-00": {
+      "instruction": "2427863668f05437ca369878051c9845fd5a98f00bc0e1fb8da994e99dd464a2",
+      "images": [
+        "5740c60994cf1fe0fd4a3c49e4005a000b9f27abda17376417b0327b15514e84"
+      ],
+      "gold_commitment": "17b870c1c7922bf317c4586c1b83fe648acf9284c0d2bfa48deacca44aa04380"
+    },
+    "matcha-0901-00": {
+      "instruction": "2427863668f05437ca369878051c9845fd5a98f00bc0e1fb8da994e99dd464a2",
+      "images": [
+        "49b704b52cd37ad693b9c38c85d39de1ebc86f421a1a383fe0db723ebe623c15"
+      ],
+      "gold_commitment": "a4d44b37d1d8b73eeea5d60fa1dc50bbc38231d9fdda87d9d2a8b48907884907"
+    },
+    "matcha-0416-00": {
+      "instruction": "c2f0478e3c21b9ff623a225d738760d38814a2412ad41451e860abe7356d9421",
+      "images": [
+        "10ab5101dfd35a96e6a57d3b166a8e87c862d9274a932b2ccfc94b23956ee118"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0501-00": {
+      "instruction": "3403bf79d3f90891597febb6a4f176ae871e4d04fa2ca0e8ab20543e5541988e",
+      "images": [
+        "93d30ddb9f693ba4ba8952351800a9ccdf562036d96ed227c9ab8d4510f41643"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0199-00": {
+      "instruction": "855e450080fff71653f2da084c3409a1442f1d5b219dc60604aa87551d770d77",
+      "images": [
+        "1a30a5613e9227fa2904aaea4676298dfc0630801f4f2e6e3aef2cb7f9f0e407"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0316-00": {
+      "instruction": "373ac8d0d32ae3591fec0df4960519ee0c4782836bf902a918014e41449e6dc4",
+      "images": [
+        "88ccfa7ef29691c044cca0eb3bfc8184b341a097023fa9eaf2d4b0c3240709e4"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-0162-00": {
+      "instruction": "7f0fac445ce2d019e9194e0d7b6eafd7ad21349e0b43960e00ff516dd92a193b",
+      "images": [
+        "256d174e423184008660b4619ac254fe8c65c812559a3dfad6c6528d9dc9e8ef"
+      ],
+      "gold_commitment": "7cc37bc56fd13bd74e314784fba45063135405a0ad66c9d6b00c64302c87bf9f"
+    },
+    "matcha-0306-02": {
+      "instruction": "dfc10c5da9d0469f0ffebce80f73ed3a1831bc51bf1710f8da967da3b53390a8",
+      "images": [
+        "be0a94b96687d87aec5e0174c52e6d2cb5f3e9010173c8750dccf826e7d39abb"
+      ],
+      "gold_commitment": "ee5748e597310664ba8f91db503000d28f9e46fbd95d545c8768db13d4024d75"
+    },
+    "matcha-0259-01": {
+      "instruction": "d9f46d07e1a03f0627c6b9f538a8929eb912c56812c933a40d2ad4f83d1edc1f",
+      "images": [
+        "f0bd916b116287b8570b6067ec827ee3c3cf9709113e024f258149915de13386"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0556-00": {
+      "instruction": "cafba22b9699bb420e22effb9e44cc03317119c7837f5f3676ebb96fc56850bb",
+      "images": [
+        "45c04b6adfa864ce4d7ceb91ae47c727482144536f26799c8b2f43a451206367"
+      ],
+      "gold_commitment": "bc511f26ca52c9188a47863c57bcd87633d1b9d606aa9a31cab274e66439a779"
+    },
+    "matcha-0593-00": {
+      "instruction": "e313018206b703d59958fa973a915bc38904153f0baaa062d6aeb9ed6350eda5",
+      "images": [
+        "cf8256d9020c34a159d8fa9c1aca8073611178d8ca22f3fb09d0721b72e76fc5"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0859-00": {
+      "instruction": "2427863668f05437ca369878051c9845fd5a98f00bc0e1fb8da994e99dd464a2",
+      "images": [
+        "ddf50868037aeb945a46d6beefba0fb0fa2a10a8ec16da6f573ad6c2ff874065"
+      ],
+      "gold_commitment": "a4d44b37d1d8b73eeea5d60fa1dc50bbc38231d9fdda87d9d2a8b48907884907"
+    },
+    "matcha-0254-00": {
+      "instruction": "158c799cb3df51e4854b4b95a25385f7b9831cc5498d1244093ff36c7b33312c",
+      "images": [
+        "944094ebe0f4e34ef0735482e23dc0218594de3300ceb4164ae37b7ca1c90150"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-0592-00": {
+      "instruction": "904037b5c80edb6b1ff51cda4903f0273c9fd6246bf32848c20a53cb6c5b0640",
+      "images": [
+        "32cb0dbd3ce746d8af0ba9cd39e27d427962d5228bac4255eb525280359877c8"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-1255-00": {
+      "instruction": "41f881d92e1880d087d100d2f1c9f8beadcd11192924ee4623f98499214b5942",
+      "images": [
+        "68d0b03eaea6605ccd3efcc9aa957fae712ba8ddbf21a79b63f6b070fb1d83ce"
+      ],
+      "gold_commitment": "9f9f32b2f992a32ce0cd6f57b921a9904c7727b47a052f0d4802a55fdde61cde"
+    },
+    "matcha-0356-01": {
+      "instruction": "a567998d9b68a556ae7ca7665e9abf2bdfea1d42da6c9c3843efb31b33d0f8d1",
+      "images": [
+        "423ee1ec8391de5c369d21db671f68c1625f4fa5982e5bd715c51dea4ddd21c2"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-0152-00": {
+      "instruction": "62fd4089e678260ea4f3f957cd320b94c2ddeda88f357c0226603e800174aaea",
+      "images": [
+        "892ab3f85ef7a856bb5184d3185278caabb24f49ab4ff17d4250c45ae812bbe2"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0260-00": {
+      "instruction": "8abda57e55b4daf987b75b42860d485ffc1d6d8f095cccd27a3adda36dae4073",
+      "images": [
+        "778fbd7eeb588198362df0e6bb6dceea9766f04d82db1fa599aac68146bbb24d"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-1163-00": {
+      "instruction": "14d6a2e87062e4ebc57159496943780967d22c0fe205d79fa1eac84f4fd1ee85",
+      "images": [
+        "98c00f7fc189e3809df6baa53fcc04625dda96e53daa7e6ed2cd70eadd0c7909"
+      ],
+      "gold_commitment": "9f9f32b2f992a32ce0cd6f57b921a9904c7727b47a052f0d4802a55fdde61cde"
+    },
+    "matcha-0378-00": {
+      "instruction": "7b63d86235b5109a9a95587bf6f51f0935d66b756730cb70c739488087ae6b85",
+      "images": [
+        "3eb84cee0db7c0bc228a9b66d580326279998f54f1c5552b231b8553d14ffa77"
+      ],
+      "gold_commitment": "bc511f26ca52c9188a47863c57bcd87633d1b9d606aa9a31cab274e66439a779"
+    },
+    "matcha-1190-00": {
+      "instruction": "d10299dd6b7cef810080c9e89dea0f6b5df6cf18ecd609c2ae9f2a8d1bc6a21b",
+      "images": [
+        "7384de7d1e27e14724a7ecc37c114d0214e478ebb7210e76eb68543e61a4938e"
+      ],
+      "gold_commitment": "9f9f32b2f992a32ce0cd6f57b921a9904c7727b47a052f0d4802a55fdde61cde"
+    },
+    "matcha-0127-00": {
+      "instruction": "238862fd248c1d783b10ec3e2db6b57370084138ae4b7d74892e34e06b1e88bb",
+      "images": [
+        "48843ac70b4f827bdb02fd006992173bdca4499dc95c957ea83b13faa1bd0fdb"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0488-00": {
+      "instruction": "c12d2ad081a322ca945d13f3813b2301abb971ffd85bd62a3f516e08e874d982",
+      "images": [
+        "dc6473239e3c50d5505f62a42f5aa2a6c34d7a148b79a7647555149b138d6aff"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0180-00": {
+      "instruction": "db51c267647caf3918ff3d58f24836776eb64c780db5a4807d4fe830a18ef86e",
+      "images": [
+        "0ea3a777c65893caa467fa871054a6ba0443205cc30e83761b592da2f3a61a39"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-1048-00": {
+      "instruction": "5b7a43f91988ea30401ea447be1a716e833dd9cbbd018cb2b13240e08f987200",
+      "images": [
+        "1cb7f52ce60999a109e53d583c5b5a587e1f9564ecb6f7dc85c4ddf05d8fcafd"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0580-01": {
+      "instruction": "00a885ce1d4dfb966976caf7b18414504285bfbf742a86e608fc3dbf39f0e872",
+      "images": [
+        "e7dbf15d5fb47d05165047e3a27924a8bb3dd5ae5ab76dc35299d6e5aa49be8b"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-1198-00": {
+      "instruction": "df8fa92be44c3325e75365041e3ad6e2d1e69dff68773382be0f80907732f034",
+      "images": [
+        "7f7c8cfc876e1a974957e19a34ea75b09fb38f3dfc9e1c0b68eebdcd0966eeec"
+      ],
+      "gold_commitment": "2eb254e54d4063e3c35cc6479fd155cb2efa2865d5c48c0f5d858e15fdc0adc2"
+    },
+    "matcha-0655-00": {
+      "instruction": "6e3aa72a8574432c816a524ead4b5c5f633b2ba070f9fe343ed51aad63435706",
+      "images": [
+        "bf119ba6bded3d080f6b777a1a5b1c8df8c73487f9a04b45bca2eb371c847f15"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-0076-01": {
+      "instruction": "cfbf7eaf3f0ee0e1983244f73243402d6267c14767e809e32a99481e6f49d5a2",
+      "images": [
+        "5ff6683bf9d805e66318950ed9e73d4ee074c3a2ad94ecca967186a17de0607f"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-1203-00": {
+      "instruction": "67757a088339ffbbdab7346b2e45a46309673c72613cc533016f66c67b4ee60e",
+      "images": [
+        "3c6084def3016e2cb9856ae8f08dc521a47cd278391594b54e3e34601a62b23f"
+      ],
+      "gold_commitment": "a2f280cf68d7b3da2bcd01945f0620b8bbda5301216feb1567ee31736bdd0b45"
+    },
+    "matcha-1115-00": {
+      "instruction": "1a71761526841089fd0f6e161982cb422728877fd7132cba61ea5554a6840a3b",
+      "images": [
+        "52f052f47cb184cc0e259ff741f751e9a5af82ce08b338579fc5a5461e63adf2"
+      ],
+      "gold_commitment": "9f9f32b2f992a32ce0cd6f57b921a9904c7727b47a052f0d4802a55fdde61cde"
+    },
+    "matcha-1227-00": {
+      "instruction": "e4ec1428f087008444d69f3429c98ff3eb23cb38a409758896af39c9d962be03",
+      "images": [
+        "350fe982f5418e9950c5d9c82f5956daa2a40041d85b3e187fd6715f393899ec"
+      ],
+      "gold_commitment": "a358176bb7118d3ec13a3bfd478961ab02f60fd5f109fcbc5039b4652f9f9e46"
+    },
+    "matcha-0718-01": {
+      "instruction": "57d6b1909fe83ca8d5b7a28b258a06f82dfda8d417de6d6dbae5eaaa6a6cd1b1",
+      "images": [
+        "190f887e6f4710d1aeddb121ae23ef055df57ca883b508c8824cd1d24d39eb48"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-1061-00": {
+      "instruction": "362947991d1af792bef0e1916240c0f2094a223d64ad1b20f28091ff55f08eaa",
+      "images": [
+        "f5812c1d2159d19f78cdac880f10423f80a6b763708c7e72ffd7e6137522a555"
+      ],
+      "gold_commitment": "2eb254e54d4063e3c35cc6479fd155cb2efa2865d5c48c0f5d858e15fdc0adc2"
+    },
+    "matcha-0273-00": {
+      "instruction": "0ff9812dc075f7ce5a2c615bae10dd9573bc03d9cefd83074ddd8ce98fce1464",
+      "images": [
+        "9628d58dc4bbd79dd3c88e1933042874ef0cd5b4e10cc0a13dfd9f7df13b67aa"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-1091-00": {
+      "instruction": "535c430133cca19692dc51621f600570f70c49341e9d38629549e0e3d8b22381",
+      "images": [
+        "100d419cb950a354a83702fad8df1a359f1bcc63ddf82b7621669a586af31129"
+      ],
+      "gold_commitment": "a2f280cf68d7b3da2bcd01945f0620b8bbda5301216feb1567ee31736bdd0b45"
+    },
+    "matcha-0043-00": {
+      "instruction": "09edde9adffddc9e949f87a5db5782ccf8fffd39a5d3eba54ba95a579ca39c9b",
+      "images": [
+        "ffc4d1cf8307d99f4260ae1122852aa03e101485fa5e01b55f5e14febb91ecf3"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0413-00": {
+      "instruction": "8356bdfc583534b4fb08fbcc02f59db444a2e7eccd7a154587bf704db5dfaa2e",
+      "images": [
+        "30dac4abe1cf0119ddbd2b4057ab816e4715e502ececb907156f7b04a4fa2132"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0340-00": {
+      "instruction": "d7c338447aa5dff166225aa4329d2d06267457077152508163d2aaa5d3c67292",
+      "images": [
+        "787abd40920abba9c919d2ec4decbfccc5fef4593bc1bd3a43174dcfad2442f3"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0854-00": {
+      "instruction": "175d4b9814f9091c50eb9bb3c026be5c9b54d829314025e826349981489ed387",
+      "images": [
+        "e5d0d58bf78596348a0e1f28f30d21ccf2eadd99cde220f944173923dd65816c"
+      ],
+      "gold_commitment": "a4d44b37d1d8b73eeea5d60fa1dc50bbc38231d9fdda87d9d2a8b48907884907"
+    },
+    "matcha-0346-00": {
+      "instruction": "2c7f13fb5f8fce9a5753885288b8d7c5bc166fb45262c8e19f8b9c296d15223d",
+      "images": [
+        "8315bb14542119fc87c331d8b9a0bc88cc528fb8ffa543b69020f8251559a997"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0993-00": {
+      "instruction": "04b09a3757321a8bf80a5afa60b3ae51aa362458dd198f291d8fcf67695c7dac",
+      "images": [
+        "81497b887725ea9aaa8798d2cdb219056b894760b9c20b7c0b6fde66a095678b"
+      ],
+      "gold_commitment": "42b782bb12553b148e71affdf5ecac7becdacbca2c320c7addfd8cffb811ecbe"
+    },
+    "matcha-0011-00": {
+      "instruction": "eb3301eeecf88382a7adf125b3434d7dfcd21e5f964fe62163ecf4a3279066bd",
+      "images": [
+        "06555ad0054a1b2bca6200dc458afeeae5a880215eaa7e6cf7bcdea691dda426"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-0222-01": {
+      "instruction": "f965d31c6958fa589ccf5512957804394858f37fac407053560ebc12bea9af33",
+      "images": [
+        "17dce02209faf0c1d7b7b654bd84fb3e58ede4e4cd02fd3d17d7ad67aea8b0e4"
+      ],
+      "gold_commitment": "bc511f26ca52c9188a47863c57bcd87633d1b9d606aa9a31cab274e66439a779"
+    },
+    "matcha-0358-00": {
+      "instruction": "b5d1fc88276086d8edf3881ce04f39b58a69cc09c1d158e69498f942721ea3f7",
+      "images": [
+        "11e76c61aa4b7b7b38418b3304d62993c2d1d9acbd97274a2d1c180c3729806d"
+      ],
+      "gold_commitment": "586a9a7e3efb237e0a19e5df26064777ceb906bed2aaec8e0d3728f117cbb1ec"
+    },
+    "matcha-0153-01": {
+      "instruction": "ac24fec3f120f59b7c78737f6df8821f2d1bfa882e96ac00eb8e8bdc119ab9bd",
+      "images": [
+        "8ab8e251266f82a621d5326ce9908032424f7756a0aca6fe91345ca7ee93c91b"
+      ],
+      "gold_commitment": "bc511f26ca52c9188a47863c57bcd87633d1b9d606aa9a31cab274e66439a779"
+    },
+    "matcha-0430-00": {
+      "instruction": "4a8cbfa17eed79710626f8ba93d75a6cab74c0895a604196720010fbb95a2263",
+      "images": [
+        "3d9ae060cdbbe01e447b49e7a19eb3f0a81d3e26a6a4e7dbdcbb5b594dda1d0f"
+      ],
+      "gold_commitment": "164b1e3bd370469f0eeac210a8b824c2f5c3f301e699b85c8fb59c5c6407ae66"
+    },
+    "matcha-1160-00": {
+      "instruction": "dae630066eb2bf465f7918c138884c6b3046765c29a39d59bdfd5aceddd6ec5e",
+      "images": [
+        "91f482a92a58ca9c98ad25f191a181d3bc5615765211f0a62c53d2f5bf20396f"
+      ],
+      "gold_commitment": "9cd604d9b1cc1947e1c7f87f8d9a9cd4aaa257f03a509a855ee7856b0e799801"
+    },
+    "matcha-0073-00": {
+      "instruction": "59fd15ebbf2f6635c3f122c74d02210a18efefaa705730392305ec8f28ba9470",
+      "images": [
+        "0296269b0a0bc482879912d8f6d2e800179cf166a00a3355007afc3b32e8a354"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0331-00": {
+      "instruction": "3acadb1d96940b1c9dac59657e535a0b035c9ebe166e0f90ea0c174b23449534",
+      "images": [
+        "d9fd156de0e273e02a8105188815d8a53021bc12d0e589e2e0406aa8da0b30d2"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-1027-00": {
+      "instruction": "a44ef4f006e04153d6d8812f2450b6a3c0560e4f4ce05c17c57fb421e63050d3",
+      "images": [
+        "bb22d7572c62b1ab8b792bf045716f402baea72e7469a0af42b7cdd73676a155"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-0525-00": {
+      "instruction": "4f840edaa3f2e5913a1e6149e4ddfb949234c646c10e54f193d2395153257adf",
+      "images": [
+        "9f5adba4742b6131229520eea1e98eb26a52e03f39df33e81c07964a5b6956d9"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-1146-00": {
+      "instruction": "6ee0a798a46f289431566ff53012c0f15ea3dff6a64dbe9a26e23c5381a9d11a",
+      "images": [
+        "f0a0d7b6a4e267fcde6a74a329fb113d79b7ef63345e8a1d079258b3e3ab3536"
+      ],
+      "gold_commitment": "a2f280cf68d7b3da2bcd01945f0620b8bbda5301216feb1567ee31736bdd0b45"
+    },
+    "matcha-1062-00": {
+      "instruction": "6e262e3a29a9601b8d5d3e640dc4a513a9f5776301055f01b71fbb46a63bee90",
+      "images": [
+        "ed3898205c93ef8447fb3f946525092e15a8d1b1999c94f3f484a37cc6e6aa6e"
+      ],
+      "gold_commitment": "a2f280cf68d7b3da2bcd01945f0620b8bbda5301216feb1567ee31736bdd0b45"
+    },
+    "matcha-0563-00": {
+      "instruction": "bd87dbaa2685e6904315c10b022dc93b7726c92b2b8f1fdc8b7a90ea055e0df7",
+      "images": [
+        "9a0142bb4d315cd98cb280267570d1f968fabfd4917e694f76ef3aa1f9817239"
+      ],
+      "gold_commitment": "c6cc562d00508da9a9fd656829937b87822a5db3eb115c50b1a3a23c62a8666e"
+    },
+    "matcha-0360-01": {
+      "instruction": "33dbab3180aef0a58f7753c9939374f48074f2b7fa6b3a134e05a37a58526ec4",
+      "images": [
+        "d0d0249b750b05851936c4f013b4cc585774f848f0b9260902c36161bf5a2cfb"
+      ],
+      "gold_commitment": "1a0215a76ed4b959ad56f35ea259b261e15abcd45f998ec7e85bed3295399c4f"
+    },
+    "matcha-0435-00": {
+      "instruction": "4eb21c045f5e13569ed4ac35fa19f022cc9d59a5791f82ca6289efc4945a0693",
+      "images": [
+        "9cd5a63acddfc142a34c135edc9217f8e27440d165f84c7b53367d4929f0d863"
+      ],
+      "gold_commitment": "bc511f26ca52c9188a47863c57bcd87633d1b9d606aa9a31cab274e66439a779"
+    },
+    "matcha-1170-00": {
+      "instruction": "50b4ebbc1f360aee1a4b8a6076970aef0f349852d2dec8091e902f6c2c659a7d",
+      "images": [
+        "543ae012921ce5672e880ac2b62ca785a79a0e27f3631d571a6814d9d49e9a65"
+      ],
+      "gold_commitment": "a2f280cf68d7b3da2bcd01945f0620b8bbda5301216feb1567ee31736bdd0b45"
+    },
+    "matcha-1197-00": {
+      "instruction": "3faa95e4641c3630ed69e36ee015dc17aafcefbd2b2f0b8fb6a04a3c7118e0c9",
+      "images": [
+        "a8b34bfc162420aa970b13ccecec7b5ee0a38ba909f4a65745a8683ba0e546ae"
+      ],
+      "gold_commitment": "9cd604d9b1cc1947e1c7f87f8d9a9cd4aaa257f03a509a855ee7856b0e799801"
+    },
+    "matcha-1254-00": {
+      "instruction": "cdf6bde96509f0cfaee73a4a2101726e21d16d706d3c28f9a6ad8ce7723bd24e",
+      "images": [
+        "c6031d42fcae110b1b5b65e21e6dd5df0ab617827c8b368252c8bc0ba585aeb5"
+      ],
+      "gold_commitment": "7d2e604b8222a583c72678bfb0fbb07d3ec4fdb58d20790504a27c1fa93304b3"
+    }
+  }
+}
