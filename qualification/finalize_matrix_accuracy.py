@@ -78,7 +78,7 @@ def main():
               "missing_or_infrastructure_counted_zero": sum(row["status"] != "judged" for row in rows),
               "accuracy": successes / 100, "confidence": CONFIDENCE, "wilson": wilson(successes, 100),
               "cluster_bootstrap": None,
-              "cluster_caveat": "The release provides no paper/source grouping for MATRIX vision rows. A population-independent cluster interval is invalid; if the n=100 Wilson look is otherwise conclusive, the precommitted full 250-image population must still be run for a definitive finite-population decision.",
+              "cluster_caveat": "The release provides no paper/source grouping for MATRIX vision rows. A population-independent cluster interval is invalid; the frozen additional 140 must run to complete the prospective 240-image bounded population (the ten earlier pilot images remain excluded and are not reused) before a definitive finite-population decision.",
               "verifier_replay_reason": "The Harbor agent attempts are preserved unchanged. Their in-container verifier lacked injected configuration and produced no reward; only the same frozen verifier was replayed over the preserved answer bytes.",
               "fidelity_caveat": "MATRIX publishes vision kinds and a loader but no vision rubrics. This is a reconstructed official-style full-credit binary endpoint, not an official native vision verifier.",
               "rows": rows}

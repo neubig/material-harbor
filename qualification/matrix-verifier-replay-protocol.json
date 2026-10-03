@@ -8,6 +8,6 @@
   "missing_policy": "Missing/empty answers and any unresolved replay infrastructure errors count as binary zero in the all-scheduled primary denominator.",
   "judge": "gpt-5.1 via authorized all-hands LLM proxy, temperature 0, identical frozen reconstructed official-style vision rubric",
   "binary_mapping": "Exactly graded score 1 succeeds; 0, 0.25, 0.5, 0.75, missing, and errors fail. Fractional scores remain reported separately.",
-  "inference": "Compute the precommitted 98.333333% Wilson interval. MATRIX vision rows provide no paper/source grouping, so no pseudo-cluster interval is permitted. Regardless of n100, execute the already frozen remaining 150 to obtain the full 250-image finite population before a definitive gate claim.",
+  "inference": "Compute the precommitted 98.333333% Wilson interval. MATRIX vision rows provide no paper/source grouping, so no pseudo-cluster interval is permitted. Regardless of n100, execute the already frozen additional 140 to obtain the complete prospective 240-image bounded population before a definitive finite-population claim. The ten earlier pilot images were excluded before cohort outcomes and are never reused.",
   "fidelity_caveat": "The MATRIX release publishes vision kinds and a loader but no vision rubrics. The endpoint is reconstructed official-style, not official-exact. This caveat remains attached to every result."
 }
