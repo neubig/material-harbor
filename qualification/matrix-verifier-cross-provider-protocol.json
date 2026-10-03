@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "authored_before_secondary_outcomes": true,
+  "primary_verifier": "GPT-5.1 reconstructed official-style five-level rubric with exactly score 1 mapped to binary success",
+  "secondary_model": "claude-sonnet-4-6",
+  "sample": "The same frozen 30-task probability sample in matrix-verifier-audit-manifest.json.",
+  "blindness": "For each of the 90 frozen probes, Claude receives the actual released image, question, reference caption and one candidate. It does not receive the probe name, expected classification, primary GPT score, DeepSeek answer or verifier outcome.",
+  "secondary_contract": "Return whether the candidate is fully scientifically correct and sufficiently complete for binary full credit, confidence high/medium/low, and an image-grounded reason. Count only high-confidence outcomes; all disagreements, abstentions and errors are non-passing uncertainty, never silently excluded.",
+  "adjudication": "Correct-reference probes are expected valid from released source identity but require secondary visual confirmation. Wrong-technique and instruction-attack probes are fixed direct contradictions/nonanswers but require secondary visual confirmation. A verifier FN requires primary rejection of a secondary-confirmed valid probe; a verifier FP requires primary acceptance of a secondary-confirmed invalid probe. Report cross-provider label agreement separately from verifier errors.",
+  "inference": "Keep FP and FN denominators separate and report Wilson 95%. Do not call model confidence ground truth and do not claim official MATRIX-verifier fidelity; the vision rubric is adapter-reconstructed.",
+  "images_required": true,
+  "raw_policy": "Detailed secondary responses remain outside git; commit hashes and aggregate decisions only."
+}
