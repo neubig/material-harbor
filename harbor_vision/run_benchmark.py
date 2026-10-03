@@ -91,7 +91,7 @@ def stage(source: Path, destination: Path, count: int | None) -> list[dict]:
     return staged
 
 
-def start_proxy(log_dir: Path, seconds: float) -> subprocess.Popen:
+def start_proxy(log_dir: Path, seconds: float, port: int = PROXY_PORT) -> subprocess.Popen:
     log_dir.mkdir(parents=True, exist_ok=True)
     upstream = os.environ["LLM_BASE_URL"].rstrip("/")
     if upstream.endswith("/v1"):
@@ -101,7 +101,7 @@ def start_proxy(log_dir: Path, seconds: float) -> subprocess.Popen:
             sys.executable,
             str(HERE / "recording_proxy.py"),
             "--port",
-            str(PROXY_PORT),
+            str(port),
             "--upstream",
             upstream,
             "--log-dir",
@@ -210,6 +210,7 @@ def main() -> None:
     parser.add_argument("--max-iterations", type=int, default=40)
     parser.add_argument("--timeout", type=float, default=5400)
     parser.add_argument("--version", default=None)
+    parser.add_argument("--proxy-port", type=int, default=PROXY_PORT)
     parser.add_argument(
         "--verifier-env",
         action="append",
@@ -225,7 +226,7 @@ def main() -> None:
     if not staged:
         raise SystemExit(f"no tasks staged from {args.source}")
 
-    proxy = start_proxy(run_dir / "proxy", args.timeout + 300)
+    proxy = start_proxy(run_dir / "proxy", args.timeout + 300, args.proxy_port)
     job_name = f"{args.name}-{int(time.time())}"
     try:
         command = [
@@ -241,7 +242,7 @@ def main() -> None:
             "--ak", "vision_supports_vision=true",
             "--ak", "load_skills=false",
             "--ak", f"max_iterations={args.max_iterations}",
-            "--ae", f"LLM_BASE_URL=http://{PROXY_HOST}:{PROXY_PORT}/v1",
+            "--ae", f"LLM_BASE_URL=http://{PROXY_HOST}:{args.proxy_port}/v1",
         ]
         if args.version:
             command += ["--ak", f"version={args.version}"]
