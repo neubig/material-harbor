@@ -148,6 +148,17 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(report["false_negative"]["gate"], "preliminary_single_provider_unresolved")
         self.assertEqual(report["overall"], "unresolved_pending_cross_provider_corroboration")
 
+    def test_matcha_cross_provider_audit_remains_inconclusive(self):
+        report = json.loads((ROOT / "qualification/matcha-scientific-cross-provider-corroboration-report.json").read_text())
+        self.assertEqual(report["false_positive"]["denominator"], 100)
+        self.assertEqual(report["false_negative"]["denominator"], 100)
+        self.assertEqual(report["false_positive"]["corroborated_errors"], 20)
+        self.assertEqual(report["false_negative"]["corroborated_errors"], 17)
+        self.assertLess(report["false_positive"]["wilson95"][0], 0.15)
+        self.assertGreater(report["false_positive"]["wilson95"][1], 0.15)
+        self.assertEqual(report["overall"], "unresolved")
+
+
 
 
 

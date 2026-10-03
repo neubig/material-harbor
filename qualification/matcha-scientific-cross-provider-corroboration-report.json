@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "candidate": "MATCHA",
+  "protocol": "matcha-scientific-cross-provider-corroboration-protocol.json",
+  "sampling_frame": "Frozen first100 probability sample from 1,500 tasks; not a population census.",
+  "secondary_model": "claude-sonnet-4-6",
+  "blindness": "Claude received figures, questions and all options, but not released gold, GPT outcomes, native verifier outcomes or flag reason.",
+  "primary_flags": 28,
+  "secondary_completed": 28,
+  "secondary_high_confidence_unambiguous": 27,
+  "disagreement_review": {
+    "specific_non_gold_exact_agreement": 17,
+    "both_reject_gold_but_different_alternate": 3,
+    "claude_selected_released_gold_contradicting_primary_flag": 7,
+    "claude_unresolved": 1,
+    "policy": "Only exact specific-option corroboration counts FN. Both judges excluding gold counts FP. All other cases and all 72 unflagged sample tasks count as non-errors."
+  },
+  "false_positive": {
+    "corroborated_errors": 20,
+    "denominator": 100,
+    "rate": 0.2,
+    "wilson95": [
+      0.1333669333310325,
+      0.28882916559315885
+    ],
+    "paper_group_bootstrap95": [
+      0.13,
+      0.28
+    ],
+    "gate": "unresolved_interval_crosses_15_percent"
+  },
+  "false_negative": {
+    "corroborated_errors": 17,
+    "denominator": 100,
+    "rate": 0.17,
+    "wilson95": [
+      0.1089356611405993,
+      0.2554800476760112
+    ],
+    "paper_group_bootstrap95": [
+      0.1,
+      0.25
+    ],
+    "gate": "unresolved_interval_crosses_15_percent"
+  },
+  "cluster_caveat": "The 100 sampled tasks have 100 distinct task-prefix/paper groups, so the deterministic 100,000-replicate paper-group bootstrap reduces to a task bootstrap; both lower bounds cross 15%.",
+  "inference": "Neither conservative cross-provider rate is definitively above or below 15%. Do not claim verifier pass or fail from this audit. Continue the frozen accuracy expansion; a definitive accuracy failure can stop qualification without resolving verifier rates.",
+  "raw_secondary_sha256": "5029ce643838ab8f18d7d4ea472c77ad60f6c4fa82cf76a5a10747d3a19a081e",
+  "raw_policy": "Detailed secondary outputs remain outside git.",
+  "overall": "unresolved"
+}

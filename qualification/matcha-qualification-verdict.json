@@ -1,7 +1,7 @@
 {
-  "version": 4,
+  "version": 5,
   "candidate": "MATCHA image-bearing subset",
-  "overall": "unresolved_pending_cross_provider_verifier_corroboration",
+  "overall": "unresolved_accuracy_expansion_resumed",
   "gates": {
     "public_nonduplicate_tasks": {
       "verdict": "pass",
@@ -16,19 +16,19 @@
       "evidence": "All 100 frozen tasks were scheduled through Harbor with real images; pilot transport recordings matched staged images byte-for-byte."
     },
     "deepseek_binary_accuracy": {
-      "verdict": "unresolved_expansion_required_if_verifier_not_failed",
-      "evidence": "70/100 full-credit binary successes over all scheduled attempts; no missing rewards. Precommitted 98.333% Wilson and paper-cluster intervals cross the strict 70% ceiling. A prematurely stopped expansion retains every completed attempt and will resume without rerunning them if corroboration does not establish verifier failure."
+      "verdict": "unresolved_expansion_resumed",
+      "evidence": "70/100 full-credit binary successes over all scheduled attempts; no missing rewards. Precommitted 98.333% Wilson and paper-cluster intervals cross the strict 70% ceiling. The expansion resumed using only the 183 not-yet-completed tasks; all 17 completed expansion attempts are retained and never rerun."
     },
     "verifier_false_positive": {
-      "verdict": "unresolved_pending_cross_provider_corroboration",
-      "evidence": "GPT-5.1 flagged 28/100 sampled tasks, but single-judge disagreement is not scientific ground truth. Every flag is frozen for a second blind provider; disagreements and abstentions count as non-errors in denominator 100."
+      "verdict": "unresolved",
+      "evidence": "Blind GPT-5.1/Claude corroboration supports 20/100 conservative sampled-task FPs. Wilson 95% CI [13.34%, 28.88%] and paper-group bootstrap [13%, 28%] cross 15%; no pass or fail claim."
     },
     "verifier_false_negative": {
-      "verdict": "unresolved_pending_cross_provider_corroboration",
-      "evidence": "GPT-5.1 flagged 28/100 sampled tasks, but each specific alternate must be independently corroborated blind before counting. Wilson and paper-group cluster uncertainty are required because this is a sample of 1,500, not a census."
+      "verdict": "unresolved",
+      "evidence": "The judges agree on a specific rejected non-gold option for 17/100 sampled tasks. Wilson 95% CI [10.89%, 25.55%] and paper-group bootstrap [10%, 25%] cross 15%; no pass or fail claim."
     }
   },
-  "audit_independence": "Primary flags are not a verdict. Claude Sonnet 4.6 will receive figures, questions and options while blind to gold, GPT outcomes and verifier outcomes.",
+  "audit_independence": "Claude Sonnet 4.6 reviewed all 28 primary flags blind to gold, GPT outcomes and verifier outcomes. It corroborated 17 exact alternate options, independently excluded gold on three additional tasks, selected gold on seven primary flags, and left one unresolved.",
   "stop_reason": null,
   "no_pass_claim": true
 }
