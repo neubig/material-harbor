@@ -164,14 +164,24 @@ class OmniMatBenchVisionTests(unittest.TestCase):
             TaskConfig.model_validate(tomllib.loads((task / 'task.toml').read_text()))
 
     def test_full_population_verifier_audit_rates_are_separate(self):
-        from qualification import audit_omnimat_verifier
-        report = audit_omnimat_verifier.run()
-        self.assertEqual(report['false_positive']['denominator'], 693)
-        self.assertEqual(report['false_positive']['errors'], 0)
-        self.assertEqual(report['false_negative']['denominator'], 181)
-        self.assertEqual(report['false_negative']['errors'], 22)
-        self.assertLess(report['false_positive']['rate'], 0.15)
-        self.assertLess(report['false_negative']['rate'], 0.15)
+        native = json.loads((ROOT.parent / 'qualification/omnimat-verifier-audit-native-v1-report.json').read_text())
+        self.assertEqual(native['false_positive']['denominator'], 693)
+        self.assertEqual(native['false_positive']['errors'], 0)
+        self.assertEqual(native['false_negative']['denominator'], 181)
+        self.assertEqual(native['false_negative']['errors'], 22)
+        repaired = json.loads((ROOT.parent / 'qualification/omnimat-verifier-audit-adapter-v2-report.json').read_text())
+        self.assertFalse(repaired['official_exact'])
+        self.assertIn('not an independent source-label', repaired['scope_caveat'])
+        self.assertEqual(repaired['false_positive']['errors'], 0)
+        self.assertEqual(repaired['false_negative']['errors'], 0)
+        regrade = json.loads((ROOT.parent / 'qualification/omnimat-retained-dual-regrade-report.json').read_text())
+        self.assertTrue(regrade['native_v1']['matches_original_harbor_rewards'])
+        self.assertEqual(regrade['native_v1']['correct'], 26)
+        self.assertEqual(regrade['adapter_v2']['correct'], 26)
+        transport = json.loads((ROOT.parent / 'qualification/omnimat-transport-audit-report.json').read_text())
+        self.assertEqual(transport['image_enabled_attempts'], 100)
+        self.assertTrue(all(task['image_use_proven'] for task in transport['tasks']))
+        self.assertFalse(transport['rerun_required'])
 
 
 

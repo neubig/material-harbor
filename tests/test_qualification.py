@@ -90,6 +90,16 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(result["classification"], "fail_outside_band")
 
 
+    def test_matcha_resume_preserves_frozen_cohort_without_reruns(self):
+        original = set(json.loads((ROOT / "matcha/manifest100.json").read_text())["task_ids"])
+        resume = json.loads((ROOT / "qualification/matcha-resume-manifest.json").read_text())
+        completed = set(resume["retained_completed_task_ids"])
+        remaining = set(resume["remaining_task_ids"])
+        self.assertEqual(len(completed), 23)
+        self.assertEqual(len(remaining), 77)
+        self.assertFalse(completed & remaining)
+        self.assertEqual(completed | remaining, original)
+
 
 if __name__ == "__main__":
     unittest.main()

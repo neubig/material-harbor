@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "status": "post-cohort verifier remediation",
+  "official_exact": false,
+  "native_v1": "Pinned upstream score_exact comparator used during the frozen 100-task Harbor cohort.",
+  "adapter_v2_change": "Before calling the pinned scorer, flatten prediction and reference lists and canonicalize a prediction slot to the reference representation only when both parse as Decimal values and are mathematically equal. List length, slot order, text semantics, and all unequal values are unchanged.",
+  "reason": "The pre-outcome full-population parser-equivalence audit found 22/181 false negatives for exact Decimal-equivalent answer representations.",
+  "audit_scope": "Synthetic parser/list-equivalence cases over all 142 image-bearing CAL tasks. These cases establish comparator behavior conditional on the released references; they do not independently establish the scientific correctness of source labels.",
+  "cohort_regrading": "All 100 retained answer artifacts must be regraded under native-v1 and adapter-v2. No selective regrading, task reruns, or instruction changes are permitted. Native-v1 remains the precommitted headline accuracy.",
+  "created_after_cohort_started": true
+}

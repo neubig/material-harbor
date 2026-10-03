@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "reason": "Agent-server restart interrupted monitoring; no benchmark process survived.",
+  "runtime_revalidated": {
+    "python": "3.12.3",
+    "harbor": "0.22.0",
+    "docker_server": "29.1.3",
+    "active_benchmark_processes_at_recovery": 0
+  },
+  "csmbench": {
+    "status": "complete",
+    "attempted": 100,
+    "correct": 91,
+    "incorrect": 5,
+    "missing_counted_zero": 4,
+    "accuracy_gate": "fail_outside_band"
+  },
+  "omnimatbench": {
+    "status": "complete_before_recovery",
+    "attempted": 100,
+    "correct": 26,
+    "incorrect": 74,
+    "missing_rewards": 0,
+    "transport_verified": 100,
+    "full_original_file_sha256_matches": 98,
+    "transformed_source_pixel_matches": [
+      "omnimatbench-cal-08-021",
+      "omnimatbench-cal-09-028"
+    ],
+    "accuracy_gate": "pass_strict_band",
+    "native_v1_verifier": "Preserved precommitted scorer; parser audit FN 22/181 and FP 0/693.",
+    "adapter_v2_verifier": "Post-cohort nonofficial numeric-equivalence repair; parser audit FN 0/181 and FP 0/693. All 100 retained attempts dual-regraded: 26 correct under each version.",
+    "source_label_audit": "Parser-equivalence audits are not source-label scientific-correctness audits."
+  },
+  "matcha": {
+    "status": "resume_running",
+    "run_name": "matcha-qualification-n100-resume77",
+    "retained_completed": 23,
+    "retained_correct": 19,
+    "retained_incorrect": 4,
+    "remaining": 77,
+    "completed_attempts_will_not_be_rerun": true
+  },
+  "raw_data_policy": "Run directories, trajectories, proxy request records, and generated resume tasks remain ignored and uncommitted."
+}

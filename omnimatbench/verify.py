@@ -24,12 +24,26 @@ def valid(value):
     return isinstance(value, str) and bool(value.strip())
 
 
-def grade(raw, gold):
+def canonicalize_exact_numeric_equivalents(prediction, gold):
+    predicted = native.flatten_answer(prediction)
+    expected = native.flatten_answer(gold)
+    if len(predicted) != len(expected):
+        return predicted
+    for index, (value, reference) in enumerate(zip(predicted, expected)):
+        value_decimal = native.to_decimal(value)
+        reference_decimal = native.to_decimal(reference)
+        if value_decimal is not None and reference_decimal is not None and value_decimal == reference_decimal:
+            predicted[index] = reference
+    return predicted
+
+
+def _grade(raw, gold, canonicalize=False):
     try:
         prediction = json.loads(raw)
         if not isinstance(prediction, list) or not valid(prediction):
             return {'reward': 0, 'status': 'malformed'}
-        # Lists enter the native list path, avoiding its first-boxed-answer text heuristic.
+        if canonicalize:
+            prediction = canonicalize_exact_numeric_equivalents(prediction, gold)
         scored = native.score_item({'id': 'case', 'llm_answer': prediction},
                                    {'case': native.flatten_answer(gold)},
                                    rel_tol=0.1, zero_tol=1e-12)
@@ -38,6 +52,14 @@ def grade(raw, gold):
         return {'reward': 0, 'status': 'malformed'}
     except DecimalException as exc:
         return {'reward': 0, 'status': 'native_exception', 'exception': type(exc).__name__}
+
+
+def grade(raw, gold):
+    return _grade(raw, gold)
+
+
+def grade_adapter_v2(raw, gold):
+    return _grade(raw, gold, canonicalize=True)
 
 
 def main():

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "gate_semantics": "Existence of at least one scientific foundation model relevant to the candidate environment; benchmark-specific demonstrated benefit is not required.",
+  "model": "Intern-S1",
+  "official_repository": "https://github.com/InternLM/Intern-S1",
+  "paper": "https://arxiv.org/html/2508.15763v2",
+  "primary_evidence": [
+    "The official paper title is 'Intern-S1: A Scientific Multimodal Foundation Model'.",
+    "Intern-S1 combines a Qwen3 MoE language model and InternViT vision encoder and is further pretrained on multimodal data including scientific-domain tokens.",
+    "The official paper reports MatBench 75.0 and materials-science-relevant professional tasks, including thermodynamic stability prediction for crystals."
+  ],
+  "gate_outcomes": {
+    "MATCHA": "pass_existence",
+    "CSMBench": "pass_existence",
+    "OmniMatBench": "pass_existence"
+  },
+  "caveat": "This establishes a named multimodal scientific foundation model with materials relevance only. It does not establish fit, improvement, or successful tool integration on MATCHA, CSMBench, or OmniMatBench specifically."
+}

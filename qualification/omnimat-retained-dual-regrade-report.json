@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "cohort": "omnimat-cal-vision-qualification-n100",
+  "attempts": 100,
+  "answer_artifacts_retained": 47,
+  "missing_answer_artifacts_counted_zero": 53,
+  "native_v1": {
+    "correct": 26,
+    "incorrect": 74,
+    "matches_original_harbor_rewards": true,
+    "mismatched_task_ids": []
+  },
+  "adapter_v2": {
+    "correct": 26,
+    "incorrect": 74,
+    "changed_task_ids": []
+  },
+  "scope": "All retained attempts were regraded. No task was rerun and no instruction changed. Missing answer artifacts remain zero under both versions.",
+  "headline": "Native-v1 remains the precommitted accuracy. Adapter-v2 is a post-cohort secondary analysis and is not official-exact."
+}

@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "verifier": "adapter-v2-post-cohort",
+  "official_exact": false,
+  "population": "All 142 released image-bearing CAL tasks",
+  "independence": "Cases are generated from mathematical equality/inequality and structural list invariants, not solver outcomes. Official references are verifier-only.",
+  "scope_caveat": "This is a parser-equivalence audit conditional on released references, not an independent source-label scientific-correctness audit. Mutations from the same task may be correlated.",
+  "false_positive": {
+    "errors": 0,
+    "denominator": 693,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.005512672605896973
+    ],
+    "examples": []
+  },
+  "false_negative": {
+    "errors": 0,
+    "denominator": 181,
+    "rate": 0.0,
+    "wilson95": [
+      0,
+      0.020782452406527152
+    ],
+    "examples": []
+  },
+  "valid_case_types": "Exact official answer plus exact Decimal-equivalent representations where a distinct form is constructible.",
+  "invalid_case_types": "Missing slot, extra slot, definitely wrong first slot, plus each parseable numeric slot moved by abs(value)+1."
+}

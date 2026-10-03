@@ -8,7 +8,7 @@ from statistics import NormalDist
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from omnimatbench.verify import grade, native
+from omnimatbench.verify import grade_adapter_v2 as grade, native
 
 
 def wilson(k, n):
@@ -73,9 +73,12 @@ def run():
             false_positives.append({"task": key, "perturbation": perturbation, "status": result["status"]})
 
     report = {
-        "version": 1,
+        "version": 2,
+        "verifier": "adapter-v2-post-cohort",
+        "official_exact": False,
         "population": "All 142 released image-bearing CAL tasks",
         "independence": "Cases are generated from mathematical equality/inequality and structural list invariants, not solver outcomes. Official references are verifier-only.",
+        "scope_caveat": "This is a parser-equivalence audit conditional on released references, not an independent source-label scientific-correctness audit. Mutations from the same task may be correlated.",
         "false_positive": {
             "errors": len(false_positives),
             "denominator": len(invalid_cases),
