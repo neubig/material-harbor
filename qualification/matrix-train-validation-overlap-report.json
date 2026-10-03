@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "source_revision": "80b39472f8a22c4e47ec40b6a9b78c7077af01eb",
+  "source_hashes": {
+    "train": "012633a7cd646c0554aec2d10929f875a31ef096c496e5a3b0df6d48023c4641",
+    "validation": "9be8eabae01b0cbbe4461649637f951d8846c98802a16546eb44d2f014b7dcbb",
+    "test": "fcc4b654a7d799ef3e93403939641ca7c51f8868237c8cb4a01001d2bbe58f10"
+  },
+  "overlap_key": "lowercase and whitespace-collapse question; skip null train/validation questions",
+  "train_rows": 11331,
+  "validation_rows": 1688,
+  "test_rows": 470,
+  "vision_test_rows": 250,
+  "vision_train_validation_overlap": 0,
+  "text_test_rows": 220,
+  "text_train_validation_overlap": 164,
+  "text_remaining_after_exact_overlap": 56,
+  "overlap_by_kind": {
+    "foundational_theory": 118,
+    "research_reasoning": 46
+  },
+  "qualification_scope": "Only the frozen image-bearing vision cohort is used; no text or no-image controls are substituted.",
+  "vision_overlap_gate": "pass"
+}
