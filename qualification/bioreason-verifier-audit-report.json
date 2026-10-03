@@ -1,0 +1,629 @@
+{
+  "version": 1,
+  "protocol": "bioreason-go-complete-v1",
+  "independence": "Audit closure parser is implemented separately from the verifier and constructs probes without verifier output. Gold remains the frozen annotation-recovery target; no biological-truth completeness claim is made.",
+  "correct_probes": "100 independently reduced leaf/antichain outputs whose is_a/part_of closure equals the released aspect closures.",
+  "wrong_probes": "100 missing-leaf and 100 valid same-aspect extra-term outputs; all are independently unequal to the target closure.",
+  "false_negative": {
+    "errors": 0,
+    "total": 100,
+    "rate": 0.0,
+    "wilson_95": [
+      0.0,
+      0.03699349820698566
+    ]
+  },
+  "false_positive": {
+    "errors": 0,
+    "total": 200,
+    "rate": 0.0,
+    "wilson_95": [
+      0.0,
+      0.018845326377266564
+    ]
+  },
+  "gate": "pass",
+  "caveat": "This verifies exact frozen annotation recovery mechanics. Open-world GO incompleteness means extra biologically true terms absent from released labels still fail by contract.",
+  "rows": [
+    {
+      "task_id": "bioreason-go-000-fea3a0a8aa8aee31",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-001-a30ecf9e1472aa84",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-002-bf97a7807fef6821",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-003-fd1427cc3ac678ae",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-004-39395c1027f81d95",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-005-8d7dc433a0ec4771",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-006-8e3c059cfc3bff6d",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-007-aee7202631a9f4b0",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-008-0c3d09652f9c14a5",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-009-bbd2aa626f9115d6",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-010-03c78500c9518af8",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-011-30be3ff8ef985e25",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-012-69c60ab688cadae6",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-013-949e50aea912971a",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-014-feadf3714fba5780",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-015-354a25559aa8da38",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-016-c70c8a50bf6cb986",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-017-c89b2a5ada6c1530",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-018-94f9e0efc8b021b6",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-019-d9d9ced22aeb3eea",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-020-78ebfb90c42afba5",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-021-27e0577e4bfb8e33",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-022-bbe84a5e3f514b81",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-023-faa928cbe5b05d22",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-024-22d2fae68da0c58c",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-025-6ffcf02dd1ec76a5",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-026-5d889e2d71c06688",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-027-9e0f22e2b45fbb84",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-028-68eb2e30bba9ea56",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-029-7d14a5cc5396cf9e",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-030-7d99dd2594481e74",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-031-4af45bba491fe230",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-032-cbb8627440638b05",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-033-7d3d485ffbdcfd1b",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-034-b04ba44c7773312e",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-035-bb46a81aa78f8aa1",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-036-2518e9e2d843b665",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-037-b3ab29844636fbe6",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-038-40225b6fbbcdb8f8",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-039-d8b63442e2bd70f3",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-040-f71ac380753aa70f",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-041-5f8500bdeafc1e74",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-042-d723a6ce4eb2bee3",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-043-26c9201b6e085331",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-044-8d37348068645c99",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-045-f4f6c1626dfff18c",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-046-c8d51edcafa70552",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-047-672b30bf8687bf90",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-048-675b40b27f42efa1",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-049-956855b9328a54e8",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-050-94c740aafd527e26",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-051-17374052eee08160",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-052-939785aea5d747a8",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-053-e7a54fc6423c18d6",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-054-17622f6e95bbdbfc",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-055-4e89514f8c7ec419",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-056-746380deacd3fc5c",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-057-d8aa7094235772b4",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-058-3ca46d5efa0fa799",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-059-c6e123a9247a452f",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-060-93afe26259e161bf",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-061-e14561a3d264cf10",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-062-36e0c120bbd9e74f",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-063-459d8e2145c0742c",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-064-333b6466937fb13c",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-065-17627a929b559b0f",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-066-89f88ca5141dcfa8",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-067-b29972b8d5d63b05",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-068-19dad3a08c842618",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-069-1459c76d3e455773",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-070-20c3b2b5a8de6e89",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-071-c5eb74137e15de59",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-072-64017c14fd1a4abf",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-073-66eda2dc0e1740eb",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-074-5d65d1665bc55191",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-075-e32ae93eece5c347",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-076-91b7dc9f1e5472f1",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-077-1baf2be261e4b5e7",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-078-2b770afedb3c8023",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-079-dea75992543f3510",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-080-298eb61eeb26b16c",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-081-d1c0e9c1e39b668b",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-082-80f3385586d038b7",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-083-c2473b2b5ed44a79",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-084-23eb42e07d27f3d2",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-085-c10b2adb03600d01",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-086-96bf7b54b4d6f13c",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-087-4bb912daaf5063a4",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-088-983e51364441a5f9",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-089-3427d07780716210",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-090-6f10443245dca8a6",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-091-51ef6f2dae4e0506",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-092-9b10676113fe78f2",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-093-00b74690ba8ce7b1",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-094-4e8ee70424a4e1e1",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-095-fae34664a4054bbe",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-096-0328ca42421c1648",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-097-fdc56ef186467ef4",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-098-4b57a60c62f2eae4",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    },
+    {
+      "task_id": "bioreason-go-099-cc8a41cd342c4aad",
+      "correct_leaf_probe_reward": 1,
+      "missing_leaf_probe_reward": 0,
+      "extra_same_aspect_probe_reward": 0
+    }
+  ]
+}
