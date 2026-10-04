@@ -1,0 +1,516 @@
+{
+  "version": 1,
+  "protocol": "matrix-pre-agent-infrastructure-recovery-v1",
+  "parent": "matrix-transport-failure-audit-report.json",
+  "authorization": "User explicitly requested recovery of the audited infrastructure failures.",
+  "eligibility": "Exactly the 82 attempts with no agent execution, RuntimeError, no trajectory, no answer, and unproven image transport. No agent-executed attempt is rerun.",
+  "root_cause": "Docker compose network creation failed: all predefined address pools have been fully subnetted.",
+  "preflight": "A temporary Docker network was successfully allocated and removed before freezing this partition.",
+  "fixed": {
+    "model": "openai/deepseek-v4.1-flash",
+    "max_iterations": 40,
+    "tasks": [
+      {
+        "task_id": "matrix-binary-vision-00a2615ca4454791b1ae89b7989004be",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "d99b47cb46201d190f1b30bc775f5c6599b50e71aa3a813da37c9e365bd45bec",
+        "image_sha256": "1967a10a96ecfa91244b15cc2175536e3ffac562a9d16f6bdc873288cf3d7790"
+      },
+      {
+        "task_id": "matrix-binary-vision-019ef77515f74e41a4fa78d05af85b32",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "714732a769a4cc306f17f9fb03b9ad5b7197c55108610dd7e9cfe95fedfe2c16",
+        "image_sha256": "af4944ffac9fbe050ca302c398c16a4711bf3ebdedff7211fe78afe4ad36b425"
+      },
+      {
+        "task_id": "matrix-binary-vision-09b5cc20b22541f1b7d277e1046b7beb",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "8fd522ef96f15f47691af32c5f1c80d6ce0c230aaf301f216e9b1537dc785601",
+        "image_sha256": "ac99116455eb301ffbe08243beabbd214e93fb2e36de0d24656ef7a398cd3cc7"
+      },
+      {
+        "task_id": "matrix-binary-vision-11c941e2155146d69540098b162b33b4",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "7ef485d930e52f68b46730d4fa8fe1412c693eefe15cb24e5341bf8fc3aa870c",
+        "image_sha256": "61f3e51e7a05e5b9732a5b4e55c8e02d93a6dccdc961cf7fcf3186db4f214767"
+      },
+      {
+        "task_id": "matrix-binary-vision-1b77bf095f26456699db23207985957c",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "51ea68e912d8e6b3aadcedf5663faba3a832a1502c1e80624134ce5542da3952",
+        "image_sha256": "24b4d7012b860054bb495064b70fd58f0e1e583704ab3ad5e44f4cd91fa25e7a"
+      },
+      {
+        "task_id": "matrix-binary-vision-1d9e3247f45d4aa9b735f591d4d21d32",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "834cd3b5200ff991241c4c494a2da4f91cecd22f1c856d740a529c0ac5d39f5c",
+        "image_sha256": "4efdcf1ebee9d76eec6a01ab57a1d7b0ece89a4cefb830e2d4ab679b9ed8005b"
+      },
+      {
+        "task_id": "matrix-binary-vision-237e15476484446896c4216f353d4e3b",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "9c35b2cb534e43baf13f8aa768ad0acdaa9ea1da02759dd4acde6179fcf43315",
+        "image_sha256": "605fabcafdacbf2d03c19b820e081c9b3cec47727a922c59c817bc9790976d96"
+      },
+      {
+        "task_id": "matrix-binary-vision-2dc3ca74bca642d2a001cb0bafc5e813",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "5b39b9ced4c49a6ab1231fd624a20a4a4282aafd29fbe22c9fad7ded7204c8ed",
+        "image_sha256": "226a650b4e9912e91d2a8ffd4a6ee51f216800c261709eb3edfc3ae242606ca6"
+      },
+      {
+        "task_id": "matrix-binary-vision-2e44f9e51c134c5f9995dbcb18f77bd8",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "e86aac7e69f72bf7d8296dc046cb73d29f8b464620f98246e92d3626ccdf90c6",
+        "image_sha256": "706ae75cff3498b44d1b922e400cbd07697f4075a8c9d8f04ee6960f97d4eaec"
+      },
+      {
+        "task_id": "matrix-binary-vision-30cd7e8f7ea64f47acd50eff08d12a2f",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "d8868565fef19cf60e3b0ae5658beb8443289efdc16b5695c72e13f8e09f9f30",
+        "image_sha256": "08d17c7f7f11b4fe43e26f9499a2afe35c6f8b8cd7ebec702e41ed56f27314de"
+      },
+      {
+        "task_id": "matrix-binary-vision-32af255290ab4a5d9f5686b7dd08b4c0",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "11763c2fcbe5136747b0b3d8d0d1b455721f8e11282ece8e1a48bf167b13c147",
+        "image_sha256": "7f42604a49306d4986290eaa98ffb3a2f67ff671ea3f6efbb2082e6baea58c4a"
+      },
+      {
+        "task_id": "matrix-binary-vision-3853236f3692436a9368822da1a8281e",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "050a30da16b1faf0c32aec4e8ed6c221eafe05ac910ea833fb625a80ff1e1cac",
+        "image_sha256": "e5c17590d436acc3536523be6893887b9c73d4f91943c39cc5ca9782ff2d8be2"
+      },
+      {
+        "task_id": "matrix-binary-vision-42f792e1abf44efbaafb8dd66403e0af",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "1b8f54e69b9b2b8885b5d3cef0d31db551b8f13c3221bfe43fcc30393ee6ef72",
+        "image_sha256": "f7ebb9e5ab2629a2c7d8a13b2a69ecc9280a278ab9ae404fc29a3d240f9f18f9"
+      },
+      {
+        "task_id": "matrix-binary-vision-46e5819694b34f4c87d615f9124dbc04",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "9d299f90f4018d2a38a223d4114417dd88906d0cd5884c6e46dc66762f6247fc",
+        "image_sha256": "60c23492b28c7ebd15de68cccfd43c64577b0f2a06db57773c70a281f4bc9d60"
+      },
+      {
+        "task_id": "matrix-binary-vision-4b96a7e9dc3049c79e5f1c06f9d7257a",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "3c7ef6de11a55c9578d68e43f4cc85badb43631d71f4f4f0296d63cbafaa20cb",
+        "image_sha256": "024c9486945a23f99deb5ba4dfabf101fae2545d9f5241ad7e59fcce5cf577bb"
+      },
+      {
+        "task_id": "matrix-binary-vision-4d9668a367f749e5b9a4664f12756644",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "c6c7b88b63d1c7c8e7fb5e845df57ea93cbe27b251f80039d60642e99c367fa5",
+        "image_sha256": "e6b2091168385b21316ce321a9ed7235a0c1cb241bcfbf02d706dcf0e1abef6f"
+      },
+      {
+        "task_id": "matrix-binary-vision-4f1f3453b51f4862b5c2f17a99a53f07",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "0d04556c116a7af0e547e8c36dd3316625c4ddde0c1ce635068adf16612d4169",
+        "image_sha256": "f3a87bac80612a9ae858bcc076aade0a93cbc5a5c206cd09eaec7d68173b2a71"
+      },
+      {
+        "task_id": "matrix-binary-vision-50426011c20c4eceb43b9f46b40923e2",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "821e986a9e27b4d03aabd96c700fc3cde712a372118ebf0028f456e3dc44fd88",
+        "image_sha256": "bf7046a0bf70492fefe7949c4a56cf9ce7d2be1588ef16d2eadd45b6a3354d5f"
+      },
+      {
+        "task_id": "matrix-binary-vision-55972a75767142a48d7814e4edd95d16",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "d940fb8cda5e1904c84be4ebc5924c83978a3d85e3cee0e5fd27bc69bb88f8ef",
+        "image_sha256": "8024b394b7cd3a53a8cd16cf10c3029888853d4e67b7220a506547247eb1a381"
+      },
+      {
+        "task_id": "matrix-binary-vision-56c4e61d9b9c48b897624fae8bd59535",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "bb78e9dfdd34c996310bd403d776dd35de67c7c1e51c9d79ca74a3e7973ad8e6",
+        "image_sha256": "f93d965eeab9bf468dc9b23b4c0f1569c084100d723017ff233ca5593fd386d2"
+      },
+      {
+        "task_id": "matrix-binary-vision-5c8cd3e99c49410687535a2389693227",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "80ae573367804d421bdf4976719aa4a99630bfd88fe587a225cd0f35e1981e96",
+        "image_sha256": "7434c1b2f74e61052623fe0c34e06d76aa3e7f760562ffdcade6437d92c95a59"
+      },
+      {
+        "task_id": "matrix-binary-vision-5e89739fbc2f471684985dfa63d84ce8",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "f9fbe849aa5cb5fb49441e6a7a7c0231bbf8d3f8218ca0f50568db757a6dec68",
+        "image_sha256": "5cb8c608bf6f1ddad0da65545d17a69b31883c80f57e3c6da3ef29a9368985a9"
+      },
+      {
+        "task_id": "matrix-binary-vision-60424895c3214dcab2b4e250826dc6e5",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "d144cc85d4ef84f06ad6778bf2a3a43ebb952f89cf10869d60c9b0db3fca567f",
+        "image_sha256": "0065a8d0bf95f1cb27c58284cd0209ef532b3c554535a7a50b0529c5eb464422"
+      },
+      {
+        "task_id": "matrix-binary-vision-6238573cadb7422a879dfc81c1971d54",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "f72cdbd97d05abf488a83e99b091a7d9be50ecdc8107e054b59472fae9340a05",
+        "image_sha256": "4cdbca481791d2cf1161dd8bfc68a68d4ab016d0c492d2b90d32657e5e5bdf39"
+      },
+      {
+        "task_id": "matrix-binary-vision-65ec13aabc8d4b588c119cf886aebd5c",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "0b11f14dedb2d6dab66b22ac3f2221e578fbc9f8dc27b2757bcf3126acbcbc58",
+        "image_sha256": "01bca6cbd3aea341c116f33e6e8ec97887ad21000fd3bad1eca066d71e33e8ad"
+      },
+      {
+        "task_id": "matrix-binary-vision-6631b30c8bf849ae91ddb7a93ae2738c",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "574ebb11c57618c332b91feed5ea8909d87e672a662b5547fc2b66a3045b180d",
+        "image_sha256": "a5d6bc2d69edab205d3ece559299b7198702dbd5cfc1c3bac88349c87b907873"
+      },
+      {
+        "task_id": "matrix-binary-vision-68d64a85e707477483af6eb2c253431f",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "e516ae555e1d65513876839ec7a2efc41be21794c0bed2ac8db0b2d58995fa4e",
+        "image_sha256": "87b9a3ba2576c4d83dc7c9b11cc263e1d7c45a7955f805e45098828b0d7e517b"
+      },
+      {
+        "task_id": "matrix-binary-vision-6bf7098d74c64edba3e44141b5016463",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "e8ec242a9f309aa0ee7393088d0787017b7618100100a4efc6d8c7e8a76eed72",
+        "image_sha256": "11d5c20963a247b0b2c217a198853b2bc4b622c176d32eae1b2d7aadd352ddab"
+      },
+      {
+        "task_id": "matrix-binary-vision-6c1660fb6be14bc4a956bd58b0232fd7",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "a71417c97be7f278e1186397de60d37d9d3d8d8f9cac824ab199e7722af8ac2e",
+        "image_sha256": "5242675738652c76740bb6e37bec898187652566c3971c85bc51dde0f845f6b4"
+      },
+      {
+        "task_id": "matrix-binary-vision-7428652ecbef4a8593d1fb61ff04edb9",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "46f66480d9599a672fac1941cfaf90d8c54e02bbbff56615ae155da8ab34e674",
+        "image_sha256": "bf574ceeac1a27759f1b99f1aacaadc5222a4f21035e6ae0b00c705410d26eac"
+      },
+      {
+        "task_id": "matrix-binary-vision-775ef5d45959462a95e298a0b964a6e1",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "e437678a29f11687f78cab55215f29cf34ece8a288638a557e2ca7fba0980c63",
+        "image_sha256": "374494cee4f185030b27bfcf8b959085a334eb90eb0934d183cb1f7155f42c50"
+      },
+      {
+        "task_id": "matrix-binary-vision-7be5badc3fd7443690d97fa511d02362",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "f1375dee0e91b5315976c9470e4bbb08286815273029fdf53e6ab448320cec37",
+        "image_sha256": "db1633b68a3d33c983418830e82c3ed08a57d4eddca61b58889eff21e33cdebe"
+      },
+      {
+        "task_id": "matrix-binary-vision-826dd05eb1b54151b08d6fcd7dcf525e",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "b85bff595603aaba760bb9bda8d23ddb33306f3594adb96e5270e845098f3354",
+        "image_sha256": "1e7f66f6e7c8a12550e7d0ce5c0994dcff0e5f100bf4c8274702ec596db74b51"
+      },
+      {
+        "task_id": "matrix-binary-vision-8364798434994d4eb9cb5dc315171f2a",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "74d962b70587b890defdec32954b686aa310f0f20c32688992ce5bd84ef75a5b",
+        "image_sha256": "18d24ca133c293d73d03aadec4354c4664efd50cc31419ad027bd08f22cfc7e9"
+      },
+      {
+        "task_id": "matrix-binary-vision-886d8e54ab804dd5ab47176ea9ab8729",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "06a30e223903039ecdffe36365b1af7a71eb69b0168fe87e50d599a2f8199986",
+        "image_sha256": "2de4155ab3f79c2d9acf4ce454d90e48bbcbf57c0601efbd7311de7674f4f146"
+      },
+      {
+        "task_id": "matrix-binary-vision-88767005a6134aafb4dad21c28a98115",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "b666c23a595e48dd3a20f467e2fb9984d30d91ee083816d4f5fb685b5b99270a",
+        "image_sha256": "3d7ff34144f769b2e9225a24b62b20e4de6ed931f06f3bef4876f21108fbb4d9"
+      },
+      {
+        "task_id": "matrix-binary-vision-88d76fb35f3e481d912bed400e3955a1",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "222f74fe7375b661eec13a114a0cfb0292d2f57dcd761cd964fdd8512bc2f1ab",
+        "image_sha256": "e4c4baceddab89581653487a9b1cf88319ba85893a0785c8a1c2c272ed24ae58"
+      },
+      {
+        "task_id": "matrix-binary-vision-8d67adfe7fcf44b39d7729d94e2b6e22",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "5c5c78522b584627d541483d89e68ba37d5ba927d3008a33ce382739845def36",
+        "image_sha256": "ca2c3693e0ce9ec16e07737e3c5ef8bde48c4bd1afb025049807672d8ff4c9ec"
+      },
+      {
+        "task_id": "matrix-binary-vision-8f45a5ee5110482dae1dc991f6f490d3",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "b3485d451721e1e918236f76d8b12b68961997dba19744f1370fe293470900b0",
+        "image_sha256": "c5d64efb05136ca0e2fa30bb614e140d878785acaea98d43494d7b2fe7b3e9cb"
+      },
+      {
+        "task_id": "matrix-binary-vision-8fd3c967eeee4c6481fa05d67f6e3f1c",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "d4244582cb26d12ba1a0b2c55418ab9f0616fce5b2b923fa6647d7ca8cc4784b",
+        "image_sha256": "6001c307b5fe9abdc61c0b12665c50dabd60c6c4b12017daee1f0917fe55c376"
+      },
+      {
+        "task_id": "matrix-binary-vision-92e422d7fa62402f9401874293217542",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "7abdbb5cb2a1efe60f2523dcf922e5ee2b1161fbe2a88ae53f8f9a5b0c3f8d81",
+        "image_sha256": "5f76f08fd1ee2ab46d9c5497725e1baa9ec7303da5e697c9f182fd6c5fadfbf2"
+      },
+      {
+        "task_id": "matrix-binary-vision-95054ad5e6e64d2d9cf81b1893fb4e2b",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "a8b52e529fdfa8238a9534b9807e3253b299f64bf4847ed5e37ab4e87e736df2",
+        "image_sha256": "7a386b17509e36735ff0aaddbec2c315e3b58198c5296778b4073fc1784fc24f"
+      },
+      {
+        "task_id": "matrix-binary-vision-957888ecbae3438092a40f65d4aa2b38",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "590a0bc2777959894c98107f52db4ab1f2614f274e78e105a745261624cb3835",
+        "image_sha256": "ea229ce9ee9537e3813c7faca1dc85d42d2d2c3befa338b7998a9fb92586e85d"
+      },
+      {
+        "task_id": "matrix-binary-vision-9800db3e14b04327a4356e39704bb592",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "7b12edc4c71840e4682d837efd0a85cd84060b308455406c8e8a21daa334bfe6",
+        "image_sha256": "17bf379cf407ddc300ed1bba58518a0009ee453889661754f1377f6a5590f671"
+      },
+      {
+        "task_id": "matrix-binary-vision-9bbf8717a7a646308649e3de8cb1c4fb",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "17d381869f3f9e85e5646e1f541b93cbeb6c6561a973e9f86ba9274eb102fcf7",
+        "image_sha256": "22a47228a61f3b498442b646b5bd190e57ad4db3bff20a3fbbf738fd42965e63"
+      },
+      {
+        "task_id": "matrix-binary-vision-9f26c857a31e42cb869bc8c9dd5c078e",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "6194dcc338f49fd3ab7fe5e320c4f7110e179c3f2a13d9b1184f425f0691f482",
+        "image_sha256": "f8fee940f7a385c5c68dcd1ec7f74c56c8f9cb4695a146dca3b1bea337864c45"
+      },
+      {
+        "task_id": "matrix-binary-vision-a2c83f6b525f4dbbb385182fc38f7499",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "8b7da457ffe94cb2b7f1227d0673c58447ee376ed0983198f4ca8a690ed3b94a",
+        "image_sha256": "4321092dd0aec63088b408f2039fec0bd9434e77ba56fec78a6595a976d143ec"
+      },
+      {
+        "task_id": "matrix-binary-vision-a7ec027d375f4d3087c4666099d9432e",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "e11dedab59fee93a1e8b2c116ed010f339dffd9bd1e86278b502c807d389c25e",
+        "image_sha256": "484baabb3c7a0d942820c84e6d2de202ac577155c5e1b197e190cad65bebee91"
+      },
+      {
+        "task_id": "matrix-binary-vision-a8a632c9d3f54bf9ba349dafcc347ddd",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "9f1a0ec783dd0715895cb6f2d72eed7a45793dae9fc6a62799565d31a77a2118",
+        "image_sha256": "86dda27b86d27ce68da111bf92e34a41926293baae8f63f598ca3971932ab7bb"
+      },
+      {
+        "task_id": "matrix-binary-vision-abea5dba52724c479110b241c9c82beb",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "06ac13555bd5eec9990d4e10e094ed80557ce8c7e37d3423110a7a2d4ff61456",
+        "image_sha256": "118ad3d814305ee3e1bd08909609b53998afd98897aab88be9d33221bf7c1249"
+      },
+      {
+        "task_id": "matrix-binary-vision-adec909883b94d488130d5109c0c8e36",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "383d524f22cf23e418a23d24c6435395e25b4c0b4ead9045f6f47f96c75b1991",
+        "image_sha256": "b76639a9a51d04b5301ca739dca9afcdce5b84f895bfd524dfecd25071a414c3"
+      },
+      {
+        "task_id": "matrix-binary-vision-aec99b6ab9844425870aead55372f7af",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "57a178d01ff179a38042e00449843522692714c1e8930ba6a8ed229e5ca7b9af",
+        "image_sha256": "064e647cbc35a744166e79f1192985df274ce24c1b896149cc2e7bafb26125ab"
+      },
+      {
+        "task_id": "matrix-binary-vision-afdb4b44ec194659bbbe10b11b37ca55",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "49172033ac053e993493847b480ae44eedf0817ec062af619e528530b4ee56f3",
+        "image_sha256": "9b7fe88657e09b96a26939fad4cd798a8d445c771d7eeb8ba889a17b858d0420"
+      },
+      {
+        "task_id": "matrix-binary-vision-b17d76aab760489191ae65603d96f4b0",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "4d378eaa7b6a50e3fc5e8d8dd235ce351118c3ba571f3d3eb397d2de65761e16",
+        "image_sha256": "1fc68233857046c8960c3538ce60a3d0d85e3b0369a76a866301c3427c586fe0"
+      },
+      {
+        "task_id": "matrix-binary-vision-b4f102bcf92c4342a4d9dd085d56e28c",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "ca943b963849521fbe63e328ade30639e179b3c3eb2a31b6b7ea50f36a00fbec",
+        "image_sha256": "f344b7139cf5393beff316989a98ae83f6c81df0fde5518ca1f6aceee91cacd1"
+      },
+      {
+        "task_id": "matrix-binary-vision-bcb46df5ae344cbfa7d6b9bd6c3acc1b",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "93c7277648dc834531fe59f1adf6b8f2d2635b1e295f4075f8425b1c615dc241",
+        "image_sha256": "ffeea3159701c24e7cf7183b29d4fdb6a241c0c02d81643a80b4655b87c77263"
+      },
+      {
+        "task_id": "matrix-binary-vision-bd1894f9af284cd693d228cf5cd01870",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "227b09dfcb38dc90183cb8fbf2ac50ef1b8238dbf2ce5e859a6c96c4518ec63e",
+        "image_sha256": "04bf568f565bb3d3a90c254ae87685330dc3e005df55a244a4cf2190b7e144cd"
+      },
+      {
+        "task_id": "matrix-binary-vision-bd309efd24c542ea9a85995d9fa94265",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "4db37ab7ba9f69dc00ce6ac7e8303a6454633056dde543788acae1acbc18c251",
+        "image_sha256": "8781d7a2996e184b01bdd70cc8e0ad336615b6503d67e15418e2429f97afb244"
+      },
+      {
+        "task_id": "matrix-binary-vision-be4a2e0b59914ba599ea4ae293b4188a",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "27c76d2258b579a6a3f7befa58a0a2fc738ec67f8ce6660d1e51db4824b57588",
+        "image_sha256": "87454df208d23268e9068a72168cd3b873170c5fdf2b021f942816b42eecf1a2"
+      },
+      {
+        "task_id": "matrix-binary-vision-c19cd6b225274cb2a0a8ef66e40bd9ee",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "369f9cbafcb45486413bde72324ef6128b6542d3dbf3723b88f93105b58bce8e",
+        "image_sha256": "0f8e33725dd4a3cd31a2164cb004ce106968ea8e59d61d10f66dde777f514322"
+      },
+      {
+        "task_id": "matrix-binary-vision-ca0a12a17d5c424ab97cc6f4e38c6905",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "23c6a9c95c6b332818dde2d9818d6d39ecf1dc2c6e77397383d2e87d8251a506",
+        "image_sha256": "f9f47e5f01dac0e8b6b53020494bdf1a98b8a94177df3f40e9a73be11d6a95b6"
+      },
+      {
+        "task_id": "matrix-binary-vision-d78a45088af94a29ad53cc0907a4285b",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "ba0e80efaed17d1068e1adcd81d165f20c39aaff17a238c0afa7a0fee91ed1f6",
+        "image_sha256": "5c77df948fe9eeef0c172a05b8f8de51626b865407dec12aa8a1c6e8e1697a5c"
+      },
+      {
+        "task_id": "matrix-binary-vision-d8d25733e46f48e1bec4750266137b96",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "5945318ca3f6a413ecb459dd59b6c6b44e5fd160d0101e87135fc086610c76b6",
+        "image_sha256": "8292602e064081a3cd53932c496b05c85e5e78b54708a913e40cb80044a93207"
+      },
+      {
+        "task_id": "matrix-binary-vision-d94b32d57de1456ba2595aa85f98120c",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "2fbe2535299c56ae605eb6631e01f5b6f000ae2c75bb6ae5d0f1215f934a775b",
+        "image_sha256": "3da91f07980ce774838e9f1c30aa1e6096aae2680df387e99d7b79c724265b1e"
+      },
+      {
+        "task_id": "matrix-binary-vision-e07c965293fe4006b04002da4c4c7649",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "f34a90b1922925b415f75f7311869b1a5c933fe43bdca5329e108f7965910e8a",
+        "image_sha256": "19899d661a0dbe5792fa4bdc2090ac1098cb1565e81b229a07da191eb7d1d14f"
+      },
+      {
+        "task_id": "matrix-binary-vision-e47b72d0783b4e6387ed60ac5dd87cf2",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "8d5bf9d4cae807fbc49b4c42b2c726a453b23857aa890843c4843511a2d16f16",
+        "image_sha256": "3f2e32b145bd7af377da13958d7e96d807e5bcca3feb864f07d573be96e510cf"
+      },
+      {
+        "task_id": "matrix-binary-vision-e53b7a1a67ea47d9a35bc6cfa83e8fb6",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "329a8ea82d39e90d86662ee867f7c234c51f49e8d1c3ae8820afffe138420556",
+        "image_sha256": "5ed3f4f8366b717ec482104d5c484d909c8988c379002be3f87275ab7a1cb632"
+      },
+      {
+        "task_id": "matrix-binary-vision-e6a38d4b87d748a081742efa6fce7b49",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "01a9477e86da89a760229377b55f961963a51d806cbb26dc269daf5f7a6fe6a3",
+        "image_sha256": "efcb762155246afe95841fc3f5aa56b4216eee1552baddeb36115cf34cb0328c"
+      },
+      {
+        "task_id": "matrix-binary-vision-e6ecb7bdc9704dfeac32b15117526359",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "fbb65a253b933251dfd9937005e4386ae2499212c0bee1a7169e9ed3221df92b",
+        "image_sha256": "901496a3dedc42377e8849d997adcb7477cec39826384dd258cd9926ea85a92b"
+      },
+      {
+        "task_id": "matrix-binary-vision-ec65dcd569c14b63bb9e24c1952b9a6a",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "ce009759acce2ee9b76aecdc1d5330ff415bb38f8dc07dd8b6d8e5add2d2af64",
+        "image_sha256": "f6e4e613e82f85b31364495605ee03f2815c5e88e898c2c2531ef33622a7e0ca"
+      },
+      {
+        "task_id": "matrix-binary-vision-f03461a7f5664d77bd492e6e6b0ec978",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "4529ac59d88232c08bacd1114200521fcf946b78cea434b955c9d39886c23765",
+        "image_sha256": "0fc0f34470221ea1a89b55ccea96483296521173106f397b0652e025037ee568"
+      },
+      {
+        "task_id": "matrix-binary-vision-f0505a36e07049ecb905bb5f11e55a50",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "3156772dc412771c49af371ea5164b9a6358fcb1405ae3d4ac7739d36e2584e6",
+        "image_sha256": "f5af13d81e1bcab55faf44401f2ef8b87db6bb8cd62ee10b3e4e9884a982fc1c"
+      },
+      {
+        "task_id": "matrix-binary-vision-f11119fa8f834a00989001cbff85383a",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "24c7a81a489c3cfb1069ebf635dbf5fcc6185ac8f0e75487e95212bd113124e6",
+        "image_sha256": "96b06329c969acab40417ea589a729552e3d23d3edcf12a12c565ebac9c78b6b"
+      },
+      {
+        "task_id": "matrix-binary-vision-f1e8058e3c04416894910a462ba2a2ae",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "74232fc65dbb539e61005acf204a49dcff3ae03d754c5dd0cc867a3efc4e49b7",
+        "image_sha256": "36b350c16094bec80ccd330d7edb61ddd3e3a026f70979d91f06020afead3f2c"
+      },
+      {
+        "task_id": "matrix-binary-vision-f3a7eebe2d6848688bb857ec31283216",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "2e8b020d191730dc176b9716ff14ab9524899f0fe48a1c64a97a62720c87cb7f",
+        "image_sha256": "b33bfb6cfadbef51888f334451d3138321a8266b4065bb37d4d05ebb0aa9b2dc"
+      },
+      {
+        "task_id": "matrix-binary-vision-f53da62d138a4925bf829fa0a7701f71",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "83c27ffa2eddae70410a863d7212d5d5c8faea51d83b094a57f2b20d24333a11",
+        "image_sha256": "b3b925bbc9fdcee201ca6b818d743c8559ca419d6908ce3d85c3b6c3c33aa272"
+      },
+      {
+        "task_id": "matrix-binary-vision-f54fc5c383154cafa3c3f4af5eb9b9a3",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "42abd8a57f0a0d0fca50b94145ef9ab706ed95294588ca0cd90fb7a92bc13afb",
+        "image_sha256": "c5c63c4da2502e8843858cbea703798cab820246057a0f4fb447509006e02974"
+      },
+      {
+        "task_id": "matrix-binary-vision-f602f7a54a424ecd84aabf8a10ad1a70",
+        "source_run": "matrix-binary-vision-qualification-additional140-restart2-remaining14",
+        "task_tree_sha256": "417c68b798aafa5984657642c2c3c9b34daedfa682e38ba3a91d8e5fdf6f5772",
+        "image_sha256": "120bad6265e25fc99d7251ddfb29a6a918fd9abce5364455bb470f2cfa436c46"
+      },
+      {
+        "task_id": "matrix-binary-vision-f76c65135a4f430a985fbf924e3bb2e6",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "52198b931138cace07505b94b3077def243cadcdd0b871761ffac4a8a57a805e",
+        "image_sha256": "664f631156562819e7959dea249d8f649f6dee15f4b11734e790cfe6560c6d58"
+      },
+      {
+        "task_id": "matrix-binary-vision-f9b85129a7fc4a7fb21de464de44e0f0",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "7a9f3029ad7939873299905e7dd0d406903049ffc8d3b5e50b8ae1e7c72faa1c",
+        "image_sha256": "9617fa9adb316a2ecacce73eda2575775dce91094fea0d294f3b2c0e9ec54d5e"
+      },
+      {
+        "task_id": "matrix-binary-vision-fc288eb12b5646f98eed7af9ae9005f2",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "aa443af46655e378b5df7176dcc6c01445fb53910ad91b6c2333c1cdfc8e7b9a",
+        "image_sha256": "75ebed5f0b907d77baa4887544ff1e15645c52d2944226c1c8f2a6099d2fc996"
+      },
+      {
+        "task_id": "matrix-binary-vision-fea9bb749dde4388bc9499397e4c6bd6",
+        "source_run": "matrix-binary-vision-qualification-additional140-resume109",
+        "task_tree_sha256": "327b6d838e74e8d00d777e732576306521297aeaca97188d3e1bd9fa64732c64",
+        "image_sha256": "117b50555056c0259fe8d7576ac4193af6bc13bcc2f21637e526f0ddcbb9f561"
+      }
+    ],
+    "cohort_tree_sha256": "284fd21c633e740156c0eb9e6e1edec76aa992f0e5704c64d2f6ea99c0639468"
+  },
+  "execution": {
+    "source": "matrix/tasks-binary-vision82-infra-recovery",
+    "run_name": "matrix-binary-vision-infra-recovery82",
+    "concurrency": 8,
+    "runner_timeout_seconds": 21600,
+    "proxy_port": 18121
+  },
+  "reporting": "Preserve original all-scheduled result and report a recovery-completed 240-task sensitivity separately; do not rerun the other 158 attempts."
+}
