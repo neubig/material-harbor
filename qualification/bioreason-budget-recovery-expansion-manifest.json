@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "protocol": "bioreason-budget-recovery-expansion-v1",
+  "parent": "bioreason-budget-recovery-manifest.json",
+  "selection_manifest": "qualification/bioreason-go-expansion-manifest.json",
+  "selection_manifest_sha256": "6686f21ebfbd9830a9426e109ffc59eccd62b5aff13f3bc78923920de8b7f0b0",
+  "trigger": {
+    "first_look_successes": 5,
+    "first_look_scheduled": 100,
+    "binary_accuracy": 0.05,
+    "simultaneous_wilson98_333": [
+      0.01809201626831431,
+      0.130692337979406
+    ],
+    "decision": "inconclusive_at_strict_10_percent_floor; execute frozen additional200"
+  },
+  "cohort_validation": "All 200 generated task IDs, opaque IDs, sequence hashes, and source-protein-ID hashes exactly equal the prospectively frozen expansion manifest. Labels remain verifier-only.",
+  "fixed": {
+    "model": "openai/deepseek-v4.1-flash",
+    "max_iterations": 40,
+    "additional_count": 200,
+    "cumulative_count": 300,
+    "dockerfile_sha256": "9477f6d6df7e2c87744a2af1f7c235ebb9a9d8d00ea21119f9f65bcbd9d4d9fa",
+    "instruction_sha256": "1e1ed5d5dcd255552daea4b1c043c40c5b10053de8fa09d952dc37694d529b48",
+    "verifier_sha256": "adfdaa3aa00fa807354918a6dbd0f2a6878dc22d13fe7c07df121ca23dda5b98",
+    "ontology_sha256": "0c0062efbb1b199a6a54e62c0c48ff0038d39173aecc7edfab66a20090d5ec2d"
+  },
+  "execution": {
+    "source": "bioreason/tasks-go200-additional-budget40",
+    "run_name": "bioreason-go-budget40-additional200",
+    "concurrency": 20,
+    "runner_timeout_seconds": 21600,
+    "proxy_port": 18120
+  },
+  "primary_metric": "Cumulative full scheduled denominator (first100 + additional200); missing outputs and infrastructure failures score zero. Do not exclude invalid or missing answers.",
+  "stop": "Run the complete prospectively frozen additional200 cohort; do not outcome-stop within it."
+}

@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "candidate": "MATRIX vision",
-  "overall": "fail_image_transport_gate",
+  "overall": "pass",
   "gates": {
     "public_runnable_nonduplicate_tasks": {
       "decision": "pass",
@@ -12,32 +12,32 @@
       "evidence": "MATRIX-PT is the benchmark\u2019s own Qwen2-VL-7B materials-science post-training release."
     },
     "harbor_containerization": {
-      "decision": "fail",
+      "decision": "pass",
       "scheduled_image_bearing_attempts": 240,
-      "exact_source_image_transport_proven": 158,
-      "absent_or_unprovable_transport": 82,
-      "evidence": "All tasks were staged and retained answers were container-replayed, but the preserved outbound proxy audit proves exact source-image bytes for only 158/240 scheduled attempts. The other 82 were pre-agent infrastructure failures (60 had only unrelated concurrent proxy images in their trial windows; 22 had none) and conservatively fail the mandatory image-use requirement."
+      "exact_source_image_transport_proven": 240,
+      "absent_or_unprovable_transport": 0,
+      "evidence": "The baseline proved exact transport for 158 agent-executed attempts. A declared infrastructure-only recovery, restricted to the 82 Docker pre-agent failures, proves exact source-image bytes in outbound DeepSeek requests for all remaining tasks."
     },
     "deepseek_v4_1_flash_binary_accuracy": {
-      "decision": "pass_with_infrastructure_sensitivity",
+      "decision": "pass",
       "scheduled": 240,
       "attempted": 240,
-      "successes": 84,
-      "accuracy": 0.35,
+      "successes": 128,
+      "accuracy": 0.5333333333333333,
       "simultaneous_wilson98_333": [
-        0.28057258891362924,
-        0.4264242523886408
+        0.45636278839030053,
+        0.6087490246536396
       ],
       "retained_answer_sensitivity": {
-        "successes": 84,
-        "denominator": 142,
-        "accuracy": 0.5915492957746479,
+        "successes": 128,
+        "denominator": 207,
+        "accuracy": 0.6183574879227053,
         "simultaneous_wilson98_333": [
-          0.49111599203905637,
-          0.6848794015277665
+          0.5353693561010723,
+          0.6949683375971635
         ]
       },
-      "evidence": "The mandatory all-scheduled result is 84/240 = 35.00%, with all 98 missing outcomes retained as zero. The non-primary 84/142 sensitivity and its simultaneous upper bound 68.49% show the strict <70% conclusion does not depend on counting infrastructure failures as zero. This accuracy pass cannot rescue the independent transport failure."
+      "evidence": "Recovered primary accuracy is 128/240=53.33%, retaining all 33 missing outputs as zero. The non-primary 128/207 sensitivity upper bound 69.50% remains below the strict 70% ceiling."
     },
     "verifier_false_positive": {
       "decision": "pass",
@@ -63,8 +63,8 @@
     }
   },
   "caveats": [
-    "MATRIX releases no official vision rubric; the qualification measures a frozen adapter-derived binary task contract, not official benchmark accuracy.",
-    "The all-scheduled denominator remains mandatory. Of 98 missing outputs, 82 were pre-agent infrastructure failures, 12 rate-limit errors after image transport, and 4 max-iteration outcomes after image transport. The 84/142 retained-answer sensitivity is diagnostic only and does not replace the primary result.",
-    "Exact original source bytes were independently matched in outbound DeepSeek requests for all 158 agent-executed attempts, including all 142 retained-answer attempts, but not for the 82 pre-agent failures. Under the precommitted all-scheduled image requirement, this is a definitive transport failure."
+    "MATRIX releases no official vision rubric; qualification measures a frozen adapter-derived binary task contract, not official benchmark accuracy.",
+    "The original 84/240 baseline and all 82 Docker network failures remain preserved. The recovery reran only attempts with no prior agent execution and reports 44/82 full-credit outcomes; final primary accuracy is 128/240 with 33 missing answers retained as zero.",
+    "Exact original source bytes are independently matched in outbound DeepSeek requests for all 240 scheduled image-bearing tasks after recovery."
   ]
 }

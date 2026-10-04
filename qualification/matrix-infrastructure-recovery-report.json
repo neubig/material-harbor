@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "protocol": "matrix-pre-agent-infrastructure-recovery-v1",
+  "baseline_report": "qualification/matrix-transport-failure-audit-report.json",
+  "baseline_preserved": {
+    "successes": 84,
+    "scheduled": 240,
+    "binary_accuracy": 0.35,
+    "exact_image_transport_proven": 158,
+    "pre_agent_infrastructure_failures": 82
+  },
+  "root_cause": "All 82 baseline pre-agent failures were Docker compose network failures: all predefined address pools had been fully subnetted.",
+  "recovery_partition": {
+    "scheduled": 82,
+    "agent_executed": 82,
+    "exact_original_bytes_in_outbound_request": 82,
+    "retained_answer_artifacts": 65,
+    "missing_answers_counted_zero": 17,
+    "successes": 44,
+    "failures_including_missing": 38,
+    "binary_accuracy": 0.5365853658536586,
+    "simultaneous_wilson98_333": [
+      0.4067206177198257,
+      0.6616701503598863
+    ]
+  },
+  "execution": {
+    "first_attempt": {
+      "run": "harbor_vision/runs/matrix-binary-vision-infra-recovery82",
+      "agent_executed_retained": 2,
+      "exact_transport": 2,
+      "missing_answers": 2,
+      "successes": 0,
+      "report_sha256": "2b32354f79cf8ffff6d9612d914b9d1b065fb720ee7a110d5b3d1f0b02fb480e"
+    },
+    "resume_after_targeted_cleanup": {
+      "run": "harbor_vision/runs/matrix-binary-vision-infra-recovery82-resume80",
+      "scheduled": 80,
+      "exact_transport": 80,
+      "retained_answer_artifacts": 65,
+      "missing_answers": 15,
+      "successes": 44,
+      "raw_replay_detail_sha256": "53f14ee3280c82b53456e888c80937bdd0919f3fb6c212832727856dad4cba06",
+      "runner_report_sha256": "cd5aff28ad2f497056a3b46a5c5d7633c0e3d5fde87c7002db18b23d7f0470f2"
+    }
+  },
+  "no_rerun_invariant": "Only attempts with no prior agent execution were eligible. The two agent-executed first-recovery attempts were retained; only the other 80 were resumed.",
+  "recovered_complete_population": {
+    "successes": 128,
+    "scheduled": 240,
+    "binary_accuracy": 0.5333333333333333,
+    "failures_including_missing": 112,
+    "retained_answer_artifacts": 207,
+    "missing_answers_counted_zero": 33,
+    "fractional_score_distribution": {
+      "1": 128,
+      "0": 79,
+      "missing_or_error": 33
+    },
+    "simultaneous_wilson98_333": [
+      0.45636278839030053,
+      0.6087490246536396
+    ]
+  },
+  "retained_answer_sensitivity": {
+    "successes": 128,
+    "denominator": 207,
+    "binary_accuracy": 0.6183574879227053,
+    "simultaneous_wilson98_333": [
+      0.5353693561010723,
+      0.6949683375971635
+    ],
+    "interpretation": "Diagnostic only; the all-scheduled recovered population remains primary."
+  },
+  "image_transport_gate": {
+    "decision": "pass",
+    "exact_original_bytes_proven": 240,
+    "scheduled": 240,
+    "evidence": "The baseline proved 158 exact outbound source images. The infrastructure-only recovery independently proved all remaining 82 exact source images in outbound DeepSeek requests."
+  },
+  "strict_accuracy_gate": {
+    "decision": "pass",
+    "required": "strictly >0.10 and <0.70",
+    "evidence": "Recovered all-scheduled accuracy is 128/240=53.33%; its simultaneous interval is [45.64%,60.87%]. Retained-answer sensitivity is 128/207=61.84% with upper bound 69.50%, below 70%."
+  },
+  "raw_data_policy": "Per-task answers, proxy records, judgments, and replay rows remain untracked under harbor_vision/runs."
+}
