@@ -1,9 +1,9 @@
 {
-  "version": 1,
+  "version": 2,
   "scope": "Workbook rows 19-25 under frozen bounded qualification protocols",
   "complete": true,
-  "pass_count": 0,
-  "fail_count": 7,
+  "pass_count": 1,
+  "fail_count": 6,
   "pending_count": 0,
   "candidates": [
     {
@@ -23,22 +23,26 @@
     {
       "row": 21,
       "candidate": "MATRIX vision",
-      "verdict": "fail",
-      "decisive_gate": "harbor_image_transport",
+      "verdict": "pass",
+      "decisive_gate": "all_pass",
       "transport": {
-        "exact_original_bytes_proven": 158,
+        "exact_original_bytes_proven": 240,
         "scheduled": 240,
-        "absent_or_unprovable": 82
+        "absent_or_unprovable": 0
       },
       "accuracy": {
-        "successes": 84,
+        "successes": 128,
         "scheduled": 240,
-        "rate": 0.35,
-        "missing_or_infrastructure_counted_zero": 98,
+        "rate": 0.5333333333333333,
+        "missing_counted_zero": 33,
         "retained_answer_sensitivity": {
-          "successes": 84,
-          "denominator": 142,
-          "rate": 0.5915492957746479
+          "successes": 128,
+          "denominator": 207,
+          "rate": 0.6183574879227053,
+          "simultaneous_wilson98_333": [
+            0.5353693561010723,
+            0.6949683375971635
+          ]
         }
       },
       "verifier_audit": {
@@ -53,7 +57,7 @@
           "wilson95_upper": 0.11351339317396873
         }
       },
-      "evidence": "Exact source bytes reached DeepSeek in 158/240 scheduled attempts; all 82 absent/unprovable cases were pre-agent infrastructure failures and conservatively fail the mandatory image-use requirement. The primary accuracy remains 84/240; the 84/142 sensitivity interval [49.11%, 68.49%] supports the <70% ceiling but cannot rescue transport.",
+      "evidence": "Infrastructure-only recovery proved exact original source-image bytes in outbound DeepSeek requests for all remaining 82 tasks without rerunning any agent-executed attempt. Final all-scheduled binary accuracy is 128/240=53.33%; all 33 missing answers count zero. FP and FN audit upper bounds remain strictly below 15%.",
       "caveat": "MATRIX releases no official vision rubric; the frozen verifier is adapter-derived."
     },
     {
@@ -95,12 +99,16 @@
       "verdict": "fail",
       "decisive_gate": "deepseek_v4_1_flash_binary_accuracy",
       "accuracy": {
-        "successes": 0,
-        "scheduled": 100,
-        "rate": 0.0,
-        "wilson98_333_upper": 0.0542
+        "successes": 15,
+        "scheduled": 300,
+        "rate": 0.05,
+        "invalid_or_missing_counted_zero": 273,
+        "simultaneous_wilson98_333": [
+          0.02742622659978,
+          0.089444888870694
+        ]
       },
-      "evidence": "The conservative simultaneous upper bound is strictly below the required 10% floor; labels remained verifier-only."
+      "evidence": "At the recovered max-iterations=40 budget, the prospectively frozen cumulative population scored 15/300=5.00%. All 273 invalid/missing outputs remain zero; simultaneous Wilson upper 8.94% is strictly below the required 10% floor. Labels remained verifier-only."
     }
   ],
   "workbook": "../GENESIS Benchmark Brainstorming.xlsx",

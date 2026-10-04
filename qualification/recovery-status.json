@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "recorded_at_utc": "2026-10-03T20:21:55.365642+00:00",
+  "version": 2,
+  "recorded_at_utc": "2026-10-04T14:49:54Z",
   "branch": "vision-multimodal-harbor-measurements",
   "restart_state": {
     "surviving_benchmark_or_replay_processes": 0,
@@ -10,7 +10,10 @@
       "matrix-binary-vision-qualification-additional140": 31,
       "matrix-binary-vision-qualification-additional140-resume109": 95,
       "matrix-binary-vision-qualification-additional140-restart2-remaining14": 14
-    }
+    },
+    "matrix_infrastructure_recovery_completed": 82,
+    "bioreason_budget40_first100_completed": 100,
+    "bioreason_budget40_additional200_completed": 200
   },
   "definitive_candidate_state": {
     "MatSciFig": "fail",
@@ -18,23 +21,23 @@
     "MATCHA": "fail",
     "CSMBench": "fail",
     "OmniMatBench": "fail",
-    "BioReason-Pro GO": "fail",
-    "MATRIX": "fail_image_transport_gate"
+    "BioReason-Pro GO": "fail_deepseek_accuracy_below_10_percent",
+    "MATRIX": "pass"
   },
   "outstanding_steps": [],
   "matrix_final": {
-    "successes": 84,
+    "successes": 128,
     "scheduled": 240,
-    "binary_accuracy": 0.35,
-    "retained_answer_sensitivity": 0.5915492957746479,
-    "exact_image_transport_proven": 158,
+    "binary_accuracy": 0.5333333333333333,
+    "retained_answer_sensitivity": 0.6183574879227053,
+    "exact_image_transport_proven": 240,
     "transport_scheduled": 240,
-    "verdict": "fail_image_transport_gate"
+    "verdict": "pass"
   },
   "workbook": {
-    "path": "GENESIS Benchmark Brainstorming.xlsx",
+    "path": "../GENESIS Benchmark Brainstorming.xlsx",
     "before_sha256": "0859f0e2468fbe45439cf3d95d1050b4c8750aa8bfe94cf960562c38b85ddd39",
-    "after_sha256": "aabf6269ceb48def81fc88d848a8ff2508d20d9caae85d4ff8006f0ff867afed",
+    "after_sha256": "717c20e047167dc3ab470155d75f30f13d2bed553bcfc38a7cf68d7cf0ebe555",
     "rows_finalized": [
       19,
       20,
@@ -65,6 +68,15 @@
       64,
       69,
       76
+    ],
+    "recovery_before_sha256": "aabf6269ceb48def81fc88d848a8ff2508d20d9caae85d4ff8006f0ff867afed",
+    "recovery_rows_updated": [
+      21,
+      25
+    ],
+    "evidence_rows_updated": [
+      83,
+      87
     ]
   },
   "validation": {
@@ -72,6 +84,18 @@
     "full_test_suite": "113 passed, 1 skipped",
     "workbook_integrity": "pass",
     "qualification_json_parse": "pass",
-    "seven_definitive_failures": "pass"
+    "seven_definitive_results": "1 pass, 6 fail, 0 pending"
+  },
+  "bioreason_final": {
+    "baseline_preserved": "0/100 at max_iterations=20",
+    "recovered_successes": 15,
+    "recovered_scheduled": 300,
+    "binary_accuracy": 0.05,
+    "invalid_or_missing_counted_zero": 273,
+    "simultaneous_wilson98_333": [
+      0.02742622659978,
+      0.089444888870694
+    ],
+    "verdict": "fail_deepseek_accuracy_below_10_percent"
   }
 }

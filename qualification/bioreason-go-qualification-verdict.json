@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 2,
   "candidate": "BioReason-Pro distinct nonvisual GO annotation-recovery track",
   "overall": "fail_deepseek_accuracy_below_10_percent",
   "gates": {
     "public_nonduplicate_tasks": {
       "verdict": "pass",
-      "evidence": "8,058 clean unique sequences after official exclusion, exact-sequence deduplication and three inconsistent-target sequence groups quarantined; frozen probability cohort n=100."
+      "evidence": "8,058 clean unique public sequences after official exclusion, exact-sequence deduplication and three inconsistent-target sequence groups quarantined; frozen cumulative recovery population n=300."
     },
     "relevant_foundation_model": {
       "verdict": "pass",
@@ -13,11 +13,11 @@
     },
     "harbor": {
       "verdict": "pass",
-      "evidence": "100 disjoint tasks completed in Harbor; retained original task plus declared 99-task network retry, with no completed attempt rerun."
+      "evidence": "300 disjoint tasks completed in Harbor at the recovered max-iterations=40 budget. The original max-iterations=20 baseline remains preserved; labels remained verifier-only."
     },
     "deepseek_binary_accuracy": {
       "verdict": "fail",
-      "evidence": "0/100=0%; all attempts had numeric rewards. Precommitted 98.333% Wilson CI [0%,5.42%] lies strictly below the required >10% floor."
+      "evidence": "15/300=5.00% on the complete frozen recovery population, with all 273 invalid/missing outputs retained as zero. Precommitted simultaneous 98.333% Wilson CI [2.74%,8.94%] lies strictly below the required >10% floor."
     },
     "verifier_false_negative": {
       "verdict": "pass_contract_only",
@@ -28,6 +28,6 @@
       "evidence": "0/200 independently constructed missing-leaf or extra-term probes accepted; Wilson95 upper 1.88%."
     }
   },
-  "stop_reason": "Accuracy upper confidence bound is strictly below 10%; do not run frozen additional200.",
+  "stop_reason": "The complete prospectively frozen n=300 recovery population is measured; its accuracy upper confidence bound is strictly below 10%.",
   "caveat": "The verifier audit establishes exact annotation-recovery mechanics only. It does not establish biological truth or open-world GO completeness. This is a newly defined task over released data, not a released benchmark task contract."
 }

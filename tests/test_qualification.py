@@ -182,12 +182,16 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(report["overall"], "fail_verifier_false_positive_gate")
 
 
-    def test_bioreason_accuracy_uses_all_scheduled_attempts(self):
+    def test_bioreason_recovery_uses_full_frozen_n300_denominator(self):
         report = json.loads((ROOT / "qualification/bioreason-go-accuracy-report.json").read_text())
-        self.assertEqual(report["scheduled"], 100)
-        self.assertEqual(report["attempted"], 100)
-        self.assertEqual(report["successes"], 0)
-        self.assertLess(report["wilson98_333"][1], 0.10)
+        self.assertEqual(report["baseline_preserved"]["successes"], 0)
+        self.assertEqual(report["baseline_preserved"]["scheduled"], 100)
+        cumulative = report["budget_recovery"]["cumulative"]
+        self.assertEqual(cumulative["scheduled"], 300)
+        self.assertEqual(cumulative["attempted"], 300)
+        self.assertEqual(cumulative["successes"], 15)
+        self.assertEqual(cumulative["invalid_or_missing_counted_zero"], 273)
+        self.assertLess(cumulative["simultaneous_wilson98_333"][1], 0.10)
         self.assertEqual(report["decision"], "fail_below_strict_10_percent_floor")
 
     def test_matrix_replay_is_containerized_and_missing_is_zero(self):
@@ -206,26 +210,30 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(report["gate"], "pass")
 
 
-    def test_matrix_bounded240_fails_exact_image_transport(self):
+    def test_matrix_recovery_preserves_baseline_and_passes_all_gates(self):
         report = json.loads((ROOT / "qualification/matrix-bounded240-accuracy-report.json").read_text())
-        transport = json.loads((ROOT / "qualification/matrix-transport-failure-audit-report.json").read_text())
+        baseline = json.loads((ROOT / "qualification/matrix-transport-failure-audit-report.json").read_text())
+        recovery = json.loads((ROOT / "qualification/matrix-infrastructure-recovery-report.json").read_text())
         verdict = json.loads((ROOT / "qualification/matrix-qualification-verdict.json").read_text())
         self.assertEqual(report["scheduled"], 240)
         self.assertEqual(report["attempted"], 240)
-        self.assertEqual(report["successes"], 84)
-        self.assertEqual(report["failures_including_missing"], 156)
-        self.assertEqual(report["missing_or_infrastructure_counted_zero"], 98)
-        self.assertEqual(report["strict_accuracy_gate"]["decision"], "pass_with_infrastructure_sensitivity")
+        self.assertEqual(report["successes"], 128)
+        self.assertEqual(report["failures_including_missing"], 112)
+        self.assertEqual(report["missing_or_infrastructure_counted_zero"], 33)
+        self.assertEqual(report["strict_accuracy_gate"]["decision"], "pass")
         self.assertLess(report["retained_answer_sensitivity"]["simultaneous_wilson98_333"][1], 0.70)
-        self.assertEqual(transport["scheduled"], 240)
-        self.assertEqual(transport["transport_counts"]["exact_original_bytes_in_model_request"], 158)
-        self.assertEqual(transport["transport_failures"], 82)
-        self.assertEqual(transport["failed_transport_by_missing_cause"], {"pre_agent_infrastructure_failure": 82})
-        self.assertEqual(transport["transport_gate"], "fail")
-        self.assertEqual(verdict["overall"], "fail_image_transport_gate")
-        self.assertEqual(verdict["gates"]["harbor_containerization"]["decision"], "fail")
+        self.assertEqual(report["image_transport_gate"]["exact_original_bytes_proven"], 240)
+        self.assertEqual(baseline["transport_counts"]["exact_original_bytes_in_model_request"], 158)
+        self.assertEqual(baseline["transport_failures"], 82)
+        self.assertEqual(recovery["recovery_partition"]["exact_original_bytes_in_outbound_request"], 82)
+        self.assertEqual(recovery["recovery_partition"]["successes"], 44)
+        self.assertEqual(recovery["execution"]["first_attempt"]["agent_executed_retained"], 2)
+        self.assertEqual(recovery["execution"]["resume_after_targeted_cleanup"]["scheduled"], 80)
+        self.assertEqual(verdict["overall"], "pass")
+        self.assertEqual(verdict["gates"]["harbor_containerization"]["decision"], "pass")
         self.assertNotIn("rows", json.loads((ROOT / "qualification/matrix-accuracy-report.json").read_text()))
         self.assertNotIn("rows", json.loads((ROOT / "qualification/matrix-accuracy-additional140-report.json").read_text()))
+        self.assertNotIn("rows", recovery)
 
 
 

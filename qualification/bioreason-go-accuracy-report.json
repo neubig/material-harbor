@@ -1,26 +1,53 @@
 {
-  "version": 1,
-  "candidate": "BioReason-Pro GO annotation-recovery track",
+  "version": 2,
   "protocol": "bioreason-go-complete-v1",
   "solver_model": "openai/deepseek-v4.1-flash",
-  "scheduled": 100,
-  "attempted": 100,
-  "successes": 0,
-  "failures": 100,
-  "missing_or_infrastructure_counted_zero": 0,
-  "binary_accuracy": 0.0,
-  "confidence": 0.9833333333333333,
-  "wilson98_333": [
-    0.0,
-    0.054204838053022515
-  ],
-  "decision": "fail_below_strict_10_percent_floor",
-  "inference": "The conservative simultaneous Wilson upper bound is 5.42%, strictly below 10%; the frozen n=300 expansion is not triggered.",
-  "runs": {
-    "retained_original_task": "bioreason-go-qualification-n100 (1 task)",
-    "declared_network_retry": "bioreason-go-qualification-n100-resume99-network-retry (99 disjoint tasks)"
+  "all_scheduled_denominator": true,
+  "baseline_preserved": {
+    "max_iterations": 20,
+    "successes": 0,
+    "scheduled": 100,
+    "binary_accuracy": 0.0,
+    "failure_interpretation": "All 100 reached max_iterations without writing answer.json; this baseline measured the original agent/protocol budget failure."
   },
-  "retry_provenance": "The original completed task was never rerun. The 99-task cohort retried only after the prior run failed from a shared proxy/network incident, under the declared infrastructure retry; all final trials completed with numeric rewards.",
-  "cluster_caveat": "The public data do not provide an independence/cluster unit for these deduplicated proteins. No pseudo-cluster interval is reported; the conservative task-level simultaneous Wilson interval is the decision basis.",
-  "task_contract_caveat": "This is a newly defined exact released-annotation recovery task over the nonvisual GO split, not a released BioReason-Pro benchmark task contract. Labels remain verifier-only; no open-world biological completeness claim."
+  "budget_recovery": {
+    "max_iterations": 40,
+    "first100": {
+      "successes": 5,
+      "scheduled": 100,
+      "binary_accuracy": 0.05,
+      "valid_answers": 8,
+      "invalid_or_missing_counted_zero": 92,
+      "runner_report_sha256": "7aa598b9a31fb7ac19a77ed61c421b560ab5e410c533ae92d41e90407812d4c2"
+    },
+    "prospectively_frozen_additional200": {
+      "successes": 10,
+      "scheduled": 200,
+      "binary_accuracy": 0.05,
+      "valid_answers": 19,
+      "invalid_or_missing_counted_zero": 181,
+      "runner_report_sha256": "b17e3748c918f2191e205ef7658e0eff3b2f02c4d172b5c4d6dec74fcbeb1593"
+    },
+    "cumulative": {
+      "successes": 15,
+      "scheduled": 300,
+      "attempted": 300,
+      "binary_accuracy": 0.05,
+      "failures_including_missing": 285,
+      "valid_answers": 27,
+      "invalid_or_missing_counted_zero": 273,
+      "simultaneous_wilson98_333": [
+        0.02742622659978,
+        0.089444888870694
+      ]
+    }
+  },
+  "decision": "fail_below_strict_10_percent_floor",
+  "strict_gate": {
+    "required": "strictly >0.10 and <0.70",
+    "evidence": "The recovered-budget cumulative result is 15/300=5.00%. Its precommitted simultaneous 98.333% Wilson upper bound is 8.94%, strictly below 10%."
+  },
+  "labels": "All released GO labels and free-text annotations remained verifier-only. Solver input was restricted to sequence, organism, InterPro context, and pinned GO-GPT predictions.",
+  "cohort": "The first100 and prospectively frozen next200 are disjoint exact-sequence-deduplicated tasks selected before recovery outcomes. Missing and invalid outputs remain in the primary denominator as zero.",
+  "image_note": "This is a distinct nonvisual GO task; no image-bearing dataset or no-image control is involved."
 }
