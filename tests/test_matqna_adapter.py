@@ -15,6 +15,10 @@ class MatQnASelectedRowsTests(unittest.TestCase):
             parse_value(value),
             ['A. unchanged', "B. material's transition narrows", 'C. transition widens', 'D. disappears'],
         )
+        same_line = "['A. left' 'B. right' 'C. unchanged' 'D. absent']"
+        self.assertEqual(parse_value(same_line), ['A. left', 'B. right', 'C. unchanged', 'D. absent'])
+        comma_separated = "['A. left', 'B. right', 'C. unchanged', 'D. absent']"
+        self.assertEqual(parse_value(comma_separated), ['A. left', 'B. right', 'C. unchanged', 'D. absent'])
 
     def make_source(self, root):
         rows = []

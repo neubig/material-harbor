@@ -23,7 +23,7 @@ def parse_value(value):
         return None
     if text.startswith("[") and text.endswith("]"):
         labeled = re.findall(
-            r"(?:^\[|\n\s*)['\"]([A-Z]\.\s.*?)(?=['\"](?:\s*\n\s*['\"][A-Z]\.\s|\s*\]$))",
+            r"(?:^\[|\s*,\s*|\s+)['\"]([A-Z]\.\s.*?)(?=['\"](?:\s*,?\s*['\"][A-Z]\.\s|\s*\]$))",
             text,
             re.DOTALL,
         )
