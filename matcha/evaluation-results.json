@@ -1254,6 +1254,34 @@
       "malformed_accepts": 0,
       "malformed_denominator": 100,
       "scope": "Random task sample; canonical source key,one deterministic wrong letter,and fixed malformed prose per task."
-    }
-  }
+    },
+    "scientific_verifier_audit": {
+      "sample_size": 50,
+      "false_positives": 17,
+      "invalid_denominator": 181,
+      "false_positive_percentage": 9.392265193370166,
+      "false_positive_wilson_95": [
+        0.05946866199751928,
+        0.1452552081889973
+      ],
+      "false_negatives": 7,
+      "valid_denominator": 40,
+      "false_negative_percentage": 17.5,
+      "false_negative_wilson_95": [
+        0.0874541374603592,
+        0.31949990331787714
+      ],
+      "source_key_supported_tasks": 33,
+      "unanswerable_tasks": 9,
+      "sample_definition": "First50 tasks in draw order from the previously frozen random100 sample",
+      "method": "First50 draw-order tasks from each frozen random100;key-free GPT-5.6 Harbor/Sail audit;complete finite option spaces reconciled only after outputs.",
+      "job_ids": [
+        "18ce4130-5f6c-4e0f-a2c9-fd3106a6e175",
+        "08e979b9-d161-4d24-90cc-f207f32d87b0",
+        "78818feb-aed8-4931-9d98-a74babbe8c1b"
+      ]
+    },
+    "meets_fp_fn_under_15": false
+  },
+  "random_sample_qualification_status": "not_qualified_random_verifier_rates"
 }

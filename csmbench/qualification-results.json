@@ -160,6 +160,34 @@
       "false_positive_two_sided_exact_95_upper_percentage": 3.6216692645176463,
       "malformed_accepts": 0,
       "malformed_denominator": 100
-    }
-  }
+    },
+    "scientific_verifier_audit": {
+      "sample_size": 50,
+      "false_positives": 7,
+      "invalid_denominator": 156,
+      "false_positive_percentage": 4.487179487179487,
+      "false_positive_wilson_95": [
+        0.0219033374935471,
+        0.08971638214820239
+      ],
+      "false_negatives": 1,
+      "valid_denominator": 44,
+      "false_negative_percentage": 2.272727272727273,
+      "false_negative_wilson_95": [
+        0.004023252060053224,
+        0.11807709698213287
+      ],
+      "source_key_supported_tasks": 43,
+      "unanswerable_tasks": 6,
+      "sample_definition": "First50 tasks in draw order from the previously frozen random100 sample",
+      "method": "First50 draw-order tasks from each frozen random100;key-free GPT-5.6 Harbor/Sail audit;complete finite option spaces reconciled only after outputs.",
+      "job_ids": [
+        "18ce4130-5f6c-4e0f-a2c9-fd3106a6e175",
+        "08e979b9-d161-4d24-90cc-f207f32d87b0",
+        "78818feb-aed8-4931-9d98-a74babbe8c1b"
+      ]
+    },
+    "meets_fp_fn_under_15": true
+  },
+  "random_sample_qualification_status": "qualified"
 }
