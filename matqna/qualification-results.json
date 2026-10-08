@@ -1,0 +1,114 @@
+{
+  "status": "qualified",
+  "scope": "MatQnA objective-only,50 source rows with50 unique decoded images across10 materials-characterization categories. Subjective rows and their nonempty-answer verifier are explicitly excluded.",
+  "source_revision": "a5e17d0be750d2741efaeeaf06593c08a384115c",
+  "harbor_version": "0.24.0",
+  "harbor_revision": "4b94505a91c5ddcb70b5740ac95718ddee13e5a0",
+  "environment": "sail",
+  "selection": {
+    "primary_candidates": 50,
+    "reserve_candidates": 30,
+    "scientifically_supported_pool": 52,
+    "final_primary": 34,
+    "final_reserve": 16,
+    "unique_images": 50,
+    "category_counts": {
+      "afm": 5,
+      "dsc": 3,
+      "ftir": 5,
+      "raman": 5,
+      "sem": 6,
+      "tem": 6,
+      "tga": 5,
+      "xafs": 5,
+      "xps": 5,
+      "xrd": 5
+    },
+    "outcome_independent": true
+  },
+  "scientific_audit": {
+    "model": "openai/gpt-5.6",
+    "method": "Single independent GPT-5.6 gold-blind Harbor/Sail audit of all80 image-disjoint candidates; source keys reconciled only after audit completion. Valid initial outputs were preserved; only12 missing/invalid outputs caused by API usage limits were retried at lower concurrency.",
+    "job_ids": [
+      "cd092996-d282-4979-a1b7-a8bb58de750f",
+      "72e5f481-fab4-4879-bafd-b708963ec6ea"
+    ],
+    "initial_valid_outputs_preserved": 68,
+    "infrastructure_only_retries": 12,
+    "selected_source_key_agreements": 50,
+    "human_expert_review": false
+  },
+  "deepseek_v4_1_flash": {
+    "correct": 24,
+    "total": 50,
+    "accuracy": 0.48,
+    "wilson_95": [
+      0.34797135286578046,
+      0.6148825510995539
+    ],
+    "image_bootstrap_95_percentile": [
+      0.34,
+      0.62
+    ],
+    "errors": 0,
+    "answer_key_distribution": {
+      "A": 20,
+      "B": 19,
+      "C": 10,
+      "D": 1
+    },
+    "majority_key_baseline": 0.4
+  },
+  "verifier": {
+    "sail_jobs": {
+      "canonical": {
+        "job_id": "f9063247-d123-4b01-9d01-d8065617e532",
+        "finished_at": "2026-10-08T17:07:34.609233",
+        "trials": 50,
+        "errors": 0,
+        "expected_reward": 1.0,
+        "reward_counts": {
+          "1.0": 50
+        }
+      },
+      "wrong": {
+        "job_id": "244b8caf-47b5-4159-ad75-b5dcd5f82670",
+        "finished_at": "2026-10-08T17:07:35.703201",
+        "trials": 50,
+        "errors": 0,
+        "expected_reward": 0.0,
+        "reward_counts": {
+          "0.0": 50
+        }
+      },
+      "malformed": {
+        "job_id": "b26d590d-803e-46f6-ac7d-3aaec382c55d",
+        "finished_at": "2026-10-08T17:07:34.756287",
+        "trials": 50,
+        "errors": 0,
+        "expected_reward": 0.0,
+        "reward_counts": {
+          "0.0": 50
+        }
+      }
+    },
+    "false_negatives": 0,
+    "valid_denominator": 50,
+    "false_negative_percentage": 0.0,
+    "false_negative_two_sided_exact_95_upper_percentage": 7.112173646419762,
+    "false_positives": 0,
+    "wrong_denominator": 50,
+    "false_positive_percentage": 0.0,
+    "false_positive_two_sided_exact_95_upper_percentage": 7.112173646419762,
+    "malformed_accepts": 0,
+    "malformed_denominator": 50,
+    "local_exhaustive_canonical_wrong_denominator": 150,
+    "local_exhaustive_false_positives": 0,
+    "scope": "Exact finite option-letter source-label contract only; not free-form answers or universal scientific truth."
+  },
+  "limitations": [
+    "Gold-blind scientific audit was performed by GPT-5.6 on Sail, not human domain experts.",
+    "Rows are image-distinct but source-paper independence is unavailable in the public metadata.",
+    "Raw accuracy should be read with the disclosed40% majority-key baseline."
+  ]
+}

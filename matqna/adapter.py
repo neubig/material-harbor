@@ -9,6 +9,7 @@ import urllib.request
 from pathlib import Path
 
 import pandas as pd
+import pyarrow.parquet as pq
 
 DATA_URL = "https://huggingface.co/datasets/richardhzgg/matQnA/resolve/refs%2Fconvert%2Fparquet/default/train/0000.parquet"
 ROOT = Path(__file__).parent
@@ -21,6 +22,13 @@ def parse_value(value):
     if text in {"None", "nan", ""}:
         return None
     if text.startswith("[") and text.endswith("]"):
+        labeled = re.findall(
+            r"(?:^\[|\n\s*)['\"]([A-Z]\.\s.*?)(?=['\"](?:\s*\n\s*['\"][A-Z]\.\s|\s*\]$))",
+            text,
+            re.DOTALL,
+        )
+        if labeled:
+            return labeled
         quoted = re.findall(r"'([^']*)'|\"([^\"]*)\"", text)
         if quoted:
             return [first or second for first, second in quoted]
@@ -44,12 +52,35 @@ def choices_text(value: object) -> str:
     return "Choices:\n" + "\n".join(item.strip() for item in items)
 
 
-def records(source: Path | None = None) -> pd.DataFrame:
+def source_path(source: Path | None = None) -> Path:
     source = source or Path("/tmp/matQnA.parquet")
     if not source.exists():
         source.parent.mkdir(parents=True, exist_ok=True)
         urllib.request.urlretrieve(DATA_URL, source)
-    return pd.read_parquet(source)
+    return source
+
+
+def records(source: Path | None = None) -> pd.DataFrame:
+    return pd.read_parquet(source_path(source))
+
+
+def records_at_indices(source: Path | None, indices: list[int]) -> dict[int, pd.Series]:
+    requested = set(indices)
+    if any(index < 0 for index in requested):
+        raise IndexError("Task IDs must be nonnegative")
+    selected = {}
+    offset = 0
+    for batch in pq.ParquetFile(source_path(source)).iter_batches(batch_size=8):
+        for row in batch.to_pylist():
+            if offset in requested:
+                selected[offset] = pd.Series(row)
+            offset += 1
+        if len(selected) == len(requested):
+            break
+    missing = requested - selected.keys()
+    if missing:
+        raise IndexError(f"Task IDs outside source range: {sorted(missing)}")
+    return selected
 
 
 def generate(
@@ -59,12 +90,20 @@ def generate(
     limit: int | None = None,
     overwrite: bool = False,
 ) -> int:
-    frame = records(source)
-    selected = list(range(len(frame))) if ids is None else [int(value) for value in ids]
+    if ids is None:
+        frame = records(source)
+        selected = list(range(len(frame)))
+        rows = None
+    else:
+        frame = None
+        selected = [int(value) for value in ids]
+        if limit is not None:
+            selected = selected[:limit]
+        rows = records_at_indices(source, selected)
     if limit is not None:
         selected = selected[:limit]
     for index in selected:
-        row = frame.iloc[index]
+        row = rows[index] if rows is not None else frame.iloc[index]
         task = output / f"matqna-{index:06d}"
         if task.exists() and not overwrite:
             continue
