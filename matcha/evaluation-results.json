@@ -1189,5 +1189,71 @@
       "malformed_denominator": 250,
       "scope": "Complete finite option-letter answer space for all50 independently audited, uniquely answerable tasks plus five malformed cases/task. Does not generalize to free-form scientific answers."
     }
+  },
+  "random_sample_evaluation": {
+    "scope": "All1500 source QAs/1261 records, without license/topic/paper filtering.",
+    "population_size": 1500,
+    "sample_size": 100,
+    "seed": 2026100802,
+    "algorithm": "Python3.13 random.Random(seed).sample(sorted(universe),100)",
+    "deepseek_v4_1_flash": {
+      "correct": 25,
+      "accuracy": 0.25,
+      "wilson_95": [
+        0.17545211362287672,
+        0.34304463548061603
+      ],
+      "random_sample_bootstrap_95_percentile": [
+        0.17,
+        0.34
+      ],
+      "errors": 0,
+      "missing_answer_writes": 73,
+      "hidden_gold_probe_trials": 0,
+      "answer_key_distribution": {
+        "A": 21,
+        "B": 39,
+        "C": 24,
+        "D": 8,
+        "E": 4,
+        "F": 3,
+        "G": 1
+      },
+      "majority_key_baseline": 0.39,
+      "cost_usd": 0.519224652
+    },
+    "verifier": {
+      "sail_jobs": {
+        "canonical": {
+          "job_id": "ce3736b8-505c-4178-b3a9-95092b34ac8d",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 1.0
+        },
+        "wrong": {
+          "job_id": "1c48c705-1685-4a0e-9423-23f4f65189f8",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 0.0
+        },
+        "malformed": {
+          "job_id": "337dff9a-f4ae-4907-96b4-0f8bcb856966",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 0.0
+        }
+      },
+      "false_negatives": 0,
+      "valid_denominator": 100,
+      "false_negative_percentage": 0.0,
+      "false_negative_two_sided_exact_95_upper_percentage": 3.6216692645176463,
+      "false_positives": 0,
+      "wrong_denominator": 100,
+      "false_positive_percentage": 0.0,
+      "false_positive_two_sided_exact_95_upper_percentage": 3.6216692645176463,
+      "malformed_accepts": 0,
+      "malformed_denominator": 100,
+      "scope": "Random task sample; canonical source key,one deterministic wrong letter,and fixed malformed prose per task."
+    }
   }
 }

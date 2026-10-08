@@ -99,5 +99,67 @@
     "Gold-blind scientific audit used GPT-5.6 on Sail,not human materials experts.",
     "Dataset card declares Apache-2.0,but per-figure third-party paper rights were not independently established.",
     "Paper-folder strings provide grouping,not a full bibliographic provenance audit."
-  ]
+  ],
+  "random_sample_evaluation": {
+    "scope": "All1041 released MCQ rows, including the four known identical-caption rows if sampled.",
+    "population_size": 1041,
+    "sample_size": 100,
+    "seed": 2026100803,
+    "algorithm": "Python3.13 random.Random(seed).sample(sorted(universe),100)",
+    "deepseek_v4_1_flash": {
+      "correct": 32,
+      "accuracy": 0.32,
+      "wilson_95": [
+        0.23669147324999093,
+        0.41662618610452384
+      ],
+      "random_sample_bootstrap_95_percentile": [
+        0.23,
+        0.41
+      ],
+      "errors": 0,
+      "missing_answer_writes": 68,
+      "hidden_gold_probe_trials": 0,
+      "answer_key_distribution": {
+        "A": 25,
+        "B": 21,
+        "C": 25,
+        "D": 29
+      },
+      "majority_key_baseline": 0.29,
+      "cost_usd": 0.6887390808
+    },
+    "verifier": {
+      "sail_jobs": {
+        "canonical": {
+          "job_id": "a41181c3-77af-4254-8038-66762259328e",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 1.0
+        },
+        "wrong": {
+          "job_id": "96cc5237-63ae-4125-b486-0434ed548ce0",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 0.0
+        },
+        "malformed": {
+          "job_id": "c9653864-8230-4e8d-8ca8-58737b951d69",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 0.0
+        }
+      },
+      "false_negatives": 0,
+      "valid_denominator": 100,
+      "false_negative_percentage": 0.0,
+      "false_negative_two_sided_exact_95_upper_percentage": 3.6216692645176463,
+      "false_positives": 0,
+      "wrong_denominator": 100,
+      "false_positive_percentage": 0.0,
+      "false_positive_two_sided_exact_95_upper_percentage": 3.6216692645176463,
+      "malformed_accepts": 0,
+      "malformed_denominator": 100
+    }
+  }
 }

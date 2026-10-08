@@ -110,5 +110,68 @@
     "Gold-blind scientific audit was performed by GPT-5.6 on Sail, not human domain experts.",
     "Rows are image-distinct but source-paper independence is unavailable in the public metadata.",
     "Raw accuracy should be read with the disclosed40% majority-key baseline."
-  ]
+  ],
+  "random_sample_evaluation": {
+    "scope": "All2203 technically complete objective rows recorded by the pinned full-source audit; subjective rows excluded by declared setting.",
+    "population_size": 2203,
+    "sample_size": 100,
+    "seed": 2026100801,
+    "algorithm": "Python3.13 random.Random(seed).sample(sorted(universe),100)",
+    "deepseek_v4_1_flash": {
+      "correct": 45,
+      "accuracy": 0.45,
+      "wilson_95": [
+        0.3561453797951198,
+        0.5475539700255787
+      ],
+      "random_sample_bootstrap_95_percentile": [
+        0.35,
+        0.55
+      ],
+      "errors": 0,
+      "missing_answer_writes": 61,
+      "hidden_gold_probe_trials": 0,
+      "answer_key_distribution": {
+        "A": 34,
+        "B": 44,
+        "C": 20,
+        "D": 2
+      },
+      "majority_key_baseline": 0.44,
+      "cost_usd": 0.540851088
+    },
+    "verifier": {
+      "sail_jobs": {
+        "canonical": {
+          "job_id": "09c7d9ed-c37b-4f04-9713-63e5fb7366da",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 1.0
+        },
+        "wrong": {
+          "job_id": "5e033af3-0af2-4d6f-a08a-296c1aaa4da8",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 0.0
+        },
+        "malformed": {
+          "job_id": "7c76053b-8cf2-4769-a2a8-2e4da1f7d58e",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 0.0
+        }
+      },
+      "false_negatives": 0,
+      "valid_denominator": 100,
+      "false_negative_percentage": 0.0,
+      "false_negative_two_sided_exact_95_upper_percentage": 3.6216692645176463,
+      "false_positives": 0,
+      "wrong_denominator": 100,
+      "false_positive_percentage": 0.0,
+      "false_positive_two_sided_exact_95_upper_percentage": 3.6216692645176463,
+      "malformed_accepts": 0,
+      "malformed_denominator": 100,
+      "scope": "Random task sample; canonical source key,one deterministic wrong letter,and fixed malformed prose per task."
+    }
+  }
 }
