@@ -1,0 +1,4776 @@
+{
+  "scope": "Exhaustive declared canonical answer space plus fixed malformed cases; source-key contract only until blinded scientific adjudication is reconciled.",
+  "verifier": "/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/material-harbor/matcha/verify.py",
+  "summaries": {
+    "primary50": {
+      "tasks": 50,
+      "valid_denominator": 50,
+      "false_negatives": 0,
+      "false_negative_percentage": 0.0,
+      "wrong_denominator": 148,
+      "false_positives": 0,
+      "false_positive_percentage": 0.0,
+      "malformed_denominator": 250,
+      "malformed_accepts": 0,
+      "zero_event_two_sided_exact_95_upper_fnr_percentage": 7.112173646419762,
+      "zero_event_two_sided_exact_95_upper_fpr_percentage": 2.461680157898427
+    },
+    "reserve21": {
+      "tasks": 21,
+      "valid_denominator": 21,
+      "false_negatives": 0,
+      "false_negative_percentage": 0.0,
+      "wrong_denominator": 61,
+      "false_positives": 0,
+      "false_positive_percentage": 0.0,
+      "malformed_denominator": 105,
+      "malformed_accepts": 0,
+      "zero_event_two_sided_exact_95_upper_fnr_percentage": 16.109761521907963,
+      "zero_event_two_sided_exact_95_upper_fpr_percentage": 5.8681223932292585
+    },
+    "all71": {
+      "tasks": 71,
+      "valid_denominator": 71,
+      "false_negatives": 0,
+      "false_negative_percentage": 0.0,
+      "wrong_denominator": 209,
+      "false_positives": 0,
+      "false_positive_percentage": 0.0,
+      "malformed_denominator": 355,
+      "malformed_accepts": 0,
+      "zero_event_two_sided_exact_95_upper_fnr_percentage": 5.062940795440374,
+      "zero_event_two_sided_exact_95_upper_fpr_percentage": 1.7495289579186557
+    }
+  },
+  "tasks": [
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-501a8e39dec12db66e50",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-e1a890aede5f56e7170a",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-af4075df86982e25621f",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-e65885c8d08f470355c1",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-3d954e1a5e695ed829a9",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-2182a12f6683b4350772",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-fa7eefbd0fb50bf5d1e7",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-f9337f7831e581d5baea",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-bcd4e405894075b887ac",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-1ca1ea017760b59a5b22",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-a16f79f73afff18653c1",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-269d9c9b819f77495690",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-91f836fc1fce05dbac29",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-1dc8c5fa20bb42e3cd26",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-fda654c6f868113f0bca",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-da7920e4dd85ac26fccc",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-3851209cd057d9788bde",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-7ee86510eaede00704f1",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-5d0fc7fcd9ac378c6593",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-55b6e3bec6e62f83e174",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-291121d9ff565a05bc58",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-34d20ba0ea005982db5d",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-7222692062922d3ffbde",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-5735219481e83ec9554f",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-474ada02ef87d558c4b3",
+      "source_key": "D",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "d",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: D",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-71afd5822bb98a73a3bb",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-17e8da0648d29e843754",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-194d317dfd5f0badd825",
+      "source_key": "D",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "d",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: D",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-314a426474ed85abba05",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-073c7bba6e85fde9e533",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-782f3cc4cf5a65219baf",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-623ed5866aac53c89917",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-32ac1038c507fbc41ac4",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-132d22ac05705e3c5827",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-621ac085145e418213e5",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-f916c175123b125b0933",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-a4f32b3e4710e37d37ad",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-5355411c6ae670ad7084",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-2a25b01d4cc7577c181c",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-f07ba75d44a912404aa7",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-6a54032ff3905b6e882b",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-9c5afd3545bb3650c6f6",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-500a4760ded8189660eb",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-89d20be453bdd095c103",
+      "source_key": "D",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "d",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: D",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-aa00af5df9f40c649332",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-033074e44896ea121e52",
+      "source_key": "E",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "E",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "e",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: E",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "E\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-eded911f692e4b683b8c",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-ddbb3da1fcf0d437d9a4",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-609d5e76eee77ac881a3",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-f866427c87c065865cb9",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-69671bb273cc91a67465",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-0e74a100834c933969c1",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-a9e1624e3ce196aaa48f",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-f092c73a13b2102f23ec",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-2d4f0b6be61a95ef7dfe",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-3d43a624a9448b49bb4f",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-86ea46f8316f95a7748d",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-95ed3586db58f0ce896d",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-618939532118b34d18b3",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-ee5a28ff46cb2fb481d8",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-c271fa2b811aa8f5d3e8",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-a19f150eaca82d8b3000",
+      "source_key": "D",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "d",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: D",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-1687e9e9bc5d34418608",
+      "source_key": "B",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "b",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: B",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-900f87d9bf8cb7e71855",
+      "source_key": "D",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "d",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: D",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-7ee85975946a4d9dba8b",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-505fc19ef2da2318add1",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-160b3a3535a7fcd433e6",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-0b908ccdfc121e05e485",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "reserve21",
+      "task_id": "matcha-7698e849b7ad4fea944c",
+      "source_key": "A",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "a",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: A",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "A\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-2e765fe2e88512c892aa",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    },
+    {
+      "cohort": "primary50",
+      "task_id": "matcha-5b5d60e52001ed3e072f",
+      "source_key": "C",
+      "allowed_letters": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "cases": [
+        {
+          "input": "A",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "B",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C",
+          "category": "canonical_letter",
+          "accepted": true,
+          "scientifically_correct_under_source_key": true
+        },
+        {
+          "input": "D",
+          "category": "canonical_letter",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "",
+          "category": "empty",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "c",
+          "category": "lowercase",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Answer: C",
+          "category": "prose",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "C\n\n",
+          "category": "extra_newline",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        },
+        {
+          "input": "Z",
+          "category": "out_of_options",
+          "accepted": false,
+          "scientifically_correct_under_source_key": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "status": "qualified",
+  "scope": "CSMBench strict MCQ,50 public image- and paper-folder-disjoint tasks balanced across four scales.",
+  "source_revision": "6dfc2ba8aea24dd04977801c68d2d6f24f76bc02",
+  "harbor_version": "0.24.0",
+  "harbor_revision": "4b94505a91c5ddcb70b5740ac95718ddee13e5a0",
+  "environment": "sail",
+  "selection": {
+    "primary_candidates": 50,
+    "reserve_candidates": 30,
+    "scientifically_supported_pool": 61,
+    "final_primary": 38,
+    "final_reserve": 12,
+    "unique_images": 50,
+    "distinct_paper_folders": 50,
+    "scale_counts": {
+      "AtomScale": 13,
+      "Macroscale": 13,
+      "Mesoscale": 12,
+      "Microscale": 12
+    },
+    "outcome_independent": true
+  },
+  "scientific_audit": {
+    "model": "openai/gpt-5.6",
+    "method": "Single independent GPT-5.6 gold-blind Harbor/Sail audit of80 paper- and image-disjoint candidates; source keys reconciled only after audit completion.17 valid initial artifacts were preserved and63 unfinished/invalid tasks resumed at concurrency4.",
+    "job_ids": [
+      "96b44fae-b8fa-4d7e-93d6-7be8f70fd591",
+      "566c4ff2-d54f-4a08-9292-3e3a5fbeef76"
+    ],
+    "human_expert_review": false
+  },
+  "deepseek_v4_1_flash": {
+    "correct": 22,
+    "total": 50,
+    "accuracy": 0.44,
+    "wilson_95": [
+      0.3116219921125717,
+      0.5769397197834315
+    ],
+    "image_bootstrap_95_percentile": [
+      0.3,
+      0.58
+    ],
+    "errors": 0,
+    "answer_key_distribution": {
+      "A": 9,
+      "B": 10,
+      "C": 15,
+      "D": 16
+    },
+    "majority_key_baseline": 0.32
+  },
+  "verifier": {
+    "sail_jobs": {
+      "canonical": {
+        "job_id": "db00e78b-c2fa-473f-ba11-bd751cc6aa1e",
+        "trials": 50,
+        "errors": 0,
+        "expected_reward": 1.0,
+        "reward_counts": {
+          "1.0": 50
+        }
+      },
+      "wrong": {
+        "job_id": "0f959ca2-32e1-434c-9715-fa3d1a7b91dd",
+        "trials": 50,
+        "errors": 0,
+        "expected_reward": 0.0,
+        "reward_counts": {
+          "0.0": 50
+        }
+      },
+      "malformed": {
+        "job_id": "b4301b45-f349-4e0b-8293-71cdae7f8577",
+        "trials": 50,
+        "errors": 0,
+        "expected_reward": 0.0,
+        "reward_counts": {
+          "0.0": 50
+        }
+      }
+    },
+    "false_negatives": 0,
+    "valid_denominator": 50,
+    "false_negative_percentage": 0.0,
+    "false_negative_two_sided_exact_95_upper_percentage": 7.112173646419762,
+    "false_positives": 0,
+    "wrong_denominator": 50,
+    "false_positive_percentage": 0.0,
+    "false_positive_two_sided_exact_95_upper_percentage": 7.112173646419762,
+    "malformed_accepts": 0,
+    "malformed_denominator": 50,
+    "local_exhaustive_wrong_denominator": 150,
+    "local_exhaustive_false_positives": 0,
+    "scope": "Exact finite caption-option source-label contract only."
+  },
+  "limitations": [
+    "Gold-blind scientific audit used GPT-5.6 on Sail,not human materials experts.",
+    "Dataset card declares Apache-2.0,but per-figure third-party paper rights were not independently established.",
+    "Paper-folder strings provide grouping,not a full bibliographic provenance audit."
+  ],
+  "random_sample_evaluation": {
+    "scope": "All1041 released MCQ rows, including the four known identical-caption rows if sampled.",
+    "population_size": 1041,
+    "sample_size": 100,
+    "seed": 2026100803,
+    "algorithm": "Python3.13 random.Random(seed).sample(sorted(universe),100)",
+    "deepseek_v4_1_flash": {
+      "correct": 32,
+      "accuracy": 0.32,
+      "wilson_95": [
+        0.23669147324999093,
+        0.41662618610452384
+      ],
+      "random_sample_bootstrap_95_percentile": [
+        0.23,
+        0.41
+      ],
+      "errors": 0,
+      "missing_answer_writes": 68,
+      "hidden_gold_probe_trials": 0,
+      "answer_key_distribution": {
+        "A": 25,
+        "B": 21,
+        "C": 25,
+        "D": 29
+      },
+      "majority_key_baseline": 0.29,
+      "cost_usd": 0.6887390808
+    },
+    "verifier": {
+      "sail_jobs": {
+        "canonical": {
+          "job_id": "a41181c3-77af-4254-8038-66762259328e",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 1.0
+        },
+        "wrong": {
+          "job_id": "96cc5237-63ae-4125-b486-0434ed548ce0",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 0.0
+        },
+        "malformed": {
+          "job_id": "c9653864-8230-4e8d-8ca8-58737b951d69",
+          "trials": 100,
+          "errors": 0,
+          "mean_reward": 0.0
+        }
+      },
+      "false_negatives": 0,
+      "valid_denominator": 100,
+      "false_negative_percentage": 0.0,
+      "false_negative_two_sided_exact_95_upper_percentage": 3.6216692645176463,
+      "false_positives": 0,
+      "wrong_denominator": 100,
+      "false_positive_percentage": 0.0,
+      "false_positive_two_sided_exact_95_upper_percentage": 3.6216692645176463,
+      "malformed_accepts": 0,
+      "malformed_denominator": 100
+    },
+    "scientific_verifier_audit": {
+      "sample_size": 50,
+      "false_positives": 7,
+      "invalid_denominator": 156,
+      "false_positive_percentage": 4.487179487179487,
+      "false_positive_wilson_95": [
+        0.0219033374935471,
+        0.08971638214820239
+      ],
+      "false_negatives": 1,
+      "valid_denominator": 44,
+      "false_negative_percentage": 2.272727272727273,
+      "false_negative_wilson_95": [
+        0.004023252060053224,
+        0.11807709698213287
+      ],
+      "source_key_supported_tasks": 43,
+      "unanswerable_tasks": 6,
+      "sample_definition": "First50 tasks in draw order from the previously frozen random100 sample",
+      "method": "First50 draw-order tasks from each frozen random100;key-free GPT-5.6 Harbor/Sail audit;complete finite option spaces reconciled only after outputs.",
+      "job_ids": [
+        "18ce4130-5f6c-4e0f-a2c9-fd3106a6e175",
+        "08e979b9-d161-4d24-90cc-f207f32d87b0",
+        "78818feb-aed8-4931-9d98-a74babbe8c1b"
+      ]
+    },
+    "meets_fp_fn_under_15": true
+  },
+  "random_sample_qualification_status": "qualified"
+}

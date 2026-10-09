@@ -1,0 +1,19 @@
+schema_version = "1.0"
+
+[metadata]
+category = "materials-science"
+dataset = "MatCha"
+source = "https://huggingface.co/datasets/FreedomIntelligence/MatCha"
+source_revision = "dc52d6016053c67ebdf41719d6cfaa0603b154fa"
+
+[verifier]
+timeout_sec = 60.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 4096

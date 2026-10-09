@@ -1,0 +1,744 @@
+{
+  "method": "Three-stage gold-blind scientific review with second review of every initial flag and third tie-break of source-supporting conflicts.",
+  "pool_summary": {
+    "total": 71,
+    "accepted": 53,
+    "rejected": 18,
+    "primary_accepted": 38,
+    "reserve_accepted": 15
+  },
+  "qualification": {
+    "name": "matcha-scientifically-audited50-v1",
+    "selection_independent_of_solver_outcomes": true,
+    "selection_rule": "Retain scientifically accepted primary tasks; replace rejected primary tasks with accepted reserve of same topic when available, then deterministic reserve order. No DeepSeek outcomes consulted.",
+    "tasks": [
+      "matcha-eded911f692e4b683b8c",
+      "matcha-618939532118b34d18b3",
+      "matcha-505fc19ef2da2318add1",
+      "matcha-af4075df86982e25621f",
+      "matcha-3d43a624a9448b49bb4f",
+      "matcha-ee5a28ff46cb2fb481d8",
+      "matcha-e65885c8d08f470355c1",
+      "matcha-9c5afd3545bb3650c6f6",
+      "matcha-69671bb273cc91a67465",
+      "matcha-71afd5822bb98a73a3bb",
+      "matcha-0b908ccdfc121e05e485",
+      "matcha-aa00af5df9f40c649332",
+      "matcha-2a25b01d4cc7577c181c",
+      "matcha-bcd4e405894075b887ac",
+      "matcha-073c7bba6e85fde9e533",
+      "matcha-3d954e1a5e695ed829a9",
+      "matcha-623ed5866aac53c89917",
+      "matcha-f092c73a13b2102f23ec",
+      "matcha-132d22ac05705e3c5827",
+      "matcha-609d5e76eee77ac881a3",
+      "matcha-2e765fe2e88512c892aa",
+      "matcha-1dc8c5fa20bb42e3cd26",
+      "matcha-500a4760ded8189660eb",
+      "matcha-1ca1ea017760b59a5b22",
+      "matcha-17e8da0648d29e843754",
+      "matcha-32ac1038c507fbc41ac4",
+      "matcha-ddbb3da1fcf0d437d9a4",
+      "matcha-291121d9ff565a05bc58",
+      "matcha-7ee85975946a4d9dba8b",
+      "matcha-621ac085145e418213e5",
+      "matcha-5355411c6ae670ad7084",
+      "matcha-f866427c87c065865cb9",
+      "matcha-a4f32b3e4710e37d37ad",
+      "matcha-5d0fc7fcd9ac378c6593",
+      "matcha-5b5d60e52001ed3e072f",
+      "matcha-a9e1624e3ce196aaa48f",
+      "matcha-269d9c9b819f77495690",
+      "matcha-6a54032ff3905b6e882b",
+      "matcha-55b6e3bec6e62f83e174",
+      "matcha-91f836fc1fce05dbac29",
+      "matcha-86ea46f8316f95a7748d",
+      "matcha-2182a12f6683b4350772",
+      "matcha-e1a890aede5f56e7170a",
+      "matcha-2d4f0b6be61a95ef7dfe",
+      "matcha-7698e849b7ad4fea944c",
+      "matcha-782f3cc4cf5a65219baf",
+      "matcha-3851209cd057d9788bde",
+      "matcha-7222692062922d3ffbde",
+      "matcha-160b3a3535a7fcd433e6",
+      "matcha-fa7eefbd0fb50bf5d1e7"
+    ],
+    "primary_tasks": 38,
+    "reserve_tasks": 12,
+    "distinct_papers": 50,
+    "scientific_audit": {
+      "accepted_pool": 53,
+      "rejected_pool": 18,
+      "initial_review_files": [
+        ".audit/matcha-blind-scientific-audit/batch-1-review.json",
+        ".audit/matcha-blind-scientific-audit/batch-2-review.json",
+        ".audit/matcha-blind-scientific-audit/batch-3-review.json",
+        ".audit/matcha-blind-scientific-audit/batch-4-review.json",
+        ".audit/matcha-blind-scientific-audit/batch-5-review.json",
+        ".audit/matcha-blind-scientific-audit/batch-6-review.json",
+        ".audit/matcha-blind-scientific-audit/batch-7-review.json"
+      ],
+      "second_review_files": [
+        ".audit/matcha-blind-scientific-audit/second-review/batch-1-review.json",
+        ".audit/matcha-blind-scientific-audit/second-review/batch-2-review.json",
+        ".audit/matcha-blind-scientific-audit/second-review/batch-3-review.json",
+        ".audit/matcha-blind-scientific-audit/second-review/batch-4-review.json",
+        ".audit/matcha-blind-scientific-audit/second-review/batch-5-review.json"
+      ],
+      "third_review_files": [
+        ".audit/matcha-blind-scientific-audit/third-review/batch-1-review.json",
+        ".audit/matcha-blind-scientific-audit/third-review/batch-2-review.json",
+        ".audit/matcha-blind-scientific-audit/third-review/batch-3-review.json"
+      ],
+      "gold_isolation": "Each judgment file was written before source-key reconciliation for that review stage; third reviewers saw neither prior judgments nor keys."
+    },
+    "deepseek_v4_1_flash": {
+      "correct": 21,
+      "total": 50,
+      "accuracy": 0.42,
+      "wilson_95": [
+        0.2937500335471198,
+        0.5576655823142176
+      ],
+      "paper_bootstrap_95_percentile": [
+        0.28,
+        0.56
+      ],
+      "bootstrap_resamples": 100000,
+      "bootstrap_seed": 20261008,
+      "in_open_interval_10_70": true,
+      "errors": 0,
+      "answer_key_distribution": {
+        "A": 11,
+        "B": 27,
+        "C": 12
+      },
+      "majority_key_baseline": 0.54
+    },
+    "verifier": {
+      "false_positives": 0,
+      "wrong_denominator": 148,
+      "false_positive_percentage": 0.0,
+      "false_positive_two_sided_exact_95_upper_percentage": 2.461680157898427,
+      "false_negatives": 0,
+      "valid_denominator": 50,
+      "false_negative_percentage": 0.0,
+      "false_negative_two_sided_exact_95_upper_percentage": 7.112173646419762,
+      "malformed_accepts": 0,
+      "malformed_denominator": 250,
+      "scope": "Complete finite option-letter answer space for all50 independently audited, uniquely answerable tasks plus five malformed cases/task. Does not generalize to free-form scientific answers."
+    }
+  },
+  "resolutions": [
+    {
+      "task_id": "matcha-501a8e39dec12db66e50",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_unanswerable",
+        "second_not_unique",
+        "second_no_allowed_choice",
+        "second_source_key_disagreement"
+      ]
+    },
+    {
+      "task_id": "matcha-e1a890aede5f56e7170a",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-af4075df86982e25621f",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-e65885c8d08f470355c1",
+      "accepted": true,
+      "basis": "second_and_third_blinded_reviews_support_source_unique",
+      "third_review": {
+        "task_id": "matcha-e65885c8d08f470355c1",
+        "chosen_letter": "B",
+        "answerable": true,
+        "unique_correct": true,
+        "valid_alternatives": [],
+        "confidence": 0.98,
+        "evidence": [
+          "The supplied geometry selects Fig. 4b. The SI bcc feature near 19.65\u201319.7 degrees is narrower in angular width than the ice VII feature near 20.2 degrees. Peak height is not the measure of sharpness; the taller ice VII feature remains broader.",
+          "The listed article describes Fig. 4a as showing the SI-bcc reflection alongside the broad, hot (110) ice VII reflection, then applies the same analysis across runs in Fig. 4b. It attributes the narrow SI reflection most likely to a narrow temperature stability field at 69 GPa and discusses the temperature gradient within the heated area.",
+          "B matches the observed relative widths and thermal context. Its thermal explanation is qualitative, not a standalone inference from width alone. A incorrectly equates sharp peaks with single crystallinity, C incorrectly infers amorphous behavior, and D reverses the width comparison."
+        ],
+        "article_url": "https://www.nature.com/articles/s41467-024-52505-0",
+        "answerable_normalized": true,
+        "unique_normalized": true,
+        "confidence_normalized": "high",
+        "valid_alternative_letters_normalized": []
+      }
+    },
+    {
+      "task_id": "matcha-3d954e1a5e695ed829a9",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-2182a12f6683b4350772",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-fa7eefbd0fb50bf5d1e7",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-f9337f7831e581d5baea",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_source_key_disagreement"
+      ]
+    },
+    {
+      "task_id": "matcha-bcd4e405894075b887ac",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-1ca1ea017760b59a5b22",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-a16f79f73afff18653c1",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_not_unique",
+        "second_valid_alternative_claimed"
+      ]
+    },
+    {
+      "task_id": "matcha-269d9c9b819f77495690",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-91f836fc1fce05dbac29",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-1dc8c5fa20bb42e3cd26",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-fda654c6f868113f0bca",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_unanswerable",
+        "second_not_unique",
+        "second_no_allowed_choice",
+        "second_source_key_disagreement"
+      ]
+    },
+    {
+      "task_id": "matcha-da7920e4dd85ac26fccc",
+      "accepted": false,
+      "basis": "third_tiebreak_rejection",
+      "third_review": {
+        "task_id": "matcha-da7920e4dd85ac26fccc",
+        "chosen_letter": null,
+        "answerable": false,
+        "unique_correct": false,
+        "valid_alternatives": [],
+        "confidence": 0.88,
+        "evidence": [
+          "The supplied geometry selects Fig. 6d (Ti2p). The legend explicitly distinguishes black testing, gray background, cyan fitting, and shaded Ti4+, Ti3+, Ti2+ component peaks. The cyan fitting curve is the total fitted spectral envelope, not the individual deconvolved oxidation-state components.",
+          "The listed primary article discusses Fig. 6c\u2013g in terms of high- and low-valence ions and states in Methods that the test results were fitted and analyzed using Advantage software. This supports oxidation-state analysis as the purpose of fitting, but does not equate the total fit curve with the separate oxidation states.",
+          "C is the closest intended answer if the question means what peak deconvolution reveals. Literally, none of the options accurately names the total modeled spectrum. B describes visual agreement/overlap with measured data rather than what the curve represents; A is separately labeled background; D is not this fit. A scientifically exact single-letter answer therefore requires rewording the stem or an option."
+        ],
+        "article_url": "https://www.nature.com/articles/s41467-025-58211-9",
+        "answerable_normalized": false,
+        "unique_normalized": false,
+        "confidence_normalized": "high",
+        "valid_alternative_letters_normalized": []
+      },
+      "reasons": [
+        "third_unanswerable",
+        "third_not_unique",
+        "third_source_key_disagreement"
+      ]
+    },
+    {
+      "task_id": "matcha-3851209cd057d9788bde",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-7ee86510eaede00704f1",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_unanswerable",
+        "second_not_unique",
+        "second_no_allowed_choice",
+        "second_source_key_disagreement"
+      ]
+    },
+    {
+      "task_id": "matcha-5d0fc7fcd9ac378c6593",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-55b6e3bec6e62f83e174",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-291121d9ff565a05bc58",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-34d20ba0ea005982db5d",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-7222692062922d3ffbde",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-5735219481e83ec9554f",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_unanswerable",
+        "second_not_unique",
+        "second_no_allowed_choice",
+        "second_source_key_disagreement"
+      ]
+    },
+    {
+      "task_id": "matcha-474ada02ef87d558c4b3",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_valid_alternative_claimed"
+      ]
+    },
+    {
+      "task_id": "matcha-71afd5822bb98a73a3bb",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-17e8da0648d29e843754",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-194d317dfd5f0badd825",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_not_unique",
+        "second_valid_alternative_claimed"
+      ]
+    },
+    {
+      "task_id": "matcha-314a426474ed85abba05",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_not_unique",
+        "second_source_key_disagreement",
+        "second_valid_alternative_claimed"
+      ]
+    },
+    {
+      "task_id": "matcha-073c7bba6e85fde9e533",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-782f3cc4cf5a65219baf",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-623ed5866aac53c89917",
+      "accepted": true,
+      "basis": "second_and_third_blinded_reviews_support_source_unique",
+      "third_review": {
+        "task_id": "matcha-623ed5866aac53c89917",
+        "chosen_letter": "B",
+        "answerable": true,
+        "unique_correct": true,
+        "valid_alternatives": [],
+        "confidence": 0.98,
+        "evidence": [
+          "Fig. 2d includes HAADF, Bi (red), Pd (green), and overlaid atomic-resolution maps. Read together with the atomic models and intensity profiles, the bright atomic rows are assigned to Bi.",
+          "The listed article explicitly states: the larger bright atoms and the smaller dark atoms are assigned to Bi and Pd atoms respectively, according to their vastly different atomic number. It then describes two bright rows followed by a dark row in Bi2Pd and says the atomic-resolution EDX mapping in Fig. 2d also exhibits alternating bright and dark rows.",
+          "The wording loosely transfers HAADF brightness language to EDX mapping, where both elemental channels have bright signal. Nevertheless, the accompanying primary text explicitly fixes the intended bright-row assignment to Bi; Pd is the dark-row assignment, and Cu/Au are not mapped constituents."
+        ],
+        "article_url": "https://www.nature.com/articles/s41467-024-46072-7",
+        "answerable_normalized": true,
+        "unique_normalized": true,
+        "confidence_normalized": "high",
+        "valid_alternative_letters_normalized": []
+      }
+    },
+    {
+      "task_id": "matcha-32ac1038c507fbc41ac4",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-132d22ac05705e3c5827",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-621ac085145e418213e5",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-f916c175123b125b0933",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-a4f32b3e4710e37d37ad",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-5355411c6ae670ad7084",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-2a25b01d4cc7577c181c",
+      "accepted": true,
+      "basis": "second_and_third_blinded_reviews_support_source_unique",
+      "third_review": {
+        "task_id": "matcha-2a25b01d4cc7577c181c",
+        "chosen_letter": "C",
+        "answerability": "answerable with the permitted primary-source caption; the isolated panel c does not itself label boundary WBVD classes",
+        "uniqueness": "unique among the listed options under the stated between-axis interpretation",
+        "alternatives": [],
+        "confidence": 0.998,
+        "evidence": {
+          "geometry": "The supplied rectangle x=1201\u20131679, y=0\u20131553 covers the rightmost Figure 4c column of three misorientation-axis distributions.",
+          "image": "All three plots label [001] at the upper left, [010] at the upper right and [100] at the lower left. Their dominant upper-edge distributions lie between [001] and [010]; the middle plot additionally contains a separate concentration near [100]. Panel b provides the separate WBVD maps, so c alone must not be read as a WBVD-color classification.",
+          "primary_source": "https://www.nature.com/articles/s41467-019-13635-y",
+          "source_support": "The Figure 4 caption states: 'Subgrain boundaries with [100] WBVDs (green) show misorientation axes between [001] and [010]. Subgrain boundaries with [001] WBVDs (red) show misorientation axes about [100] or [010].' The article text likewise associates the between-[010]-and-[001] lattice-distortion axes with predominantly [100] WBVDs.",
+          "adjudication": "C exactly matches the caption. B refers instead to axes about [100] or [010], not the distribution between the two named axes. Treating an endpoint at [010] as equivalent to the stated between-axis distribution would erase the distinction explicitly made in the caption; it is not a defensible coequal answer here. A and D lack supporting identification."
+        },
+        "answerable_normalized": true,
+        "unique_normalized": true,
+        "confidence_normalized": "high",
+        "valid_alternative_letters_normalized": []
+      }
+    },
+    {
+      "task_id": "matcha-f07ba75d44a912404aa7",
+      "accepted": false,
+      "basis": "third_tiebreak_rejection",
+      "third_review": {
+        "task_id": "matcha-f07ba75d44a912404aa7",
+        "chosen_letter": "B",
+        "answerable": true,
+        "unique_correct": false,
+        "valid_alternative_letters": [
+          "A"
+        ],
+        "confidence": 0.97,
+        "evidence": {
+          "image_geometry": "The rectangle x=403\u2013775, y=630\u2013930 selects panel 1d, explicitly labelled 1C, not the C/10 plot in panel 1c. Its horizontal axis is specific capacity (mAh/g).",
+          "visual": "The longest discharge traces reach approximately 150\u2013155 mAh/g at the 1.5 V lower cutoff. However, the plotted family also contains later-cycle endpoints around 100\u2013120 mAh/g; no cycle number is specified in the question.",
+          "primary_source": "https://www.nature.com/articles/s41467-020-18345-4",
+          "source_evidence": "The characterization paragraph explicitly states that Na2/3Fe1/2Mn1/2O2 delivers 185\u2013190 mAh/g at C/10 (Fig. 1c) and 150\u2013155 mAh/g at 1C (Fig. 1d). The figure caption says the curves are plotted for up to 20 cycles.",
+          "judgment": "B is the source-supported headline capacity and strongest answer. Strict uniqueness is weakened by the unspecified cycle: A is also readable from some of the supplied 1C discharge curves. C is the C/10 value, and D does not match the selected 1C panel."
+        },
+        "answerable_normalized": true,
+        "unique_normalized": false,
+        "confidence_normalized": "high",
+        "valid_alternative_letters_normalized": [
+          "A"
+        ]
+      },
+      "reasons": [
+        "third_not_unique",
+        "third_valid_alternative_claimed"
+      ]
+    },
+    {
+      "task_id": "matcha-6a54032ff3905b6e882b",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-9c5afd3545bb3650c6f6",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-500a4760ded8189660eb",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-89d20be453bdd095c103",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_source_key_disagreement"
+      ]
+    },
+    {
+      "task_id": "matcha-aa00af5df9f40c649332",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-033074e44896ea121e52",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_valid_alternative_claimed"
+      ]
+    },
+    {
+      "task_id": "matcha-eded911f692e4b683b8c",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-ddbb3da1fcf0d437d9a4",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-609d5e76eee77ac881a3",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-f866427c87c065865cb9",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-69671bb273cc91a67465",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-0e74a100834c933969c1",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_not_unique",
+        "second_no_allowed_choice",
+        "second_source_key_disagreement",
+        "second_valid_alternative_claimed"
+      ]
+    },
+    {
+      "task_id": "matcha-a9e1624e3ce196aaa48f",
+      "accepted": true,
+      "basis": "second_and_third_blinded_reviews_support_source_unique",
+      "third_review": {
+        "task_id": "matcha-a9e1624e3ce196aaa48f",
+        "chosen_letter": "B",
+        "answerable": true,
+        "unique_correct": true,
+        "valid_alternative_letters": [],
+        "confidence": 0.78,
+        "evidence": {
+          "image_geometry": "The rectangle x=461\u2013979, y=529\u2013804 includes panel 1c at lower centre of the microscopy overview, with some adjacent margin/panel d. The explicitly labelled c panel was inspected rather than b or the lower tomographic slices.",
+          "visual": "Panel c has visibly nonuniform, textured contrast and irregular contoured boundaries around the milled region, especially the lower dark block and the upper mottled region. It does not present a uniformly featureless, highly polished appearance.",
+          "primary_source": "https://www.nature.com/articles/s41467-023-36372-9",
+          "source_evidence": "The Fig. 1 caption identifies b as an SEM image of a finished lamella and c as its respective PFIB image, with a 5 micrometre scale bar. The text explains that argon was chosen based on experience producing smooth flat surfaces and that lamella preparation includes fine milling/polishing.",
+          "judgment": "B is the best and only matching qualitative description of the visible contours/texture in panel c. This should not be interpreted as a quantitative surface-roughness determination: ion-image contrast, surrounding material and outlines are not direct height measurements, and the paper does not establish a roughness value for panel c. Process polishing alone does not establish option C, and A/D ignore the visibly nonuniform appearance."
+        },
+        "answerable_normalized": true,
+        "unique_normalized": true,
+        "confidence_normalized": "medium",
+        "valid_alternative_letters_normalized": []
+      }
+    },
+    {
+      "task_id": "matcha-f092c73a13b2102f23ec",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-2d4f0b6be61a95ef7dfe",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-3d43a624a9448b49bb4f",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-86ea46f8316f95a7748d",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-95ed3586db58f0ce896d",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_source_key_disagreement"
+      ]
+    },
+    {
+      "task_id": "matcha-618939532118b34d18b3",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-ee5a28ff46cb2fb481d8",
+      "accepted": true,
+      "basis": "second_and_third_blinded_reviews_support_source_unique",
+      "third_review": {
+        "task_id": "matcha-ee5a28ff46cb2fb481d8",
+        "chosen_letter": "B",
+        "answerability": "answerable",
+        "uniqueness": "unique among the listed options",
+        "alternatives": [],
+        "confidence": 0.999,
+        "evidence": {
+          "geometry": "The supplied rectangle x=39\u20131007, y=805\u20131129 selects the lower-left Figure 4d triplet, not the MFM/AFM panels above it.",
+          "image": "Panel d includes a 2 micrometre scale bar and underfocus (uf) and overfocus (of) images, with alternating bright/dark wall contrast marked by white and black arrows. These are defocused Fresnel magnetic-domain images.",
+          "primary_source": "https://www.nature.com/articles/s41467-025-57571-6",
+          "source_support": "The Figure 4 caption explicitly identifies d as Lorentz TEM images of magnetic domain walls in the Fresnel defocused condition. The accompanying text also identifies Figure 4d,e as Lorentz TEM (LTEM) magnetic-domain structures recorded at magnetic remanence.",
+          "adjudication": "Lorentz TEM is TEM, so B is directly supported. AFM is explicitly associated with different panels b/c; SEM and XRD do not describe panel d. No competing listed answer is supported."
+        },
+        "answerable_normalized": true,
+        "unique_normalized": true,
+        "confidence_normalized": "high",
+        "valid_alternative_letters_normalized": []
+      }
+    },
+    {
+      "task_id": "matcha-c271fa2b811aa8f5d3e8",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_unanswerable",
+        "second_not_unique",
+        "second_no_allowed_choice",
+        "second_source_key_disagreement"
+      ]
+    },
+    {
+      "task_id": "matcha-a19f150eaca82d8b3000",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_not_unique",
+        "second_no_allowed_choice",
+        "second_source_key_disagreement",
+        "second_valid_alternative_claimed"
+      ]
+    },
+    {
+      "task_id": "matcha-1687e9e9bc5d34418608",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-900f87d9bf8cb7e71855",
+      "accepted": false,
+      "basis": "initial_flag_plus_second_rejection",
+      "reasons": [
+        "second_source_key_disagreement",
+        "second_valid_alternative_claimed"
+      ]
+    },
+    {
+      "task_id": "matcha-7ee85975946a4d9dba8b",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-505fc19ef2da2318add1",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-160b3a3535a7fcd433e6",
+      "accepted": true,
+      "basis": "second_and_third_blinded_reviews_support_source_unique",
+      "third_review": {
+        "task_id": "matcha-160b3a3535a7fcd433e6",
+        "chosen_letter": "C",
+        "answerability": "answerable",
+        "uniqueness": "unique among the listed options",
+        "alternatives": [],
+        "confidence": 0.999,
+        "evidence": {
+          "geometry": "The supplied rectangle x=1622\u20131980, y=583\u20131566 selects the rightmost HAADF-STEM panel h, including its red dashed highlighted layer pair and 0.5 nm scale bar.",
+          "image": "Panel h shows numbered layers 1\u20134 and a localized change in interlayer registry at layers 2\u20133 within the dashed red box. The associated model in panel i explicitly labels the 2-to-3 displacement 'R-stacking fault'. This is a stacking-sequence change, not a highlighted missing atom, grain boundary, or dislocation core.",
+          "primary_source": "https://www.nature.com/articles/s41467-024-50314-z",
+          "source_support": "The article states that Figure 1h shows occasionally observed stacking faults with rhombohedral-type (R-type) local stacking and that Figure 1i presents the corresponding top-view Cr-position model. The Figure 1 title identifies monoclinic CrI3 with rhombohedral-type stacking faults.",
+          "adjudication": "C names the specific highlighted structural defect and is confirmed independently by both the supplied figure's model annotation and the primary text. The other options do not identify the marked feature."
+        },
+        "answerable_normalized": true,
+        "unique_normalized": true,
+        "confidence_normalized": "high",
+        "valid_alternative_letters_normalized": []
+      }
+    },
+    {
+      "task_id": "matcha-0b908ccdfc121e05e485",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-7698e849b7ad4fea944c",
+      "accepted": true,
+      "basis": "second_and_third_blinded_reviews_support_source_unique",
+      "third_review": {
+        "task_id": "matcha-7698e849b7ad4fea944c",
+        "chosen_letter": "A",
+        "answerable": true,
+        "unique_correct": true,
+        "valid_alternative_letters": [],
+        "confidence": 0.95,
+        "evidence": {
+          "image_geometry": "The supplied rectangle x=970\u20131351, y=333\u20131208 lies over panel 1e (stacked PL spectra) in the supplied full-resolution image, not the decay panel. The full supplied figure nevertheless includes the relevant panel 1g at bottom right and PLQY measurements in panel 1f.",
+          "visual": "Panel 1g shows an approximately straight decay on a logarithmic intensity axis, labelled InAs/InP/ZnSe/ZnS and tau=69.5 ns. Panel 1f independently shows high, near-unity PLQY for the passivated QDs.",
+          "primary_source": "https://www.nature.com/articles/s41467-025-57746-1",
+          "source_evidence": "The shell-growth discussion states: \u201cThe QDs-900 exhibited monoexponential PL decay dynamics, consistent with their near-unity PLQY (Fig. 1g).\u201d It also reports recovery of near-unity PLQY after the protective ZnS deposition.",
+          "judgment": "A is uniquely supported in this sample-specific figure/article context. Monoexponential kinetics alone do not prove high quantum yield: a single lifetime measures kr+knr, whereas PLQY is kr/(kr+knr). Thus the question overstates a general implication, but the supplied full figure and primary source supply the missing sample-specific support. B, C and D are not inferred from this decay."
+        },
+        "answerable_normalized": true,
+        "unique_normalized": true,
+        "confidence_normalized": "high",
+        "valid_alternative_letters_normalized": []
+      }
+    },
+    {
+      "task_id": "matcha-2e765fe2e88512c892aa",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    },
+    {
+      "task_id": "matcha-5b5d60e52001ed3e072f",
+      "accepted": true,
+      "basis": "initial_blinded_review"
+    }
+  ]
+}
