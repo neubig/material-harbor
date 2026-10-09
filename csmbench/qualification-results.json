@@ -1,5 +1,5 @@
 {
-  "status": "qualified",
+  "status": "not_qualified_accuracy_ci_crosses_70",
   "scope": "CSMBench strict MCQ,50 public image- and paper-folder-disjoint tasks balanced across four scales.",
   "source_revision": "6dfc2ba8aea24dd04977801c68d2d6f24f76bc02",
   "harbor_version": "0.24.0",
@@ -189,7 +189,7 @@
     },
     "meets_fp_fn_under_15": true
   },
-  "random_sample_qualification_status": "qualified",
+  "random_sample_qualification_status": "not_qualified_accuracy_ci_crosses_70",
   "preferred_agent_evaluation": {
     "model": "openai/deepseek-v4.1-flash",
     "temperature": 1,
@@ -212,7 +212,9 @@
     "missing_answer_writes": 38,
     "hidden_gold_probe_trials": 2,
     "majority_key_baseline": 0.29,
-    "cost_usd": 3.49518492
+    "cost_usd": 3.49518492,
+    "accuracy_interval_strictly_contained_in_open_interval_10_70": false,
+    "accuracy_gate_reason": "Bootstrap95%CI[58%,76%] and Wilson95%CI[57.31%,75.44%] cross the70% ceiling."
   },
-  "preferred_setting_accuracy_in_open_interval_10_70": true
+  "preferred_setting_accuracy_in_open_interval_10_70": false
 }
