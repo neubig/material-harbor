@@ -1,0 +1,44 @@
+{
+  "harbor": {
+    "version": "0.24.0",
+    "files": [
+      {
+        "filename": "harbor-0.24.0-py3-none-any.whl",
+        "sha256": "23b7ba616a3aae4eff561ced5e2c51c7186f2981e53a770dea9c689d3969877c"
+      },
+      {
+        "filename": "harbor-0.24.0.tar.gz",
+        "sha256": "6c5185e6a76abc677ed3f95e688dc0dbf8597e4fa50847cb9a37a4448c91b1e5"
+      }
+    ]
+  },
+  "sail": {
+    "version": "0.13.0",
+    "files": [
+      {
+        "filename": "sail-0.13.0-cp39-abi3-macosx_10_12_x86_64.whl",
+        "sha256": "8a80b118620b98dc3b61e05d16c0f10c4cb3533a91b97ba53f666dd55ce320c3"
+      },
+      {
+        "filename": "sail-0.13.0-cp39-abi3-macosx_11_0_arm64.whl",
+        "sha256": "f5a4793d7ced08a1ce4fc4fe513a11e15ecdf0661a944f3f6d2411b769fad6a4"
+      },
+      {
+        "filename": "sail-0.13.0-cp39-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+        "sha256": "ee48e049df91c8922d8e1be06c30c20e87ea3745b7dcfbda52ed4ef385fd10df"
+      },
+      {
+        "filename": "sail-0.13.0-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "sha256": "75e021e867ef286bcbb639022ded973dc05ef3fc6df0ed583d95c5505f83888b"
+      },
+      {
+        "filename": "sail-0.13.0-cp39-abi3-win_amd64.whl",
+        "sha256": "d67b5585f779f3a545acfa744a718be30139d9c1f4c5cb7953cadeea1a4bb4cd"
+      }
+    ]
+  },
+  "harbor_main": {
+    "sha": "d5ac1be17f575852eaf4fffc4072fd18481c209b",
+    "url": "https://github.com/harbor-framework/harbor/commit/d5ac1be17f575852eaf4fffc4072fd18481c209b"
+  }
+}

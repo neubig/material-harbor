@@ -1,16 +1,29 @@
+artifacts = [{ source = "/app/answer.txt", destination = "answer.txt" }]
 schema_version = "1.0"
 
 [task]
-name = "materials_figure_qa/materials_figure_qa__{{ task_id }}"
+name = "materials_figure_qa/recovered__{{ task_id }}"
 keywords = ["materials-science", "multimodal", "question-answering"]
 
 [metadata]
 category = "materials-figure-qa"
-dataset = "Materials Figure QA"
+dataset = "Materials Figure QA recovered source"
+difficulty = "{{ difficulty }}"
 source = "https://huggingface.co/datasets/gneubig/materials-figure-qa"
+qa_revision = "29afd45383c1c1830d13e67df114f41069d53531"
+image_revision = "1ac9ba2b970f624d207cf95dd823790850cce75b"
+sample = "random100-seed-2026100901"
 
 [verifier]
 timeout_sec = 300.0
+environment_mode = "separate"
+network_mode = "allowlist"
+allowed_hosts = ["llm-proxy.app.all-hands.dev"]
+
+[verifier.env]
+VLM_JUDGE_API_KEY = "${LLM_API_KEY}"
+VLM_JUDGE_BASE_URL = "https://llm-proxy.app.all-hands.dev/v1"
+VLM_JUDGE_MODEL = "gpt-5.6"
 
 [agent]
 timeout_sec = 900.0
@@ -20,3 +33,5 @@ build_timeout_sec = 600.0
 cpus = 1
 memory_mb = 2048
 storage_mb = 4096
+network_mode = "allowlist"
+allowed_hosts = ["llm-proxy.app.all-hands.dev"]

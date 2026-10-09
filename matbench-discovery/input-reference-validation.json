@@ -1,0 +1,5 @@
+{
+  "validated": 100,
+  "errors": 0,
+  "method": "pymatgen initial structure validity, periodicity and exact fractional composition equality against fixed MP reference"
+}

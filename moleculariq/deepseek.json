@@ -1,0 +1,31 @@
+{
+  "agents": [
+    {
+      "env": {
+        "LLM_API_KEY": "${LLM_API_KEY}",
+        "LLM_BASE_URL": "https://llm-proxy.app.all-hands.dev"
+      },
+      "kwargs": {
+        "load_skills": false,
+        "max_iterations": 50,
+        "temperature": 1
+      },
+      "model_name": "openai/deepseek-v4.1-flash",
+      "name": "openhands-sdk"
+    }
+  ],
+  "datasets": [
+    {
+      "path": "/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/material-harbor/moleculariq/frozen/tasks"
+    }
+  ],
+  "environment": {
+    "type": "sail"
+  },
+  "job_name": "moleculariq-deepseek100",
+  "jobs_dir": "/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/material-harbor/moleculariq/jobs",
+  "n_concurrent_trials": 10,
+  "retry": {
+    "max_retries": 0
+  }
+}

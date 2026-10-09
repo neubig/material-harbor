@@ -1,0 +1,10 @@
+{
+  "revision": 2,
+  "sdk_import": true,
+  "scientific_cli_help": true,
+  "image_export": "Interrupted after >8min total build, >4min layer export; build checks passed but no final image digest or runtime claim",
+  "pid": null,
+  "log": "container-rebuild.log",
+  "full_container_relaxation": "not yet tested",
+  "revision1_error": "Relocated SDK venv home; fixed revision2"
+}
