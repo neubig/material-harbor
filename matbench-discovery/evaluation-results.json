@@ -1,0 +1,661 @@
+{
+  "tasks": 100,
+  "correct": 69,
+  "accuracy": 0.69,
+  "bootstrap95": [
+    0.6,
+    0.78
+  ],
+  "wilson95": [
+    0.5937394428051057,
+    0.7722030278762395
+  ],
+  "errors": 8,
+  "missing_rewards": 4,
+  "jobs": [
+    "0910f945-9cc3-4f36-b6f2-5e6592e82d40",
+    "24a72b38-5818-4402-9132-e2e055581380"
+  ],
+  "trials": {
+    "mbd-029": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-029__87btqK8",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-008": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-008__Fx86Lsg",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-038": {
+      "reward": null,
+      "exception": {
+        "exception_type": "CancelledError",
+        "exception_message": "",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 500, in run\n    await self._run()\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 40, in _run\n    await self._run_agent()\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 76, in _run_agent\n    await self._run_agent_phase(\n    ...<5 lines>...\n    )\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 651, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/openhands_sdk.py\", line 287, in run\n    await self.exec_as_agent(environment, command=command.strip(), env=env)\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1075, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1026, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 882, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 246, in exec\n    return await self._env._sdk_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        _bash_argv(command, cwd), env=env, timeout_sec=timeout_sec, user=user\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 810, in _sdk_exec\n    result = await self._require_sailbox().run.aio(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/_aio.py\", line 82, in call\n    return await fn(*prefix, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/sailbox.py\", line 2158, in run\n    result = await proc.wait()\n             ^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/exec_process.py\", line 775, in wait\n    ) = await self._proc.wait_aio()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n",
+        "occurred_at": "2026-10-09T21:20:48.646128Z"
+      },
+      "trial": "mbd-038__8TJx3S5",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-009": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-009__ZFqMoT6",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-014": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-014__mxcjJPh",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-035": {
+      "reward": null,
+      "exception": {
+        "exception_type": "CancelledError",
+        "exception_message": "",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 500, in run\n    await self._run()\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 40, in _run\n    await self._run_agent()\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 76, in _run_agent\n    await self._run_agent_phase(\n    ...<5 lines>...\n    )\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 651, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/openhands_sdk.py\", line 287, in run\n    await self.exec_as_agent(environment, command=command.strip(), env=env)\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1075, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1026, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 882, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 246, in exec\n    return await self._env._sdk_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        _bash_argv(command, cwd), env=env, timeout_sec=timeout_sec, user=user\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 810, in _sdk_exec\n    result = await self._require_sailbox().run.aio(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/_aio.py\", line 82, in call\n    return await fn(*prefix, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/sailbox.py\", line 2158, in run\n    result = await proc.wait()\n             ^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/exec_process.py\", line 775, in wait\n    ) = await self._proc.wait_aio()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n",
+        "occurred_at": "2026-10-09T21:20:48.673488Z"
+      },
+      "trial": "mbd-035__YxC23ky",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-013": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-013__wEMyEvq",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-037": {
+      "reward": null,
+      "exception": {
+        "exception_type": "CancelledError",
+        "exception_message": "",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 500, in run\n    await self._run()\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 40, in _run\n    await self._run_agent()\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 76, in _run_agent\n    await self._run_agent_phase(\n    ...<5 lines>...\n    )\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 651, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/openhands_sdk.py\", line 287, in run\n    await self.exec_as_agent(environment, command=command.strip(), env=env)\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1075, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1026, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 882, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 246, in exec\n    return await self._env._sdk_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        _bash_argv(command, cwd), env=env, timeout_sec=timeout_sec, user=user\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 810, in _sdk_exec\n    result = await self._require_sailbox().run.aio(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/_aio.py\", line 82, in call\n    return await fn(*prefix, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/sailbox.py\", line 2158, in run\n    result = await proc.wait()\n             ^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/exec_process.py\", line 775, in wait\n    ) = await self._proc.wait_aio()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n",
+        "occurred_at": "2026-10-09T21:20:48.754793Z"
+      },
+      "trial": "mbd-037__TrbV7Dc",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-024": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-024__JqtDs7e",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-003": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-003__GnoWF2w",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-022": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-022__nprzR9X",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-036": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-036__5rXcZDC",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-016": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-016__uSR7Umd",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-006": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-006__297ZzsP",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-034": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-034__sA9yH3g",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-032": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-032__kXWAWn3",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-015": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-015__Qd452rg",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-031": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-031__BPy2VG5",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-020": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-020__jYwM9H5",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-028": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-028__CsWnmeQ",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-012": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-012__LwqCSc3",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-027": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-027__vffqndp",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-023": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-023__jG2FGUf",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-007": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-007__H4QgKzQ",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-004": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-004__9gGAefX",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-000": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-000__wjjjNGi",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-025": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-025__qz675hr",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-018": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-018__XRoBHGZ",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-011": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-011__znuKV5d",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-002": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-002__Vqi7ERN",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-019": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-019__iNVeatT",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-021": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-021__SScficX",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-001": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-001__qpQ4GbW",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-005": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-005__9roazDA",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-010": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-010__NwUtCbm",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-017": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-017__Yrckx5g",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-026": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-026__L89qa7R",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-030": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-030__WwX3t3x",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-033": {
+      "reward": null,
+      "exception": {
+        "exception_type": "CancelledError",
+        "exception_message": "",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 500, in run\n    await self._run()\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 40, in _run\n    await self._run_agent()\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 76, in _run_agent\n    await self._run_agent_phase(\n    ...<5 lines>...\n    )\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 651, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/openhands_sdk.py\", line 287, in run\n    await self.exec_as_agent(environment, command=command.strip(), env=env)\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1075, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1026, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 882, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 246, in exec\n    return await self._env._sdk_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        _bash_argv(command, cwd), env=env, timeout_sec=timeout_sec, user=user\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 810, in _sdk_exec\n    result = await self._require_sailbox().run.aio(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/_aio.py\", line 82, in call\n    return await fn(*prefix, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/sailbox.py\", line 2158, in run\n    result = await proc.wait()\n             ^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/exec_process.py\", line 775, in wait\n    ) = await self._proc.wait_aio()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n",
+        "occurred_at": "2026-10-09T21:20:48.683065Z"
+      },
+      "trial": "mbd-033__YZ3P3sp",
+      "job": "matbench-deepseek100-digestfix"
+    },
+    "mbd-072": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-072__9pkyvL2",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-099": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-099__dzbgVZe",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-078": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-078__LDD5MUL",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-048": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-048__Vs4PXbZ",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-095": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-095__atWz2Jd",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-049": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-049__z3B4Fv8",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-065": {
+      "reward": 0.0,
+      "exception": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/openhands_sdk.py\", line 287, in run\n    await self.exec_as_agent(environment, command=command.strip(), env=env)\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1075, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1026, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 882, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 246, in exec\n    return await self._env._sdk_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        _bash_argv(command, cwd), env=env, timeout_sec=timeout_sec, user=user\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 810, in _sdk_exec\n    result = await self._require_sailbox().run.aio(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/_aio.py\", line 82, in call\n    return await fn(*prefix, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/sailbox.py\", line 2158, in run\n    result = await proc.wait()\n             ^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/exec_process.py\", line 775, in wait\n    ) = await self._proc.wait_aio()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 651, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 76, in _run_agent\n    await self._run_agent_phase(\n    ...<5 lines>...\n    )\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 660, in _run_agent_phase\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {timeout_sec} seconds\"\n    ) from exc\nharbor.trial.errors.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-10-09T21:58:56.910821Z"
+      },
+      "trial": "mbd-065__49p8sPb",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-092": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-092__Kaz3xxV",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-076": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-076__jPtkfDN",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-085": {
+      "reward": 0.0,
+      "exception": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/openhands_sdk.py\", line 287, in run\n    await self.exec_as_agent(environment, command=command.strip(), env=env)\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1075, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1026, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 882, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 246, in exec\n    return await self._env._sdk_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        _bash_argv(command, cwd), env=env, timeout_sec=timeout_sec, user=user\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 810, in _sdk_exec\n    result = await self._require_sailbox().run.aio(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/_aio.py\", line 82, in call\n    return await fn(*prefix, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/sailbox.py\", line 2158, in run\n    result = await proc.wait()\n             ^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/exec_process.py\", line 775, in wait\n    ) = await self._proc.wait_aio()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 651, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 76, in _run_agent\n    await self._run_agent_phase(\n    ...<5 lines>...\n    )\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 660, in _run_agent_phase\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {timeout_sec} seconds\"\n    ) from exc\nharbor.trial.errors.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-10-09T22:06:38.730261Z"
+      },
+      "trial": "mbd-085__fedHYRJ",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-083": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-083__XQ6pzPZ",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-066": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-066__DxdTt6d",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-046": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-046__rDp43uq",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-054": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-054__p5vewNb",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-075": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-075__U4YV9qX",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-068": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-068__WtVrtvT",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-041": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-041__8bGztHq",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-047": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-047__gua2CNp",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-070": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-070__p5FtsSW",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-088": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-088__ESyzgSU",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-082": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-082__wzZn4fu",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-074": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-074__9WLDEJg",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-057": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-057__ckYv2eD",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-073": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-073__LEnn6Ac",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-069": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-069__HD9ee6d",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-056": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-056__dXfxvbY",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-090": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-090__HDGyEEF",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-062": {
+      "reward": 0.0,
+      "exception": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/openhands_sdk.py\", line 287, in run\n    await self.exec_as_agent(environment, command=command.strip(), env=env)\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1075, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1026, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 882, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 246, in exec\n    return await self._env._sdk_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        _bash_argv(command, cwd), env=env, timeout_sec=timeout_sec, user=user\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 810, in _sdk_exec\n    result = await self._require_sailbox().run.aio(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/_aio.py\", line 82, in call\n    return await fn(*prefix, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/sailbox.py\", line 2158, in run\n    result = await proc.wait()\n             ^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/exec_process.py\", line 775, in wait\n    ) = await self._proc.wait_aio()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 651, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 76, in _run_agent\n    await self._run_agent_phase(\n    ...<5 lines>...\n    )\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 660, in _run_agent_phase\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {timeout_sec} seconds\"\n    ) from exc\nharbor.trial.errors.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-10-09T21:57:27.239170Z"
+      },
+      "trial": "mbd-062__3BuXTEr",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-039": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-039__hAh4tf6",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-059": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-059__gTsDEkv",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-079": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-079__s9cn9au",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-093": {
+      "reward": 0.0,
+      "exception": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/openhands_sdk.py\", line 287, in run\n    await self.exec_as_agent(environment, command=command.strip(), env=env)\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1075, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 1026, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 882, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 246, in exec\n    return await self._env._sdk_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        _bash_argv(command, cwd), env=env, timeout_sec=timeout_sec, user=user\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/environments/sail.py\", line 810, in _sdk_exec\n    result = await self._require_sailbox().run.aio(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/_aio.py\", line 82, in call\n    return await fn(*prefix, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/sailbox.py\", line 2158, in run\n    result = await proc.wait()\n             ^^^^^^^^^^^^^^^^^\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/sail/exec_process.py\", line 775, in wait\n    ) = await self._proc.wait_aio()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 651, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/gneubig/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 76, in _run_agent\n    await self._run_agent_phase(\n    ...<5 lines>...\n    )\n  File \"/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/.audit/venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 660, in _run_agent_phase\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {timeout_sec} seconds\"\n    ) from exc\nharbor.trial.errors.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-10-09T22:10:48.044958Z"
+      },
+      "trial": "mbd-093__BmWucqe",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-050": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-050__8F6CNDL",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-094": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-094__RdrudqT",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-067": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-067__mAofuty",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-064": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-064__FkyoVzK",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-045": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-045__BUXLCyB",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-091": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-091__zBzwBQn",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-042": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-042__ZydGVd9",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-097": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-097__fM464Wf",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-053": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-053__7x25FJX",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-043": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-043__VYwdHHx",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-098": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-098__5acHVfQ",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-044": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-044__GyXghRZ",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-077": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-077__HdCRkB7",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-061": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-061__9Ayfwgw",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-080": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-080__upU2yPe",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-051": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-051__yW9zdJr",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-086": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-086__mdPuJty",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-055": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-055__cfBYZBn",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-058": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-058__5iDVMSP",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-096": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-096__FP8fVs3",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-089": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-089__QdyMwGe",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-063": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-063__MGMQxRq",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-071": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-071__Hj2tGGo",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-060": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-060__peiDsDy",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-087": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-087__pXXxSbZ",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-084": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-084__RzYFKRN",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-052": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-052__jzgeoKJ",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-040": {
+      "reward": 1.0,
+      "exception": null,
+      "trial": "mbd-040__k3W3RgT",
+      "job": "matbench-deepseek61-resume"
+    },
+    "mbd-081": {
+      "reward": 0.0,
+      "exception": null,
+      "trial": "mbd-081__CPVatZU",
+      "job": "matbench-deepseek61-resume"
+    }
+  }
+}

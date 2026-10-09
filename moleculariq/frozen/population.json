@@ -1,0 +1,26 @@
+{
+  "universe": {
+    "rows": 179,
+    "features": {
+      "single_count_chain_termini": 30,
+      "single_count_branch_point": 30,
+      "single_count_carbon_atom": 30,
+      "single_count_hetero_atom": 29,
+      "single_count_halogen_atom": 30,
+      "single_count_heavy_atom": 30
+    },
+    "canonical_molecules": 170
+  },
+  "sample": {
+    "rows": 100,
+    "features": {
+      "single_count_chain_termini": 20,
+      "single_count_branch_point": 14,
+      "single_count_carbon_atom": 18,
+      "single_count_hetero_atom": 13,
+      "single_count_halogen_atom": 18,
+      "single_count_heavy_atom": 17
+    },
+    "canonical_molecules": 97
+  }
+}

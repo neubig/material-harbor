@@ -1,0 +1,47 @@
+[
+  {
+    "phase": "setup",
+    "error": "Two terminal heredoc combined-command calls rejected by tool parser; rerun as single commands; no scientific impact."
+  },
+  {
+    "phase": "delegation",
+    "error": "launch_child_conversation UI dispatch returned no child after several minutes; API listing confirmed absent; started two workers via local API instead."
+  },
+  {
+    "phase": "tests",
+    "error": "Initial eight tests passed with ResourceWarning for unclosed hash handle; fixed context manager and rerun."
+  },
+  {
+    "phase": "inspection",
+    "error": "grep nonexistent harbor-main/src/harbor/models/environment.py exited2; corrected schema path config.py."
+  },
+  {
+    "phase": "source_inspection",
+    "error": "Sail advertised GitHub repository HEAD API404; latest PyPI Sail0.13.0 verified, source SHA unknown."
+  },
+  {
+    "phase": "science",
+    "error": "CHGNet0.3.0 wheel is yanked for missing checkpoint; official tagged checkpoint fetched separately, SHA256 pinned, safe weights_only load succeeds."
+  },
+  {
+    "phase": "science_audit",
+    "error": "Initial independent reconstruction completed calculations but serialization failed on NumPy bool_; incomplete audit discarded before freeze and same100 recomputed with bool conversion. No gold comparison before freeze."
+  },
+  {
+    "phase": "Sail_oracle",
+    "job_name": "matbench-oracle100-20261009T150323Z",
+    "error": "Repeated local file upload HTTP503 before Sailbox creation; interrupted batch on systemic infrastructure failure. No retries or isolation workaround. Model evaluation not launched pending service recovery confirmation."
+  },
+  {
+    "phase": "container_build",
+    "error": "Relocated SDK venv retained /usr/local/bin home, Python3.13 could not import encodings. Corrected pyvenv.cfg home to /opt/python313/bin; local rebuild required. Frozen attempted Sail tasks retain original failed-image hashes; no silent rewrite."
+  },
+  {
+    "phase": "reporting",
+    "error": "Initial missing_outputs aggregation compared namespaced Harbor task_name to directory basenames and incorrectly counted100 missing; fixed final counts4 completed error records and96 missing/interrupted. All100 lack verifier outputs."
+  },
+  {
+    "phase": "container_export",
+    "error": "Corrected build passed SDK import and scientific CLI checks but layer export remained running beyond8min total. Stopped exact build PID676491; no completed image/runtime smoke claim."
+  }
+]

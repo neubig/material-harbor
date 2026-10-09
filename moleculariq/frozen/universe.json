@@ -1,0 +1,1076 @@
+[
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"C[SiH](C[Si](C[SiH](C)C)(C[SiH](C)C)CC[Si](C[SiH](C)C)(C[SiH]C)C[SiH](C)C)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many terminal (chain-end) carbon atoms are in C[SiH](C[Si](C[SiH](C)C)(C[SiH](C)C)CC[Si](C[SiH](C)C)(C[SiH]C)C[SiH](C)C)C? Provide the answer as a JSON object with a single field chain_termini_count containing the numeric count.",
+    "uid": "task_00000080"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"COc1ccc(S(=O)(=O)C2CN(S(=O)(=O)c3cccs3)C2)cc1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbon atoms are in COc1ccc(S(=O)(=O)C2CN(S(=O)(=O)c3cccs3)C2)cc1? Provide the answer as a JSON object with chain_termini_count containing the numerical count.",
+    "uid": "task_00000082"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CCC(c1cc(C(C)(C)C)cc(C(C)(C)C)c1)c1cc(C(C)(C)C)cc(C(C)(C)C)c1C(C)(C)C\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbon atoms are in CCC(c1cc(C(C)(C)C)cc(C(C)(C)C)c1)c1cc(C(C)(C)C)cc(C(C)(C)C)c1C(C)(C)C? Provide the answer as a JSON object with chain_termini_count containing the numerical count.",
+    "uid": "task_00000084"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"C=C[Si]1(C(C)(C)C)O[Si](C=C)(C(C)(C)C)O[Si](C=C)(C(C)(C)C)O[Si](C=C)(C(C)(C)C)O1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many terminal carbons are present in C=C[Si]1(C(C)(C)C)O[Si](C=C)(C(C)(C)C)O[Si](C=C)(C(C)(C)C)O[Si](C=C)(C(C)(C)C)O1? Please provide your answer for chain_termini_count.",
+    "uid": "task_00000086"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"COc1ccc2nc(N(C)CCN3C[C@@H](C)O[C@@H](C)C3)ccc2c1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in COc1ccc2nc(N(C)CCN3C[C@@H](C)O[C@@H](C)C3)ccc2c1? Please provide your answer as chain_termini_count.",
+    "uid": "task_00000088"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CC(C)OC1=NC=CC=C1CNC(=O)C1=CC(S(=O)(=O)N(C)C)=CC=C1Cl\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many terminal carbon atoms are in CC(C)OC1=NC=CC=C1CNC(=O)C1=CC(S(=O)(=O)N(C)C)=CC=C1Cl? Provide the answer as an integer in JSON using the key chain_termini_count.",
+    "uid": "task_00000090"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CC(C)(C)OOC(C)(C)C1=CC(C)(C(C)(C)OOC(C)(C)C)C=C(C(C)(C)OOC(C)(C)C)C1(C)C(C)(C)OOC(C)(C)C\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in CC(C)(C)OOC(C)(C)C1=CC(C)(C(C)(C)OOC(C)(C)C)C=C(C(C)(C)OOC(C)(C)C)C1(C)C(C)(C)OOC(C)(C)C? Provide your answer as chain_termini_count.",
+    "uid": "task_00000092"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"C(C)(C)(NCCc1cc2c(cc1)[nH]c(=O)o2)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in C(C)(C)(NCCc1cc2c(cc1)[nH]c(=O)o2)C? Please provide your answer as chain_termini_count.",
+    "uid": "task_00000094"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CCOC(=O)c1ccccc1NC(=O)[C@H](C)Oc1ccc(C)c(C)c1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbon atoms are in the molecule CCOC(=O)c1ccccc1NC(=O)[C@H](C)Oc1ccc(C)c(C)c1? Provide your numeric answer as a JSON object with chain_termini_count.",
+    "uid": "task_00000096"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"C(C)([Si](C(C)(C)C)(N(c1ncn(c1)[Si](C)(C)C)[Si](C(C)(C)C)(C(C)(C)C)C(C)(C)C)C(C)(C)C)(C)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in the molecule C(C)([Si](C(C)(C)C)(N(c1ncn(c1)[Si](C)(C)C)[Si](C(C)(C)C)(C(C)(C)C)C(C)(C)C)C(C)(C)C)(C)C? Provide your answer as JSON with the key chain_termini_count.",
+    "uid": "task_00000098"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"CCOCCCN/C(=N\\\\C)NCCCN(CC)c1ccccc1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many branch points are present in CCOCCCN/C(=N\\C)NCCCN(CC)c1ccccc1? Please provide your answer with branch_point_count.",
+    "uid": "task_00000100"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C=C(C)[C@@H]1CC[C@](C)(O)[C@@H](C2=C(O)C(CC=C(C)C)(CC=C(C)C)C(=O)C(C(=O)C(C)C)=C2O)C1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many branch points are present in the structure C=C(C)[C@@H]1CC[C@](C)(O)[C@@H](C2=C(O)C(CC=C(C)C)(CC=C(C)C)C(=O)C(C(=O)C(C)C)=C2O)C1? Please provide your answer as JSON with the key branch_point_count.",
+    "uid": "task_00000102"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"CC(=O)[C@H](CCCCNC(=O)CCCCOC(O)C(O)C(O)C(O)C(C)CO)NC(=O)CCCCOC(O)C(O)C(O)C(O)C(C)CO\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many branch points are present in CC(=O)[C@H](CCCCNC(=O)CCCCOC(O)C(O)C(O)C(O)C(C)CO)NC(=O)CCCCOC(O)C(O)C(O)C(O)C(C)CO? Please provide your answer with branch_point_count.",
+    "uid": "task_00000104"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C(CC(C)C(=O)O)CC(C)NCc1nnn(C)n1\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many branch points are present in C(CC(C)C(=O)O)CC(C)NCc1nnn(C)n1? Please provide your answer with branch_point_count.",
+    "uid": "task_00000106"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"CC(=O)O[C@]1(C(=O)CCl)C(C)C[C@H]2[C@@H]3CC(F)C4=C(F)C(=O)C=C[C@]4(C)[C@@]3(F)C(O)C[C@@]21C\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many branch points does the molecule CC(=O)O[C@]1(C(=O)CCl)C(C)C[C@H]2[C@@H]3CC(F)C4=C(F)C(=O)C=C[C@]4(C)[C@@]3(F)C(O)C[C@@]21C contain? Please provide your answer as branch_point_count.",
+    "uid": "task_00000108"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C1C2CC3C4C5C6C7C8CC9CC%10C%11C%12C%13[C-]%14C1C23C%144C%135C%126C%117C9%108\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many branch points are present in C1C2CC3C4C5C6C7C8CC9CC%10C%11C%12C%13[C-]%14C1C23C%144C%135C%126C%117C9%108? Please provide your answer as JSON with branch_point_count.",
+    "uid": "task_00000110"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"COC1CC(C2OC3CC(O)CC(O)C3CC2OC2OC(COC(=O)CC(=O)O)C(O)C(O)C2O)CCC1O\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many branch points are in COC1CC(C2OC3CC(O)CC(O)C3CC2OC2OC(COC(=O)CC(=O)O)C(O)C(O)C2O)CCC1O? Provide your answer as a JSON object with the key branch_point_count containing the numerical count.",
+    "uid": "task_00000112"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C(O)(=O)CNC(=O)C1=C(O)N(C2CCCCC2)C(N(C1=O)C1CCCC(C1)C)=O\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many branch points are present in C(O)(=O)CNC(=O)C1=C(O)N(C2CCCCC2)C(N(C1=O)C1CCCC(C1)C)=O? Please provide your answer for branch_point_count.",
+    "uid": "task_00000114"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C1C(C(=O)N(C2CCCC2)CCO)CC(C)NC1\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many branch points are in C1C(C(=O)N(C2CCCC2)CCO)CC(C)NC1? Provide your answer as a JSON mapping with the field branch_point_count.",
+    "uid": "task_00000116"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"CC1CC2=C(F)C(F)=C(F)C(=C2F)OC(=O)OC2=C(F)C(F)=C(F)C(=C2F)CC1C\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many branch points are in CC1CC2=C(F)C(F)=C(F)C(=C2F)OC(=O)OC2=C(F)C(F)=C(F)C(=C2F)CC1C? Provide the numerical answer as JSON using the key branch_point_count.",
+    "uid": "task_00000118"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1CCC(CCCC1)C(C(CC/C=C/C)CCC(N)C)(C)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are present in C1CCC(CCCC1)C(C(CC/C=C/C)CCC(N)C)(C)C? Provide your answer as carbon_atom_count.",
+    "uid": "task_00000340"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"c1(ccccc1C(=O)NC(Nc1ccc(cc1)NC(=O)CC)=S)[N+]([O-])=O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are present in the molecule c1(ccccc1C(=O)NC(Nc1ccc(cc1)NC(=O)CC)=S)[N+]([O-])=O? Please provide your answer for carbon_atom_count.",
+    "uid": "task_00000342"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"COC1(c2ccc(O)cc2)C2CC3CC(C2)CC1C3\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are present in COC1(c2ccc(O)cc2)C2CC3CC(C2)CC1C3? Provide your answer as JSON with key carbon_atom_count.",
+    "uid": "task_00000344"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1CC(CC2C3(C)C(C4(C(C)(C(C)C3C(C3C2CCCC3C)C)C(C)C(C(C)C4)C(C)C)C)C)CC2CCCC21\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are in C1CC(CC2C3(C)C(C4(C(C)(C(C)C3C(C3C2CCCC3C)C)C(C)C(C(C)C4)C(C)C)C)C)CC2CCCC21? Return the result as a JSON object with carbon_atom_count containing the numerical count.",
+    "uid": "task_00000346"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1(CCCCC1)CCCCCC1=CC=C(C=C1C(F)(F)F)NC(=O)CCO\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are present in C1(CCCCC1)CCCCCC1=CC=C(C=C1C(F)(F)F)NC(=O)CCO? Please provide your answer using carbon_atom_count.",
+    "uid": "task_00000348"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"CCC(OC(C(=O)OCC)([PH+]=O)O)OC(CC(CCCCCCC)CCCCCCCCCCC)S\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are present in the molecule CCC(OC(C(=O)OCC)([PH+]=O)O)OC(CC(CCCCCCC)CCCCCCCCCCC)S? Please provide your answer for carbon_atom_count.",
+    "uid": "task_00000350"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"CSc1ccccc1C(Cl)c1ccc(Br)cc1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are in CSc1ccccc1C(Cl)c1ccc(Br)cc1? Please provide your answer for carbon_atom_count.",
+    "uid": "task_00000352"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C(CCCC)CCCCCCCc1[nH]cc([n+]1CCCCCCCCCCCCCCCC)CCCCCCCCCCCCCCCC\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are in C(CCCC)CCCCCCCc1[nH]cc([n+]1CCCCCCCCCCCCCCCC)CCCCCCCCCCCCCCCC? Give the numerical answer as a JSON object with carbon_atom_count.",
+    "uid": "task_00000354"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C(CCCCCCCCCC(OCC(OC(CCCCC)=O)COC(=O)CCCCCCCCCCCCCCC)=O)CCCCC\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are in C(CCCCCCCCCC(OCC(OC(CCCCC)=O)COC(=O)CCCCCCCCCCCCCCC)=O)CCCCC? Return the answer as a JSON object using the key carbon_atom_count with the numerical count as the value.",
+    "uid": "task_00000356"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"CCCCCCCCCSSCCCCCCCN(CCO)CCCCCCCC(=O)CC(CCCCCCCC)CCCCCCCC\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are present in CCCCCCCCCSSCCCCCCCN(CCO)CCCCCCCC(=O)CC(CCCCCCCC)CCCCCCCC? Provide your answer as JSON with key carbon_atom_count.",
+    "uid": "task_00000358"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"FC(F)(C(C(C(COCC(F)C(F)(C(C(C(F)(F)F)(F)F)(F)F)F)F)(F)F)(F)F)C(F)(F)F\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are in FC(F)(C(C(C(COCC(F)C(F)(C(C(C(F)(F)F)(F)F)(F)F)F)F)(F)F)(F)F)C(F)(F)F? Provide the answer as a JSON object with hetero_atom_count giving the count.",
+    "uid": "task_00000360"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"C1(F)(F)C(F)(F)C(C(F)(C(F)(F)C(F)(F)C(F)(C(F)(OC(=O)C(C)=C)F)C(C(F)(C1(F)F)F)(F)F)F)(F)F\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heteroatoms are in C1(F)(F)C(F)(F)C(C(F)(C(F)(F)C(F)(F)C(F)(C(F)(OC(=O)C(C)=C)F)C(C(F)(C1(F)F)F)(F)F)F)(F)F? Provide the result as a JSON mapping with hetero_atom_count.",
+    "uid": "task_00000364"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"O=c1[nH]cc(C2OC(COP(=O)(O)OP(=O)(O)OP(=O)(O)O)C(O)C2O)c(=O)[nH]1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in O=c1[nH]cc(C2OC(COP(=O)(O)OP(=O)(O)OP(=O)(O)O)C(O)C2O)c(=O)[nH]1? Please provide your answer as hetero_atom_count.",
+    "uid": "task_00000366"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"OC(F)(C(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)F\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many total heteroatoms are in OC(F)(C(O)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)F? Provide your answer as a JSON object with the key hetero_atom_count.",
+    "uid": "task_00000368"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"O=C(C1=CC=CC=C1Cl)N1CCC(OC2=NC=CC=N2)CC1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heteroatoms are present in O=C(C1=CC=CC=C1Cl)N1CCC(OC2=NC=CC=N2)CC1? Please provide your answer as hetero_atom_count.",
+    "uid": "task_00000370"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"N(NCC)NNNNNNNNNNNNNNNNNNNNNNNNNN\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are in the structure N(NCC)NNNNNNNNNNNNNNNNNNNNNNNNNN? Provide the result as a JSON object with the field hetero_atom_count.",
+    "uid": "task_00000372"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"C(CC(=O)NC(COCCC(NCCOCCN)=O)COCCC(=O)NCCOCCN)OCCOCCOCCOCCN\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heteroatoms are present in C(CC(=O)NC(COCCC(NCCOCCN)=O)COCCC(=O)NCCOCCN)OCCOCCOCCOCCN? Please provide your answer as a JSON with the field hetero_atom_count.",
+    "uid": "task_00000374"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"FC(OC(F)(F)C(F)(F)OC(F)(F)F)=C(F)C(F)(F)OC(F)(F)C(F)=C(F)OC(F)(F)C(F)(F)OC(F)(F)F\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are in FC(OC(F)(F)C(F)(F)OC(F)(F)F)=C(F)C(F)(F)OC(F)(F)C(F)=C(F)OC(F)(F)C(F)(F)OC(F)(F)F? Provide the numeric answer as a JSON object with the field hetero_atom_count.",
+    "uid": "task_00000376"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"NC(CC1=CC(Br)=CS1)C1CCCC1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heteroatoms are present in NC(CC1=CC(Br)=CS1)C1CCCC1? Please provide your answer as hetero_atom_count.",
+    "uid": "task_00000378"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"C1C=C2NC(=NC2=CC=1)SC1=CC=C(C(C(F)(F)F)=C1)N\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in the molecule C1C=C2NC(=NC2=CC=1)SC1=CC=C(C(C(F)(F)F)=C1)N? Provide the answer as a JSON object with the field halogen_atom_count.",
+    "uid": "task_00000380"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"FC(SC1=CC=C(C=C1)NC(C1=C(N=NS1)C)=O)(F)F\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in FC(SC1=CC=C(C=C1)NC(C1=C(N=NS1)C)=O)(F)F? Provide the answer as a JSON mapping with the field halogen_atom_count containing the numerical count.",
+    "uid": "task_00000382"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"C(C(F)(C(F)(C(F)(C(C(C(F)(C(F)(F)C(F)(F)C(F)(C(F)(C(F)F)F)F)F)(F)F)(F)F)F)F)F)(F)(F)C(O)=O\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are present in C(C(F)(C(F)(C(F)(C(C(C(F)(C(F)(F)C(F)(F)C(F)(C(F)(C(F)F)F)F)F)(F)F)(F)F)F)F)F)(F)(F)C(O)=O? Please provide your answer for halogen_atom_count.",
+    "uid": "task_00000384"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"C1(=C2CC(C(CC3C(=C(F)C(F)=C(C=3F)OC(=O)OC(=C2F)C(=C1F)F)F)C)C)F\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are present in C1(=C2CC(C(CC3C(=C(F)C(F)=C(C=3F)OC(=O)OC(=C2F)C(=C1F)F)F)C)C)F? Please provide your answer as a JSON with the field halogen_atom_count.",
+    "uid": "task_00000386"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"O=C(Nc1cccc(Cl)c1Cl)c1ccc(C(F)(F)F)cc1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are in the molecule O=C(Nc1cccc(Cl)c1Cl)c1ccc(C(F)(F)F)cc1? Provide your answer as a JSON object with the key halogen_atom_count.",
+    "uid": "task_00000388"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"CC(C1=CC=CC=C1)[Si](I)([Si](I)(I)I)[Si](I)(I)I\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in the molecule CC(C1=CC=CC=C1)[Si](I)([Si](I)(I)I)[Si](I)(I)I? Provide the numeric answer as a JSON object with halogen_atom_count.",
+    "uid": "task_00000390"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"CCO/C(=C\\\\C(=O)OCCOCCOCCOC)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are present in CCO/C(=C\\C(=O)OCCOCCOCCOC)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F? Please provide your answer for halogen_atom_count.",
+    "uid": "task_00000392"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"FC(F)(OC1C(C#N)=CC(=NC=1I)C(F)(F)F)F\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are present in FC(F)(OC1C(C#N)=CC(=NC=1I)C(F)(F)F)F? Give the answer as JSON using the key halogen_atom_count.",
+    "uid": "task_00000394"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"CCNC(C)c1ccc(Sc2ccc(F)c(F)c2)cc1\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are present in CCNC(C)c1ccc(Sc2ccc(F)c(F)c2)cc1? Please provide your answer for halogen_atom_count.",
+    "uid": "task_00000396"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"C(CSCCC(F)(F)C(F)(F)C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(CSCCC(C(F)(F)C(C(F)(C(C(F)(F)F)(F)F)F)(F)F)(F)F)O\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are present in the molecule C(CSCCC(F)(F)C(F)(F)C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(CSCCC(C(F)(F)C(C(F)(C(C(F)(F)F)(F)F)F)(F)F)(F)F)O? Please provide your answer using halogen_atom_count.",
+    "uid": "task_00000398"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"CCCCCCCCCCCCCCCCCCCCP(Cl)(c1ccccc1)(c1ccccc1)c1ccccc1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heavy atoms are present in CCCCCCCCCCCCCCCCCCCCP(Cl)(c1ccccc1)(c1ccccc1)c1ccccc1? Please provide your answer as heavy_atom_count.",
+    "uid": "task_00000400"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"N1(CCC(CC1)COC1N=CC(=CC=1)C1C=CC(=CC=1)C(=O)N1CC(CC1C)O)CC(CC)(CC)F\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are present in N1(CCC(CC1)COC1N=CC(=CC=1)C1C=CC(=CC=1)C(=O)N1CC(CC1C)O)CC(CC)(CC)F? Please provide your answer as heavy_atom_count.",
+    "uid": "task_00000402"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"CCc1nc(CN2CCCN(C(=O)c3ccc(=O)[nH]c3)CC2)cs1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heavy atoms are in CCc1nc(CN2CCCN(C(=O)c3ccc(=O)[nH]c3)CC2)cs1? Provide the answer as JSON using the key heavy_atom_count.",
+    "uid": "task_00000404"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"[C-]#[N+]CC1=CC=C(OC2=C(C)C=C(F)C=C2C)C(Br)=C1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are present in [C-]#[N+]CC1=CC=C(OC2=C(C)C=C(F)C=C2C)C(Br)=C1? Please provide your answer using heavy_atom_count.",
+    "uid": "task_00000406"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"CCCCC(F)(F)C(=O)CCC1OCCC[C@H]1O[C@@H]1CCC(=O)C1CC=CCCCCCC(=O)OCc1ccccc1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heavy (non-hydrogen) atoms are in CCCCC(F)(F)C(=O)CCC1OCCC[C@H]1O[C@@H]1CCC(=O)C1CC=CCCCCCC(=O)OCc1ccccc1? Respond with a JSON object keyed by heavy_atom_count.",
+    "uid": "task_00000408"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"CC(C)CC(N)C(=O)N1CCCC1C(=O)NC(CCC(=O)O)C(=O)NC(CCC(=O)O)C(=O)O\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are present in the molecule CC(C)CC(N)C(=O)N1CCCC1C(=O)NC(CCC(=O)O)C(=O)NC(CCC(=O)O)C(=O)O? Please provide your answer as heavy_atom_count.",
+    "uid": "task_00000410"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C(C1Oc2c(cccc2)C1)NCCCC=C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy atoms (non-hydrogen atoms) does C(C1Oc2c(cccc2)C1)NCCCC=C contain? Please provide your answer as heavy_atom_count.",
+    "uid": "task_00000412"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"CCCCC(F)(F)C(=O)CCC1OCCC[C@H]1O[C@@H]1CCC(=O)C1CC=CCCCCCC(=O)OCC1=CC=CC=C1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are present in CCCCC(F)(F)C(=O)CCC1OCCC[C@H]1O[C@@H]1CCC(=O)C1CC=CCCCCCC(=O)OCC1=CC=CC=C1? Please provide your answer using heavy_atom_count.",
+    "uid": "task_00000414"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"CC1CCCC(CN(CC2CCCCC2)C2CCC(C3CCC(N(C4CCCCC4)C4CCCC(C)C4)C(C)C3)CC2C)C1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are in CC1CCCC(CN(CC2CCCCC2)C2CCC(C3CCC(N(C4CCCCC4)C4CCCC(C)C4)C(C)C3)CC2C)C1? Provide your answer as a JSON object with the field heavy_atom_count containing the numerical count.",
+    "uid": "task_00000416"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C[C@@H](O)CNC(=O)C1CC=C(c2ccc(OCC3CCN(C(=O)OC(C)(C)C)CC3)nc2)CC1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heavy (non-hydrogen) atoms are in the molecule C[C@@H](O)CNC(=O)C1CC=C(c2ccc(OCC3CCN(C(=O)OC(C)(C)C)CC3)nc2)CC1? Provide your answer as a JSON object with heavy_atom_count.",
+    "uid": "task_00000418"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CCC(C1=CC=C(C(C)(C)C)C(C(C)(C)C)=C1)C1=CC(C(C)(C)C)=C(C(C)(C)C)C(C(C)(C)C)=C1C(C)(C)C\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many terminal carbons are present in CCC(C1=CC=C(C(C)(C)C)C(C(C)(C)C)=C1)C1=CC(C(C)(C)C)=C(C(C)(C)C)C(C(C)(C)C)=C1C(C)(C)C? Please provide your answer using chain_termini_count.",
+    "uid": "task_00000660"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CCC(c1ccc(C(C)(C)C)c(C(C)(C)C)c1)c1cc(C(C)(C)C)c(C(C)(C)C)c(C(C)(C)C)c1C(C)(C)C\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in CCC(c1ccc(C(C)(C)C)c(C(C)(C)C)c1)c1cc(C(C)(C)C)c(C(C)(C)C)c(C(C)(C)C)c1C(C)(C)C? Please provide your answer using chain_termini_count.",
+    "uid": "task_00000662"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"c1(C([C@@](c2cc(c(cc2C)C)C)(C(CC)(C)C)C)=O)ccc(c(c1O)C[C@@H](O)C(C)=C)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in c1(C([C@@](c2cc(c(cc2C)C)C)(C(CC)(C)C)C)=O)ccc(c(c1O)C[C@@H](O)C(C)=C)C? Provide your answer as chain_termini_count.",
+    "uid": "task_00000664"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"C(OC(C)(C)C)(N(Cc1c(N(C)Cc2ccccc2)ccc(c1)N/C(NC(=O)OC(C)(C)C)=N/CC)C(OC(C)(C)C)=O)=O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in C(OC(C)(C)C)(N(Cc1c(N(C)Cc2ccccc2)ccc(c1)N/C(NC(=O)OC(C)(C)C)=N/CC)C(OC(C)(C)C)=O)=O? Please provide your answer for chain_termini_count.",
+    "uid": "task_00000666"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"C1CC(C(=O)OCC(C2C=C(N(C=2C)C2C=C(C(=O)OC)C=C(C(OC)=O)C=2)C)=O)(CCC1)O\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many terminal carbons are present in the molecule C1CC(C(=O)OCC(C2C=C(N(C=2C)C2C=C(C(=O)OC)C=C(C(OC)=O)C=2)C)=O)(CCC1)O? Please provide your answer as a JSON with the field chain_termini_count.",
+    "uid": "task_00000668"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"COc1cc(OCc2nnc([C@@H]3CCCN3C(=O)C(F)(F)C3(O)CC(C)(C)CC(C)(C)C3)o2)cc(OC)c1OC\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are in COc1cc(OCc2nnc([C@@H]3CCCN3C(=O)C(F)(F)C3(O)CC(C)(C)CC(C)(C)C3)o2)cc(OC)c1OC? Provide the numerical answer as a JSON object using the key chain_termini_count.",
+    "uid": "task_00000670"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CN(C)P(=NP(=NCc1ccc(P)cc1)(N=P(N(C)C)(N(C)C)N(C)C)N=P(N(C)C)(N(C)C)N(C)C)(N(C)C)N(C)C\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in CN(C)P(=NP(=NCc1ccc(P)cc1)(N=P(N(C)C)(N(C)C)N(C)C)N=P(N(C)C)(N(C)C)N(C)C)(N(C)C)N(C)C? Please provide your answer as chain_termini_count.",
+    "uid": "task_00000672"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CCC(CC)OC(=O)O[C@@H](C)OC(=O)C1=C(/C=C\\\\c2cccnc2)CS[C@@H]2[C@H](NC(=O)/C(=N\\\\O)c3csc(N)n3)C(=O)N12\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in the molecule CCC(CC)OC(=O)O[C@@H](C)OC(=O)C1=C(/C=C\\c2cccnc2)CS[C@@H]2[C@H](NC(=O)/C(=N\\O)c3csc(N)n3)C(=O)N12? Please provide your answer for chain_termini_count.",
+    "uid": "task_00000674"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CN[C@H](C(=O)N[C@](C)(C(=O)N(C)[C@H](/C=C(\\\\C)C(=O)C1=NC=CN1)C(C)C)C(C)C)C(C)(C)C1=CC=CC=C1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many terminal carbons are present in CN[C@H](C(=O)N[C@](C)(C(=O)N(C)[C@H](/C=C(\\C)C(=O)C1=NC=CN1)C(C)C)C(C)C)C(C)(C)C1=CC=CC=C1? Please provide your answer as chain_termini_count.",
+    "uid": "task_00000676"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"Cc1sc2c(C)c3c(C)c(C)c4c(sc5c(C)c6c(C)c7c(C)c(C)sc7c(C)c6c(C)c54)c3cc2c1C\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbons are present in the molecule Cc1sc2c(C)c3c(C)c(C)c4c(sc5c(C)c6c(C)c7c(C)c(C)sc7c(C)c6c(C)c54)c3cc2c1C? Provide your answer as JSON with the key chain_termini_count.",
+    "uid": "task_00000678"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"c1(c(c(c(c2C(c3c(F)c(F)c(F)c(c3F)F)(c3c(F)c(c(c(c3C(F)(c12)F)F)F)F)F)F)F)F)F\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many branch points are in c1(c(c(c(c2C(c3c(F)c(F)c(F)c(c3F)F)(c3c(F)c(c(c(c3C(F)(c12)F)F)F)F)F)F)F)F)F? Respond with a JSON object using branch_point_count and give a numerical count.",
+    "uid": "task_00000680"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"N1=C2C(=C(C=C1C1=CC=[N+](CC3C=CC(C(OC)=O)=CC=3)C=C1)NC(C1C=C(C=CC=1)C(F)(F)F)=O)C=CC=C2\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many branch points are in N1=C2C(=C(C=C1C1=CC=[N+](CC3C=CC(C(OC)=O)=CC=3)C=C1)NC(C1C=C(C=CC=1)C(F)(F)F)=O)C=CC=C2? Provide your answer as a JSON object with the key branch_point_count and a numerical count.",
+    "uid": "task_00000682"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"CC1=CC=CC(NC(=O)CN2CCN(C(=O)C3=CC=C(N4C=NC=N4)N=C3)CC2)=C1C\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many branch points are present in CC1=CC=CC(NC(=O)CN2CCN(C(=O)C3=CC=C(N4C=NC=N4)N=C3)CC2)=C1C? Please provide your answer for branch_point_count.",
+    "uid": "task_00000684"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"Fc1ccc(F)c(B(Oc2c(F)c(F)c(F)c(F)c2-c2c(F)c(F)c(F)c(F)c2F)Oc2c(F)c(F)c(F)c3c(F)c(F)c(F)c(F)c23)c1F\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many branch points are present in the molecule Fc1ccc(F)c(B(Oc2c(F)c(F)c(F)c(F)c2-c2c(F)c(F)c(F)c(F)c2F)Oc2c(F)c(F)c(F)c3c(F)c(F)c(F)c(F)c23)c1F? Provide your answer with branch_point_count.",
+    "uid": "task_00000686"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C1=C2C3=C4C5=C(C=CC=C5S3)C3=CC=C5C6=C7C8=C(C=CC=C8C8=CC=C9C%10=C%11C%12=C(C=CC=C%12S%10)C(C1)N2C1=C4C(=C7C(=C%111)N89)N35)S6\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many branch points does the molecule C1=C2C3=C4C5=C(C=CC=C5S3)C3=CC=C5C6=C7C8=C(C=CC=C8C8=CC=C9C%10=C%11C%12=C(C=CC=C%12S%10)C(C1)N2C1=C4C(=C7C(=C%111)N89)N35)S6 contain? Provide your answer as branch_point_count.",
+    "uid": "task_00000688"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"O=C1C2=CC=CC=C2C2=CC3=CC=C4C(=O)C5=C(Br)C=C(Br)C(Br)=C5C5=C(Br)C6=CC=C1C2=C6C3=C45\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many branch points are present in the molecule O=C1C2=CC=CC=C2C2=CC3=CC=C4C(=O)C5=C(Br)C=C(Br)C(Br)=C5C5=C(Br)C6=CC=C1C2=C6C3=C45? Please provide your answer for branch_point_count.",
+    "uid": "task_00000690"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"COC1=CC=C(S(=O)(=O)NCCNC2=CC(NC3=CC(C)=CC=N3)=NC(C)=N2)C=C1Cl\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many branch points does the molecule COC1=CC=C(S(=O)(=O)NCCNC2=CC(NC3=CC(C)=CC=N3)=NC(C)=N2)C=C1Cl contain? Please provide your answer as branch_point_count.",
+    "uid": "task_00000692"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"c1cc(ccc1C(c1cn(Cc2cc(ccc2Cl)OCC(=O)O)c2nc(ccc21)C(F)(F)F)=O)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many branch points are present in c1cc(ccc1C(c1cn(Cc2cc(ccc2Cl)OCC(=O)O)c2nc(ccc21)C(F)(F)F)=O)C? Please provide your answer for branch_point_count.",
+    "uid": "task_00000694"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"FC1C(F)=C(C2=C(C(F)=C(C(=C2C2=C(F)C(F)=C(C(=C2F)F)F)F)F)F)C2C3C=1C(=C(F)C1=C(F)C(F)=C(F)C(C1=3)=C(F)C=2F)F\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many branch points are there in FC1C(F)=C(C2=C(C(F)=C(C(=C2C2=C(F)C(F)=C(C(=C2F)F)F)F)F)F)C2C3C=1C(=C(F)C1=C(F)C(F)=C(F)C(C1=3)=C(F)C=2F)F? Provide your answer as a JSON object with the key branch_point_count and a numerical value.",
+    "uid": "task_00000696"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"c1cnn(P2(n3cccn3)=NP(n3cccn3)(n3cccn3)=NP(n3cccn3)(n3cccn3)=NP(n3cccn3)(n3cccn3)=N2)c1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many branch points does the molecule c1cnn(P2(n3cccn3)=NP(n3cccn3)(n3cccn3)=NP(n3cccn3)(n3cccn3)=NP(n3cccn3)(n3cccn3)=N2)c1 contain? Please provide your answer as branch_point_count.",
+    "uid": "task_00000698"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"Cc1ccc(S(=O)(=O)n2ccc3c(CCC(=O)O)cnc(C#N)c32)cc1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are in Cc1ccc(S(=O)(=O)n2ccc3c(CCC(=O)O)cnc(C#N)c32)cc1? Give the numerical answer as a JSON object using the key carbon_atom_count.",
+    "uid": "task_00000920"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1C=CC[C@H](C(=O)Nc2cc3c(c(=O)n4CCC(c4n3)=Cc3ccc(cc3)OC)cc2)[C@@H]1C(O)=O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are in C1C=CC[C@H](C(=O)Nc2cc3c(c(=O)n4CCC(c4n3)=Cc3ccc(cc3)OC)cc2)[C@@H]1C(O)=O? Provide your answer as a JSON object with the field carbon_atom_count.",
+    "uid": "task_00000922"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"CC1=CC(C(F)(F)F)=NC2=C1C1=C(S2)C2=NC(C(C)N3C=C(Cl)C=N3)=NN2C=N1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "What is the total number of carbon atoms in CC1=CC(C(F)(F)F)=NC2=C1C1=C(S2)C2=NC(C(C)N3C=C(Cl)C=N3)=NN2C=N1? Provide the answer as JSON with carbon_atom_count.",
+    "uid": "task_00000924"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1(OC(O)N2[C@@H](CC(C[C@@H]2CC)N(CC2=CC(C(F)(F)F)=CC(C(F)(F)F)=C2)C2N=CC(O)=CN=2)CC)CCC(C(OC)=O)CC1\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are in C1(OC(O)N2[C@@H](CC(C[C@@H]2CC)N(CC2=CC(C(F)(F)F)=CC(C(F)(F)F)=C2)C2N=CC(O)=CN=2)CC)CCC(C(OC)=O)CC1? Provide the answer as a JSON object using the key carbon_atom_count.",
+    "uid": "task_00000926"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1C2CC3CC(C(OC(=O)COC(CCC(C)C4CCC5C6CCC7C(C)(CCC(C7)N=O)C6CC(O)C45C)=O)(C1C3)C)C2\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are present in C1C2CC3CC(C(OC(=O)COC(CCC(C)C4CCC5C6CCC7C(C)(CCC(C7)N=O)C6CC(O)C45C)=O)(C1C3)C)C2? Give the answer as JSON with carbon_atom_count.",
+    "uid": "task_00000928"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"c1c(ccc(c1)F)-c1ccc2oc(cc2c1)COC(=O)Nc1c(cc(-c2ccc(F)cc2)cc1)C(=O)O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are present in c1c(ccc(c1)F)-c1ccc2oc(cc2c1)COC(=O)Nc1c(cc(-c2ccc(F)cc2)cc1)C(=O)O? Please provide your answer using carbon_atom_count.",
+    "uid": "task_00000930"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"[N+]([O-])(=O)C1C=CC=C(C=1)N(S(=O)(C1=CC=CC=C1)=O)CC(NN=C1CCCCCC1)=O\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are present in [N+]([O-])(=O)C1C=CC=C(C=1)N(S(=O)(C1=CC=CC=C1)=O)CC(NN=C1CCCCCC1)=O? Please provide your answer as carbon_atom_count.",
+    "uid": "task_00000932"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1(CCN(CC1)CC1C=CC(C(N)=O)=CC=1)OC(=O)N1C[C@@H](N(C[C@H]1C)C1N=CC(C(F)(F)F)=NC=1)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are present in C1(CCN(CC1)CC1C=CC(C(N)=O)=CC=1)OC(=O)N1C[C@@H](N(C[C@H]1C)C1N=CC(C(F)(F)F)=NC=1)C? Please provide your answer as a JSON object with carbon_atom_count.",
+    "uid": "task_00000934"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C12(C(C(CC3(C)C4(C)C(CCCC4)C4CCCCC34)(C3(C)CCCCC3)C3(C)CCCCC3)(C3C(C1CCCC2)CCCC3)C)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are present in C12(C(C(CC3(C)C4(C)C(CCCC4)C4CCCCC34)(C3(C)CCCCC3)C3(C)CCCCC3)(C3C(C1CCCC2)CCCC3)C)C? Please provide your answer as carbon_atom_count.",
+    "uid": "task_00000936"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"COC1=CC=CC(CN(C(=O)COC2=CC=CC3=CC=CC=C23)[C@H](C)C(=O)NCC(C)C)=C1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are in COC1=CC=CC(CN(C(=O)COC2=CC=CC3=CC=CC=C23)[C@H](C)C(=O)NCC(C)C)=C1? Provide your answer as a numerical count in JSON using the key carbon_atom_count.",
+    "uid": "task_00000938"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"CN(c1nc(nc2c1cccc2)NC1CCC(CC1)NCc1ccc(c(Br)c1)F)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in CN(c1nc(nc2c1cccc2)NC1CCC(CC1)NCc1ccc(c(Br)c1)F)C? Please provide your answer as hetero_atom_count.",
+    "uid": "task_00000940"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"[C@@H]12C([C@](O[C@H]2n2c(=O)nc(cc2)N)(CO)CO1)OP(=S)(O)OC[C@]12CO[C@H]([C@@H](O2)n2ccc(N)nc2=O)C1O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are in the molecule with SMILES [C@@H]12C([C@](O[C@H]2n2c(=O)nc(cc2)N)(CO)CO1)OP(=S)(O)OC[C@]12CO[C@H]([C@@H](O2)n2ccc(N)nc2=O)C1O? Provide your answer as a JSON object with the field hetero_atom_count.",
+    "uid": "task_00000942"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"O=S(=O)(O)CC(C(O)(CCCO)C(CC(F)(F)C(F)(F)C(F)(F)C(F)(F)F)S(=O)(=O)O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in O=S(=O)(O)CC(C(O)(CCCO)C(CC(F)(F)C(F)(F)C(F)(F)C(F)(F)F)S(=O)(=O)O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F? Provide your answer as a JSON with the key hetero_atom_count.",
+    "uid": "task_00000944"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"C(N(CC(=O)O)C(=O)CN(CC(N(CC(O)=O)CC(O)=O)=O)C(=O)COCC(CC(F)(F)F)(CC(F)(F)F)CC(F)(F)F)C(O)=O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in the molecule C(N(CC(=O)O)C(=O)CN(CC(N(CC(O)=O)CC(O)=O)=O)C(=O)COCC(CC(F)(F)F)(CC(F)(F)F)CC(F)(F)F)C(O)=O? Provide your answer as a JSON object with the field hetero_atom_count containing the numerical count.",
+    "uid": "task_00000946"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"C1=CC=C(C2=CC=C3C(=C2)C2=CC=CC=C2N3C2=CC=C3C(=C2)OC2=CC=CC(C4=CC=C5C(=C4)SC4=CC=CC=C45)=C23)C=C1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heteroatoms are in C1=CC=C(C2=CC=C3C(=C2)C2=CC=CC=C2N3C2=CC=C3C(=C2)OC2=CC=CC(C4=CC=C5C(=C4)SC4=CC=CC=C45)=C23)C=C1? Provide the answer as JSON using the key hetero_atom_count.",
+    "uid": "task_00000948"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"O=C(C(S(=O)(F)=O)(OC(F)(C(F)(C(F)(F)F)F)F)OC(C(C(F)(F)F)(F)F)(F)F)OC(F)(F)C(F)(F)C(F)(F)F\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heteroatoms are in O=C(C(S(=O)(F)=O)(OC(F)(C(F)(C(F)(F)F)F)F)OC(C(C(F)(F)F)(F)F)(F)F)OC(F)(F)C(F)(F)C(F)(F)F? Provide the numerical answer as a JSON object with the key hetero_atom_count.",
+    "uid": "task_00000950"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"O=P(OP(O)(=O)OP(O)(O)=O)(O)OC[C@]1(C#N)[C@H]([C@](Cl)(n2ccc(nc2=O)N)CO1)O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in the molecule O=P(OP(O)(=O)OP(O)(O)=O)(O)OC[C@]1(C#N)[C@H]([C@](Cl)(n2ccc(nc2=O)N)CO1)O? Please provide your answer as a JSON object with hetero_atom_count.",
+    "uid": "task_00000952"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"FC(C(C(F)(F)C(F)(C(C(F)(F)F)(F)F)F)(F)F)(F)C(F)(C(F)(F)CCc1ccc(cc1)/C(=N/c1ccccn1)c1ccccc1)F\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in the molecule FC(C(C(F)(F)C(F)(C(C(F)(F)F)(F)F)F)(F)F)(F)C(F)(C(F)(F)CCc1ccc(cc1)/C(=N/c1ccccn1)c1ccccc1)F? Please provide your answer as a JSON object with hetero_atom_count.",
+    "uid": "task_00000954"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"O=S(=O)(Cl)C1=C(F)C(F)=C(F)C(F)=C1OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heteroatoms are in O=S(=O)(Cl)C1=C(F)C(F)=C(F)C(F)=C1OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F? Provide your answer as a JSON object with the field hetero_atom_count containing the count.",
+    "uid": "task_00000956"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"C(C1C=CC(=CC=1)/N=C/C(=C(\\\\C1=CC=C(C=C1F)C1=CC=NC=C1)O)C(=O)OCC)(C)(C)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heteroatoms are present in C(C1C=CC(=CC=1)/N=C/C(=C(\\C1=CC=C(C=C1F)C1=CC=NC=C1)O)C(=O)OCC)(C)(C)C? Please provide your answer with hetero_atom_count.",
+    "uid": "task_00000958"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"c1cc(C=Cc2ccc(OC)c(c2F)F)ccc1-c1c(c(F)c(C2CCC(CCCCC)CC2)cc1)F\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are present in c1cc(C=Cc2ccc(OC)c(c2F)F)ccc1-c1c(c(F)c(C2CCC(CCCCC)CC2)cc1)F? Please provide your answer as a JSON object with the field halogen_atom_count.",
+    "uid": "task_00000960"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"[N+](=NCCC(F)(C(F)(F)F)C(F)(F)C(C(F)(F)F)(C(F)(C(F)(F)C(C(F)(C(CCN=[N+]=[N-])(F)F)F)(F)F)F)F)=[N-]\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are in the molecule [N+](=NCCC(F)(C(F)(F)F)C(F)(F)C(C(F)(F)F)(C(F)(C(F)(F)C(C(F)(C(CCN=[N+]=[N-])(F)F)F)(F)F)F)F)=[N-]? Provide the answer as a JSON object with the field halogen_atom_count.",
+    "uid": "task_00000962"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"FC(F)(F)C(F)(F)C(F)(F)C#Cc1ccc2cc(C#CC(F)(F)C(F)(F)C(F)(F)F)ccc2c1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are in FC(F)(F)C(F)(F)C(F)(F)C#Cc1ccc2cc(C#CC(F)(F)C(F)(F)C(F)(F)F)ccc2c1? Return the result as a JSON mapping with the field halogen_atom_count.",
+    "uid": "task_00000964"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"C(NC1=C(F)C(=CC=C1F)NC(=O)C1C(Cl)=CC=C(C=1)NC([C@@H]1C(Cl)([C@H]1C1=CC=C(Cl)C(Cl)=C1)Cl)=O)(=O)C1(C(F)(F)F)CC1\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are present in the molecule C(NC1=C(F)C(=CC=C1F)NC(=O)C1C(Cl)=CC=C(C=1)NC([C@@H]1C(Cl)([C@H]1C1=CC=C(Cl)C(Cl)=C1)Cl)=O)(=O)C1(C(F)(F)F)CC1? Please provide your answer using halogen_atom_count.",
+    "uid": "task_00000966"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"FC(F)(F)C(F)(F)C1=CC(N)(N)C=C(C1=C1C(C(F)(F)C(F)(F)F)=CC(C=C1C(F)(F)C(F)(F)F)(N)N)C(C(F)(F)F)(F)F\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are present in FC(F)(F)C(F)(F)C1=CC(N)(N)C=C(C1=C1C(C(F)(F)C(F)(F)F)=CC(C=C1C(F)(F)C(F)(F)F)(N)N)C(C(F)(F)F)(F)F? Please provide your answer as a JSON with halogen_atom_count.",
+    "uid": "task_00000968"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"CCCCCC1=CC(F)=C(C2=CC(F)=C(C3=CC(F)=C(C(F)(F)OC4=CC(F)=C(OC=C(F)F)C(F)=C4)C(F)=C3)C(F)=C2)C(F)=C1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in CCCCCC1=CC(F)=C(C2=CC(F)=C(C3=CC(F)=C(C(F)(F)OC4=CC(F)=C(OC=C(F)F)C(F)=C4)C(F)=C3)C(F)=C2)C(F)=C1? Provide the numerical result as a JSON object using the key halogen_atom_count.",
+    "uid": "task_00000970"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"FC(F)(F)C(=O)Cc1c(F)ccc(c1F)CC(c1cc(cc(c1F)F)NC([C@@H]1C(Cl)(Cl)[C@H]1c1cc(C(F)(F)F)c(cc1)F)=O)=O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are in FC(F)(F)C(=O)Cc1c(F)ccc(c1F)CC(c1cc(cc(c1F)F)NC([C@@H]1C(Cl)(Cl)[C@H]1c1cc(C(F)(F)F)c(cc1)F)=O)=O? Provide the answer as a JSON object with halogen_atom_count.",
+    "uid": "task_00000972"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"O=C(OC(C(F)(F)F)C(F)(F)F)N1CCC2(CCCN2CC2=CC=C3C=C(Cl)C=CC3=N2)CC1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are present in O=C(OC(C(F)(F)F)C(F)(F)F)N1CCC2(CCCN2CC2=CC=C3C=C(Cl)C=CC3=N2)CC1? Please provide your answer as halogen_atom_count.",
+    "uid": "task_00000974"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"N1C(=CC=CC=1)N1C(=CC(=C1C)/C=C1/NC(N(C2=CC=CC(Cl)=C2)C1=O)=O)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in N1C(=CC=CC=1)N1C(=CC(=C1C)/C=C1/NC(N(C2=CC=CC(Cl)=C2)C1=O)=O)C? Return the result as a JSON mapping with the field halogen_atom_count.",
+    "uid": "task_00000976"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"C1(=CC=C(F)C(=C1F)CC(=O)C(F)(F)F)CC(C1C(=C(F)C=C(NC([C@@H]2C(Cl)(Cl)[C@H]2C2=CC=C(F)C(C(F)(F)F)=C2)=O)C=1)F)=O\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are present in C1(=CC=C(F)C(=C1F)CC(=O)C(F)(F)F)CC(C1C(=C(F)C=C(NC([C@@H]2C(Cl)(Cl)[C@H]2C2=CC=C(F)C(C(F)(F)F)=C2)=O)C=1)F)=O? Please provide your answer as halogen_atom_count.",
+    "uid": "task_00000978"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"c1cc(c(C)c(Cl)c1)NC(/C(C#N)=C\\\\Nc1cccc(c1)S(=O)(O)=O)=O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy atoms (non-hydrogen atoms) does c1cc(c(C)c(Cl)c1)NC(/C(C#N)=C\\Nc1cccc(c1)S(=O)(O)=O)=O contain? Please provide your answer as heavy_atom_count.",
+    "uid": "task_00000980"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"N1(c2ccc(F)cc2F)CCN(Cc2ccn3c(c2C(F)(F)F)nnc3CC2CC2)C(C1C)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy atoms are present in N1(c2ccc(F)cc2F)CCN(Cc2ccn3c(c2C(F)(F)F)nnc3CC2CC2)C(C1C)C? Please provide your answer for heavy_atom_count.",
+    "uid": "task_00000982"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C1=CC=C2C(=C1)C(=O)N(C1N2C(SCC(NC2=CC=C(F)C(=C2)F)=O)=NN=1)CCCC\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are in C1=CC=C2C(=C1)C(=O)N(C1N2C(SCC(NC2=CC=C(F)C(=C2)F)=O)=NN=1)CCCC? Provide the numerical answer as a JSON object with the field heavy_atom_count.",
+    "uid": "task_00000984"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"n1c(nn2c(nc(c2c1Oc1cc(c(OC)c(c1)OC)OC)C)C)-c1ccc(cc1)NC(C(O)C)=O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy atoms are present in n1c(nn2c(nc(c2c1Oc1cc(c(OC)c(c1)OC)OC)C)C)-c1ccc(cc1)NC(C(O)C)=O? Please provide your answer for heavy_atom_count.",
+    "uid": "task_00000986"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C=CC(=O)NC1=CC=CC(C2=CN(C3=CC=C(NC(=O)C4=CC=CC(Br)=N4)C=C3)N=N2)=C1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are in C=CC(=O)NC1=CC=CC(C2=CN(C3=CC=C(NC(=O)C4=CC=CC(Br)=N4)C=C3)N=N2)=C1? Give your answer as a JSON object with heavy_atom_count containing the numeric count.",
+    "uid": "task_00000988"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"COc1cc(OCc2cccc(CC(=O)c3ccc(C(F)(F)F)cc3)c2)c2cc(-c3cn4nc(OC)sc4n3)oc2c1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heavy atoms are present in COc1cc(OCc2cccc(CC(=O)c3ccc(C(F)(F)F)cc3)c2)c2cc(-c3cn4nc(OC)sc4n3)oc2c1? Provide your answer as a JSON with the field heavy_atom_count.",
+    "uid": "task_00000990"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"COC1=CC=CC2=C(C)C=C3C=C(C)C4=CC=CC=C4C3=C12\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heavy (non-hydrogen) atoms are in the molecule COC1=CC=CC2=C(C)C=C3C=C(C)C4=CC=CC=C4C3=C12? Provide your answer as a JSON object with heavy_atom_count.",
+    "uid": "task_00000992"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C1(/C=C2\\\\SC3N(C2=O)C2=CC=CC=C2N=3)=CC=NC=C1\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heavy (non-hydrogen) atoms are in C1(/C=C2\\SC3N(C2=O)C2=CC=CC=C2N=3)=CC=NC=C1? Provide the answer as a JSON object with the field heavy_atom_count.",
+    "uid": "task_00000994"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"c1(-c2ccc3ccc4c5c(ccc4)ccc2c53)cc(cc(-c2c3cccc4c3c(-c3ccccc3S4)cc2)c1)-c1ccccc1\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy atoms are present in the molecule c1(-c2ccc3ccc4c5c(ccc4)ccc2c53)cc(cc(-c2c3cccc4c3c(-c3ccccc3S4)cc2)c1)-c1ccccc1? Please provide your answer as heavy_atom_count.",
+    "uid": "task_00000996"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"c1c(N(C(=O)OC(C)(C)C)Cc2ccc3CCCN(C(C)=O)c3c2)cc(F)c(CCC(OCC)=O)c1\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy atoms are present in c1c(N(C(=O)OC(C)(C)C)Cc2ccc3CCCN(C(C)=O)c3c2)cc(F)c(CCC(OCC)=O)c1? Please provide your answer as heavy_atom_count.",
+    "uid": "task_00000998"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CCNC(=O)CN(CC)C(=O)C(C)(C)C\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "Count the number of terminal carbon atoms in CCNC(=O)CN(CC)C(=O)C(C)(C)C and provide the result as JSON with the key chain_termini_count.",
+    "uid": "task_00001240"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"C(C)([Si](C[Si](C)(C)C)(C(C)(C)C)C(C)(C)C)(C)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many terminal carbon atoms are present in C(C)([Si](C[Si](C)(C)C)(C(C)(C)C)C(C)(C)C)(C)C? Provide the numerical answer as a JSON object using the key chain_termini_count.",
+    "uid": "task_00001242"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CC(C)N(C(C)C)P(N(C(C)C)C(C)C)[Si](C)(C)C\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many terminal carbons are present in CC(C)N(C(C)C)P(N(C(C)C)C(C)C)[Si](C)(C)C? Please provide your answer as chain_termini_count.",
+    "uid": "task_00001244"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CNCCC(C)(C)OOC(C)(C)CCNC\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many terminal carbon atoms are in the molecule CNCCC(C)(C)OOC(C)(C)CCNC? Provide your numeric answer as a JSON object with chain_termini_count.",
+    "uid": "task_00001246"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"N(C)(CCNC(CC)(CC(CC)C)C(=O)OC)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many terminal carbons are present in N(C)(CCNC(CC)(CC(CC)C)C(=O)OC)C? Please provide your answer as chain_termini_count.",
+    "uid": "task_00001248"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CC(C)(C)[N+](C(CO)C)(C(C)(C)C)C(C)(C)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many terminal carbon atoms are in CC(C)(C)[N+](C(CO)C)(C(C)(C)C)C(C)(C)C? Provide the result as a JSON object with the field chain_termini_count.",
+    "uid": "task_00001250"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CC(C)(C)P(CCCP(C(C)(C)C)C(C)(C)C)C(C)(C)C\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many terminal carbon atoms are in CC(C)(C)P(CCCP(C(C)(C)C)C(C)(C)C)C(C)(C)C? Provide your answer as a JSON object with chain_termini_count.",
+    "uid": "task_00001252"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"[Si](C([Si](C)(C)C)([SiH](CC)OC)[Si](C)(C)C)(C)(C)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many terminal carbons are present in [Si](C([Si](C)(C)C)([SiH](CC)OC)[Si](C)(C)C)(C)(C)C? Please provide your answer as chain_termini_count.",
+    "uid": "task_00001254"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"O(C(CNC(CCC)CCCC)C)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many terminal carbon atoms are in O(C(CNC(CCC)CCCC)C)C? Give the numeric answer as a JSON object using the key chain_termini_count.",
+    "uid": "task_00001256"
+  },
+  {
+    "features": "single_count_chain_termini",
+    "metadata": "{\"smiles\": \"CCN(CCNC(CCCCCCC)C)CCC\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many terminal carbons are present in CCN(CCNC(CCCCCCC)C)CCC? Please provide your answer using chain_termini_count.",
+    "uid": "task_00001258"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C(CC(=C)C(F)F)(/C(C(C)C)=N/C)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many total branch points are in C(CC(=C)C(F)F)(/C(C(C)C)=N/C)C? Provide the result as a JSON object with branch_point_count containing the numerical count.",
+    "uid": "task_00001260"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"OCCN(C(C(C)(NC)C)=O)C1CCCC1\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many branch points are present in OCCN(C(C(C)(NC)C)=O)C1CCCC1? Please provide your answer with branch_point_count.",
+    "uid": "task_00001262"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C1C(CC)CN(C)CCO1\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many branch points are present in C1C(CC)CN(C)CCO1? Please provide your answer with branch_point_count.",
+    "uid": "task_00001264"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"CC(CC)(C(CN)C(=O)O)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many branch points are in CC(CC)(C(CN)C(=O)O)C? Return your answer as a JSON object using the key branch_point_count.",
+    "uid": "task_00001266"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"FC(F)(F)C1CCCCC1C(C(CN)C)O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many branch points are there in FC(F)(F)C1CCCCC1C(C(CN)C)O? Provide your answer as a JSON object with the key branch_point_count and a numerical value.",
+    "uid": "task_00001268"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"FC(F)(F)COC1[C@H](Cl)[C@@H](C([C@@H]([C@@H]1Cl)Cl)Cl)Cl\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many branch points are present in FC(F)(F)COC1[C@H](Cl)[C@@H](C([C@@H]([C@@H]1Cl)Cl)Cl)Cl? Please provide your answer with branch_point_count.",
+    "uid": "task_00001270"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C1C(CCCC1O)NC(C1COCCN1)=O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many branch points are present in C1C(CCCC1O)NC(C1COCCN1)=O? Please provide your answer as a JSON with the field branch_point_count.",
+    "uid": "task_00001272"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"CC1CN2CC(C)OC2O1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many branch points does the molecule CC1CN2CC(C)OC2O1 contain? Please provide your answer as branch_point_count.",
+    "uid": "task_00001274"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"CC1C(C)C2C3CC(C(C)C3C)C2C1C\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many branch points are in CC1C(C)C2C3CC(C(C)C3C)C2C1C? Provide the result as a JSON object with the key branch_point_count.",
+    "uid": "task_00001276"
+  },
+  {
+    "features": "single_count_branch_point",
+    "metadata": "{\"smiles\": \"C1(C(C(O)C(N)C(C1O)N)O)O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many branch points are present in C1(C(C(O)C(N)C(C1O)N)O)O? Please provide your answer as a JSON with the field branch_point_count.",
+    "uid": "task_00001278"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"CC(C)C(C1(CC1)CN)N\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are in CC(C)C(C1(CC1)CN)N? Please provide your answer with carbon_atom_count.",
+    "uid": "task_00001500"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1(CC)N(N=C1C(CC)CCC)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are in C1(CC)N(N=C1C(CC)CCC)C? Return the numerical answer as a JSON object with the field carbon_atom_count.",
+    "uid": "task_00001502"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C(CCCCCCCCCCCCCCCCC)C(CCCCC)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many total carbon atoms are in C(CCCCCCCCCCCCCCCCC)C(CCCCC)C? Provide the answer as a JSON mapping with the field carbon_atom_count.",
+    "uid": "task_00001504"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1CC(C(NCCOC(N)=O)C)CCC1\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are present in C1CC(C(NCCOC(N)=O)C)CCC1? Please provide your answer as carbon_atom_count.",
+    "uid": "task_00001506"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"CC(C(CCC(CCCC(CCC)CCCC)CC)F)C(C)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are in CC(C(CCC(CCCC(CCC)CCCC)CC)F)C(C)C? Return the result as a JSON object with carbon_atom_count containing the numerical count.",
+    "uid": "task_00001508"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C1CC(NCC2(CC)CCCN2)C1\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are in C1CC(NCC2(CC)CCCN2)C1? Give the numerical answer as a JSON object using the key carbon_atom_count.",
+    "uid": "task_00001510"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"C(CC(NCC(O)CN1CCC(C)CC1)C1CC1)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are present in C(CC(NCC(O)CN1CCC(C)CC1)C1CC1)C? Please provide your answer as carbon_atom_count.",
+    "uid": "task_00001512"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"CCO[SiH](OCCCCCCCCCCCCCCCCCC)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are present in CCO[SiH](OCCCCCCCCCCCCCCCCCC)C? Please provide your answer as carbon_atom_count.",
+    "uid": "task_00001514"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"CC(SN=N)=N\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many carbon atoms are present in CC(SN=N)=N? Please provide your answer as carbon_atom_count.",
+    "uid": "task_00001516"
+  },
+  {
+    "features": "single_count_carbon_atom",
+    "metadata": "{\"smiles\": \"CCCC(C)C(CCC)CC(CC)C(CC)C(C)C(C)CC\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many carbon atoms are present in CCCC(C)C(CCC)CC(CC)C(CC)C(C)C(C)CC? Please provide your answer as a JSON object with carbon_atom_count.",
+    "uid": "task_00001518"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"N(\\\\C(C(Cl)(Cl)Cl)(Cl)Cl)=P/C(C(Cl)(Cl)Cl)(Cl)Cl\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are in N(\\C(C(Cl)(Cl)Cl)(Cl)Cl)=P/C(C(Cl)(Cl)Cl)(Cl)Cl? Provide the numerical answer as a JSON object with the key hetero_atom_count.",
+    "uid": "task_00001520"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"[B][B]B([B])C(B(B([B])[B])B([B])[B])B(B([B])[B])B([B])[B]\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in the molecule [B][B]B([B])C(B(B([B])[B])B([B])[B])B(B([B])[B])B([B])[B]? Please provide your answer using hetero_atom_count.",
+    "uid": "task_00001522"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"C=C([SiH](CC)C)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are in C=C([SiH](CC)C)C? Give the exact number as a JSON object with the key hetero_atom_count.",
+    "uid": "task_00001524"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"NC1CC(C(F)(F)F)CC(C(F)(F)F)C1N\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in NC1CC(C(F)(F)F)CC(C(F)(F)F)C1N? Please provide your answer as hetero_atom_count.",
+    "uid": "task_00001526"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"FC(F)(C(F)F)C(F)(C(NF)=O)F\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in FC(F)(C(F)F)C(F)(C(NF)=O)F? Please provide your answer as hetero_atom_count.",
+    "uid": "task_00001528"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"S(=O)(CC(O[N+]([O-])=O)CN1CCOCC1)O\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms (atoms other than carbon and hydrogen) are in S(=O)(CC(O[N+]([O-])=O)CN1CCOCC1)O? Give your answer as JSON with hetero_atom_count.",
+    "uid": "task_00001530"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"O=C(NF)C(F)(F)C(F)(F)C(F)F\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are in O=C(NF)C(F)(F)C(F)(F)C(F)F? Provide the answer as a JSON object with hetero_atom_count giving the count.",
+    "uid": "task_00001532"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"NCCC[SiH]1O[SiH2]O[SiH2]O[SiH2]O[SiH2]O[SiH2]O1\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are in NCCC[SiH]1O[SiH2]O[SiH2]O[SiH2]O[SiH2]O[SiH2]O1? Provide the numerical answer as a JSON object with the key hetero_atom_count.",
+    "uid": "task_00001534"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"O=C(C(OC(F)(F)F)(F)C(F)(F)F)F\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are in O=C(C(OC(F)(F)F)(F)C(F)(F)F)F? Provide the numeric answer as a JSON object with the field hetero_atom_count.",
+    "uid": "task_00001536"
+  },
+  {
+    "features": "single_count_hetero_atom",
+    "metadata": "{\"smiles\": \"CCCCOC(CC)O[Si](OOCC)(OOCC)OOCC\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heteroatoms are present in CCCCOC(CC)O[Si](OOCC)(OOCC)OOCC? Provide the answer as a JSON object using the key hetero_atom_count.",
+    "uid": "task_00001538"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"F[Si](F)(F)C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in F[Si](F)(F)C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F? Provide the numerical result as a JSON object using the key halogen_atom_count.",
+    "uid": "task_00001540"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"F[Si](F)(F)C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are present in F[Si](F)(F)C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F? Please provide your answer for halogen_atom_count.",
+    "uid": "task_00001542"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"C(F)(F)(F)C(CC)CC(C)(O)C(F)(F)F\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in C(F)(F)(F)C(CC)CC(C)(O)C(F)(F)F? Provide the numerical result as a JSON object using the key halogen_atom_count.",
+    "uid": "task_00001544"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"C(=CC(F)(F)F)OP(OCC)(O)=O\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in C(=CC(F)(F)F)OP(OCC)(O)=O? Provide your answer as JSON with halogen_atom_count.",
+    "uid": "task_00001546"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"CCC(CC)CNC(=O)CBr\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are in CCC(CC)CNC(=O)CBr? Provide your answer as a JSON object with halogen_atom_count containing the numerical count.",
+    "uid": "task_00001548"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"F[Si](F)(F)C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are present in the molecule F[Si](F)(F)C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F? Please provide your answer as halogen_atom_count.",
+    "uid": "task_00001550"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"COCC1=CCN(C(=O)CCCl)CC1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in the molecule COCC1=CCN(C(=O)CCCl)CC1? Provide the numeric answer as a JSON object with halogen_atom_count.",
+    "uid": "task_00001552"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"[Si](C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F)(F)(F)F\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are in [Si](C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F)(F)(F)F? Return the result as a JSON object with halogen_atom_count containing the numerical count.",
+    "uid": "task_00001554"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"F[Si](F)(F)C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many halogen atoms are in F[Si](F)(F)C([Si](F)(F)F)([Si](F)(F)F)[Si](F)(F)F? Provide your answer as a JSON object using the key halogen_atom_count.",
+    "uid": "task_00001556"
+  },
+  {
+    "features": "single_count_halogen_atom",
+    "metadata": "{\"smiles\": \"CNC1=CC(C)=C(Br)C(C)=N1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many halogen atoms are present in the molecule CNC1=CC(C)=C(Br)C(C)=N1? Please provide your answer using halogen_atom_count.",
+    "uid": "task_00001558"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C=COCC(COC(C)=O)OC(C)=O\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are present in C=COCC(COC(C)=O)OC(C)=O? Please provide your answer using heavy_atom_count.",
+    "uid": "task_00001560"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C(=CCl)(C)CNC1(CC)CCC1\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy atoms are present in C(=CCl)(C)CNC1(CC)CCC1? Please provide your answer for heavy_atom_count.",
+    "uid": "task_00001562"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C(CCCCCCCC(CC)CC)CCCCCCCCCN(C)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are present in C(CCCCCCCC(CC)CC)CCCCCCCCCN(C)C? Please provide your answer using heavy_atom_count.",
+    "uid": "task_00001564"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C1COCCN(CCOCCOCCO1)CCO\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy atoms does C1COCCN(CCOCCOCCO1)CCO contain? Please provide your answer as heavy_atom_count.",
+    "uid": "task_00001566"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"CCCCCCCCCCCCCCCCNOCC(O)CO\", \"is_randomized\": false, \"is_kekulized\": false}",
+    "question": "How many heavy atoms does CCCCCCCCCCCCCCCCNOCC(O)CO contain? Please provide your answer as heavy_atom_count.",
+    "uid": "task_00001568"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C(C)(C)CC(C(OCCCC)OCCCC)(C)CC(C)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are in C(C)(C)CC(C(OCCCC)OCCCC)(C)CC(C)C? Give the answer as a JSON object using the key heavy_atom_count.",
+    "uid": "task_00001570"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C(CCCCOCCCC(C)(C)C)CCCCCCCCSC\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy atoms are in C(CCCCOCCCC(C)(C)C)CCCCCCCCSC? Give your answer as a JSON object with heavy_atom_count containing the numeric count.",
+    "uid": "task_00001572"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"BrC1(Br)CO1\", \"is_randomized\": false, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are present in BrC1(Br)CO1? Please provide your answer using heavy_atom_count.",
+    "uid": "task_00001574"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"C(C)(C1CC1)(NC(C(C)(NCC)C)=O)C\", \"is_randomized\": true, \"is_kekulized\": true}",
+    "question": "How many heavy atoms are in C(C)(C1CC1)(NC(C(C)(NCC)C)=O)C? Provide the answer as JSON with the key heavy_atom_count.",
+    "uid": "task_00001576"
+  },
+  {
+    "features": "single_count_heavy_atom",
+    "metadata": "{\"smiles\": \"CC(c1scc(c1)OC)C\", \"is_randomized\": true, \"is_kekulized\": false}",
+    "question": "How many heavy (non-hydrogen) atoms are in CC(c1scc(c1)OC)C? Provide your answer as a JSON mapping with the field heavy_atom_count.",
+    "uid": "task_00001578"
+  }
+]

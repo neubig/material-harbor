@@ -1283,5 +1283,30 @@
     },
     "meets_fp_fn_under_15": false
   },
-  "random_sample_qualification_status": "not_qualified_random_verifier_rates"
+  "random_sample_qualification_status": "not_qualified_random_verifier_rates",
+  "preferred_agent_evaluation": {
+    "model": "openai/deepseek-v4.1-flash",
+    "temperature": 1,
+    "max_iterations": 50,
+    "prompt_visible_turn_budget": 40,
+    "same_random100_sample": true,
+    "job_id": "338b0b27-bb78-44ea-8602-e356a945b3b2",
+    "correct": 47,
+    "accuracy": 0.47,
+    "wilson_95": [
+      0.3751081795934127,
+      0.5671114302990063
+    ],
+    "random_sample_bootstrap_95_percentile": [
+      0.37,
+      0.57
+    ],
+    "errors": 0,
+    "submitted_answers": 61,
+    "missing_answer_writes": 39,
+    "hidden_gold_probe_trials": 0,
+    "majority_key_baseline": 0.39,
+    "cost_usd": 2.5482863399999998
+  },
+  "preferred_setting_accuracy_in_open_interval_10_70": true
 }

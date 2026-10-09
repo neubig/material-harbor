@@ -8,5 +8,7 @@
 - Do not replace sampled tasks because they are ambiguous, malformed, timed out, or failed. Keep them in the denominator and report each failure category. Infrastructure-only retries must rerun the same task under a declared policy.
 - Calculate representative verifier FP/FN from randomly sampled, independently adjudicated valid and invalid answers. Report valid and invalid denominators separately with confidence intervals. Keep hand-written adversarial tests separate from representative rates.
 - Preserve source keys outside the agent environment. Auditors must not see source keys, solver outputs, or prior judgments before recording their assessment.
+- For primary OpenHands evaluations, allot 50 iterations and tell the agent in the initial prompt that it has a working budget of 40 turns. This leaves an unannounced completion buffer without prescribing its reasoning strategy.
+- Use temperature 1 for primary model evaluations unless a benchmark has a preregistered reason to require another value. Treat other temperature/iteration settings as separate agent configurations.
 - Record the source revision, sample manifest, random seed, Harbor revision, agent/model settings, Sail job IDs, missing outputs, errors, retries, token usage, and cost.
 - Qualification claims apply only to the exact task contract and population sampled. Clearly distinguish objective-only or other subset results from the full source benchmark.

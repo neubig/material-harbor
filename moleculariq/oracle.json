@@ -1,0 +1,21 @@
+{
+  "agents": [
+    {
+      "name": "oracle"
+    }
+  ],
+  "datasets": [
+    {
+      "path": "/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/material-harbor/moleculariq/frozen/tasks"
+    }
+  ],
+  "environment": {
+    "type": "sail"
+  },
+  "job_name": "moleculariq-oracle100",
+  "jobs_dir": "/mnt/statusquo_block_storage/workspace/project/985b2f1e79674b7d8766ddd9dd90e632/material-harbor/moleculariq/jobs",
+  "n_concurrent_trials": 10,
+  "retry": {
+    "max_retries": 0
+  }
+}
