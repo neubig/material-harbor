@@ -1,0 +1,24 @@
+{
+  "tasks_with_complete_calibration": 98,
+  "valid_denominator": 98,
+  "false_negatives": 36,
+  "false_negative_percentage": 36.734693877551024,
+  "false_negative_wilson95": [
+    0.2785887752216772,
+    0.46611244664734003
+  ],
+  "invalid_denominator": 98,
+  "false_positives": 0,
+  "false_positive_percentage": 0.0,
+  "false_positive_wilson95": [
+    3.469446951953614e-18,
+    0.037719990121680605
+  ],
+  "ambiguous": 0,
+  "score_counts": {
+    "1": 62,
+    "0.5": 51,
+    "0.25": 28,
+    "0.75": 55
+  }
+}

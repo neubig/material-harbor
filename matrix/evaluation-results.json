@@ -1,0 +1,21 @@
+{
+  "job_ids": [
+    "9c64b3d2-df38-4f6e-8659-b8ef01d219b4",
+    "3b859c6b-dfec-440d-a0ae-7825dc7d8c45",
+    "b05bf53d-965b-4184-b9e5-0998c0fc84f7"
+  ],
+  "tasks": 100,
+  "ordinal_mean": 0.2375,
+  "strict_successes": 0,
+  "strict_accuracy": 0.0,
+  "strict_wilson95": [
+    3.469446951953614e-18,
+    0.03699349820698568
+  ],
+  "score_counts": {
+    "0.0": 53,
+    "0.25": 10,
+    "0.5": 26,
+    "0.75": 11
+  }
+}

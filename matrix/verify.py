@@ -88,7 +88,7 @@ def parse_verdict(text):
 
 def request_body(record, image, answer):
     return {
-        'model': MODEL, 'temperature': 0, 'max_tokens': 1600,
+        'model': MODEL, 'temperature': 1, 'max_tokens': 1600,
         'response_format': {'type': 'json_object'},
         'messages': [
             {'role': 'system', 'content': RUBRIC},

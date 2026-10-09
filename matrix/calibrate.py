@@ -58,7 +58,7 @@ def call(stage, index, system, data, image):
     path = OUT / f'{stage}-{index:03d}.json'
     if path.exists():
         return json.loads(path.read_text())
-    body = {'model': 'gpt-5.6', 'temperature': 0, 'max_tokens': 5000,
+    body = {'model': 'gpt-5.6', 'temperature': 1, 'max_tokens': 5000,
             'response_format': {'type': 'json_object'}, 'messages': [
                 {'role': 'system', 'content': system},
                 {'role': 'user', 'content': [

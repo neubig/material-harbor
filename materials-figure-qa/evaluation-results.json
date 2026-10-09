@@ -1,0 +1,26 @@
+{
+  "job_ids": [
+    "95ee1b81-a33b-478b-b3a8-81bfd932b4cc",
+    "a86776c3-fdc6-482a-bcd1-3765eb12ea98",
+    "d0ae88c1-a249-483e-ae1c-a56a038115f9"
+  ],
+  "tasks": 100,
+  "ordinal_mean": 0.03,
+  "strict_successes": 3,
+  "strict_accuracy": 0.03,
+  "strict_wilson95": [
+    0.010254524024038925,
+    0.0845193642905276
+  ],
+  "score_counts": {
+    "0.0": 97,
+    "1.0": 3
+  },
+  "status": "not_qualified_accuracy_below_10",
+  "model": "openai/deepseek-v4.1-flash",
+  "temperature": 1,
+  "max_iterations": 50,
+  "prompt_visible_turn_budget": 40,
+  "sample_size": 100,
+  "strict_accuracy_gate_passes": false
+}

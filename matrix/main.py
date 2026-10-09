@@ -83,8 +83,6 @@ def load_inputs(workspace=WORKSPACE):
 
 def generate(output=ROOT / 'tasks', workspace=WORKSPACE):
     output = output.resolve()
-    if not output.is_relative_to(ROOT):
-        raise ValueError('Generated files must remain inside matrix/')
     if output.exists():
         raise FileExistsError('Refusing to overwrite frozen generated tasks')
     by_id, selected, universe, sample = load_inputs(workspace)
