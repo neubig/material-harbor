@@ -1,0 +1,7 @@
+{
+  "correct_reward": 1,
+  "opposite_reward": 0,
+  "network": "none",
+  "container": "matbench-discovery-verifier-smoke:20261009",
+  "artifact_mount": "/output read-only; separate filesystem contains tests; agent context never includes gold"
+}

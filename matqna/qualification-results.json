@@ -201,5 +201,30 @@
     },
     "meets_fp_fn_under_15": true
   },
-  "random_sample_qualification_status": "qualified"
+  "random_sample_qualification_status": "qualified",
+  "preferred_agent_evaluation": {
+    "model": "openai/deepseek-v4.1-flash",
+    "temperature": 1,
+    "max_iterations": 50,
+    "prompt_visible_turn_budget": 40,
+    "same_random100_sample": true,
+    "job_id": "d2711d61-2746-405c-9bf5-c6c4cdba01d5",
+    "correct": 71,
+    "accuracy": 0.71,
+    "wilson_95": [
+      0.6146110882442888,
+      0.7898516425087772
+    ],
+    "random_sample_bootstrap_95_percentile": [
+      0.62,
+      0.8
+    ],
+    "errors": 0,
+    "submitted_answers": 62,
+    "missing_answer_writes": 38,
+    "hidden_gold_probe_trials": 0,
+    "majority_key_baseline": 0.44,
+    "cost_usd": 2.9219747640000002
+  },
+  "preferred_setting_accuracy_in_open_interval_10_70": false
 }

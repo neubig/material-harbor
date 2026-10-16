@@ -1,0 +1,7 @@
+{
+  "auditor": "GPT-5.6, temperature 1, max50/prompt40, key-free independent tasks; not human adjudication",
+  "candidates": "After judgments are persisted, one auditor-derived valid integer and one uniformly random alternative from 0..N excluding auditor count per row, seed 20261010. No source-value-based candidate filtering.",
+  "limitations": "Model adjudication shares RDKit parser semantics but not source solver; conditional on declared versioned contract. Synthetic uniform invalids are not the distribution of agent mistakes.",
+  "rates": "FN rejected / independently valid; FP accepted / independently invalid; Wilson 95% intervals. Missing/ambiguous judgments remain in cohort and reported separately, never replaced.",
+  "sample": "same preregistered SRS100 of complete eligible row universe"
+}

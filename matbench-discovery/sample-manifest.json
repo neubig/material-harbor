@@ -1,0 +1,17 @@
+{
+  "n_eligible": 215488,
+  "n_stable": 32942,
+  "n_unstable": 182546,
+  "n_sampled": 100,
+  "seed": 20261009,
+  "shuffle_after_stratum_sampling": true,
+  "protocol_sha256": "d5f14182d50c425eace04e8602afaf09eed28437228ea53413eb76c54f3cfc5f",
+  "source_sha256": {
+    "wbm-summary.csv.gz": "adbdd8b24086d4888195d8894c77f6d5fb29ce33bbb5d7d3898b4d79e964dc54",
+    "wbm-init-structs.jsonl.gz": "98d545172c1ea9060f03f40cace6f8173a4ac06f1ee875ccd963765211519b58"
+  },
+  "sample_sha256": "8377deb19cd1456fd003dcff995dc630247ead9f20e4d26d57793f3d63144539",
+  "eligible_sha256": "e14f9b0183d742ec55f08924992ab8e68358956ea5170fda4622e6380b3a92e7",
+  "near_hull_abs_le_0_001_sample": 0,
+  "exclusion_count": 41475
+}

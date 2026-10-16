@@ -1,0 +1,30 @@
+{
+  "name": "Matbench Discovery balanced unrelaxed-structure qualification v1",
+  "preregistered_at": "2026-10-09",
+  "state": "frozen before selection or outcomes",
+  "population": "All released unique_prototype=True rows with finite e_above_hull_mp2020_corrected_ppd_mp and uniquely aligned valid ordered initial periodic structure. No chemistry, size, near-hull or model-support exclusions.",
+  "sampling": {
+    "n": 100,
+    "stable": 50,
+    "unstable": 50,
+    "seed": 20261009,
+    "algorithm": "Python random.Random(seed).sample over lexicographically sorted material IDs, stable then unstable, without replacement",
+    "weights": "Source-distribution estimates require population stratum counts /50. Primary balanced accuracy only."
+  },
+  "target": "DFT-relaxed MP2020 corrected signed distance <=0 eV/atom against fixed MP DFT hull. No predicted hull or clipping.",
+  "input": "Initial lattice species fractional coordinates PBC only; opaque ID; MP-only reference allowed. No WBM energies or target metadata.",
+  "tool": "CHGNet checkpoint0.3.0 already MP2020-corrected total energy/atom minus fixed MP DFT hull total energy/atom after relaxation. No double correction. Pin dependencies/checkpoint/reference before production.",
+  "answer": "Strict JSON exactly one boolean stable field; reject duplicates extras nonboolean symlink nonregular oversized missing output.",
+  "metrics": "Balanced cohort accuracy; both constant baselines50%. Not leaderboard, source raw accuracy, or evidence of scientific skill from10-70% gate.",
+  "dependence": "Stratified random structures, not independent groups. Replaces earlier unfrozen grouping proposal to avoid nonuniform selection and unavailable lineage. Unique prototypes do not imply independence; conditional descriptive CI only.",
+  "agent": {
+    "model": "deepseek-v4.1-flash",
+    "temperature": 1,
+    "max_iterations": 50,
+    "announced_turns": 40
+  },
+  "failures": "Keep all100. No replacements. At most one infrastructure-only retry of same task; report first attempt separately.",
+  "audit": "Key-free independent reconstruction from WBM CSE historical MP2020 and MP-only hull. Freeze judgments before gold comparison. Assess correct/opposite booleans against reconstructed sign. Scientific disagreements separate from parser tests; unavailable reconstruction means unmeasured not zero.",
+  "security": "No gold/source summary in build context; verifier and oracle mounted only after agent. Qualification requires network dataset retrieval blocked and isolation validated. Public memorization risk remains.",
+  "scope": "Balanced finite adaptation, not official benchmark. Licensing uncertainty excluded. No workbook edits."
+}

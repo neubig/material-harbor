@@ -1,0 +1,724 @@
+{
+  "scope": "100 randomly sampled balanced structures, independent key-free DFT reconstruction; paired correct/opposite boolean answers, not natural agent-output error distribution",
+  "audit_sha256": "a9c8fff10ca8d1b8661a53bc387f4aab312adee42f7e7f322eab1e2ecb5e5905",
+  "valid_denominator": 100,
+  "invalid_denominator": 100,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "fp_rate": 0.0,
+  "fn_rate": 0.0,
+  "fp_wilson95": [
+    0.0,
+    0.03699349820698568
+  ],
+  "fn_wilson95": [
+    0.0,
+    0.03699349820698568
+  ],
+  "ci_caveat": "Conditional descriptive binomial interval; chemistry/lineage correlation not accounted for.",
+  "scientific_sign_disagreements": 0,
+  "max_absolute_distance_delta": 4.999999999345806e-07,
+  "qualified": true,
+  "records": [
+    {
+      "task_id": "mbd-000",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.86562499235621e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-001",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -5.250000054135562e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-002",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -9.208333442978223e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-003",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.924999737199176e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-004",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -2.862500003012261e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-005",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.434090905558463e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-006",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.599999998688986e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-007",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.1812500021766166e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-008",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 2.2000000096666916e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-009",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.613281214683017e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-010",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.9604166623388153e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-011",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -2.9396825730609866e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-012",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.1319445434330184e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-013",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.290833325384935e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-014",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.0625000890793785e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-015",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 7.923387186636877e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-016",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -6.000000256356497e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-017",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.74999911678664e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-018",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.0614035013656485e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-019",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 1.825384614156933e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-020",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.393055554816061e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-021",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.263888775917323e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-022",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.7999999775419884e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-023",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -7.640151450383215e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-024",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 5.900000232816893e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-025",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.0222221842425854e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-026",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.1522727299976294e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-027",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.516666667868762e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-028",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.555555727786542e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-029",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.61999999873097e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-030",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.7249999964547873e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-031",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.3833332795920583e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-032",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.5071428578236095e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-033",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 1.8699999841664816e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-034",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.349999995738706e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-035",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -2.0245536116667018e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-036",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.1416666606008956e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-037",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 1.3125000225544525e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-038",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -2.3986111136187205e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-039",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -2.31666666629729e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-040",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.874999997127704e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-041",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.199999637660712e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-042",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.53000000011361e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-043",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 2.713068187362548e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-044",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.4885714176744724e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-045",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.699999996109593e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-046",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.3708333269100166e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-047",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -2.0449999823743403e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-048",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.993333312525161e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-049",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -9.499999972795159e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-050",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 1.7590909261178123e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-051",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -6.979166736545417e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-052",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.3791666370055466e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-053",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 2.1072580647096828e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-054",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 2.2666666626980359e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-055",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.7499999875078025e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-056",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.2500000196898924e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-057",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.877499998334756e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-058",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -2.5499999767655823e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-059",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 1.1549999615230455e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-060",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.3600000544570362e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-061",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.6577777920432375e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-062",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.549999996494858e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-063",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.3645454449875443e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-064",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 2.0433333108166307e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-065",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.999999999345806e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-066",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 5.000002386082447e-09,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-067",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 2.4785714322628216e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-068",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.0749999995204345e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-069",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.2374999974226224e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-070",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.534558261678554e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-071",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.7833333495337333e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-072",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.27685186332638e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-073",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.2982978670492713e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-074",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.5788461214686373e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-075",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.69166666366809e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-076",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -4.5400000919793015e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-077",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 1.5909090889804078e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-078",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 1.283333332935399e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-079",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.6554687110612605e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-080",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -2.4166666619598876e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-081",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 7.227272747281632e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-082",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -2.0066666669982247e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-083",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.0337543632796837e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-084",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.0999999927765485e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-085",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.333333625955449e-09,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-086",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 1.6133333424067642e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-087",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.2544776282228405e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-088",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 2.504166660560747e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-089",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.576543213604233e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-090",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 3.002777794053335e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-091",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.2623333248487634e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-092",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.4900000178982324e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-093",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 4.199999938114818e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-094",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -1.699999031823385e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-095",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.7763888922556776e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-096",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.0925000005233017e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-097",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": -3.4549999870792103e-07,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-098",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 6.687499902457983e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    },
+    {
+      "task_id": "mbd-099",
+      "sign_agrees": true,
+      "distance_delta_ev_per_atom": 1.4000000825298287e-08,
+      "valid_accepted": true,
+      "invalid_accepted": false
+    }
+  ]
+}
